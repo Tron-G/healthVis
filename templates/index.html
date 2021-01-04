@@ -5,14 +5,30 @@
     <title>HealthVis</title>
 </head>
 
+<script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+<script type="text/javascript" src="../static/lib/jquery/jquery-3.1.1.min.js"></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
 
 
+<link rel="stylesheet" href="../static/css/base.css">
+<link rel="stylesheet" href="../static/css/map_view.css">
+<link rel="stylesheet" href="../static/css/timeline.css">
+<link rel="stylesheet" href="../static/css/radar.css">
+<link rel="stylesheet" href="../static/css/job_pie.css">
+<link rel="stylesheet" href="../static/css/body_view.css">
+<link rel="stylesheet" href="../static/css/word_cloud.css">
 
 <body>
     <div id="title">
         <span id="system_title">日照市健康可视分析系统</span>
+{#        <button id="second_page">feature</button>#}
     </div>
     <div id="map_view"></div>
+    <div id="left_view">
+        <div id="body_view"></div>
+        <div id="word_cloud"></div>
+    </div>
     <div id="right_view">
         <div id="radar"></div>
         <div id="job_pie"></div>
@@ -21,10 +37,10 @@
 </body>
 
 
-<link rel="stylesheet" href="../static/css/base.css">
-<link rel="stylesheet" href="../static/css/map_view.css">
-<link rel="stylesheet" href="../static/css/timeline.css">
-<link rel="stylesheet" href="../static/css/radar.css">
-<link rel="stylesheet" href="../static/css/job_pie.css">
 
+
+<script type="text/javascript" src="../static/js/map_view.js"></script>
+<script type="text/javascript" src="../static/js/radar.js"></script>
+<script type="text/javascript" src="../static/js/timeline.js"></script>
+<script type="text/javascript" src="../static/js/job_pie.js"></script>
 </html>

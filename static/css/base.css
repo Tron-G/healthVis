@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color: #5AC039;
+    background-color: #e3fdfd;
 }
 
 #title{
@@ -19,4 +19,10 @@ body{
     left: 43%;
     font-size: 20px;
     font-weight: bold;
+}
+
+#second_page{
+    position: absolute;
+    right: 3%;
+    top: 2%;
 }
