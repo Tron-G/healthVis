@@ -35,6 +35,7 @@ function Drawbar(AHQ, tem, rain) {
 		// silent: true,
 		data: [
 			[{
+				name:"冬天",
 				xAxis: '2019/1/1',
 				itemStyle: {
 					// color: '#528B8B',
@@ -55,6 +56,7 @@ function Drawbar(AHQ, tem, rain) {
 				xAxis: '2019/2/5'
 			}],
 			[{
+				name:"春天",
 				xAxis: '2019/2/6',
 				itemStyle: {
 					// color: '#9AFF9A',
@@ -75,6 +77,7 @@ function Drawbar(AHQ, tem, rain) {
 				xAxis: '2019/5/6'
 			}],
 			[{
+				name:"夏天",
 				xAxis: '2019/5/7',
 				itemStyle: {
 					// color: 'skyblue',
@@ -95,6 +98,7 @@ function Drawbar(AHQ, tem, rain) {
 				xAxis: '2019/8/8'
 			}],
 			[{
+				name:"秋天",
 				xAxis: '2019/8/9',
 				itemStyle: {
 					// color: '#F4A460',
@@ -115,6 +119,7 @@ function Drawbar(AHQ, tem, rain) {
 				xAxis: '2019/11/10'
 			}],
 			[{
+				name:"冬天",
 				xAxis: '2019/11/11',
 				itemStyle: {
 					// color: '#528B8B',
@@ -340,6 +345,7 @@ function Drawbar(AHQ, tem, rain) {
 				// },
 				lineStyle: {
 					color: "#00EE00",
+					smooth:true,
 					width: 1
 				},
 				markArea: MarkArea,
@@ -372,6 +378,7 @@ function Drawbar(AHQ, tem, rain) {
 				// },
 				markArea: MarkArea,
 				lineStyle: {
+					smooth:true,
 					color: "#B22222",
 					width: 1
 				},
@@ -380,5 +387,8 @@ function Drawbar(AHQ, tem, rain) {
 		]
 	};
 	bar.setOption(option)
+	bar.on("click",function(params){
+		console.log(params.data.name)
+	})
 }
-Drawbar(AHQ, tem, rain);
+Drawbar(AHQ, tem, rain)

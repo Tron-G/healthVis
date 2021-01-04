@@ -6,3 +6,6 @@
     width: 80%;
     height: 80%;
 }
+.mapboxgl-ctrl {
+            display: none !important;
+}
