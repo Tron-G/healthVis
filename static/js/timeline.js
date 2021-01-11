@@ -27,7 +27,7 @@ tem = [3, 4, 5, 3, 3, 4, 5, 4, 2, 5, 4, 7, 7, 6, 1, 1, 6, 6, 6, 5, 7, 9, 10, 10,
 ]
 rain = []
 
-function Drawbar(AHQ, tem, rain) {
+function drawBar(AHQ, tem, rain) {
 
 
 	var bar = echarts.init(document.getElementById("timeline"));
@@ -44,7 +44,7 @@ function Drawbar(AHQ, tem, rain) {
 						color: 'white'
 					}, {
 						offset: 0.5,
-						color: '	#8B8B7A'
+						color: '	#008B00'
 					}, {
 						offset: 1,
 						color: 'white'
@@ -128,7 +128,7 @@ function Drawbar(AHQ, tem, rain) {
 						color: 'white'
 					}, {
 						offset: 0.5,
-						color: '	#8B8B7A'
+						color: '	#008B00'
 					}, {
 						offset: 1,
 						color: 'white'
@@ -169,7 +169,9 @@ function Drawbar(AHQ, tem, rain) {
 		legend: {
 			data: ["降雨量", "AHQ", "气温"],
 			selected: {
-				"降雨量": false
+				"降雨量": false,
+				// "AHQ":false,
+				// "气温":false
 			},
 			top: "15%",
 			textStyle: {
@@ -179,9 +181,9 @@ function Drawbar(AHQ, tem, rain) {
 		dataZoom: [{
 				show: true,
 				// realtime: true,
-				height: 10,
-				start: 1,
-				end: 100
+				height: 15,
+				// start: 36,
+				// end: 62
 			},
 			{
 				type: 'inside',
@@ -253,7 +255,7 @@ function Drawbar(AHQ, tem, rain) {
 		},
 		yAxis: [{
 				type: "value",
-				name: "AHQ",
+				// name: "AHQ",
 				// 				nameTextStyle: {
 				// 					color: "#ebf8ac"
 				// 				},
@@ -281,7 +283,7 @@ function Drawbar(AHQ, tem, rain) {
 			},
 			{
 				type: "value",
-				name: "降雨量",
+				// name: "降雨量",
 				// 				nameTextStyle: {
 				// 					color: "#ebf8ac"
 				// 				},
@@ -306,7 +308,7 @@ function Drawbar(AHQ, tem, rain) {
 			},
 			{
 				type: "value",
-				name: "气温",
+				// name: "气温",
 				gridIndex: 0,
 				// min: 50,
 				// max: 100,
@@ -337,12 +339,12 @@ function Drawbar(AHQ, tem, rain) {
 				yAxisIndex: 0, //使用的 y 轴的 index，在单个图表实例中存在多个 y轴的时候有用
 				smooth: true, //平滑曲线显示
 				// showAllSymbol: false, //显示所有图形。
-				symbol: "none", //标记的图形为实心圆
+				symbol: "diomand", //标记的图形为实心圆
 				// 				symbolSize: 3, //标记的大小
-				// itemStyle: {
-				// 	//折线拐点标志的样式
-				// 	color: "#058cff"
-				// },
+				itemStyle: {
+					//折线拐点标志的样式
+					color: "#058cff"
+				},
 				lineStyle: {
 					color: "#00EE00",
 					smooth:true,
@@ -354,7 +356,7 @@ function Drawbar(AHQ, tem, rain) {
 			{
 				name: "降雨量",
 				type: "bar",
-				barWidth: 3,
+				barWidth: 5,
 				yAxisIndex: 1,
 				itemStyle: {
 					normal: {
@@ -370,16 +372,17 @@ function Drawbar(AHQ, tem, rain) {
 				yAxisIndex: 1,
 
 				// barWidth: 1,
-				symbol: "none",
-				// itemStyle: {
-				// 	normal: {
-				// 		color: "#B22222"
-				// 	}
-				// },
+				symbol: "circle",
+				itemStyle: {
+					normal: {
+						color: "#CD5555"
+					}
+				},
+				smooth:true,
 				markArea: MarkArea,
 				lineStyle: {
-					smooth:true,
-					color: "#B22222",
+
+					color: "#CD5555",
 					width: 1
 				},
 				data: tem
@@ -389,6 +392,27 @@ function Drawbar(AHQ, tem, rain) {
 	bar.setOption(option)
 	bar.on("click",function(params){
 		console.log(params.data.name)
+		let season  = "all";
+		switch (params.data.name) {
+			case "春天":
+				season = "spring";
+				break;
+			case "夏天":
+				season = "summer";
+				break;
+			case "秋天":
+				season = "fall";
+				break;
+			case "冬天":
+				season = "winter";
+				break;
+			default:
+				season = "all";
+				break;
+		}
+
+		transport_data["season"] = season;
+		transmitData("/testInfo");
 	})
 }
-Drawbar(AHQ, tem, rain)
+

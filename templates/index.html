@@ -8,7 +8,6 @@
 <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
 <script type="text/javascript" src="../static/lib/jquery/jquery-3.1.1.min.js"></script>
 
-
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css' rel='stylesheet' />
 
@@ -27,12 +26,27 @@
     </div>
     <div id="map_view"></div>
     <div id="left_view">
-        <div id="body_view"></div>
+        <div id="body_view">
+                <div class="bodyClick" id="heartClick" value="heartClick" onclick = "heartTextCloud()"></div>
+                <div class="bodyClick" id="lungClick" value="lungClick" onclick = "lungTextCloud()"></div>
+                <div class="bodyClick" id="liverClick" value="liverClick" onclick = "liverTextCloud()"></div>
+                <div class="bodyClick" id="stomachClick" value="stomachClick" onclick = "stomachTextCloud()"></div>
+                <div class="bodyClick" id="headClick" value="headClick" onclick = "headTextCloud()"></div></div>
         <div id="word_cloud"></div>
     </div>
     <div id="right_view">
         <div id="radar"></div>
-        <div id="job_pie"></div>
+        <div id="job_pie">
+            <div id="piechart"></div>
+            <div id="clickbox">
+                <div id = "clickBox1"  value="clickbox1" onclick="policePie()"></div>
+                <div id = "clickBox2"  value="clickbox2" onclick="doctorPie()"></div>
+                <div id = "clickBox3"  value="clickbox3" onclick="teacherPie()"></div>
+                <div id = "clickBox4"  value="clickbox4" onclick="workerPie()"></div>
+                <div id = "clickBox5"  value="clickbox5" onclick="ironWorkerPie()"></div>
+                <div id = "clickBox6"  value="clickbox6" onclick="pieCount()"></div>
+            </div>
+        </div>
     </div>
     <div id="timeline"></div>
 </body>
@@ -45,4 +59,5 @@
 <script type="text/javascript" src="../static/js/timeline.js"></script>
 <script type="text/javascript" src="../static/js/job_pie.js"></script>
 <script type="text/javascript" src="../static/js/data_transmit.js"></script>
+
 </html>

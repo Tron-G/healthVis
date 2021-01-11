@@ -1,6 +1,6 @@
 var obj = {
 	"日照市中医医院": {
-		"心电": 10,
+		"心电": 12,
 		"眼科": 2,
 		"外科": 3,
 		"CT": 6,
@@ -41,28 +41,28 @@ var obj = {
 	},
 }
 // console.log(Object.keys(obj['日照市岚山区人民医院']))
-var colorArr = ['rgba(0,245,255, 0.5)', 'rgba(83,134,139, 0.5)',
+function drawRadar(obj) {
+
+	let colorArr = ['rgba(0,245,255, 0.5)', 'rgba(83,134,139, 0.5)',
 	'rgba(255,130,71,0.5)', 'rgba(	238 ,99 ,99, 0.6)',
 	// 'rgba(222,134,85, 0.8)'
 ]; //颜色
-function drawRadar(obj, colorArr) {
+	let list = (Object.keys(obj['日照市岚山区人民医院']))
 
-	list = (Object.keys(obj['日照市岚山区人民医院']))
-
-	hospital = Object.keys(obj)
+	let hospital = Object.keys(obj)
 	// console.log(Object.keys(obj))
-	counts = []
+	let counts = []
 	for (var i = 0; i < 4; i++) {
 		nums = []
 		for (var j = 0; j < 8; j++) {
-			nums.push(obj[hospital[i]][list[j]])
+			nums.push(Math.round(Math.log2(obj[hospital[i]][list[j]])))
 		}
 		// console.log(nums)
 		counts.push(nums)
 	}
-	console.log(counts)
+	// console.log(counts)
 
-	indicator = [];
+	let indicator = [];
 	for (var i = 0; i < list.length; i++) {
 		var obj = {
 			name: list[i],
@@ -70,9 +70,9 @@ function drawRadar(obj, colorArr) {
 		};
 		indicator.push(obj)
 	}
-	console.log(indicator)
-	var radar = echarts.init(document.getElementById('radar'));
-	var dataArr = [{
+	// console.log(indicator)
+	let radar = echarts.init(document.getElementById('radar'));
+	let dataArr = [{
 			value: counts[0],
 			name: hospital[0],
 			// itemStyle: {
@@ -292,4 +292,4 @@ function drawRadar(obj, colorArr) {
 	radar.setOption(option)
 }
 
-drawRadar(obj, colorArr)
+

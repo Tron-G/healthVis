@@ -4,59 +4,6 @@
 // });
 
 
-// 四个医院的总人数和坐标数据，日照人民，日照中医，岚山，五莲
-var point_data = {
-    "type": "FeatureCollection",
-    "features": [{
-        "type": "Feature",
-        "properties": {
-            "name": "日照市人民医院",
-            "sum": 500,
-            "radius": 50
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [119.512315, 35.410174]
-        }
-    },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "日照市岚山区人民医院",
-                "sum": 400,
-                "radius": 40
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [119.298383, 35.13066]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "日照市中医医院",
-                "sum": 300,
-                "radius": 30
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [119.464697, 35.433448]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "五莲县人民医院",
-                "sum": 200,
-                "radius": 20
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [119.209408, 35.754765]
-            }
-        },
-    ],
-}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 var gdpData = {
     "type": "FeatureCollection",
@@ -327,6 +274,56 @@ var gdpData = {
 
 function drawMap(hospital_data, GDP_data) {
 
+    // 四个医院的总人数和坐标数据，日照人民，日照中医，岚山，五莲
+    var point_data = {
+        "type": "FeatureCollection",
+        "features": [{
+            "type": "Feature",
+            "properties": {
+                "name": "日照市人民医院",
+                "sum": hospital_data["日照市人民医院"],
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [119.512315, 35.410174]
+            }
+        },
+            {
+                "type": "Feature",
+                "properties": {
+                    "name": "日照市岚山区人民医院",
+                    "sum": hospital_data["日照市岚山区人民医院"],
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [119.298383, 35.13066]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "name": "日照市中医医院",
+                    "sum": hospital_data["日照市中医医院"],
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [119.464697, 35.433448]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "name": "五莲县人民医院",
+                    "sum": hospital_data["五莲县人民医院"],
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [119.209408, 35.754765]
+                }
+            },
+        ],
+    }
+
 
     let temp_list = []
     for (let each of point_data["features"]) {
@@ -338,7 +335,7 @@ function drawMap(hospital_data, GDP_data) {
 
     //计算医院点动态半径 100, 400
     function calcRadius(sum) {
-        return (sum - min_sum) / (max_sum - min_sum) * 300 + 100
+        return parseInt((sum - min_sum) / (max_sum - min_sum) * 400) + 100
     }
 
 ////////////////////////////////////////////////////////////////////////////////////////
@@ -348,7 +345,7 @@ function drawMap(hospital_data, GDP_data) {
 
     var map = new mapboxgl.Map({
         container: 'map_view',
-        style: 'mapbox://styles/xiaobie/ckjhzekiycgjs19p1wclj4gmr',
+        style: 'mapbox://styles/xiaobie/ckjr35koy6b3t19pb3h5wlzs2',
         center: [119.442402, 35.45598],
         zoom: 9.2
     });
@@ -381,14 +378,14 @@ function drawMap(hospital_data, GDP_data) {
                 let t = (performance.now() % duration) / duration;
 
                 let radius = size / 2 * 0.3;
-                let outerRadius = size / 8 * 0.7 * t + radius;
+                let outerRadius = size / 6 * 0.7 * t + radius;
                 let context = this.context;
 
                 // draw outer circle
                 context.clearRect(0, 0, this.width, this.height);
                 context.beginPath();
                 context.arc(this.width / 2, this.height / 2, outerRadius, 0, Math.PI * 2);
-                context.fillStyle = 'rgba(255, 200, 200,' + (1 - t) + ')';
+                context.fillStyle = 'rgba(255, 100, 100,' + (1 - t) + ')';
                 context.fill();
 
                 // draw inner circle
@@ -398,7 +395,7 @@ function drawMap(hospital_data, GDP_data) {
                 context.strokeStyle = 'white';
                 context.lineWidth = 2 + 4 * (1 - t);
                 context.fill();
-                context.stroke();
+                // context.stroke();
 
                 // update this image's data with data from the canvas
                 this.data = context.getImageData(0, 0, this.width, this.height).data;
@@ -588,7 +585,8 @@ function drawMap(hospital_data, GDP_data) {
                 //     coordinates[0] += e.lngLat.lng > coordinates[0] ? 180 : -180;
                 // }
                 console.log(hospital_name);
-                transmitDataMap(hospital_name);
+                transport_data["hospital"] = hospital_name;
+                transmitData("/testInfo");
 
             });
 
@@ -605,8 +603,3 @@ function drawMap(hospital_data, GDP_data) {
 
     })
 }
-
-drawMap(point_data, gdpData);
-
-
-
