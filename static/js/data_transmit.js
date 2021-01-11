@@ -8,7 +8,7 @@ transport_data["hospital"] = "all";
 
 
 //后台数据传输测试
-function transmitData(url) {
+function redraw(url, is_draw_map) {
      $.ajax({
             type:'POST',
             url: url,
@@ -18,6 +18,17 @@ function transmitData(url) {
             success:function(data){
                 // alert(JSON.stringify(data));
                 console.log("success", data);
+
+                if(is_draw_map === false){
+                    drawRadar(data["radar"]);
+
+                }
+                else{
+                    drawMap(data["map"], gdpData);
+                    drawRadar(data["radar"]);
+                }
+
+
             }
         });
 }

@@ -575,7 +575,7 @@ function drawMap(hospital_data, GDP_data) {
                 }
             });
 
-            //点击事件
+            //点击事件******************************************
             map.on('click', "points" + index, function (e) {
                 let coordinates = e.features[0].geometry.coordinates.slice();
                 let hospital_name = e.features[0].properties.name;
@@ -586,7 +586,7 @@ function drawMap(hospital_data, GDP_data) {
                 // }
                 console.log(hospital_name);
                 transport_data["hospital"] = hospital_name;
-                transmitData("/testInfo");
+                redraw("/change_hospital", false);
 
             });
 
