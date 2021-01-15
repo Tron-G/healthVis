@@ -1,0 +1,1588 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 275699,
+        "name": "日照钢铁控股集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.380746,
+          35.165747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 61829,
+        "name": "山东省港口集团日照港集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.554158,
+          35.400983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 45799,
+        "name": "日照兴业集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.533564,
+          35.432928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 31413,
+        "name": "浩宇集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.848483,
+          35.612155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 29368,
+        "name": "亚太森博（山东）浆纸有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.523841,
+          35.383279
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 23378,
+        "name": "安泰实业（山东）集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.536517,
+          35.431124
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 18508,
+        "name": "日照市城市建设投资集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.53783,
+          35.433891
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 17689,
+        "name": "日照银行股份有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.537339,
+          35.430507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 16232,
+        "name": "山东日照烟草有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.441495,
+          35.388355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 15767,
+        "name": "日照市土地发展集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.533734,
+          35.432742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 15257,
+        "name": "华籠国际电力股份有限公司日照电厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.526043,
+          35.347048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 14572,
+        "name": "山东钢铁集团日照有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.398195,
+          35.220038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 10909,
+        "name": "日照交通发展集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.543016,
+          35.470216
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 9945,
+        "name": "文卓人力资源有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 9393,
+        "name": "新东港控股集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.55652,
+          35.436618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 7956,
+        "name": "海汇集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.822404,
+          35.598888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 7940,
+        "name": "润峰建设集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.453432,
+          35.384476
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 6923,
+        "name": "浮来春集团股份有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.833389,
+          35.579778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 6674,
+        "name": "日照市水务集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.52827,
+          35.420807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 6562,
+        "name": "日照德瑞房地产有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.494372,
+          35.422035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 6453,
+        "name": "五莲县绿色矿山发展有限责任公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 6414,
+        "name": "山东白鹭湾有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.503477,
+          35.63821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 6328,
+        "name": "山东现代威亚汽车发动机有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.471229,
+          35.38251
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 6174,
+        "name": "艾沛克斯工具（山东）有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.19535,
+          35.794924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 5874,
+        "name": "金马工业集团股份有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.483423,
+          35.383873
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 5775,
+        "name": "山东彼那尼荣安水泥有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.994742,
+          35.964929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 5744,
+        "name": "莒县城市建设投资有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.870684,
+          35.593475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 5573,
+        "name": "日照天宁置业有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.518803,
+          35.41893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 5498,
+        "name": "日照海天新城发展有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.314088,
+          35.12673
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 5253,
+        "name": "招商局地产（日照）有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 5106,
+        "name": "日照盈德气体有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.339937,
+          35.156568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 5088,
+        "name": "山东锦华建设集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.443295,
+          35.433436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 4811,
+        "name": "日照市三联调水有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.461989,
+          35.389589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 4783,
+        "name": "山东麟勃再生资源有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 4642,
+        "name": "山东金润食品集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 4606,
+        "name": "山东华信工贸有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.508373,
+          35.371222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 4448,
+        "name": "日照市东港区碧桂园房地产开发有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 4420,
+        "name": "日照中联水泥有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.842779,
+          35.66359
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 4320,
+        "name": "山东五征集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.507705,
+          35.628046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 4311,
+        "name": "山东海洋文化旅游发展有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 4307,
+        "name": "中国工商银行股份有限公司日照分行"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.539837,
+          35.400753
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 4287,
+        "name": "山东莒县农村商业银行股份有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.852176,
+          35.596202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 4253,
+        "name": "日照市碧信房地产开发有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 4143,
+        "name": "中海外能源科技股份有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.382664,
+          35.150618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 4089,
+        "name": "日照新世界房地产有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.521985,
+          35.397071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 3929,
+        "name": "日照市凌云海糖业集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.512386,
+          35.401077
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 3650,
+        "name": "莒县中联水泥有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.932552,
+          35.943836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 3587,
+        "name": "华润置地（日照）有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.539416,
+          35.427805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 3510,
+        "name": "日照利华房地产开发有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.557838,
+          35.400489
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 3324,
+        "name": "现代坦迪斯汽车传动系统（日照）有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.482351,
+          35.381679
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 3262,
+        "name": "日照中瑞集团"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.527183,
+          35.400836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2940,
+        "name": "中国农业银行股份有限公司日照分行"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.528443,
+          35.403631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2848,
+        "name": "中国建设银行股份有限公司日照分行"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.55252,
+          35.399701
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2760,
+        "name": "山东蓝天房地产开发有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2725,
+        "name": "中国银行股份有限公司日照分行"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.531651,
+          35.400238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2712,
+        "name": "山东洁晶集团股份有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.502317,
+          35.439474
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2697,
+        "name": "国网山东省电力公司日照供电公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.537489,
+          35.417982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2690,
+        "name": "山东鼎新电子玻璃集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.507349,
+          35.391021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2689,
+        "name": "日照市东港区爱之城房地产开发有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2676,
+        "name": "天元建设集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.356912,
+          35.066983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2652,
+        "name": "华润（集团）有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2601,
+        "name": "山东京创物流有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2598,
+        "name": "华仁药业（日照）有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.496947,
+          35.471103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2571,
+        "name": "现代汽车模具（山东）有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.469162,
+          35.3782
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2509,
+        "name": "日照市财金投资集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.564152,
+          35.412968
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2437,
+        "name": "日照百货大楼有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.466641,
+          35.431567
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2431,
+        "name": "日照阳光合源电力集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.501699,
+          35.444958
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2409,
+        "name": "日照威奕汽车有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2381,
+        "name": "日照市岚山区碧桂园房地产开发有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2375,
+        "name": "青岛啤酒（日照）有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.457017,
+          35.377816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2353,
+        "name": "日照高新发展集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.491463,
+          35.475137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2316,
+        "name": "中国移动通信集团山东有限公司日照市分公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.464203,
+          35.431442
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2264,
+        "name": "山东汇安工贸有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.983694,
+          36.293866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2242,
+        "name": "山东建兴铁塔制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.821725,
+          35.597684
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2084,
+        "name": "液化空气（日照）有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.375695,
+          35.172778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2056,
+        "name": "日照金禾博源生化有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.846073,
+          35.621405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 2049,
+        "name": "日照日广房地产开发有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1995,
+        "name": "日照市政工程有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.510569,
+          35.434219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1978,
+        "name": "山东荣安集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.530129,
+          35.408475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1957,
+        "name": "山东晨曦集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.78147,
+          35.510509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1952,
+        "name": "山东国恒能源有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1947,
+        "name": "日照铁运房地产开发有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1918,
+        "name": "山东美佳集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.565017,
+          35.389259
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1892,
+        "name": "山东祥云实业集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.847687,
+          35.574689
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1872,
+        "name": "日照瑞荣机械有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.465987,
+          35.373402
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1779,
+        "name": "日照安居房地产开发有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.870712,
+          35.602343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1769,
+        "name": "日照经济技术开发区泰禾天润置业有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1743,
+        "name": "山东宝山矿业集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.101331,
+          35.844345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1736,
+        "name": "日照东港农村商业银行股份有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.247225,
+          35.456345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1702,
+        "name": "山东悠客信息技术有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1690,
+        "name": "日照亿鼎房地产开发有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1617,
+        "name": "斯比凯可（山东）生物制品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.199772,
+          35.772894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1603,
+        "name": "中国农业发展银行日照市分行"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.542599,
+          35.405826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1573,
+        "name": "日照宏盛煤业发展有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.536422,
+          35.431164
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1540,
+        "name": "山西晋煤国贸（日照）有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.50831,
+          35.398878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1539,
+        "name": "中国人民财产保险股份有限公司日照市分公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.532394,
+          35.406049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1530,
+        "name": "日照港城置业有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1523,
+        "name": "莒县自来水有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.846448,
+          35.602639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1523,
+        "name": "日照富凯木业有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.512806,
+          35.519716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1512,
+        "name": "山西潞安矿业（集团）日照国贸有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.988609,
+          36.44814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1505,
+        "name": "日照东港农业发展集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1449,
+        "name": "日照市规划设计研究院集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.533722,
+          35.432598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1411,
+        "name": "日照岚山奥德城建置业有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1406,
+        "name": "日照岚山农村商业银行股份有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.336245,
+          35.12232
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1399,
+        "name": "日照市东港驰田车辆制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1394,
+        "name": "中国邮政储蓄银行股份有限公司日照市分行"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.528417,
+          35.42176
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1388,
+        "name": "日照捷优企业管理服务中心（有限合伙）"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1370,
+        "name": "日照中联港口水泥有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.565218,
+          35.374733
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1355,
+        "name": "日照市通和置业有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.862639,
+          35.583617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1346,
+        "name": "日照海恩锯业有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.506601,
+          35.4459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1342,
+        "name": "山东凯翔阳光集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.199914,
+          35.773538
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1314,
+        "name": "山东省日照运总交通集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.533195,
+          35.406024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1314,
+        "name": "日照海帝电器有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1308,
+        "name": "日照沃航置业有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1301,
+        "name": "日照利伟建设集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.50463,
+          35.471813
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1024,
+        "name": "中信银行股份有限公司日照分行"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.530238,
+          35.41948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "GDP": 1007,
+        "name": "日照市万升置业有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ]
+      }
+    }
+  ]
+}
+

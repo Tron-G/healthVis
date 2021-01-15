@@ -353,7 +353,7 @@ function drawMap(hospital_data, GDP_data) {
 
 
     //////////////////////////////////////////////////////////////////////
-    // 动画图标
+    // 动画图标生成
     let hospital_point = [];
     let coord = []
     for (let i = 0; i < 4; i++) {
@@ -385,13 +385,13 @@ function drawMap(hospital_data, GDP_data) {
                 context.clearRect(0, 0, this.width, this.height);
                 context.beginPath();
                 context.arc(this.width / 2, this.height / 2, outerRadius, 0, Math.PI * 2);
-                context.fillStyle = 'rgba(255, 100, 100,' + (1 - t) + ')';
+                context.fillStyle = 'rgba(3, 90, 166,' + (1 - t) + ')';
                 context.fill();
 
                 // draw inner circle
                 context.beginPath();
                 context.arc(this.width / 2, this.height / 2, radius, 0, Math.PI * 2);
-                context.fillStyle = 'rgba(255, 100, 100, 1)';
+                context.fillStyle = '#120136';
                 context.strokeStyle = 'white';
                 context.lineWidth = 2 + 4 * (1 - t);
                 context.fill();
@@ -411,7 +411,18 @@ function drawMap(hospital_data, GDP_data) {
         hospital_point.push(pulsingDot)
         coord.push(point_data["features"][i]["geometry"]["coordinates"])
     }
-//////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////
+
+    //gdp最值计算
+    let heat_list = [];
+    for (let i = 0; i < GDP_data["features"].length; i++) {
+        heat_list.push(GDP_data["features"][i]["properties"]["GDP"])
+    }
+    heat_list.sort(function (a, b) {
+        return a - b;
+    });
+    let max_gdp = heat_list[heat_list.length - 10];
+    let min_gdp = heat_list[0];
 
     map.on('load', function () {
 
@@ -430,8 +441,8 @@ function drawMap(hospital_data, GDP_data) {
                     "interpolate",
                     ["linear"],
                     ["get", "GDP"],
-                    0, 0,
-                    800, 1
+                    min_gdp, 0,
+                    max_gdp, 1
                 ],
                 "heatmap-intensity": [
                     "interpolate",
@@ -448,11 +459,11 @@ function drawMap(hospital_data, GDP_data) {
                     ["linear"],
                     ["heatmap-density"],
                     0, "rgba(33,102,172,0)",
-                    0.2, "rgb(103,169,207)",
-                    0.4, "rgb(209,229,240)",
-                    0.6, "rgb(253,219,199)",
-                    0.8, "rgb(239,138,98)",
-                    1, "rgb(178,24,43)"
+                    0.2, "#f0ebe5",
+                    0.4, "#fff76a",
+                    0.6, "#ffce89",
+                    0.8, "#ffb0b0",
+                    1, "#fe7171"
                 ],
                 // Adjust the heatmap radius by zoom level
                 "heatmap-radius": [
@@ -534,9 +545,11 @@ function drawMap(hospital_data, GDP_data) {
         //     map.getCanvas().style.cursor = '';
         // });
 
+
+        //添加医院圆点
         for (let index = 0; index < 4; index++) {
 
-            let icon_id = "pulsing-dot" + index
+            let icon_id = "pulsing-dot" + index;
 
             map.addImage(icon_id, hospital_point[index], {
                 pixelRatio: 2

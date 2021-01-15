@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 # 按医院科室返回json
 # @app.route('/radar_map/<season>/<hospital>/')
-def radar_map(season,hospital):
+def radar_map(season, hospital):
     df = pd.read_csv("./files/exam.csv")
     the_season = ["spring", "summer", "fall", "winter"]
     all = ["日照市岚山区人民医院", "日照市人民医院", "日照市中医医院", "五莲县人民医院"]
@@ -24,17 +24,17 @@ def radar_map(season,hospital):
             df = df.reset_index(drop=True)
             if hospital != "all":
                 department = {}
-                department["心电"] = len(df[ (df["DEPT_NAME"] == '心电室') & (df["ORG_NAME"] == hospital) ]) + len(
-                    df[ (df["DEPT_NAME"] == '心电图室') & (df["ORG_NAME"] == hospital) ])
-                department["眼科"] = len(df[ (df["DEPT_NAME"] == '眼科') & (df["ORG_NAME"] == hospital) ])
-                department["外科"] = len(df[ (df["DEPT_NAME"] == '外科') & (df["ORG_NAME"] == hospital) ])
-                department["CT"] = len(df[ (df["DEPT_NAME"] == 'CT') & (df["ORG_NAME"] == hospital) ]) + len(
+                department["心电"] = len(df[(df["DEPT_NAME"] == '心电室') & (df["ORG_NAME"] == hospital)]) + len(
+                    df[(df["DEPT_NAME"] == '心电图室') & (df["ORG_NAME"] == hospital)])
+                department["眼科"] = len(df[(df["DEPT_NAME"] == '眼科') & (df["ORG_NAME"] == hospital)])
+                department["外科"] = len(df[(df["DEPT_NAME"] == '外科') & (df["ORG_NAME"] == hospital)])
+                department["CT"] = len(df[(df["DEPT_NAME"] == 'CT') & (df["ORG_NAME"] == hospital)]) + len(
                     df[(df["DEPT_NAME"] == 'CT室') & (df["ORG_NAME"] == hospital)])
-                department["彩超"] = len(df[ (df["DEPT_NAME"] == '彩超') & (df["ORG_NAME"] == hospital) ]) + len(
-                    df[ (df["DEPT_NAME"] == '彩超室') & (df["ORG_NAME"] == hospital) ])
-                department["耳鼻喉"] = len(df[ (df["DEPT_NAME"] == '耳鼻喉科') & (df["ORG_NAME"] == hospital) ])
-                department["口腔科"] = len(df[ (df["DEPT_NAME"] == '口腔科') & (df["ORG_NAME"] == hospital) ])
-                department["内科"] = len(df[ (df["DEPT_NAME"] == '内科') & (df["ORG_NAME"] == hospital) ])
+                department["彩超"] = len(df[(df["DEPT_NAME"] == '彩超') & (df["ORG_NAME"] == hospital)]) + len(
+                    df[(df["DEPT_NAME"] == '彩超室') & (df["ORG_NAME"] == hospital)])
+                department["耳鼻喉"] = len(df[(df["DEPT_NAME"] == '耳鼻喉科') & (df["ORG_NAME"] == hospital)])
+                department["口腔科"] = len(df[(df["DEPT_NAME"] == '口腔科') & (df["ORG_NAME"] == hospital)])
+                department["内科"] = len(df[(df["DEPT_NAME"] == '内科') & (df["ORG_NAME"] == hospital)])
                 hospitals[hospital] = department
                 return hospitals
             else:
@@ -85,6 +85,7 @@ def radar_map(season,hospital):
             hospitals[one_hospital] = department
         print(hospitals)
         return hospitals
+
 
 # 按职业返回json
 # @app.route('/job/<season>/<hospital>')
@@ -589,3 +590,11 @@ def age(season, hospital):
     ages["80-90"] = len(df[(df["AGE"] >= 80) & (df["AGE"] < 90)])
     ages["90-100"] = len(df[(df["AGE"] >= 90) & (df["AGE"] < 100)])
     return ages
+
+
+# 根据病人id返回对应的疾病列表和医生建议
+def searchById(HEALTH_EXAM_NO):
+    list_data = pd.read_csv("./files/report.csv")
+
+
+    pass

@@ -20,12 +20,12 @@ function redraw(url, is_draw_map) {
                 console.log("success", data);
 
                 if(is_draw_map === false){
-                    drawRadar(data["radar"]);
+                    drawRose(data["radar"]);
 
                 }
                 else{
                     drawMap(data["map"], gdpData);
-                    drawRadar(data["radar"]);
+                    drawRose(data["radar"]);
                 }
 
 
@@ -48,7 +48,7 @@ function init_system() {
 
                 drawMap(data["map"], gdpData);
                 drawBar(AHQ, tem, rain);
-                drawRadar(data["radar"]);
+                drawRose(data["radar"]);
                 // drawRadar(obj);
             }
         });

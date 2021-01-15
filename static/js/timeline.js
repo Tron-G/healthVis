@@ -38,17 +38,17 @@ function drawBar(AHQ, tem, rain) {
 				name:"冬天",
 				xAxis: '2019/1/1',
 				itemStyle: {
-					// color: '#528B8B',
-					color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
-						offset: 0,
-						color: 'white'
-					}, {
-						offset: 0.5,
-						color: '	#008B00'
-					}, {
-						offset: 1,
-						color: 'white'
-					}]),
+					color: '#CDCDB4',
+					// color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
+					// 	offset: 0,
+					// 	color: 'white'
+					// }, {
+					// 	offset: 0.5,
+					// 	color: '	#008B00'
+					// }, {
+					// 	offset: 1,
+					// 	color: 'white'
+					// }]),
 					opacity: 0.5
 				}
 
@@ -59,17 +59,17 @@ function drawBar(AHQ, tem, rain) {
 				name:"春天",
 				xAxis: '2019/2/6',
 				itemStyle: {
-					// color: '#9AFF9A',
-					color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
-						offset: 0,
-						color: 'white'
-					}, {
-						offset: 0.5,
-						color: '	#00FF00'
-					}, {
-						offset: 1,
-						color: 'white'
-					}]),
+					color: '#00FA9A',
+					// color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
+					// 	offset: 0,
+					// 	color: 'white'
+					// }, {
+					// 	offset: 0.5,
+					// 	color: '	#00FF00'
+					// }, {
+					// 	offset: 1,
+					// 	color: 'white'
+					// }]),
 					opacity: 0.5
 				}
 
@@ -80,17 +80,17 @@ function drawBar(AHQ, tem, rain) {
 				name:"夏天",
 				xAxis: '2019/5/7',
 				itemStyle: {
-					// color: 'skyblue',
-					color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
-						offset: 0,
-						color: 'white'
-					}, {
-						offset: 0.5,
-						color: '	#00BFFF'
-					}, {
-						offset: 1,
-						color: 'white'
-					}]),
+					color: '#00F5FF',
+					// color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
+					// 	offset: 0,
+					// 	color: 'white'
+					// }, {
+					// 	offset: 0.5,
+					// 	color: '	#00BFFF'
+					// }, {
+					// 	offset: 1,
+					// 	color: 'white'
+					// }]),
 					opacity: 0.5
 				}
 
@@ -101,17 +101,17 @@ function drawBar(AHQ, tem, rain) {
 				name:"秋天",
 				xAxis: '2019/8/9',
 				itemStyle: {
-					// color: '#F4A460',
-					color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
-						offset: 0,
-						color: 'white'
-					}, {
-						offset: 0.5,
-						color: '	#EEB422'
-					}, {
-						offset: 1,
-						color: 'white'
-					}]),
+					color: '#FFC125',
+					// color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
+					// 	offset: 0,
+					// 	color: 'white'
+					// }, {
+					// 	offset: 0.5,
+					// 	color: '	#EEB422'
+					// }, {
+					// 	offset: 1,
+					// 	color: 'white'
+					// }]),
 					opacity: 0.5
 				}
 
@@ -122,17 +122,17 @@ function drawBar(AHQ, tem, rain) {
 				name:"冬天",
 				xAxis: '2019/11/11',
 				itemStyle: {
-					// color: '#528B8B',
-					color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
-						offset: 0,
-						color: 'white'
-					}, {
-						offset: 0.5,
-						color: '	#008B00'
-					}, {
-						offset: 1,
-						color: 'white'
-					}]),
+					color: '#CDCDB4',
+					// color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
+					// 	offset: 0,
+					// 	color: 'white'
+					// }, {
+					// 	offset: 0.5,
+					// 	color: '	#008B00'
+					// }, {
+					// 	offset: 1,
+					// 	color: 'white'
+					// }]),
 					opacity: 0.5
 				}
 
@@ -173,7 +173,7 @@ function drawBar(AHQ, tem, rain) {
 				// "AHQ":false,
 				// "气温":false
 			},
-			top: "15%",
+			// top: "15%",
 			textStyle: {
 				color: "#000"
 			}

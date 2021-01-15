@@ -1,3 +1,5 @@
+import json
+
 from flask import Flask, render_template, url_for, redirect, jsonify, request
 import data_manager as dm
 app = Flask(__name__)
@@ -22,8 +24,6 @@ def change_season():
     print(data["season"], data["hospital"])
     out_data = {"map": dm.season(data["season"]), "radar": dm.radar_map(data["season"], data["hospital"]),
                 "pie": dm.job(data["season"], data["hospital"])}
-
-    print(out_data)
     return jsonify(out_data)
 
 
@@ -35,7 +35,6 @@ def change_hospital():
     out_data = {"radar": dm.radar_map(data["season"], data["hospital"]),
                 "pie": dm.job(data["season"], data["hospital"])}
 
-    print(out_data)
     return jsonify(out_data)
 
 
@@ -43,7 +42,12 @@ def change_hospital():
 @app.route('/init',  methods=['POST', 'GET'])
 def initSys():
     data = {"radar": dm.radar_map("all", "all"), "map": dm.season("all"), "pie": dm.job("all", "all")}
-    print(data)
+
+    with open("./files/gdpData.json", encoding='UTF-8') as f:
+        data["gdp"] = json.load(f)
+
+    # pp = dm.top10("all","all")
+    # print(pp)
     return jsonify(data)
     pass
 
