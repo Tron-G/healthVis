@@ -43,7 +43,9 @@ let obj = {
 // console.log(Object.keys(obj['日照市岚山区人民医院']))
  //颜色
 function drawRose(obj) {
-	let colorArr = ['rgba(0,245,255, 0.5)', 'rgba(83,134,139, 0.5)',
+	console.log(Object.keys(obj).length)
+	if(Object.keys(obj).length==4){
+		let colorArr = ['rgba(0,245,255, 0.5)', 'rgba(83,134,139, 0.5)',
 		'rgba(255,130,71,0.5)', 'rgba(	238 ,99 ,99, 0.6)',
 		'rgba(222,134,85, 0.8)'
 	];
@@ -214,6 +216,97 @@ function drawRose(obj) {
 		]
 	}
 	Rose.setOption(option)
-}
+	}
+	else if(Object.keys(obj).length==1){
+		// console.log(1)
+		let data=[]
+	let list=Object.keys(obj[Object.keys(obj)[0]])
+	console.log(list)
+	for(let i=0;i<8;i++){
+		let d={
+			name:list[i],
+			value:obj[Object.keys(obj)[0]][list[i]]
+		}
+		data.push(d)
+	}
+	console.log(data)
+	let colorArr = ['rgba(0,245,255, 0.5)', 'rgba(83,134,139, 0.5)',
+		'rgba(255,130,71,0.5)', 'rgba(	238 ,99 ,99, 0.6)',
+		'rgba(222,134,85, 0.8)'
+	];
+	let Rose = echarts.init(document.getElementById('radar'));
+	Rose.clear()
+	let option = {
+    // backgroundColor: '#19181d',
+    title:{
+      text:Object.keys(obj)[0] ,
+      left: "center",
+      top:"2%"
+    },
+    color: [
+        "#f9ed69", "#f08a5d", "#b83b5e", "#6a2c70", "#6DBC49",
+        "#37B44E", "#3DBA78", "#14ADCF"
+    ],
+    legend: {
+        left: 'center',
+        // orient: 'vertical',
+        top: "bottom",
+        // type: "scroll",
+        itemWidth: 10,
+        itemHeight: 10,
+        textStyle: {
+            color: '#000',
+        },
+    },
+    calculable: true,
+    series: [
+        {
+            name: '',
+            type: 'pie',
+            startAngle: 0,
+            clockwise: false,
+            radius: ["25%", "85%"],
+            center: ['50%', '50%'],
+            roseType: 'area',
+            avoidLabelOverlap: false,
+            label: {
+                show: true,
+                position: 'inside',
+                formatter: '{c}',
 
-// drawRose(obj)
+                textStyle: {
+                    fontWeight: '100',
+                    fontFamily: 'Microsoft YaHei',
+                    color: '#000',
+                    // fontSize: 8
+                },
+            },
+
+            itemStyle: {
+                normal: {
+                    // color: new echarts.graphic.LinearGradient(0, 1, 1, 0, [{
+                    //     offset: 0,
+                    //     color: '#ef29b1'
+                    // }, {
+                    //     offset: 1,
+                    //     color: '#fd7225'
+                    // }]),
+                    borderWidth: 1,
+                    borderColor: '#19181d',
+                    shadowColor: '#19181d',
+                    shadowBlur: 10,
+                }
+            },
+            data: data.sort(function(a, b) {
+                return b.value - a.value;
+            }),
+        },
+
+
+    ]
+};
+	Rose.setOption(option)
+
+	}
+
+}

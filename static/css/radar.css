@@ -1,8 +1,11 @@
 #radar{
-    background-color: #f5f5f5;
+   background: rgba(125, 126, 128, 0.26);
+    /*background: transparent;*/
     position: absolute;
     right: 0;
     top:4%;
     width: 20%;
     height: 40%;
+    /*border:1px solid #BFBFBF;*/
+    box-shadow: 0 0 10px #888888;
 }

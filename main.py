@@ -45,7 +45,7 @@ def initSys():
 
     with open("./files/gdpData.json", encoding='UTF-8') as f:
         data["gdp"] = json.load(f)
-
+    print(dm.job("all", "all"))
     # pp = dm.top10("all","all")
     # print(pp)
     return jsonify(data)

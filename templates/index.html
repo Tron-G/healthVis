@@ -7,7 +7,7 @@
 
 <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
 <script type="text/javascript" src="../static/lib/jquery/jquery-3.1.1.min.js"></script>
-
+<script type="text/javascript" src="../static/lib/d3/d3.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css' rel='stylesheet' />
 
@@ -22,22 +22,12 @@
 <body>
     <div id="title">
         <span id="system_title">日照市健康可视分析系统</span>
-{#        <button id="second_page">feature</button>#}
+        <button id="second_page">feature</button>
     </div>
     <div id="map_view"></div>
     <div id="right_view">
         <div id="radar"></div>
-        <div id="job_pie">
-            <div id="piechart"></div>
-            <div id="clickbox">
-                <div id = "clickBox1"  value="clickbox1" onclick="policePie()"></div>
-                <div id = "clickBox2"  value="clickbox2" onclick="doctorPie()"></div>
-                <div id = "clickBox3"  value="clickbox3" onclick="teacherPie()"></div>
-                <div id = "clickBox4"  value="clickbox4" onclick="workerPie()"></div>
-                <div id = "clickBox5"  value="clickbox5" onclick="ironWorkerPie()"></div>
-                <div id = "clickBox6"  value="clickbox6" onclick="pieCount()"></div>
-            </div>
-        </div>
+        <div id="job_pie"></div>
     </div>
     <div id="timeline"></div>
 </body>

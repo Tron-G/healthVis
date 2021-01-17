@@ -1,8 +1,9 @@
 #job_pie{
-    background-color: #d6e6f2;
+    background: rgba(125, 126, 128, 0.26);
     position: absolute;
-    right: 0;
-    top:44%;
+    left: 0;
+    top:4%;
     width: 20%;
     height: 40%;
+    box-shadow: 0 0 10px #888888;
 }

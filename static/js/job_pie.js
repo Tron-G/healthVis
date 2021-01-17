@@ -1,171 +1,669 @@
-function teacherPie() {
-
-}
-
-function workerPie() {
-
-}
-
-function ironWorkerPie() {
-
-}
-
-
-function policePie(){
-    let data = [
-                ['product', '2012', '2013', '2014', '2015', '2016', '2017'],
-                ['高血压', 41.1, 30.4, 65.1, 53.3, 83.8, 98.7],
-                ['心脏病', 86.5, 92.1, 85.7, 83.1, 73.4, 55.1],
-                ['肝病', 24.1, 67.2, 79.5, 86.4, 65.2, 82.5],
-                ['肺病', 55.2, 67.1, 69.2, 72.4, 53.9, 39.1]
-            ];
-    var myChart = echarts.init(document.querySelector("#piechart"));
-
-    var option = {
-        legend: {},
-        tooltip: {},
-        dataset: {
-            source: data,
-        },
-        series: [{
-            type: 'pie',
-            radius: 100,
-            center: ['50%', '50%'],
-            encode: {
-                itemName: 'product',
-                value: '2012'
-            }
-        } ]
-    };
-
-
-    myChart.setOption(option);
-    window.addEventListener('resize',function(){
-        myChart.resize();
-    });
-
+let All={"Pie1":[{named:'正常','unnormal':10}, {named:'不正常','unnormal':156}],
+     "Pie2":[{named:'正常','unnormal':125}, {named:'不正常','unnormal':578}],
+     "Pie3":[{named:'正常','unnormal':1}, {named:'不正常','unnormal':279}],
+     "Pie4":[{named:'正常','unnormal':48}, {named:'不正常','unnormal':132}],
+	 "Pie5":[{named:'正常','unnormal':164}, {named:'不正常','unnormal':194}]
 };
 
-function doctorPie(){
-    var myChart = echarts.init(document.querySelector("#piechart"));
-
-    var option = {
-        legend: {},
-        tooltip: {},
-        dataset: {
-            source: [
-                ['product', '2012', '2013', '2014', '2015', '2016', '2017'],
-                ['高血压', 41.1, 30.4, 65.1, 53.3, 83.8, 98.7],
-                ['心脏病', 86.5, 92.1, 85.7, 83.1, 73.4, 55.1],
-                ['肝病', 24.1, 67.2, 79.5, 86.4, 65.2, 82.5],
-                ['肺病', 55.2, 67.1, 69.2, 72.4, 53.9, 39.1]
-            ]
-        },
-        series: [{
-            type: 'pie',
-            radius: 100,
-            center: ['50%', '50%'],
-            encode: {
-                itemName: 'product',
-                value: '2013'
-            }
-        } ]
-    };
-
-
-    myChart.setOption(option);
-    window.addEventListener('resize',function(){
-        myChart.resize();
-    });
-
-};
-
-
-function pieCount(){
-    var myChart = echarts.init(document.querySelector("#piechart"));
-
-    var option = {
-        legend: {},
-        tooltip: {},
-        dataset: {
-            source: [
-                ['product', '2012', '2013', '2014', '2015', '2016', '2017'],
-                ['高血压', 41.1, 30.4, 65.1, 53.3, 83.8, 98.7],
-                ['心脏病', 86.5, 92.1, 85.7, 83.1, 73.4, 55.1],
-                ['肝病', 24.1, 67.2, 79.5, 86.4, 65.2, 82.5],
-                ['肺病', 55.2, 67.1, 69.2, 72.4, 53.9, 39.1]
-            ]
-        },
-        series: [{
-            type: 'pie',
-            radius: 50,
-            center: ['20%', '30%'],
-            encode: {
-                itemName: 'product',
-                value: '2012'
-            }
-        }, {
-            type: 'pie',
-            radius: 50,
-            center: ['80%', '30%'],
-            encode: {
-                itemName: 'product',
-                value: '2013'
-            }
-        }, {
-            type: 'pie',
-            radius: 50,
-            center: ['20%', '80%'],
-            encode: {
-                itemName: 'product',
-                value: '2014'
-            }
-        }, {
-            type: 'pie',
-            radius: 50,
-            center: ['50%', '80%'],
-            encode: {
-                itemName: 'product',
-                value: '2016'
-            }
-        }, {
-            type: 'pie',
-            radius: 50,
-            center: ['50%', '30%'],
-            encode: {
-                itemName: 'product',
-                value: '2017'
-            }
-        }, {
-            type: 'pie',
-            radius: 50,
-            center: ['80%', '80%'],
-            encode: {
-                itemName: 'product',
-                value: '2015'
-            }
-        }]
-    };
-
-    myChart.setOption(option);
-    window.addEventListener('resize',function(){
-        myChart.resize();
-    });
-
-};
+let drawpie = function(data) {
 
 
 
+	let width = document.getElementById("job_pie").offsetWidth;
+	let height = document.getElementById("job_pie").offsetHeight;
+	let colorset = ['#9ca8b8', '#ddd1d1','#f0ebe5','#c1cbd7','#939391','#d8caaf']
+
+	let svg = d3.select("#job_pie")
+		.append("svg")
+		.attr("id","pie_svg")
+		.attr("width", width)
+        .attr("height", height);
+
+	console.log("svg",svg);
+
+
+	var arc_generator1 = d3.arc()
+		.innerRadius(0) //设置内半径
+		.outerRadius(250) //设置外半径
+	var arc_generator = d3.arc()
+		.innerRadius(0)
+		.outerRadius(100)
+	var angle_data = d3.pie()
+			.value(function (d) {
+				return d.unnormal;
+			});
+
+	///////////////////////////////////////////////////////////////////
+	// 添加图标
+
+	let img1 = svg.append("svg:image")
+		.attr("xlink:href", "./static/image/police.png")
+		.attr("x", "0")
+		.attr("y", "530")
+		.attr("width", "100")
+		.attr("height", "100").attr("id", "police");
+
+	let img2 = svg.append("svg:image")
+		.attr("xlink:href", "./static/image/doctor.png")
+		.attr("x", "100")
+		.attr("y", "530")
+		.attr("width", "100")
+		.attr("height", "100").attr("id", "doctor");
+
+	let img3 = svg.append("svg:image")
+		.attr("xlink:href", "./static/image/worker.png")
+		.attr("x", "200")
+		.attr("y", "530")
+		.attr("width", "100")
+		.attr("height", "100").attr("id", "worker");
+
+	let img4 = svg.append("svg:image")
+		.attr("xlink:href", "./static/image/teacher.png")
+		.attr("x", "300")
+		.attr("y", "530")
+		.attr("width", "100")
+		.attr("height", "100").attr("id", "teacher");
+
+	let img5 = svg.append("svg:image")
+		.attr("xlink:href", "./static/image/iron.png")
+		.attr("x", "400")
+		.attr("y", "530")
+		.attr("width", "100")
+		.attr("height", "100").attr("id", "ironWorker");
+
+	let img6 = svg.append("svg:image")
+		.attr("xlink:href", "./static/image/overview.png")
+		.attr("x", "500")
+		.attr("y", "530")
+		.attr("width", "100")
+		.attr("height", "100").attr("id", "menu");
+
+
+	let police1 = function(data) {
+		//console.log(data)
+		var g = svg.append("g")
+			.attr("transform", "translate(300, 250)")
+		g.selectAll("path")
+			.data(angle_data(data['Pie1']))
+			.enter()
+			.append("path")
+			.attr("d", arc_generator1)
+			.style("fill", function(d, i) {
+				// console.log(i)
+				return colorset[i]
+			}) //给不同的扇形区填充不同的颜色
+			.transition()
+			.delay(function(d, i) {
+				return i * 200;
+			})
+			.duration(1000)
+			.ease("linear")
+			.attrTween('d', function(d) {
+				var i = d3.interpolate(d.startAngle, d.endAngle);
+				return function(t) {
+					d.endAngle = i(t);
+					return arc_generator1(d);
+				}
+			})
+
+		g.selectAll("text") //给每个扇形去添加对应文字
+			.data(angle_data(data['Pie1']))
+			.enter()
+			.append("text")
+			.text(function(d) {
+				return d.data.named
+			})
+			.attr("transform", function(d) {
+				return "translate(" + arc_generator.centroid(d) + ")"
+			}) //调成每个文字的对应位置
+			.attr("text-anchor", "middle") //是文字居中
+
+
+	}
+
+	let doctor1 = function(data) {
+		var g2 = svg.append("g")
+			.attr("transform", "translate(300, 250)")
+		g2.selectAll("path")
+			.data(angle_data(data['Pie2']))
+			.enter()
+			.append("path")
+			.attr("d", arc_generator1)
+			.style("fill", function(d, i) {
+				return colorset[i]
+			})
+			.transition()
+			.delay(function(d, i) {
+				return i * 200;
+			})
+			.duration(1000)
+			.ease("linear")
+			.attrTween('d', function(d) {
+				var i = d3.interpolate(d.startAngle, d.endAngle);
+				return function(t) {
+					d.endAngle = i(t);
+					return arc_generator1(d);
+				}
+			})
+
+		g2.selectAll("text")
+			.data(angle_data(data['Pie2']))
+			.enter()
+			.append("text")
+			.text(function(d) {
+				return d.data.named
+			})
+			.attr("transform", function(d) {
+				return "translate(" + arc_generator.centroid(d) + ")"
+			})
+			.attr("text-anchor", "middle")
+	}
+
+	let worker1 = function(data) {
+		var g3 = svg.append("g")
+			.attr("transform", "translate(300, 250)")
+		g3.selectAll("path")
+			.data(angle_data(data['Pie3']))
+			.enter()
+			.append("path")
+			.attr("d", arc_generator1)
+			.style("fill", function(d, i) {
+				return colorset[i]
+			})
+			.transition()
+			.delay(function(d, i) {
+				return i * 200;
+			})
+			.duration(1000)
+			.ease("linear")
+			.attrTween('d', function(d) {
+				var i = d3.interpolate(d.startAngle, d.endAngle);
+				return function(t) {
+					d.endAngle = i(t);
+					return arc_generator1(d);
+				}
+			})
+
+
+		g3.selectAll("text")
+			.data(angle_data(data['Pie3']))
+			.enter()
+			.append("text")
+			.text(function(d) {
+				return d.data.named
+			})
+			.attr("transform", function(d) {
+				return "translate(" + arc_generator.centroid(d) + ")"
+			})
+			.attr("text-anchor", "middle")
+	}
+
+	let teacher1 = function(data) {
+		var g4 = svg.append("g")
+			.attr("transform", "translate(300, 250)")
+		g4.selectAll("path")
+			.data(angle_data(data['Pie4']))
+			.enter()
+			.append("path")
+			.attr("d", arc_generator1)
+			.style("fill", function(d, i) {
+				return colorset[i]
+			})
+			.transition()
+			.delay(function(d, i) {
+				return i * 200;
+			})
+			.duration(1000)
+			.ease("linear")
+			.attrTween('d', function(d) {
+				var i = d3.interpolate(d.startAngle, d.endAngle);
+				return function(t) {
+					d.endAngle = i(t);
+					return arc_generator1(d);
+				}
+			})
+
+		g4.selectAll("text")
+			.data(angle_data(data['Pie4']))
+			.enter()
+			.append("text")
+			.text(function(d) {
+				return d.data.named
+			})
+			.attr("transform", function(d) {
+				return "translate(" + arc_generator.centroid(d) + ")"
+			})
+			.attr("text-anchor", "middle")
+	}
+
+	let ironWorker = function(data) {
+		var g5 = svg.append("g")
+			.attr("transform", "translate(300, 250)")
+		g5.selectAll("path")
+			.data(angle_data(data['Pie5']))
+			.enter()
+			.append("path")
+			.attr("d", arc_generator1)
+			.style("fill", function(d, i) {
+				return colorset[i]
+			})
+			.transition()
+			.delay(function(d, i) {
+				return i * 200;
+			})
+			.duration(1000)
+			.ease("linear")
+			.attrTween('d', function(d) {
+				var i = d3.interpolate(d.startAngle, d.endAngle);
+				return function(t) {
+					d.endAngle = i(t);
+					return arc_generator1(d);
+				}
+			})
+
+		g5.selectAll("text")
+			.data(angle_data(data['Pie5']))
+			.enter()
+			.append("text")
+			.text(function(d) {
+				return d.data.named
+			})
+			.attr("transform", function(d) {
+				return "translate(" + arc_generator.centroid(d) + ")"
+			})
+			.attr("text-anchor", "middle")
+	}
+
+	let showAll = function(data) {
+		var g = svg.append("g")
+			.attr("transform", "translate(100, 100)")
+		g.selectAll("path")
+			.data(angle_data(data['Pie1']))
+			.enter()
+			.append("path")
+			.attr("d", arc_generator)
+			.style("fill", function(d, i) {
+				return colorset[i]
+			}) //给不同的扇形区填充不同的颜色
+			.transition()
+			.delay(function(d, i) {
+				return i * 200;
+			})
+			.duration(1000)
+			.ease("linear")
+			.attrTween('d', function(d) {
+				var i = d3.interpolate(d.startAngle, d.endAngle);
+				return function(t) {
+					d.endAngle = i(t);
+					return arc_generator(d);
+				}
+			})
+
+		g.selectAll("text") //给每个扇形去添加对应文字
+			.data(angle_data(data['Pie1']))
+			.enter()
+			.append("text")
+			.text(function(d) {
+				return d.data.named
+			})
+			.attr("transform", function(d) {
+				return "translate(" + arc_generator.centroid(d) + ")"
+			}) //调成每个文字的对应位置
+			.attr("text-anchor", "middle") //是文字居中
+			.attr("text_font", 100)
+
+		var g2 = svg.append("g")
+			.attr("transform", "translate(320,100)")
+		g2.selectAll("path")
+			.data(angle_data(data['Pie2']))
+			.enter()
+			.append("path")
+			.attr("d", arc_generator)
+			.style("fill", function(d, i) {
+				return colorset[i]
+			})
+			.transition()
+			.delay(function(d, i) {
+				return i * 200;
+			})
+			.duration(1000)
+			.ease("linear")
+			.attrTween('d', function(d) {
+				var i = d3.interpolate(d.startAngle, d.endAngle);
+				return function(t) {
+					d.endAngle = i(t);
+					return arc_generator(d);
+				}
+			})
+		g2.selectAll("text")
+			.data(angle_data(data['Pie2']))
+			.enter()
+			.append("text")
+			.text(function(d) {
+				return d.data.named
+			})
+			.attr("transform", function(d) {
+				return "translate(" + arc_generator.centroid(d) + ")"
+			})
+			.attr("text-anchor", "middle")
+
+		var g3 = svg.append("g")
+			.attr("transform", "translate(540,100)")
+		g3.selectAll("path")
+			.data(angle_data(data['Pie3']))
+			.enter()
+			.append("path")
+			.attr("d", arc_generator)
+			.style("fill", function(d, i) {
+				return colorset[i]
+			})
+			.transition()
+			.delay(function(d, i) {
+				return i * 200;
+			})
+			.duration(1000)
+			.ease("linear")
+			.attrTween('d', function(d) {
+				var i = d3.interpolate(d.startAngle, d.endAngle);
+				return function(t) {
+					d.endAngle = i(t);
+					return arc_generator(d);
+				}
+			})
+		g3.selectAll("text")
+			.data(angle_data(data['Pie3']))
+			.enter()
+			.append("text")
+			.text(function(d) {
+				return d.data.named
+			})
+			.attr("transform", function(d) {
+				return "translate(" + arc_generator.centroid(d) + ")"
+			})
+			.attr("text-anchor", "middle")
+
+		var g4 = svg.append("g")
+			.attr("transform", "translate(100,320)")
+		g4.selectAll("path")
+			.data(angle_data(data['Pie4']))
+			.enter()
+			.append("path")
+			.attr("d", arc_generator)
+			.style("fill", function(d, i) {
+				return colorset[i]
+			})
+			.transition()
+			.delay(function(d, i) {
+				return i * 200;
+			})
+			.duration(1000)
+			.ease("linear")
+			.attrTween('d', function(d) {
+				var i = d3.interpolate(d.startAngle, d.endAngle);
+				return function(t) {
+					d.endAngle = i(t);
+					return arc_generator(d);
+				}
+			})
+		g4.selectAll("text")
+			.data(angle_data(data['Pie4']))
+			.enter()
+			.append("text")
+			.text(function(d) {
+				return d.data.named
+			})
+			.attr("transform", function(d) {
+				return "translate(" + arc_generator.centroid(d) + ")"
+			})
+			.attr("text-anchor", "middle")
+
+		var g5 = svg.append("g")
+			.attr("transform", "translate(320,320)")
+		g5.selectAll("path")
+			.data(angle_data(data['Pie5']))
+			.enter()
+			.append("path")
+			.attr("d", arc_generator)
+			.style("fill", function(d, i) {
+				return colorset[i]
+			})
+			.transition()
+			.delay(function(d, i) {
+				return i * 200;
+			})
+			.duration(1000)
+			.ease("linear")
+			.attrTween('d', function(d) {
+				var i = d3.interpolate(d.startAngle, d.endAngle);
+				return function(t) {
+					d.endAngle = i(t);
+					return arc_generator(d);
+				}
+			})
+
+		g5.selectAll("text")
+			.data(angle_data(data['Pie5']))
+			.enter()
+			.append("text")
+			.text(function(d) {
+				return d.data.named
+			})
+			.attr("transform", function(d) {
+				return "translate(" + arc_generator.centroid(d) + ")"
+			})
+			.attr("text-anchor", "middle")
+	}
 
 
 
+	var g = svg.append("g")
+		.attr("transform", "translate(100, 100)")
+	g.selectAll("path")
+		.data(angle_data(data['Pie1']))
+		.enter()
+		.append("path")
+		.attr("d", arc_generator)
+		.style("fill", function(d, i) {
+			return colorset[i]
+		}) //给不同的扇形区填充不同的颜色
+		.transition()
+		.delay(function(d, i) {
+			return i * 200;
+		})
+		.duration(1000)
+		.ease(d3.easeLinear)
+		.attrTween('d', function(d) {
+			var i = d3.interpolate(d.startAngle, d.endAngle);
+			return function(t) {
+				d.endAngle = i(t);
+				return arc_generator(d);
+			}
+		})
 
+	g.selectAll("text") //给每个扇形去添加对应文字
+		.data(angle_data(data['Pie1']))
+		.enter()
+		.append("text")
+		.text(function(d) {
+			return d.data.named
+		})
+		.attr("transform", function(d) {
+			return "translate(" + arc_generator.centroid(d) + ")"
+		}) //调成每个文字的对应位置
+		.attr("text-anchor", "middle") //是文字居中
+		.attr("text_font", 100)
 
+	var g2 = svg.append("g")
+		.attr("transform", "translate(320,100)")
+	g2.selectAll("path")
+		.data(angle_data(data['Pie2']))
+		.enter()
+		.append("path")
+		.attr("d", arc_generator)
+		.style("fill", function(d, i) {
+			return colorset[i]
+		})
+		.transition()
+		.delay(function(d, i) {
+			return i * 200;
+		})
+		.duration(1000)
+		.ease(d3.easeLinear)
+		.attrTween('d', function(d) {
+			var i = d3.interpolate(d.startAngle, d.endAngle);
+			return function(t) {
+				d.endAngle = i(t);
+				return arc_generator(d);
+			}
+		})
+	g2.selectAll("text")
+		.data(angle_data(data['Pie2']))
+		.enter()
+		.append("text")
+		.text(function(d) {
+			return d.data.named
+		})
+		.attr("transform", function(d) {
+			return "translate(" + arc_generator.centroid(d) + ")"
+		})
+		.attr("text-anchor", "middle")
 
+	var g3 = svg.append("g")
+		.attr("transform", "translate(540,100)")
+	g3.selectAll("path")
+		.data(angle_data(data['Pie3']))
+		.enter()
+		.append("path")
+		.attr("d", arc_generator)
+		.style("fill", function(d, i) {
+			return colorset[i]
+		})
+		.transition()
+		.delay(function(d, i) {
+			return i * 200;
+		})
+		.duration(1000)
+		.ease(d3.easeLinear)
+		.attrTween('d', function(d) {
+			var i = d3.interpolate(d.startAngle, d.endAngle);
+			return function(t) {
+				d.endAngle = i(t);
+				return arc_generator(d);
+			}
+		})
+	g3.selectAll("text")
+		.data(angle_data(data['Pie3']))
+		.enter()
+		.append("text")
+		.text(function(d) {
+			return d.data.named
+		})
+		.attr("transform", function(d) {
+			return "translate(" + arc_generator.centroid(d) + ")"
+		})
+		.attr("text-anchor", "middle")
 
+	var g4 = svg.append("g")
+		.attr("transform", "translate(100,320)")
+	g4.selectAll("path")
+		.data(angle_data(data['Pie4']))
+		.enter()
+		.append("path")
+		.attr("d", arc_generator)
+		.style("fill", function(d, i) {
+			return colorset[i]
+		})
+		.transition()
+		.delay(function(d, i) {
+			return i * 200;
+		})
+		.duration(1000)
+		.ease(d3.easeLinear)
+		.attrTween('d', function(d) {
+			var i = d3.interpolate(d.startAngle, d.endAngle);
+			return function(t) {
+				d.endAngle = i(t);
+				return arc_generator(d);
+			}
+		})
+	g4.selectAll("text")
+		.data(angle_data(data['Pie4']))
+		.enter()
+		.append("text")
+		.text(function(d) {
+			return d.data.named
+		})
+		.attr("transform", function(d) {
+			return "translate(" + arc_generator.centroid(d) + ")"
+		})
+		.attr("text-anchor", "middle")
 
+	var g5 = svg.append("g")
+		.attr("transform", "translate(320,320)")
+	g5.selectAll("path")
+		.data(angle_data(data['Pie5']))
+		.enter()
+		.append("path")
+		.attr("d", arc_generator)
+		.style("fill", function(d, i) {
+			return colorset[i]
+		})
+		.transition()
+		.delay(function(d, i) {
+			return i * 200;
+		})
+		.duration(1000)
+		.ease(d3.easeLinear)
+		.attrTween('d', function(d) {
+			var i = d3.interpolate(d.startAngle, d.endAngle);
+			return function(t) {
+				d.endAngle = i(t);
+				return arc_generator(d);
+			}
+		})
 
+	g5.selectAll("text")
+		.data(angle_data(data['Pie5']))
+		.enter()
+		.append("text")
+		.text(function(d) {
+			return d.data.named
+		})
+		.attr("transform", function(d) {
+			return "translate(" + arc_generator.centroid(d) + ")"
+		})
+		.attr("text-anchor", "middle")
 
+	//createPie(data)
 
+	img1.on("click", function() {
+		d3.selectAll("g>*").remove()
+		police1(data)
+	})
 
+	img2.on("click", function() {
+		d3.selectAll("g>*").remove()
+		doctor1(data)
+	})
 
+	img3.on("click", function() {
+		d3.selectAll("g>*").remove()
+		worker1(data)
+	})
+
+	img4.on("click", function() {
+		d3.selectAll("g>*").remove()
+		teacher1(data)
+	})
+
+	img5.on("click", function() {
+		d3.selectAll("g>*").remove()
+		ironWorker(data)
+	})
+
+	img6.on("click", function() {
+		d3.selectAll("g>*").remove()
+		showAll(data)
+	})
+}
+drawpie(All);
