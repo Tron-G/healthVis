@@ -9,8 +9,10 @@ let drawpie = function(data) {
 
 
 
-	let width = document.getElementById("job_pie").offsetWidth;
-	let height = document.getElementById("job_pie").offsetHeight;
+	// let width = document.getElementById("job_pie").offsetWidth;
+	// let height = document.getElementById("job_pie").offsetHeight;
+	let width = 300;
+	let height = 365;
 	let colorset = ['#9ca8b8', '#ddd1d1','#f0ebe5','#c1cbd7','#939391','#d8caaf']
 
 	let svg = d3.select("#job_pie")
@@ -19,15 +21,13 @@ let drawpie = function(data) {
 		.attr("width", width)
         .attr("height", height);
 
-	console.log("svg",svg);
-
 
 	var arc_generator1 = d3.arc()
 		.innerRadius(0) //设置内半径
-		.outerRadius(250) //设置外半径
+		.outerRadius(125) //设置外半径
 	var arc_generator = d3.arc()
 		.innerRadius(0)
-		.outerRadius(100)
+		.outerRadius(45)
 	var angle_data = d3.pie()
 			.value(function (d) {
 				return d.unnormal;
@@ -39,50 +39,50 @@ let drawpie = function(data) {
 	let img1 = svg.append("svg:image")
 		.attr("xlink:href", "./static/image/police.png")
 		.attr("x", "0")
-		.attr("y", "530")
-		.attr("width", "100")
-		.attr("height", "100").attr("id", "police");
+		.attr("y", "300")
+		.attr("width", "50")
+		.attr("height", "50").attr("id", "police");
 
 	let img2 = svg.append("svg:image")
 		.attr("xlink:href", "./static/image/doctor.png")
-		.attr("x", "100")
-		.attr("y", "530")
-		.attr("width", "100")
-		.attr("height", "100").attr("id", "doctor");
+		.attr("x", "50")
+		.attr("y", "300")
+		.attr("width", "50")
+		.attr("height", "50").attr("id", "doctor");
 
 	let img3 = svg.append("svg:image")
 		.attr("xlink:href", "./static/image/worker.png")
-		.attr("x", "200")
-		.attr("y", "530")
-		.attr("width", "100")
-		.attr("height", "100").attr("id", "worker");
+		.attr("x", "100")
+		.attr("y", "300")
+		.attr("width", "50")
+		.attr("height", "50").attr("id", "worker");
 
 	let img4 = svg.append("svg:image")
 		.attr("xlink:href", "./static/image/teacher.png")
-		.attr("x", "300")
-		.attr("y", "530")
-		.attr("width", "100")
-		.attr("height", "100").attr("id", "teacher");
+		.attr("x", "150")
+		.attr("y", "300")
+		.attr("width", "50")
+		.attr("height", "50").attr("id", "teacher");
 
 	let img5 = svg.append("svg:image")
 		.attr("xlink:href", "./static/image/iron.png")
-		.attr("x", "400")
-		.attr("y", "530")
-		.attr("width", "100")
-		.attr("height", "100").attr("id", "ironWorker");
+		.attr("x", "200")
+		.attr("y", "300")
+		.attr("width", "50")
+		.attr("height", "50").attr("id", "ironWorker");
 
 	let img6 = svg.append("svg:image")
 		.attr("xlink:href", "./static/image/overview.png")
-		.attr("x", "500")
-		.attr("y", "530")
-		.attr("width", "100")
-		.attr("height", "100").attr("id", "menu");
+		.attr("x", "250")
+		.attr("y", "300")
+		.attr("width", "50")
+		.attr("height", "50").attr("id", "menu");
 
 
 	let police1 = function(data) {
 		//console.log(data)
 		var g = svg.append("g")
-			.attr("transform", "translate(300, 250)")
+			.attr("transform", "translate(150, 150)")
 		g.selectAll("path")
 			.data(angle_data(data['Pie1']))
 			.enter()
@@ -114,16 +114,15 @@ let drawpie = function(data) {
 				return d.data.named
 			})
 			.attr("transform", function(d) {
-				return "translate(" + arc_generator.centroid(d) + ")"
+				return "translate(" + arc_generator1.centroid(d) + ")"
 			}) //调成每个文字的对应位置
 			.attr("text-anchor", "middle") //是文字居中
-
-
+			.attr("text_font", 100)
 	}
 
 	let doctor1 = function(data) {
 		var g2 = svg.append("g")
-			.attr("transform", "translate(300, 250)")
+			.attr("transform", "translate(150, 150)")
 		g2.selectAll("path")
 			.data(angle_data(data['Pie2']))
 			.enter()
@@ -154,14 +153,14 @@ let drawpie = function(data) {
 				return d.data.named
 			})
 			.attr("transform", function(d) {
-				return "translate(" + arc_generator.centroid(d) + ")"
+				return "translate(" + arc_generator1.centroid(d) + ")"
 			})
 			.attr("text-anchor", "middle")
 	}
 
 	let worker1 = function(data) {
 		var g3 = svg.append("g")
-			.attr("transform", "translate(300, 250)")
+			.attr("transform", "translate(150, 150)")
 		g3.selectAll("path")
 			.data(angle_data(data['Pie3']))
 			.enter()
@@ -193,14 +192,14 @@ let drawpie = function(data) {
 				return d.data.named
 			})
 			.attr("transform", function(d) {
-				return "translate(" + arc_generator.centroid(d) + ")"
+				return "translate(" + arc_generator1.centroid(d) + ")"
 			})
 			.attr("text-anchor", "middle")
 	}
 
 	let teacher1 = function(data) {
 		var g4 = svg.append("g")
-			.attr("transform", "translate(300, 250)")
+			.attr("transform", "translate(150, 150)")
 		g4.selectAll("path")
 			.data(angle_data(data['Pie4']))
 			.enter()
@@ -238,7 +237,7 @@ let drawpie = function(data) {
 
 	let ironWorker = function(data) {
 		var g5 = svg.append("g")
-			.attr("transform", "translate(300, 250)")
+			.attr("transform", "translate(150, 150)")
 		g5.selectAll("path")
 			.data(angle_data(data['Pie5']))
 			.enter()
@@ -276,7 +275,7 @@ let drawpie = function(data) {
 
 	let showAll = function(data) {
 		var g = svg.append("g")
-			.attr("transform", "translate(100, 100)")
+			.attr("transform", "translate(50, 70)")
 		g.selectAll("path")
 			.data(angle_data(data['Pie1']))
 			.enter()
@@ -290,7 +289,7 @@ let drawpie = function(data) {
 				return i * 200;
 			})
 			.duration(1000)
-			.ease("linear")
+			.ease(d3.easeLinear)
 			.attrTween('d', function(d) {
 				var i = d3.interpolate(d.startAngle, d.endAngle);
 				return function(t) {
@@ -313,7 +312,7 @@ let drawpie = function(data) {
 			.attr("text_font", 100)
 
 		var g2 = svg.append("g")
-			.attr("transform", "translate(320,100)")
+			.attr("transform", "translate(150,70)")
 		g2.selectAll("path")
 			.data(angle_data(data['Pie2']))
 			.enter()
@@ -327,7 +326,7 @@ let drawpie = function(data) {
 				return i * 200;
 			})
 			.duration(1000)
-			.ease("linear")
+			.ease(d3.easeLinear)
 			.attrTween('d', function(d) {
 				var i = d3.interpolate(d.startAngle, d.endAngle);
 				return function(t) {
@@ -348,7 +347,7 @@ let drawpie = function(data) {
 			.attr("text-anchor", "middle")
 
 		var g3 = svg.append("g")
-			.attr("transform", "translate(540,100)")
+			.attr("transform", "translate(250,70)")
 		g3.selectAll("path")
 			.data(angle_data(data['Pie3']))
 			.enter()
@@ -362,7 +361,7 @@ let drawpie = function(data) {
 				return i * 200;
 			})
 			.duration(1000)
-			.ease("linear")
+			.ease(d3.easeLinear)
 			.attrTween('d', function(d) {
 				var i = d3.interpolate(d.startAngle, d.endAngle);
 				return function(t) {
@@ -383,7 +382,7 @@ let drawpie = function(data) {
 			.attr("text-anchor", "middle")
 
 		var g4 = svg.append("g")
-			.attr("transform", "translate(100,320)")
+			.attr("transform", "translate(50,200)")
 		g4.selectAll("path")
 			.data(angle_data(data['Pie4']))
 			.enter()
@@ -397,7 +396,7 @@ let drawpie = function(data) {
 				return i * 200;
 			})
 			.duration(1000)
-			.ease("linear")
+			.ease(d3.easeLinear)
 			.attrTween('d', function(d) {
 				var i = d3.interpolate(d.startAngle, d.endAngle);
 				return function(t) {
@@ -418,7 +417,7 @@ let drawpie = function(data) {
 			.attr("text-anchor", "middle")
 
 		var g5 = svg.append("g")
-			.attr("transform", "translate(320,320)")
+			.attr("transform", "translate(150,200)")
 		g5.selectAll("path")
 			.data(angle_data(data['Pie5']))
 			.enter()
@@ -432,7 +431,7 @@ let drawpie = function(data) {
 				return i * 200;
 			})
 			.duration(1000)
-			.ease("linear")
+			.ease(d3.easeLinear)
 			.attrTween('d', function(d) {
 				var i = d3.interpolate(d.startAngle, d.endAngle);
 				return function(t) {
@@ -457,7 +456,7 @@ let drawpie = function(data) {
 
 
 	var g = svg.append("g")
-		.attr("transform", "translate(100, 100)")
+		.attr("transform", "translate(50, 70)")
 	g.selectAll("path")
 		.data(angle_data(data['Pie1']))
 		.enter()
@@ -494,7 +493,7 @@ let drawpie = function(data) {
 		.attr("text_font", 100)
 
 	var g2 = svg.append("g")
-		.attr("transform", "translate(320,100)")
+		.attr("transform", "translate(150,70)")
 	g2.selectAll("path")
 		.data(angle_data(data['Pie2']))
 		.enter()
@@ -529,7 +528,7 @@ let drawpie = function(data) {
 		.attr("text-anchor", "middle")
 
 	var g3 = svg.append("g")
-		.attr("transform", "translate(540,100)")
+		.attr("transform", "translate(250,70)")
 	g3.selectAll("path")
 		.data(angle_data(data['Pie3']))
 		.enter()
@@ -564,7 +563,7 @@ let drawpie = function(data) {
 		.attr("text-anchor", "middle")
 
 	var g4 = svg.append("g")
-		.attr("transform", "translate(100,320)")
+		.attr("transform", "translate(50,200)")
 	g4.selectAll("path")
 		.data(angle_data(data['Pie4']))
 		.enter()
@@ -599,7 +598,7 @@ let drawpie = function(data) {
 		.attr("text-anchor", "middle")
 
 	var g5 = svg.append("g")
-		.attr("transform", "translate(320,320)")
+		.attr("transform", "translate(150,200)")
 	g5.selectAll("path")
 		.data(angle_data(data['Pie5']))
 		.enter()

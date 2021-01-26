@@ -10,7 +10,7 @@ $("#second_page").click(function () {
     window.open('/feature', '_self');
 });
 
-//后台数据传输测试
+//交互重绘更新各个视图
 function redraw(url, is_draw_map) {
     $.ajax({
         type: 'POST',
@@ -51,6 +51,8 @@ function init_system() {
             drawMap(data["map"], gdpData);
             drawBar(AHQ, tem, rain);
             drawRose(data["radar"]);
+
+
             // drawRadar(obj);
         }
     });
@@ -59,3 +61,19 @@ function init_system() {
 
 }
 init_system();
+
+testData();
+//后台接口测试
+function testData() {
+    $.ajax({
+        type: 'POST',
+        url: "/test",
+        data: JSON.stringify(transport_data),
+        contentType: 'application/json',
+        dataType: 'json',
+        success: function (data) {
+            // alert(JSON.stringify(data));
+            console.log("success", data);
+        }
+    });
+}

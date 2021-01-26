@@ -155,7 +155,9 @@ function drawBar(AHQ, tem, rain) {
 		// backgroundColor: '#000',
 		grid: {
 			top: "25%",
-			bottom: "10%" //也可设置left和right设置距离来控制图表的大小
+			bottom: "10%", //也可设置left和right设置距离来控制图表的大小
+			left:"1.5%",
+			right:"1.5%"
 		},
 		tooltip: {
 			trigger: "axis",

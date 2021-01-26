@@ -43,7 +43,7 @@ let obj = {
 // console.log(Object.keys(obj['日照市岚山区人民医院']))
  //颜色
 function drawRose(obj) {
-	console.log(Object.keys(obj).length)
+	// console.log(Object.keys(obj).length)
 	if(Object.keys(obj).length==4){
 		let colorArr = ['rgba(0,245,255, 0.5)', 'rgba(83,134,139, 0.5)',
 		'rgba(255,130,71,0.5)', 'rgba(	238 ,99 ,99, 0.6)',
@@ -52,7 +52,7 @@ function drawRose(obj) {
 	list = (Object.keys(obj['日照市岚山区人民医院']))
 
 	hospital = Object.keys(obj)
-	console.log(Object.keys(obj))
+	// console.log(Object.keys(obj))
 	counts = []
 	for (let i = 0; i < 4; i++) {
 		nums = []
@@ -62,7 +62,7 @@ function drawRose(obj) {
 		// console.log(nums)
 		counts.push(nums)
 	}
-	console.log(counts)
+	// console.log(counts)
 
 	let Rose = echarts.init(document.getElementById('radar'));
 
@@ -221,7 +221,7 @@ function drawRose(obj) {
 		// console.log(1)
 		let data=[]
 	let list=Object.keys(obj[Object.keys(obj)[0]])
-	console.log(list)
+	// console.log(list)
 	for(let i=0;i<8;i++){
 		let d={
 			name:list[i],
@@ -229,7 +229,7 @@ function drawRose(obj) {
 		}
 		data.push(d)
 	}
-	console.log(data)
+	// console.log(data)
 	let colorArr = ['rgba(0,245,255, 0.5)', 'rgba(83,134,139, 0.5)',
 		'rgba(255,130,71,0.5)', 'rgba(	238 ,99 ,99, 0.6)',
 		'rgba(222,134,85, 0.8)'

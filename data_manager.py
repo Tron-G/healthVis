@@ -3,6 +3,8 @@
 # @Author : 付超
 # @File : .py
 # @Software : PyCharm
+import random
+
 from flask import Flask
 import pandas as pd
 import json
@@ -10,7 +12,9 @@ import json
 app = Flask(__name__)
 
 
+# ******************************************************************************************
 # 按医院科室返回json
+# ******************************************************************************************
 # @app.route('/radar_map/<season>/<hospital>/')
 def radar_map(season, hospital):
     df = pd.read_csv("./files/exam.csv")
@@ -87,7 +91,9 @@ def radar_map(season, hospital):
         return hospitals
 
 
+# ******************************************************************************************
 # 按职业返回json
+# ******************************************************************************************
 # @app.route('/job/<season>/<hospital>')
 def job(season, hospital):
     df = pd.read_csv("./files/exam.csv")
@@ -321,7 +327,9 @@ def job(season, hospital):
     return work
 
 
+# ******************************************************************************************
 # 按医院诊断人数返回json
+# ******************************************************************************************
 # @app.route("/season/<season>/<hospital>")
 def season(season):
     df = pd.read_csv("./files/report.csv")
@@ -346,7 +354,9 @@ def season(season):
     return season_json
 
 
+# ******************************************************************************************
 # 根据医院和季节返回top10疾病在该医院的人数和建议
+# ******************************************************************************************
 # @app.route("/top10/<season>/<hospital>")
 def top10(season, hospital):
     df = pd.read_csv("./files/report.csv")
@@ -528,7 +538,9 @@ def top10(season, hospital):
         # deseases = [{"yajieshi":{}},{},{}]
 
 
+# ******************************************************************************************
 # 返回年龄段分布
+# ******************************************************************************************
 def age(season, hospital):
     df = pd.read_csv("./files/report.csv")
     the_hospitals = ["日照市岚山区人民医院", "日照市人民医院", "日照市中医医院", "五莲县人民医院"]
@@ -592,9 +604,171 @@ def age(season, hospital):
     return ages
 
 
+# ******************************************************************************************
 # 根据病人id返回对应的疾病列表和医生建议
+# ******************************************************************************************
 def searchById(HEALTH_EXAM_NO):
     list_data = pd.read_csv("./files/report.csv")
 
-
     pass
+
+
+# ******************************************************************************************
+# 旭日图数据
+# ******************************************************************************************
+def month(hospital):
+    df = pd.read_csv("./files/report.csv")
+    the_hospitals = ["日照市岚山区人民医院", "日照市人民医院", "日照市中医医院", "五莲县人民医院"]
+    the_month = ["2019-01", "2019-02", "2019-03", "2019-04", "2019-05", "2019-06", "2019-07", "2019-08", "2019-09",
+                 "2019-10", "2019-11", "2019-12"]
+    English_month = ["January.January", "February.February", "March.March", "April.April", "May.May", "June.June",
+                     "July.July", "August.August", "September.September", "October.October", "November.November",
+                     "December.December"]
+    names = ["girl({}).January", "girl({}).February", "girl({}).March", "girl({}).April", "girl({}).May",
+             "girl({}).June", "girl({}).July", "girl({}).August", "girl({}).September", "girl({}).October",
+             "girl({}).November", "girl({}).December", "girl({}).wonmen"]
+    root = {}
+    root["name"] = "root"
+    # top的数量
+    n = 20
+    months = []
+    # 读取全部疾病
+    with open("./files/myword.txt", "r", encoding='UTF-8') as file:
+        words = file.readlines()
+        for i in range(0, len(words)):
+            words[i] = words[i].replace("\n", "")
+    # 选择医院
+    for one_hospital in the_hospitals:
+        if hospital == one_hospital:
+            df = df[(df["ORG_NAME"] == hospital)]
+            df = df.reset_index(drop=True)
+            # 选择月份
+            for i in range(0, len(the_month)):
+                one_month = the_month[i]
+                one_month_df = df[(df["SUMMARIZE_TIME"] == one_month)]
+                one_month_df = one_month_df.reset_index(drop=True)
+                keywords = []
+                top20 = []
+                month = {}
+                month["name"] = English_month[i]
+                month["num"] = len(df["ID"])
+                diseases = []
+                # 找出top20的疾病
+                for word in words:
+                    keyword = {"keyword": word, "value": 0}
+                    for i in range(0, len(one_month_df["ID"])):
+                        if word in one_month_df["EXAM_SUMMARY"][i]:
+                            keyword['value'] = keyword['value'] + 1
+                    keywords.append(keyword)
+                for i in range(0, n):
+                    max = {"keyword": "", "value": 0}
+                    for keyword in keywords:
+                        if keyword['value'] > max['value']:
+                            max['keyword'] = keyword['keyword']
+                            max['value'] = keyword['value']
+                    top20.append(max["keyword"])
+                    for keyword in keywords:
+                        if keyword['keyword'] == max['keyword']:
+                            keyword['value'] = 0
+                # 找出top20疾病女性和男性的人数
+                girl_df = one_month_df[one_month_df["SEX_CODE"] == "2"]
+                girl_df = girl_df.reset_index(drop=True)
+                boy_df = one_month_df[one_month_df["SEX_CODE"] == "1"]
+                boy_df = boy_df.reset_index(drop=True)
+                for one in top20:
+                    # 找出女性的人数
+                    disease = {}
+                    disease["name"] = random.choice(names).format(one)
+                    # print(disease["name"])
+                    disease["num"] = 0
+                    for i in range(0, len(girl_df["ID"])):
+                        if one in girl_df["EXAM_SUMMARY"][i]:
+                            disease["num"] = disease["num"] + 1
+                    # 找出男性的人数
+                    boy_diseases = []
+                    boy_disease = {}
+                    boy_disease["name"] = "boy(" + one + ").man"
+                    boy_disease["size"] = 100
+                    boy_disease["num"] = 0
+                    for i in range(0, len(boy_df["ID"])):
+                        if one in boy_df["EXAM_SUMMARY"][i]:
+                            boy_disease["num"] = boy_disease["num"] + 1
+                    boy_diseases.append(boy_disease)
+                    disease["children"] = boy_diseases
+                    the_names = []
+                    for name in names:
+                        name = name.replace("{", "")
+                        name = name.replace("}", "")
+                        the_names.append(name)
+                    if disease["name"] not in the_names:
+                        diseases.append(disease)
+                month["children"] = diseases
+                months.append(month)
+            root["children"] = months
+            # print(root)
+            return root
+    # 选择月份
+    for i in range(0, len(the_month)):
+        one_month = the_month[i]
+        one_month_df = df[(df["SUMMARIZE_TIME"] == one_month)]
+        one_month_df = one_month_df.reset_index(drop=True)
+        keywords = []
+        top20 = []
+        month = {}
+        month["name"] = English_month[i]
+        month["num"] = len(df["ID"])
+        diseases = []
+        # 找出top20的疾病
+        for word in words:
+            keyword = {"keyword": word, "value": 0}
+            for i in range(0, len(one_month_df["ID"])):
+                if word in one_month_df["EXAM_SUMMARY"][i]:
+                    keyword['value'] = keyword['value'] + 1
+            keywords.append(keyword)
+        for i in range(0, n):
+            max = {"keyword": "", "value": 0}
+            for keyword in keywords:
+                if keyword['value'] > max['value']:
+                    max['keyword'] = keyword['keyword']
+                    max['value'] = keyword['value']
+            top20.append(max["keyword"])
+            for keyword in keywords:
+                if keyword['keyword'] == max['keyword']:
+                    keyword['value'] = 0
+        # 找出top20疾病女性和男性的人数
+        girl_df = one_month_df[one_month_df["SEX_CODE"] == "2"]
+        girl_df = girl_df.reset_index(drop=True)
+        boy_df = one_month_df[one_month_df["SEX_CODE"] == "1"]
+        boy_df = boy_df.reset_index(drop=True)
+        for one in top20:
+            # 找出女性的人数
+            disease = {}
+            disease["name"] = random.choice(names).format(one)
+            # print(disease["name"])
+            disease["num"] = 0
+            for i in range(0, len(girl_df["ID"])):
+                if one in girl_df["EXAM_SUMMARY"][i]:
+                    disease["num"] = disease["num"] + 1
+            # 找出男性的人数
+            boy_diseases = []
+            boy_disease = {}
+            boy_disease["name"] = "boy(" + one + ").man"
+            boy_disease["size"] = 100
+            boy_disease["num"] = 0
+            for i in range(0, len(boy_df["ID"])):
+                if one in boy_df["EXAM_SUMMARY"][i]:
+                    boy_disease["num"] = boy_disease["num"] + 1
+            boy_diseases.append(boy_disease)
+            disease["children"] = boy_diseases
+            the_names = []
+            for name in names:
+                name = name.replace("{", "")
+                name = name.replace("}", "")
+                the_names.append(name)
+            if disease["name"] not in the_names:
+                diseases.append(disease)
+        month["children"] = diseases
+        months.append(month)
+    root["children"] = months
+    # print(root)
+    return root
