@@ -1,0 +1,4048 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区城西小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.43446259999999,
+          35.42901752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区大村小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.453883,
+          35.47028492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区第三小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.46700220000001,
+          35.44188664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区第四小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.44150800000001,
+          35.43500293
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区第五小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.507476,
+          35.43697287
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区古城小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4010656,
+          35.42669613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区海曲中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.45517720000001,
+          35.43767558
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区后村镇初级中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.30231509999999,
+          35.38982744
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区后村镇中心小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3012308,
+          35.39150035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区慧通小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.43713729999999,
+          35.46074393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区山前小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.467878,
+          35.4970479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区涛雒镇栈子小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.38026640000001,
+          35.271306200000005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区西湖镇中心初中"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.247576,
+          35.45638694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "曲阜师范大学附属实验学校"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.54722690000001,
+          35.44780088
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照第二实验中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.48775690000001,
+          35.43788203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照第三实验中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4831636,
+          35.42328197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照第四实验小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4646301,
+          35.42551618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照第一小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4719351,
+          35.43249687
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照凤凰小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.544554,
+          35.39678411
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照港第一小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.5496239,
+          35.40342567
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照港中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.54948540000001,
+          35.41700424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照高新区中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.47323970000001,
+          35.45432405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照国际海洋城滨海湾小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.395224,
+          35.27869789
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照国际海洋城天台山小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.38276850000001,
+          35.28225443
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照河山实验学校"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.51875120000001,
+          35.53604279
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市北京路中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.20944240000001,
+          35.7713494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市北经济开发区莲海学校（初中部）"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4999132,
+          35.62601034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市北经济开发区莲海学校（小学部）"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4999132,
+          35.62601034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市北经济开发区莲溪学校"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.498093,
+          35.65758689
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市朝阳小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.49410060000001,
+          35.45981129
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市第二实验小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.49170559999999,
+          35.42022505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市第三实验小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.834204,
+          35.58797497
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市丁肇中实验中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.37224499999999,
+          35.27825796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市东港区陈疃镇中心小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.274751,
+          35.5174739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市东港区浮来春小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.5005831,
+          35.42902553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市东港区南湖镇中心小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.35625559999998,
+          35.48740071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市东港区三庄镇中心小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.18427890000001,
+          35.50949536
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市东港区石臼小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.53679740000001,
+          35.39912925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市东港区涛雒小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.39408700000001,
+          35.30142489
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市东港区天宁小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.524096,
+          35.43784792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市东港区西湖镇中心小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.247576,
+          35.45638694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市东港实验学校"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.5380285,
+          35.46662304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市济南路小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.51541979999999,
+          35.42891929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市金海岸小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.506651,
+          35.4367379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市金海岸中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.5340371,
+          35.39508822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区安东卫街道合庄小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2772406,
+          35.17773631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区安东卫实验小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.33431909999999,
+          35.12885941
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区安东卫实验中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.33682379999999,
+          35.11272062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区碑廓镇初级中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.21106280000001,
+          35.18172244
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区碑廓镇二朱曹小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.21106280000001,
+          35.18172244
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区碑廓镇甫田小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.21106280000001,
+          35.18172244
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区碑廓镇中心小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.21106280000001,
+          35.18172244
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区高兴镇初级中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3494322,
+          35.33817695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区高兴镇工农小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3494322,
+          35.33817695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区高兴镇兴业小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3494322,
+          35.33817695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区高兴镇尧王小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.36151540000002,
+          35.31576034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区高兴镇中心小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3494322,
+          35.33817695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区官山小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.31551770000002,
+          35.14530194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区虎山镇初级中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.33706090000001,
+          35.18208058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区虎山镇结庄小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.33706090000001,
+          35.18208058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区虎山镇罗黄小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.33706090000001,
+          35.18208058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区虎山镇中心小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.33706090000001,
+          35.18208058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区黄墩镇初级中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.1385687,
+          35.40629885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区黄墩镇粮山小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.1385687,
+          35.40629885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区黄墩镇辛庄小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.17549620000001,
+          35.41637959
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区黄墩镇中心小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.1385687,
+          35.40629885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区巨峰镇卜落小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.26912659999998,
+          35.24992644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区巨峰镇初级中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2426063,
+          35.28832641
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区巨峰镇大坡小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.22509299999999,
+          35.30788188
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区巨峰镇刘家沟小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2426063,
+          35.28832641
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区巨峰镇六甲小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2981706,
+          35.25618824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区巨峰镇山北头小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2426063,
+          35.28832641
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区巨峰镇中心小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.27664340000001,
+          35.29205361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区岚山头小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3255304,
+          35.12743233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区岚山头中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3255304,
+          35.12743233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区明珠路小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3180876,
+          35.12339443
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区明珠路小学西校区"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3192723,
+          35.12010439
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区实验小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.33431909999999,
+          35.12885941
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区实验中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3387881,
+          35.11218144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区中楼镇初级中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.989328,
+          35.40548289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区中楼镇第二实验小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.989328,
+          35.40548289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区中楼镇集后小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.0030665,
+          35.44615466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区中楼镇两山口小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.989328,
+          35.40548289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区中楼镇马亓河东小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9522528,
+          35.36490218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区中楼镇前姚埠小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.989328,
+          35.40548289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区中楼镇五楼山前小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.0150872,
+          35.415634999999995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区中楼镇赵家西楼小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9556578,
+          35.39487519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区中楼镇中心小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.989328,
+          35.40548289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市实验小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.21388119999999,
+          35.7594046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市实验中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3387881,
+          35.11218144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市天津路中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.55148500000001,
+          35.3948796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市新营小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.55104709999999,
+          35.42265803
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市新营小学东校"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.55104709999999,
+          35.42265803
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市新营中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.54333899999999,
+          35.42280863
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东省日照第二中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.17515,
+          35.50816193
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东省五莲县汪湖镇高化小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.11426940000001,
+          35.91636861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东省五莲县汪湖镇坡子小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.11426940000001,
+          35.91636861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东省五莲县汪湖镇中心小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.1103953,
+          35.91967716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县第二中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.219757,
+          35.761201899999996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县高泽镇程戈庄小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.21558040000001,
+          35.7556971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县高泽镇初级中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2158176,
+          35.82999035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县高泽镇辉沟子小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.21558040000001,
+          35.7556971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县高泽镇七宝山小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.12034340000001,
+          35.84988509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县高泽镇秦家庄小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.21558040000001,
+          35.7556971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县高泽镇西楼小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.21558040000001,
+          35.7556971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县高泽镇中心小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2119,
+          35.82939844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县洪凝街道初级中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.1981342,
+          35.74605747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县洪凝街道大古家沟小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.19664750000001,
+          35.71691488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县洪凝街道大楼小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.22072279999999,
+          35.76553002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县洪凝街道罗圈小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.1476957,
+          35.71311563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县洪凝街道莫家庄子小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2098101,
+          35.74080657
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县洪凝街道山阳小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2548993,
+          35.74763135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县洪凝街道同俗小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.1920085,
+          35.77589276
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县洪凝街道长兰小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2300226,
+          35.68424305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县洪凝街道中心小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.22072279999999,
+          35.76553002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县洪凝街道仲因小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.1734726,
+          35.74417677
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县户部乡槎河小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.45365670000001,
+          35.79350945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县户部乡初级中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4253122,
+          35.73942012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县户部乡大村小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4252412,
+          35.75825568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县户部乡中心小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.42750330000001,
+          35.74163688
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县街头镇迟家庄小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.27499270000001,
+          35.61298018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县街头镇初级中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.27193059999999,
+          35.61591901
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县街头镇杜家沟小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.1580553,
+          35.60927953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县街头镇坊子小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.27499270000001,
+          35.61298018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县街头镇王世疃小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3269003,
+          35.60345828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县街头镇闫马小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.27499270000001,
+          35.61298018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县街头镇镇头小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.27499270000001,
+          35.61298018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县街头镇中心小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.271196,
+          35.61805487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县叩官镇北回头小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.49866899999999,
+          35.73067991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县叩官镇初级中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.466424,
+          35.68445993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县叩官镇南回头小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4612821,
+          35.68344592
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县叩官镇王庄小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4011828,
+          35.66760152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县叩官镇中心小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4605673,
+          35.685725299999994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县石场乡山庄小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.0753736,
+          35.59667761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县石场乡岳疃小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.15949140000001,
+          35.65983784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县石场乡中心小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.147478,
+          35.65821793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县实验小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.21388119999999,
+          35.7594046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县实验学校（初中部）"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.224291,
+          35.77127676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县实验学校（小学部）"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.224291,
+          35.77127676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县松柏镇店子小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.32263,
+          35.74598189
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县松柏镇长城岭小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.320228,
+          35.76485591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县松柏镇中心学校（初中部）"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.32263,
+          35.74598189
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县松柏镇中心学校（小学部）"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.32263,
+          35.74598189
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县文华双语学校（初中部）"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2357003,
+          35.76132374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县文华双语学校（小学部）"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2357003,
+          35.76132374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县行知实验小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.21326499999999,
+          35.78630289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县许孟镇初级中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3346261,
+          35.86514835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县许孟镇范家车村小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2857446,
+          35.90763371
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县许孟镇福禄并小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2982793,
+          35.81732058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县许孟镇老庄小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.331398,
+          35.866746899999995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县许孟镇院西小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.331398,
+          35.866746899999995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县许孟镇宅科小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.331398,
+          35.866746899999995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县许孟镇中心小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3362632,
+          35.86481168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县于里镇初级中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9898422,
+          35.80613191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县于里镇管帅小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.99969399999999,
+          35.80907892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县于里镇于里沟小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.99969399999999,
+          35.80907892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县于里镇赵家辛庄小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.99969399999999,
+          35.80907892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县于里镇中心小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.00177420000001,
+          35.79903686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县育才小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.20975200000001,
+          35.77191589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县中至镇初级中学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.1292477,
+          35.78829076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县中至镇金翎店小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.1292477,
+          35.78829076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县中至镇崖头小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.1292477,
+          35.78829076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县中至镇中心小学"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.121132,
+          35.78227486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲中学（初中部）"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.19423390000001,
+          35.77838609
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市金海岸小学幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.537306,
+          35.44442791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市朝阳小学幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.49347579999998,
+          35.46070358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照高新区中学幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.478503,
+          35.45381091
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区日照街道蓝天幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4791862,
+          35.41808188
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区日照街道沙墩红豆幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.496036,
+          35.42382493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区秦楼街道大风车幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.5065535,
+          35.43899269
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区日照街道腾飞幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.49134199999999,
+          35.435756899999994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照21世纪幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.53341540000001,
+          35.422839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区日照街道比特幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.47896429999999,
+          35.43974625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区日照街道日照童星幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4620652,
+          35.4374265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区日照街道东升幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4337749,
+          35.43180941
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区日照街道新超越第二幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.43780840000001,
+          35.42735496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区日照街道荣华爱贝幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.43768419999999,
+          35.42641914
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区日照街道新超越幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4542869,
+          35.4451135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区日照街道向日葵幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.47497890000001,
+          35.44346855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区日照街道向阳树幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4773778,
+          35.41819505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区日照街道梦翔幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.45675690000002,
+          35.4580201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区日照街道苗苗幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.46405700000001,
+          35.41820821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区日照街道小燕子幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.45487800000001,
+          35.43435836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区香河街道雏鹰幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.5011733,
+          35.43724255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区香河街道祥龙幼儿园二园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4872347,
+          35.44389412
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区香河国际幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.49632220000001,
+          35.44499029
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区香河街道启智幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4927777,
+          35.44887024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区日照街道童星安泰易居幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4490314,
+          35.43376546
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区石臼街道运总幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.5360149,
+          35.40726638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区城西小学幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.43446259999999,
+          35.42901752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区日照街道兴海幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4746137,
+          35.42619053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区日照街道新苗幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.45675690000002,
+          35.4580201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市街道中心幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5286402,
+          40.13220039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "陈疃镇滕家庄幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.9136846,
+          33.37450413
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区第三小学幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.46700220000001,
+          35.44188664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市西湖镇大花崖幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2380155,
+          35.44389905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市西湖镇范家幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.247576,
+          35.45638694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市慧通小学幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.43713729999999,
+          35.46074393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市兴业东升幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4337749,
+          35.43180941
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照安泰水晶花园幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4988592,
+          35.42550684
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市安道儿幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.53341540000001,
+          35.422839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市后村镇山河幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3012308,
+          35.39150035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市滨海湾幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3953084,
+          35.27868132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市心苗幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.542061,
+          35.44598492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照经济技术开发区宁波路幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3594269,
+          35.14705455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照经济技术开发区盘石庄幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.53341540000001,
+          35.422839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照经济技术开发区璞院幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.51723,
+          35.39756853
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照经济技术开发区养正大连花园幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.5023101,
+          35.40466214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照经济技术开发区懿诚幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.53341540000001,
+          35.422839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照经济技术开发区育英幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.517473,
+          35.40470326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照经济技术开发区金起点幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4326972,
+          35.41227729
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照经济技术开发区平台社区幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4150017,
+          35.39612349
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县阎庄镇大长安坡幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.86114909999999,
+          35.65122044
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县华泰幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.82849099999999,
+          35.57941096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县浮来山街道前栗园幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.76866299999999,
+          35.63430992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县浮来山街道第二幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.799524,
+          35.63262759
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县招贤镇梁春生春蕾幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.94690600000001,
+          35.69907289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "碁山西坡幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.83727739999999,
+          36.2150143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县招贤镇第二幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9292202,
+          35.72324725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县东莞镇发牛幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.97985,
+          35.99046591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县东莞镇石河幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.97985,
+          35.99046591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县第一实验小学明德幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.8416938,
+          35.58756814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县招贤镇万基幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9292202,
+          35.72324725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县星海颐景幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.8435382,
+          35.58587212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县阎庄镇渚汀幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.834668,
+          35.6708797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县阎庄镇柳源幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.834668,
+          35.6708797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县峤山镇前店蓓蕾幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.946004,
+          35.65734187
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县第六实验小学史家校区幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.84427509999999,
+          35.560039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县东莞镇门楼社区幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.97985,
+          35.99046591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县长岭镇小岭社区幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.84455659999999,
+          35.48453265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县安庄镇王家川社区幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.76537830000001,
+          35.84157501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县夏庄镇北汀水幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.6948298,
+          35.42666664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县刘官庄镇于庄社区幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.824798,
+          35.54541793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县阎庄镇肖家河社区幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.8177989,
+          35.64973593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县果庄镇苇园幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.7460628,
+          35.8009674
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县店子集街道屋楼幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9067767,
+          35.58440415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县寨里河镇王标社区幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9373496,
+          35.50929218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县青岛路小学幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.87690970000001,
+          35.60777545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县长岭镇课庄幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.81097,
+          35.48451142
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县库山乡庄科社区幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.97990890000001,
+          35.9230411
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县招贤镇相家官庄社区幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.8997226,
+          35.70339086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县东莞镇鞠家窑社区幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.97985,
+          35.99046591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县安庄镇大马家峪幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.8300267,
+          35.85266979
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县寨里河镇门庄社区幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.93158390000002,
+          35.46998251
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县夏庄镇旺疃社区幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.77547859999999,
+          35.45907467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县碁山镇文成幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.898202,
+          35.87143657
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县店子集街道春晓幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9067767,
+          35.58440415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县峤山镇朱里社区幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.946004,
+          35.65734187
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县浮来山街道田家店子社区幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.7644459,
+          35.58327959
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县阎庄镇山沟社区幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.834668,
+          35.6708797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县果庄镇梭庄幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.7565781,
+          35.77924716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县夏庄镇孟晏社区幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.6948298,
+          35.42666664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县安庄镇官家林幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.7813622,
+          35.82767768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县果庄镇小张官庄幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.77746210000001,
+          35.80802429999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县浮来山街道中心社区幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.8082159,
+          35.62835064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县碁山镇茅河社区幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.89466429999999,
+          35.54071864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "岚山区黄墩镇蒲汪幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.1385687,
+          35.40629885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "岚山区黄墩镇孔家庄子幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.1385687,
+          35.40629885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "岚山区碑廓镇甫田幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2332793,
+          35.19438841
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "岚山区黄墩镇辛庄幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.17549620000001,
+          35.41637959
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "岚山区黄墩镇草涧幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.1385687,
+          35.40629885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "岚山区安东卫街道仁家村幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.27314979999998,
+          35.13567039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "岚山区安东卫街道合庄幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2668997,
+          35.17179871
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "岚山区虎山镇后稍坡幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.33706090000001,
+          35.18208058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "岚山区黄墩镇粮山幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.1385687,
+          35.40629885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "岚山区虎山镇罗黄幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.33706090000001,
+          35.18208058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "岚山区中楼镇黑涧社区幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.985229,
+          35.37174226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "岚山区实验幼儿园玉泉分园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3351456,
+          35.12335029
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "岚山区碑廓镇二朱曹幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.21106280000001,
+          35.18172244
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "岚山区中楼镇鸡山沟社区幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.989328,
+          35.40548289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "岚山区高兴镇中心幼儿园分园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3494322,
+          35.33817695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "岚山区巨峰镇卜落社区幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2426063,
+          35.28832641
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "岚山区巨峰镇六甲幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2426063,
+          35.28832641
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照经济技术开发区重庆路幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.46510959999999,
+          35.39045524
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照经济技术开发区兰州路幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.49811740000001,
+          35.39112666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县金色摇篮幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.21558040000001,
+          35.7556971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县松柏镇长岭幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.32263,
+          35.74598189
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县高泽镇秦家庄幼儿园　"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.21558040000001,
+          35.7556971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县叩官镇南回头幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4612821,
+          35.68344592
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县纺织幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.21558040000001,
+          35.7556971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县于里镇小窑幼儿园　"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.01357920000001,
+          35.77392236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县高泽镇宝山幼儿园　"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.21558040000001,
+          35.7556971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县户部乡大村幼儿园　"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4252412,
+          35.75825568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县爱心幼儿园　"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.20359040000001,
+          35.78117522
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县高泽镇邱村幼儿园　"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.22467590000001,
+          35.82064259
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县高泽镇好孩子幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.21558040000001,
+          35.7556971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县街头镇迟家庄幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.27499270000001,
+          35.61298018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县辰光幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.21558040000001,
+          35.7556971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县红花幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.20800590000002,
+          35.76756894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县汪湖镇高化幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.11426940000001,
+          35.91636861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县中至镇金翎店幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.1292477,
+          35.78829076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市北经济开发区魏家幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.53341540000001,
+          35.422839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市北经济开发区小庄幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.33241969999999,
+          35.60685158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县洪凝街道山阳幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.22072279999999,
+          35.76553002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县洪凝街道同俗幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.19100690000002,
+          35.77349211
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县洪凝街道莫家庄子幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2082529,
+          35.73641835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县洪凝街道长兰幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.22072279999999,
+          35.76553002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县洪凝街道罗圈幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.1476957,
+          35.71311563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县石场乡山庄幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.1461078,
+          35.65612574
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县御景幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.21558040000001,
+          35.7556971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县汪湖镇仁旺幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.11426940000001,
+          35.91636861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县于里沟幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.21558040000001,
+          35.7556971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县于里镇管帅幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.99969399999999,
+          35.80907892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县于里镇赵家辛庄幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.99969399999999,
+          35.80907892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县于里镇川里幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.99969399999999,
+          35.80907892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县中至镇崖头幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.1292477,
+          35.78829076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县叩官镇王庄幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4612821,
+          35.68344592
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县叩官镇北回头幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4612821,
+          35.68344592
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县许孟镇车村幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.331398,
+          35.866746899999995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县户部乡槎河幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4252412,
+          35.75825568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县洪凝街道河西幼儿园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.199972,
+          35.75253968
+        ]
+      }
+    }
+  ]
+}

@@ -1,278 +1,16 @@
-
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
-var gdpData = {
-    "type": "FeatureCollection",
-    "features": [{
-        "type": "Feature",
-        "properties": {
-            "GDP": 790
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                119.3729782104492,
-                35.101091404640414
-            ]
-        }
-    },
-        {
-            "type": "Feature",
-            "properties": {
-                "GDP": 730
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    119.38130378723145,
-                    35.12250612200286
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "GDP": 590
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    119.3257713317871,
-                    35.09533304538379
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "GDP": 720
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    119.35701370239258,
-                    35.13900214724948
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "GDP": 630
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    119.3063735961914,
-                    35.12580559438448
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "GDP": 570
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    119.36508178710936,
-                    35.16510817143739
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "GDP": 300
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    119.26002502441405,
-                    35.081707990840705
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "GDP": 120
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    119.52507019042967,
-                    35.34761562269892
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "GDP": 90
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    119.55699920654297,
-                    35.383172064361254
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "GDP": 660
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    119.55322265624999,
-                    35.44836479904722
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "GDP": 390
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    119.59545135498045,
-                    35.47017718937938
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "GDP": 510
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    119.46430206298828,
-                    35.34817568802731
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "GDP": 440
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    119.45262908935545,
-                    35.43577803767836
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "GDP": 360
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    119.4481658935547,
-                    35.38681081644444
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "GDP": 80
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    119.54429626464844,
-                    35.40947934315461
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "GDP": 555
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    119.20698165893555,
-                    35.72143034768088
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "GDP": 370
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    119.20389175415039,
-                    35.82129301009015
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "GDP": 120
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    119.19136047363281,
-                    35.74804478729811
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "GDP": 103
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    119.22157287597656,
-                    35.75013454980853
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "GDP": 160
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    119.21642303466797,
-                    35.770193477944666
-                ]
-            }
-        }
-    ]
-}
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-function drawMap(hospital_data, GDP_data) {
+/**
+ * @description 绘制系统首页地图以及四个医院的圆点，热力图层，职业相关坐标点集等
+ * @param {object} hospital_data  四个医院的各个就诊总人数json数据
+ * @param {object} GEO_POINT_DATA  主视图上的单选框的选中值map_checked_type，用于分别绘制不同的点集数据 (GDP|school...),以及对应的数据等
+ */
+function drawMap(hospital_data, GEO_POINT_DATA) {
+    //医院名称颜色
+    const HOSPITAL_NAME_COLOR = "#ff0000";
+    //医院圆点颜色
+    const HOSPITAL_POINT_COLOR = "#120136";
 
     // 四个医院的总人数和坐标数据，日照人民，日照中医，岚山，五莲
-    var point_data = {
+    const point_data = {
         "type": "FeatureCollection",
         "features": [{
             "type": "Feature",
@@ -319,24 +57,26 @@ function drawMap(hospital_data, GDP_data) {
                 }
             },
         ],
-    }
+    };
 
 
-    let temp_list = []
+    let temp_list = [];
     for (let each of point_data["features"]) {
         temp_list.push(each["properties"]["sum"])
     }
 
-    let max_sum = Math.max.apply(null, temp_list)
-    let min_sum = Math.min.apply(null, temp_list)
+    let max_sum = Math.max.apply(null, temp_list);
+    let min_sum = Math.min.apply(null, temp_list);
 
     //计算医院点动态半径 100, 400
     function calcRadius(sum) {
         return parseInt((sum - min_sum) / (max_sum - min_sum) * 400) + 100
     }
 
-////////////////////////////////////////////////////////////////////////////////////////
 
+    //////////////////////////////////////////////////////////////////////
+    // 地图初始化
+    //////////////////////////////////////////////////////////////////////
     mapboxgl.accessToken =
         'pk.eyJ1IjoieGlhb2JpZSIsImEiOiJja2pndjRhMzQ1d2JvMnltMDE2dnlkMGhrIn0.bCKzSCs5tHTIYk4xQ65doA';
 
@@ -346,16 +86,15 @@ function drawMap(hospital_data, GDP_data) {
         center: [119.442402, 35.45598],
         zoom: 9.2
     });
-    //////////////////////////////////////////////////////////////////////////////
-
 
     //////////////////////////////////////////////////////////////////////
-    // 动画图标生成
+    // 四大医院坐标点动画图标生成
+    //////////////////////////////////////////////////////////////////////
     let hospital_point = [];
-    let coord = []
+    let coord = [];
     for (let i = 0; i < 4; i++) {
 
-        let size = calcRadius(point_data["features"][i]["properties"]["sum"])
+        let size = calcRadius(point_data["features"][i]["properties"]["sum"]);
 
         let pulsingDot = {
             name: point_data["features"][i]["properties"]["name"],
@@ -388,7 +127,7 @@ function drawMap(hospital_data, GDP_data) {
                 // draw inner circle
                 context.beginPath();
                 context.arc(this.width / 2, this.height / 2, radius, 0, Math.PI * 2);
-                context.fillStyle = '#120136';
+                context.fillStyle = HOSPITAL_POINT_COLOR;
                 context.strokeStyle = 'white';
                 context.lineWidth = 2 + 4 * (1 - t);
                 context.fill();
@@ -405,28 +144,163 @@ function drawMap(hospital_data, GDP_data) {
             }
         };
 
-        hospital_point.push(pulsingDot)
+        hospital_point.push(pulsingDot);
         coord.push(point_data["features"][i]["geometry"]["coordinates"])
     }
-    ////////////////////////////////////////////////////////////////////////////
 
-    //gdp最值计算
-    let heat_list = [];
-    for (let i = 0; i < GDP_data["features"].length; i++) {
-        heat_list.push(GDP_data["features"][i]["properties"]["GDP"])
-    }
-    heat_list.sort(function (a, b) {
-        return a - b;
-    });
-    let max_gdp = heat_list[heat_list.length - 10];
-    let min_gdp = heat_list[0];
 
     map.on('load', function () {
 
-        //热力图
+        //////////////////////////////////////////////////////////////////////
+        // 根据单选框的值绘制地图点集
+        //////////////////////////////////////////////////////////////////////
+        switch (GEO_POINT_DATA["map_checked_type"]) {
+            case "GDP":
+                //gdp热力图
+                drawGdpHeatMap(GEO_POINT_DATA["GDP"]);
+                break;
+            case "school":
+                drawCategoryPlace("school", GEO_POINT_DATA["school"]);
+                break;
+            case "health_center":
+                drawCategoryPlace("health_center", GEO_POINT_DATA["health_center"]);
+                break;
+        }
+
+
+        ////////////////////////////////////////////////////////////////////////////
+        // //点击事件
+        // map.on('click', 'hospital', function (e) {
+        //     let coordinates = e.features[0].geometry.coordinates.slice();
+        //     let names = e.features[0].properties.name;
+        //
+        //
+        //     while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+        //         coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        //     }
+        //     console.log(names);
+        //
+        //
+        // });
+        //
+        // // Change the cursor to a pointer when the mouse is over the places layer.
+        // map.on('mouseenter', 'hospital', function () {
+        //     map.getCanvas().style.cursor = 'pointer';
+        // });
+        //
+        // // Change it back to a pointer when it leaves.
+        // map.on('mouseleave', 'hospital', function () {
+        //     map.getCanvas().style.cursor = '';
+        // });
+
+
+        //添加医院圆点
+        for (let index = 0; index < 4; index++) {
+
+            //添加医院的名字
+            let el = document.createElement("div");
+            el.id = "hospital_name" + index;
+            el.innerHTML = hospital_point[index].name;
+
+            el.style.color = HOSPITAL_NAME_COLOR;
+
+            let currentMarkerTitle = new mapboxgl.Marker(el, {offset: [65, -5]})
+                .setLngLat(coord[index])
+                .addTo(map);
+
+
+            let icon_id = "pulsing-dot" + index;
+
+            map.addImage(icon_id, hospital_point[index], {
+                pixelRatio: 2
+            });
+
+            map.addLayer({
+                "id": "hospital_points" + index,
+                "type": "symbol",
+                "source": {
+                    "type": "geojson",
+                    "data": {
+                        "type": "FeatureCollection",
+                        "features": [{
+                            "type": "Feature",
+                            "properties": {
+                                "name": hospital_point[index].name,
+                            },
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": coord[index]
+                            }
+                        }]
+                    }
+                },
+                // "icon-size"控制图标大小
+                "layout": {
+                    "icon-image": icon_id,
+                    "icon-ignore-placement": true,
+                    "icon-size": [
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        9, 0.3,
+                        16, 1
+                    ]
+                }
+            });
+            // **********************************************************************
+            //   点击事件
+            // **********************************************************************
+            map.on('click', "hospital_points" + index, function (e) {
+                let coordinates = e.features[0].geometry.coordinates.slice();
+                let hospital_name = e.features[0].properties.name;
+
+
+                // while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                //     coordinates[0] += e.lngLat.lng > coordinates[0] ? 180 : -180;
+                // }
+                console.log(hospital_name);
+                TRANSPORT_DATA["hospital"] = hospital_name;
+                redraw("/change_hospital", "select_hospital");
+                testData();
+            });
+
+            // Change the cursor to a pointer when the mouse is over the places layer.
+            map.on('mouseenter', "hospital_points" + index, function () {
+                map.getCanvas().style.cursor = 'pointer';
+            });
+
+            // Change it back to a pointer when it leaves.
+            map.on('mouseleave', "hospital_points" + index, function () {
+                map.getCanvas().style.cursor = '';
+            });
+        }
+
+    });
+
+
+    /**
+     * @description 绘制系统首页地图GDP数据热力图层
+     * @param {object} gdp_data  日照市主要GDP贡献公司的坐标以及GDP值等
+     */
+    function drawGdpHeatMap(gdp_data) {
+
+        //////////////////////////////////////////////////////////////////////////
+        //gdp最值计算
+        //////////////////////////////////////////////////////////////////////////
+        let heat_list = [];
+        for (let i = 0; i < gdp_data["features"].length; i++) {
+            heat_list.push(gdp_data["features"][i]["properties"]["GDP"])
+        }
+        heat_list.sort(function (a, b) {
+            return a - b;
+        });
+        let max_gdp = heat_list[heat_list.length - 10];
+        let min_gdp = heat_list[0];
+
+
         map.addSource('gdp-source', {
             "type": "geojson",
-            "data": GDP_data
+            "data": gdp_data
         });
         map.addLayer({
             id: "gdp-heatmap",
@@ -480,137 +354,44 @@ function drawMap(hospital_data, GDP_data) {
                 ]
             }
         });
+
+
+    }
+
+    /**
+     * @description 绘制系统首页地图职业相关坐标点集等
+     * @param {string} type_name  职业名称，用做id值
+     *  @param {object} type_place_data  相关地理点集数据
+     */
+    function drawCategoryPlace(type_name, type_place_data) {
+
+        const TYPE_POINT_COLOR = "#cd8d7b";
+        console.log(type_place_data);
         /////////////////////////////////////////////////////////////////////////////////
-        // Add a source and layer displaying a point which will be animated in a circle.
-        // map.addSource('point', {
-        //     "type": "geojson",
-        //     "data": point_data
-        // });
-        //
-        // map.addLayer({
-        //     "id": "hospital",
-        //     "source": "point",
-        //     "type": "circle",
-        //     "minzoom": 6,
-        //     "paint": {
-        //         // 圆圈半径动态更改，根据缩放等级从9到16，将数据中的radius属性，线性映射[20, 50] -> [2,5] ->[20,50]
-        //         "circle-radius": [
-        //             "interpolate",
-        //             ["linear"],
-        //             ["zoom"],
-        //             9, [
-        //                 "interpolate",
-        //                 ["linear"],
-        //                 ["get", "radius"],
-        //                 20, 2,
-        //                 50, 5
-        //             ],
-        //             16, [
-        //                 "interpolate",
-        //                 ["linear"],
-        //                 ["get", "radius"],
-        //                 20, 20,
-        //                 50, 50
-        //             ]
-        //
-        //         ],
-        //         "circle-color": "#ff2e63"
-        //     }
-        // });
-        //
-        // //点击事件
-        // map.on('click', 'hospital', function (e) {
-        //     let coordinates = e.features[0].geometry.coordinates.slice();
-        //     let names = e.features[0].properties.name;
-        //
-        //
-        //     while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-        //         coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-        //     }
-        //     console.log(names);
-        //
-        //
-        // });
-        //
-        // // Change the cursor to a pointer when the mouse is over the places layer.
-        // map.on('mouseenter', 'hospital', function () {
-        //     map.getCanvas().style.cursor = 'pointer';
-        // });
-        //
-        // // Change it back to a pointer when it leaves.
-        // map.on('mouseleave', 'hospital', function () {
-        //     map.getCanvas().style.cursor = '';
-        // });
+        //   Add a source and layer displaying a point which will be animated in a circle.
+        map.addSource('point', {
+            "type": "geojson",
+            "data": type_place_data
+        });
 
+        map.addLayer({
+            "id": type_name,
+            "source": "point",
+            "type": "circle",
+            "minzoom": 6,
+            "paint": {
+                // 圆圈半径动态更改，根据缩放等级从9到16，将数据中的radius属性，线性映射[20, 50] -> [2,5] ->[20,50]
+                "circle-radius": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    9,2.5,
+                    16,50
+                ],
+                "circle-color": TYPE_POINT_COLOR
+            }
+        });
+    }
 
-        //添加医院圆点
-        for (let index = 0; index < 4; index++) {
-
-            let icon_id = "pulsing-dot" + index;
-
-            map.addImage(icon_id, hospital_point[index], {
-                pixelRatio: 2
-            });
-
-            map.addLayer({
-                "id": "points" + index,
-                "type": "symbol",
-                "source": {
-                    "type": "geojson",
-                    "data": {
-                        "type": "FeatureCollection",
-                        "features": [{
-                            "type": "Feature",
-                            "properties": {
-                                "name": hospital_point[index].name,
-                            },
-                            "geometry": {
-                                "type": "Point",
-                                "coordinates": coord[index]
-                            }
-                        }]
-                    }
-                },
-                // "icon-size"控制图标大小
-                "layout": {
-                    "icon-image": icon_id,
-                    "icon-ignore-placement": true,
-                    "icon-size": [
-                        "interpolate",
-                        ["linear"],
-                        ["zoom"],
-                        9, 0.3,
-                        16, 1
-                    ]
-                }
-            });
-            // **********************************************************************
-            //   点击事件
-            // **********************************************************************
-            map.on('click', "points" + index, function (e) {
-                let coordinates = e.features[0].geometry.coordinates.slice();
-                let hospital_name = e.features[0].properties.name;
-
-
-                // while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-                //     coordinates[0] += e.lngLat.lng > coordinates[0] ? 180 : -180;
-                // }
-                console.log(hospital_name);
-                transport_data["hospital"] = hospital_name;
-                redraw("/change_hospital", false);
-                testData();
-            });
-
-            // Change the cursor to a pointer when the mouse is over the places layer.
-            map.on('mouseenter', "points" + index, function () {
-                map.getCanvas().style.cursor = 'pointer';
-            });
-
-            // Change it back to a pointer when it leaves.
-            map.on('mouseleave', "points" + index, function () {
-                map.getCanvas().style.cursor = '';
-            });
-        }
-
-    })
 }
+

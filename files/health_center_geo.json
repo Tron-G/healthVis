@@ -1,0 +1,603 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市东港区三庄中心卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.81952179999999,
+          35.59195393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区南湖中心卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4686243,
+          35.431049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市东港区两城中心卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.57944009999999,
+          35.5729597
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市东港区涛雒镇卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3734665,
+          35.28388023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区后村中心卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          124.1596104,
+          39.86771619
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港区陈疃镇卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2738338,
+          35.51465071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市东港区河山镇卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4722815,
+          35.45524934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市东港区西湖镇卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.40533640000001,
+          29.10240055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区黄墩中心卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.1385687,
+          35.40629885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区巨峰中心卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3255304,
+          35.12743233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区碑廓中心卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.187522,
+          35.17568991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区高兴卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.34979009999998,
+          35.33557348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区中楼卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3255304,
+          35.12743233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区虎山卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3380743,
+          35.17512063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县叩官镇中心卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.466424,
+          35.68445993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县于里镇中心卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.99127279999999,
+          35.80618847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县街头镇中心卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2734975,
+          35.61489343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县许孟镇中心卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.232021,
+          30.84144786
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县洪凝镇山阳卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2145906,
+          35.74822183
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县高泽镇卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.116716,
+          40.14025205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县松柏乡卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.334398,
+          35.74521893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县汪湖镇卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.1082565,
+          35.91492966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县中至镇卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.12795929999999,
+          35.78801957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县户部乡卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4251517,
+          35.73163367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县石场乡卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.15201200000001,
+          35.6579045
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县城阳卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.8731293,
+          35.60534438
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县寨里河卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.34170390000001,
+          30.30764113
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县小店中心卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.81406399999999,
+          35.42120594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县招贤中心卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9372007,
+          35.73800411
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县龙山中心卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.400525,
+          23.75243106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县桑园卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.5499784,
+          40.29170632
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县夏庄卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.8435382,
+          35.58587212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县洛河卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.83150259999998,
+          35.75571846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县碁山卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9862097,
+          34.44101665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县东莞卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.72556920000001,
+          23.08962665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县陵阳卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.8962275,
+          35.54410611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县浮来山卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.8024294,
+          35.63324394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县安庄镇卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.81684070000001,
+          35.81390162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县刘官庄卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.79868300000001,
+          35.52710892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县店子集镇卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.87599440000001,
+          35.58530574
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县库山乡卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.978035,
+          35.92190492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县峤山卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9404885,
+          35.6440035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县阎庄卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.83417279999999,
+          35.67081424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县长岭卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.84562140000001,
+          35.48315995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县果庄卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.8577166,
+          30.96227306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照街道卫生院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.46765400000001,
+          35.439015000000005
+        ]
+      }
+    }
+  ]
+}

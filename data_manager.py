@@ -87,7 +87,7 @@ def radar_map(season, hospital):
             department["口腔科"] = len(df[(df["DEPT_NAME"] == '口腔科') & (df["ORG_NAME"] == one_hospital)])
             department["内科"] = len(df[(df["DEPT_NAME"] == '内科') & (df["ORG_NAME"] == one_hospital)])
             hospitals[one_hospital] = department
-        print(hospitals)
+        # print(hospitals)
         return hospitals
 
 
@@ -772,3 +772,224 @@ def month(hospital):
     root["children"] = months
     # print(root)
     return root
+
+
+# ******************************************************************************************
+# 加载静态数据
+# ******************************************************************************************
+def load_static_data(data_name):
+    if data_name == "GDP":
+        with open("./files/gdpData.json", encoding='UTF-8') as f:
+            data = json.load(f)
+    elif data_name == "school":
+        with open("./files/school_geo.json", encoding='GBK') as f:
+            data = json.load(f)
+    elif data_name == "health_center":
+        with open("./files/health_center_geo.json", encoding='GBK') as f:
+            data = json.load(f)
+
+    return data
+
+
+# ******************************************************************************************
+# 返回指定疾病和月份的年龄及性别分布数据，参数disease_name为指定的疾病； 参数month的值为1到12,值为0就返回一整年的数据
+# ******************************************************************************************
+def get_disease_age(disease_name, month):
+    df = pd.read_csv("./files/report_out.csv")
+    the_month = ["all", "2019-01", "2019-02", "2019-03", "2019-04", "2019-05", "2019-06", "2019-07", "2019-08",
+                 "2019-09", "2019-10", "2019-11", "2019-12"]
+    ages = {
+        "disease_name": "",
+        "0-10": [0, 0],
+        "10-20": [0, 0],
+        "20-30": [0, 0],
+        "30-40": [0, 0],
+        "40-50": [0, 0],
+        "50-60": [0, 0],
+        "60-70": [0, 0],
+        "70-80": [0, 0],
+        "80-90": [0, 0],
+        "90-100": [0, 0]
+    }
+    month = int(month)
+    ages["disease_name"] = disease_name
+    # 当月份参数不为0时
+    if the_month[month] != "all":
+        df = df[(df["SUMMARIZE_TIME"] == the_month[month])]
+        df = df.reset_index(drop=True)
+        for i in range(0, len(df["HEALTH_EXAM_NO"])):
+            if disease_name in df["EXAM_SUMMARY"][i]:
+                age = df["AGE"][i]
+                if df["SEX_CODE"][i] != "N":
+                    df["SEX_CODE"][i] = int(df["SEX_CODE"][i])
+                    sex_code = df["SEX_CODE"][i] - 1
+                    if age <= 10:
+                        ages["0-10"][sex_code] += 1
+                    if age <= 20:
+                        ages["10-20"][sex_code] += 1
+                    if age <= 30:
+                        ages["20-30"][sex_code] += 1
+                    if age <= 40:
+                        ages["30-40"][sex_code] += 1
+                    if age <= 50:
+                        ages["40-50"][sex_code] += 1
+                    if age <= 60:
+                        ages["50-60"][sex_code] += 1
+                    if age <= 70:
+                        ages["60-70"][sex_code] += 1
+                    if age <= 80:
+                        ages["70-80"][sex_code] += 1
+                    if age <= 90:
+                        ages["80-90"][sex_code] += 1
+                    if age <= 100:
+                        ages["90-100"][sex_code] += 1
+        print(ages)
+        return ages
+    # 当月份参数为0时
+    for i in range(0, len(df["HEALTH_EXAM_NO"])):
+        if disease_name in df["EXAM_SUMMARY"][i]:
+            age = df["AGE"][i]
+            if df["SEX_CODE"][i] != "N":
+                df["SEX_CODE"][i] = int(df["SEX_CODE"][i])
+                sex_code = df["SEX_CODE"][i] - 1
+                if age <= 10:
+                    ages["0-10"][sex_code] += 1
+                if age <= 20:
+                    ages["10-20"][sex_code] += 1
+                if age <= 30:
+                    ages["20-30"][sex_code] += 1
+                if age <= 40:
+                    ages["30-40"][sex_code] += 1
+                if age <= 50:
+                    ages["40-50"][sex_code] += 1
+                if age <= 60:
+                    ages["50-60"][sex_code] += 1
+                if age <= 70:
+                    ages["60-70"][sex_code] += 1
+                if age <= 80:
+                    ages["70-80"][sex_code] += 1
+                if age <= 90:
+                    ages["80-90"][sex_code] += 1
+                if age <= 100:
+                    ages["90-100"][sex_code] += 1
+    print(ages)
+    return ages
+
+
+# ******************************************************************************************
+# 返回指定病人HEALTH_EXAM_NO的疾病列表，没有就返回空数组, 参数exam_id的值为report.csv表中的HEALTH_EXAM_NO列的数据
+# ******************************************************************************************
+def get_patient_disease(exam_id):
+    df = pd.read_csv("./files/report_out.csv")
+    with open("./files/myword.txt", "r", encoding='UTF-8') as file:
+        words = file.readlines()
+        for i in range(0, len(words)):
+            words[i] = words[i].replace("\n", "")
+    patient = {}
+    patient["exam_id"] = exam_id
+    diseases = []
+    col = df.iloc[:,4]
+    print(col.values)
+    if exam_id not in col.values:
+        patient["disease_list"] = diseases
+        return patient
+    df = df[(df["HEALTH_EXAM_NO"] == exam_id)]
+    for word in words:
+        if word in df["EXAM_SUMMARY"][0]:
+            diseases.append(word)
+    patient["disease_list"] = diseases
+    return patient
+
+
+# ******************************************************************************************
+# 返回指定月份的前20高发疾病以及疾病的男女人数数据,参数month的值为1到12,值为0就返回一整年的数据
+# ******************************************************************************************
+def get_topdisease_sex(month):
+    df = pd.read_csv("./files/report_out.csv")
+    with open("./files/myword.txt","r",encoding='UTF-8') as file:
+        words = file.readlines()
+        for i in range(0,len(words)):
+            words[i] = words[i].replace("\n","")
+    top20 = []
+    month = int(month)
+    keywords = []
+    diseases = {}
+    the_month = ["all","2019-01","2019-02","2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12"]
+    #当参数不为0时
+    if the_month[month] != "all":
+        #筛选出该月的数据
+        df = df[(df["SUMMARIZE_TIME"] == the_month[month])]
+        df = df.reset_index(drop=True)
+        #找出top20
+        for word in words:
+            keyword = {"keyword": word, "value": 0}
+            for i in range(0, len(df["ID"])):
+                if word in df["EXAM_SUMMARY"][i]:
+                    keyword['value'] = keyword['value'] + 1
+            keywords.append(keyword)
+        for i in range(0, 20):
+            max = {"keyword": "", "value": 0}
+            for keyword in keywords:
+                if keyword['value'] > max['value']:
+                    max['keyword'] = keyword['keyword']
+                    max['value'] = keyword['value']
+            top20.append(max)
+            for keyword in keywords:
+                if keyword['keyword'] == max['keyword']:
+                    keyword['value'] = 0
+        #找出男女的人数
+        girl_df = df[df["SEX_CODE"] == "2"]
+        girl_df = girl_df.reset_index(drop=True)
+        boy_df = df[df["SEX_CODE"] == "1"]
+        boy_df = boy_df.reset_index(drop=True)
+        for one in top20:
+            girl = 0
+            boy = 0
+            num = []
+            one = one["keyword"]
+            for i in range(0, len(girl_df["ID"])):
+                if one in girl_df["EXAM_SUMMARY"][i]:
+                    girl = girl + 1
+            for i in range(0, len(boy_df["ID"])):
+                if one in boy_df["EXAM_SUMMARY"][i]:
+                    boy = boy + 1
+            num.append(boy)
+            num.append(girl)
+            diseases[one] = num
+        return diseases
+    #当输入的参数为0时
+    for word in words:
+        keyword = {"keyword": word, "value": 0}
+        for i in range(0, len(df["ID"])):
+            if word in df["EXAM_SUMMARY"][i]:
+                keyword['value'] = keyword['value'] + 1
+        keywords.append(keyword)
+    for i in range(0, 20):
+        max = {"keyword": "", "value": 0}
+        for keyword in keywords:
+            if keyword['value'] > max['value']:
+                max['keyword'] = keyword['keyword']
+                max['value'] = keyword['value']
+        top20.append(max)
+        for keyword in keywords:
+            if keyword['keyword'] == max['keyword']:
+                keyword['value'] = 0
+    girl_df = df[df["SEX_CODE"] == "2"]
+    girl_df = girl_df.reset_index(drop=True)
+    boy_df = df[df["SEX_CODE"] == "1"]
+    boy_df = boy_df.reset_index(drop=True)
+    for one in top20:
+        girl = 0
+        boy = 0
+        num = []
+        one = one["keyword"]
+        for i in range(0, len(girl_df["ID"])):
+            if one in girl_df["EXAM_SUMMARY"][i]:
+                girl = girl + 1
+        for i in range(0, len(boy_df["ID"])):
+            if one in boy_df["EXAM_SUMMARY"][i]:
+                boy = boy + 1
+        num.append(boy)
+        num.append(girl)
+        diseases[one] = num
+    return diseases
