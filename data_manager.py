@@ -779,25 +779,27 @@ def month(hospital):
 # ******************************************************************************************
 def load_static_data(data_name):
     if data_name == "GDP":
-        with open("./files/gdpData.json", encoding='UTF-8') as f:
+        with open("./files/category_files/gdpData.json", encoding='UTF-8') as f:
             data = json.load(f)
     elif data_name == "school":
-        with open("./files/school_geo.json", encoding='GBK') as f:
+        with open("./files/category_files/school_geo.json", encoding='GBK') as f:
             data = json.load(f)
     elif data_name == "health_center":
-        with open("./files/health_center_geo.json", encoding='GBK') as f:
+        with open("./files/category_files/health_center_geo.json", encoding='GBK') as f:
             data = json.load(f)
-
+    elif data_name == "pollution_company":
+        with open("./files/category_files/pollution_company_geo.json", encoding='GBK') as f:
+            data = json.load(f)
     return data
 
 
 # ******************************************************************************************
 # 返回指定疾病和月份的年龄及性别分布数据，参数disease_name为指定的疾病； 参数month的值为1到12,值为0就返回一整年的数据
 # ******************************************************************************************
-def get_disease_age(disease_name, month):
-    df = pd.read_csv("./files/report_out.csv")
-    the_month = ["all", "2019-01", "2019-02", "2019-03", "2019-04", "2019-05", "2019-06", "2019-07", "2019-08",
-                 "2019-09", "2019-10", "2019-11", "2019-12"]
+def get_disease_age(disease_name,month):
+    df = pd.read_csv("./files/report.csv")
+    the_month = ["all", "19-Jan", "19-Feb", "19-Mar", "19-Apr", "19-May", "19-Jun", "19-Jul", "19-Aug",
+                 "19-Sep", "19-Oct", "19-Nov", "19-Dec"]
     ages = {
         "disease_name": "",
         "0-10": [0, 0],
@@ -817,6 +819,7 @@ def get_disease_age(disease_name, month):
     if the_month[month] != "all":
         df = df[(df["SUMMARIZE_TIME"] == the_month[month])]
         df = df.reset_index(drop=True)
+        print(df)
         for i in range(0, len(df["HEALTH_EXAM_NO"])):
             if disease_name in df["EXAM_SUMMARY"][i]:
                 age = df["AGE"][i]
@@ -824,28 +827,28 @@ def get_disease_age(disease_name, month):
                     df["SEX_CODE"][i] = int(df["SEX_CODE"][i])
                     sex_code = df["SEX_CODE"][i] - 1
                     if age <= 10:
-                        ages["0-10"][sex_code] += 1
-                    if age <= 20:
-                        ages["10-20"][sex_code] += 1
-                    if age <= 30:
-                        ages["20-30"][sex_code] += 1
-                    if age <= 40:
-                        ages["30-40"][sex_code] += 1
-                    if age <= 50:
-                        ages["40-50"][sex_code] += 1
-                    if age <= 60:
-                        ages["50-60"][sex_code] += 1
-                    if age <= 70:
-                        ages["60-70"][sex_code] += 1
-                    if age <= 80:
-                        ages["70-80"][sex_code] += 1
-                    if age <= 90:
-                        ages["80-90"][sex_code] += 1
-                    if age <= 100:
-                        ages["90-100"][sex_code] += 1
+                        ages["0-10"][sex_code] = ages["0-10"][sex_code] + 1
+                    if age > 10 and age <= 20:
+                        ages["10-20"][sex_code] = ages["10-20"][sex_code] + 1
+                    if age > 20 and age <= 30:
+                        ages["20-30"][sex_code] = ages["20-30"][sex_code] + 1
+                    if age > 30 and age <= 40:
+                        ages["30-40"][sex_code] = ages["30-40"][sex_code] + 1
+                    if age > 40 and age <= 50:
+                        ages["40-50"][sex_code] = ages["40-50"][sex_code] + 1
+                    if age > 50 and age <= 60:
+                        ages["50-60"][sex_code] = ages["50-60"][sex_code] + 1
+                    if age > 60 and age <= 70:
+                        ages["60-70"][sex_code] = ages["60-70"][sex_code] + 1
+                    if age > 70 and age <= 80:
+                        ages["70-80"][sex_code] = ages["70-80"][sex_code] + 1
+                    if age > 80 and age <= 90:
+                        ages["80-90"][sex_code] = ages["80-90"][sex_code] + 1
+                    if age > 90 and age <= 100:
+                        ages["90-100"][sex_code] = ages["90-100"][sex_code] + 1
         print(ages)
         return ages
-    # 当月份参数为0时
+    #当月份参数为0时
     for i in range(0, len(df["HEALTH_EXAM_NO"])):
         if disease_name in df["EXAM_SUMMARY"][i]:
             age = df["AGE"][i]
@@ -853,25 +856,25 @@ def get_disease_age(disease_name, month):
                 df["SEX_CODE"][i] = int(df["SEX_CODE"][i])
                 sex_code = df["SEX_CODE"][i] - 1
                 if age <= 10:
-                    ages["0-10"][sex_code] += 1
-                if age <= 20:
-                    ages["10-20"][sex_code] += 1
-                if age <= 30:
-                    ages["20-30"][sex_code] += 1
-                if age <= 40:
-                    ages["30-40"][sex_code] += 1
-                if age <= 50:
-                    ages["40-50"][sex_code] += 1
-                if age <= 60:
-                    ages["50-60"][sex_code] += 1
-                if age <= 70:
-                    ages["60-70"][sex_code] += 1
-                if age <= 80:
-                    ages["70-80"][sex_code] += 1
-                if age <= 90:
-                    ages["80-90"][sex_code] += 1
-                if age <= 100:
-                    ages["90-100"][sex_code] += 1
+                    ages["0-10"][sex_code] = ages["0-10"][sex_code] + 1
+                if age > 10 and age <= 20:
+                    ages["10-20"][sex_code] = ages["10-20"][sex_code] + 1
+                if age > 20 and age <= 30:
+                    ages["20-30"][sex_code] = ages["20-30"][sex_code] + 1
+                if age > 30 and age <= 40:
+                    ages["30-40"][sex_code] = ages["30-40"][sex_code] + 1
+                if age > 40 and age <= 50:
+                    ages["40-50"][sex_code] = ages["40-50"][sex_code] + 1
+                if age > 50 and age <= 60:
+                    ages["50-60"][sex_code] = ages["50-60"][sex_code] + 1
+                if age > 60 and age <= 70:
+                    ages["60-70"][sex_code] = ages["60-70"][sex_code] + 1
+                if age > 70 and age <= 80:
+                    ages["70-80"][sex_code] = ages["70-80"][sex_code] + 1
+                if age > 80 and age <= 90:
+                    ages["80-90"][sex_code] = ages["80-90"][sex_code] + 1
+                if age > 90 and age <= 100:
+                    ages["90-100"][sex_code] = ages["90-100"][sex_code] + 1
     print(ages)
     return ages
 
@@ -905,7 +908,7 @@ def get_patient_disease(exam_id):
 # 返回指定月份的前20高发疾病以及疾病的男女人数数据,参数month的值为1到12,值为0就返回一整年的数据
 # ******************************************************************************************
 def get_topdisease_sex(month):
-    df = pd.read_csv("./files/report_out.csv")
+    df = pd.read_csv("./files/report.csv")
     with open("./files/myword.txt","r",encoding='UTF-8') as file:
         words = file.readlines()
         for i in range(0,len(words)):

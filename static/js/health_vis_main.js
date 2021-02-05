@@ -12,8 +12,73 @@ GEO_POINT_DATA["map_checked_type"] = $('.radio_box :radio:checked').val();
 var HOSPITAL_POINT_DATA = {};
 ///////////////////////////////////////////////////////////////////////////////////
 
+/**
+ * ************************************************************************
+ * ************************************************************************
+ *   █████▒█    ██  ▄████▄   ██ ▄█▀       ██████╗ ██╗   ██╗ ██████╗
+ * ▓██   ▒ ██  ▓██▒▒██▀ ▀█   ██▄█▒        ██╔══██╗██║   ██║██╔════╝
+ * ▒████ ░▓██  ▒██░▒▓█    ▄ ▓███▄░        ██████╔╝██║   ██║██║  ███╗
+ * ░▓█▒  ░▓▓█  ░██░▒▓▓▄ ▄██▒▓██ █▄        ██╔══██╗██║   ██║██║   ██║
+ * ░▒█░   ▒▒█████▓ ▒ ▓███▀ ░▒██▒ █▄       ██████╔╝╚██████╔╝╚██████╔╝
+ *  ▒ ░   ░▒▓▒ ▒ ▒ ░ ░▒ ▒  ░▒ ▒▒ ▓▒       ╚═════╝  ╚═════╝  ╚═════╝
+ *  ░     ░░▒░ ░ ░   ░  ▒   ░ ░▒ ▒░
+ *  ░ ░    ░░░ ░ ░ ░        ░ ░░ ░
+ *           ░     ░ ░      ░  ░
+ * ************************************************************************
+ * @description ***** 系统初始化并缓存数据,可视作系统的main函数 **************
+ * *************************************************************************
+ */
+function initSystem() {
+    $.ajax({
+        type: 'POST',
+        url: "/init",
+        data: JSON.stringify(TRANSPORT_DATA),
+        contentType: 'application/json',
+        dataType: 'json',
+        success: function (data) {
+            // alert(JSON.stringify(data));
+            // console.log("success", data);
 
-//交互重绘更新各个视图
+            //初始化系统缓存数据
+            GEO_POINT_DATA["GDP"] = data["GDP"];
+            GEO_POINT_DATA["school"] = data["school"];
+            GEO_POINT_DATA["health_center"] = data["health_center"];
+            GEO_POINT_DATA["pollution_company"] = data["pollution_company"];
+
+            HOSPITAL_POINT_DATA["map"] = data["map"];
+
+            // console.log(GEO_POINT_DATA);
+            drawMap(HOSPITAL_POINT_DATA["map"], GEO_POINT_DATA);
+            drawBar(AHQ, tem, rain);
+            drawRose(data["radar"]);
+
+        }
+    });
+
+    setCheckBoxEvent();
+    testData();
+    GoBodyVisPage();
+}
+initSystem();
+
+
+/**
+ * @description 后台接口测试
+ */
+function testData() {
+    $.ajax({
+        type: 'POST',
+        url: "/test",
+        data: JSON.stringify(TRANSPORT_DATA),
+        contentType: 'application/json',
+        dataType: 'json',
+        success: function (data) {
+            // alert(JSON.stringify(data));
+            console.log("success", data);
+        }
+    });
+}
+
 /**
  * @description 用户交互操作后重绘各个视图
  * @param {string} url 访问的后台接口名称
@@ -46,82 +111,13 @@ function redraw(url, redraw_type) {
     });
 }
 
-
-/**
- * ************************************************************************
- * ************************************************************************
- *   █████▒█    ██  ▄████▄   ██ ▄█▀       ██████╗ ██╗   ██╗ ██████╗
- * ▓██   ▒ ██  ▓██▒▒██▀ ▀█   ██▄█▒        ██╔══██╗██║   ██║██╔════╝
- * ▒████ ░▓██  ▒██░▒▓█    ▄ ▓███▄░        ██████╔╝██║   ██║██║  ███╗
- * ░▓█▒  ░▓▓█  ░██░▒▓▓▄ ▄██▒▓██ █▄        ██╔══██╗██║   ██║██║   ██║
- * ░▒█░   ▒▒█████▓ ▒ ▓███▀ ░▒██▒ █▄       ██████╔╝╚██████╔╝╚██████╔╝
- *  ▒ ░   ░▒▓▒ ▒ ▒ ░ ░▒ ▒  ░▒ ▒▒ ▓▒       ╚═════╝  ╚═════╝  ╚═════╝
- *  ░     ░░▒░ ░ ░   ░  ▒   ░ ░▒ ▒░
- *  ░ ░    ░░░ ░ ░ ░        ░ ░░ ░
- *           ░     ░ ░      ░  ░
- * ************************************************************************
- * @description ***** 系统初始化并缓存数据,可视作系统的main函数 **************
- * *************************************************************************
- */
-function init_system() {
-    $.ajax({
-        type: 'POST',
-        url: "/init",
-        data: JSON.stringify(TRANSPORT_DATA),
-        contentType: 'application/json',
-        dataType: 'json',
-        success: function (data) {
-            // alert(JSON.stringify(data));
-            // console.log("success", data);
-
-            //初始化系统缓存数据
-            GEO_POINT_DATA["GDP"] = data["GDP"];
-            GEO_POINT_DATA["school"] = data["school"];
-            GEO_POINT_DATA["health_center"] = data["health_center"];
-
-            HOSPITAL_POINT_DATA["map"] = data["map"];
-
-            // console.log(GEO_POINT_DATA);
-            drawMap(HOSPITAL_POINT_DATA["map"], GEO_POINT_DATA);
-            drawBar(AHQ, tem, rain);
-            drawRose(data["radar"]);
-
-        }
-    });
-
-    setCheckBoxEvent();
-    testData();
-    GoBodyVisPage();
-}
-
-init_system();
-
-/**
- * @description 后台接口测试
- */
-function testData() {
-    $.ajax({
-        type: 'POST',
-        url: "/test",
-        data: JSON.stringify(TRANSPORT_DATA),
-        contentType: 'application/json',
-        dataType: 'json',
-        success: function (data) {
-            // alert(JSON.stringify(data));
-            console.log("success", data);
-        }
-    });
-}
-
 /**
  * @description 跳转到人体结构图页面
  */
 function GoBodyVisPage() {
-
     $("#second_page").click(function () {
         window.open('/feature', '_self');
     });
-
 }
 
 
@@ -131,7 +127,7 @@ function GoBodyVisPage() {
 function setCheckBoxEvent() {
     $(function () {
         $(".radio_box :radio").click(function () {
-            alert("选的..." + $(this).val());
+            // alert("选的..." + $(this).val());
             GEO_POINT_DATA["map_checked_type"] = $(this).val();
 
             //////////// todo : url 后台接口实现

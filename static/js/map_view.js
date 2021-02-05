@@ -157,13 +157,16 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
         switch (GEO_POINT_DATA["map_checked_type"]) {
             case "GDP":
                 //gdp热力图
-                drawGdpHeatMap(GEO_POINT_DATA["GDP"]);
+                drawHeatMap("GDP", GEO_POINT_DATA["GDP"]);
                 break;
             case "school":
                 drawCategoryPlace("school", GEO_POINT_DATA["school"]);
                 break;
             case "health_center":
                 drawCategoryPlace("health_center", GEO_POINT_DATA["health_center"]);
+                break;
+            case "pollution_company":
+                drawHeatMap("pollution_company", GEO_POINT_DATA["pollution_company"]);
                 break;
         }
 
@@ -280,81 +283,129 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
 
     /**
      * @description 绘制系统首页地图GDP数据热力图层
-     * @param {object} gdp_data  日照市主要GDP贡献公司的坐标以及GDP值等
+     * @param {object} type_name  热力图类型，用做id值
+     * @param {object} geo_data  日照市主要GDP贡献公司的坐标以及GDP值等
      */
-    function drawGdpHeatMap(gdp_data) {
+    function drawHeatMap(type_name, geo_data) {
+
 
         //////////////////////////////////////////////////////////////////////////
         //gdp最值计算
         //////////////////////////////////////////////////////////////////////////
-        let heat_list = [];
-        for (let i = 0; i < gdp_data["features"].length; i++) {
-            heat_list.push(gdp_data["features"][i]["properties"]["GDP"])
-        }
-        heat_list.sort(function (a, b) {
-            return a - b;
-        });
-        let max_gdp = heat_list[heat_list.length - 10];
-        let min_gdp = heat_list[0];
-
-
-        map.addSource('gdp-source', {
-            "type": "geojson",
-            "data": gdp_data
-        });
-        map.addLayer({
-            id: "gdp-heatmap",
-            type: "heatmap",
-            source: "gdp-source",
-            maxzoom: 17,
-            paint: {
-                "heatmap-weight": [
-                    "interpolate",
-                    ["linear"],
-                    ["get", "GDP"],
-                    min_gdp, 0,
-                    max_gdp, 1
-                ],
-                "heatmap-intensity": [
-                    "interpolate",
-                    ["linear"],
-                    ["zoom"],
-                    4, 2,
-                    13, 4
-                ],
-                // Color ramp for heatmap.  Domain is 0 (low) to 1 (high).
-                // Begin color ramp at 0-stop with a 0-transparancy color
-                // to create a blur-like effect.
-                "heatmap-color": [
-                    "interpolate",
-                    ["linear"],
-                    ["heatmap-density"],
-                    0, "rgba(33,102,172,0)",
-                    0.2, "#f0ebe5",
-                    0.4, "#fff76a",
-                    0.6, "#ffce89",
-                    0.8, "#ffb0b0",
-                    1, "#fe7171"
-                ],
-                // Adjust the heatmap radius by zoom level
-                "heatmap-radius": [
-                    "interpolate",
-                    ["linear"],
-                    ["zoom"],
-                    4, 5,
-                    16, 50
-                ],
-                // Transition from heatmap to circle layer by zoom level
-                "heatmap-opacity": [
-                    "interpolate",
-                    ["linear"],
-                    ["zoom"],
-                    10, 1,
-                    16, 0.5
-                ]
+        if (type_name === "GDP") {
+            let heat_list = [];
+            for (let i = 0; i < geo_data["features"].length; i++) {
+                heat_list.push(geo_data["features"][i]["properties"]["GDP"])
             }
-        });
-
+            heat_list.sort(function (a, b) {
+                return a - b;
+            });
+            let max_gdp = heat_list[heat_list.length - 10];
+            let min_gdp = heat_list[0];
+            map.addSource('geo-source', {
+                "type": "geojson",
+                "data": geo_data
+            });
+            map.addLayer({
+                id: type_name + "_heatMap",
+                type: "heatmap",
+                source: "geo-source",
+                maxzoom: 17,
+                paint: {
+                    "heatmap-weight": [
+                        "interpolate",
+                        ["linear"],
+                        ["get", "GDP"],
+                        min_gdp, 0,
+                        max_gdp, 1
+                    ],
+                    "heatmap-intensity": [
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        4, 2,
+                        13, 4
+                    ],
+                    // Color ramp for heatmap.  Domain is 0 (low) to 1 (high).
+                    // Begin color ramp at 0-stop with a 0-transparancy color
+                    // to create a blur-like effect.
+                    "heatmap-color": [
+                        "interpolate",
+                        ["linear"],
+                        ["heatmap-density"],
+                        0, "rgba(33,102,172,0)",
+                        0.2, "#f0ebe5",
+                        0.4, "#fff76a",
+                        0.6, "#ffce89",
+                        0.8, "#ffb0b0",
+                        1, "#fe7171"
+                    ],
+                    // Adjust the heatmap radius by zoom level
+                    "heatmap-radius": [
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        4, 5,
+                        16, 50
+                    ],
+                    // Transition from heatmap to circle layer by zoom level
+                    "heatmap-opacity": [
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        10, 1,
+                        16, 0.5
+                    ]
+                }
+            });
+        }
+        else{
+             map.addSource('geo-source', {
+                "type": "geojson",
+                "data": geo_data
+            });
+            map.addLayer({
+                id: type_name + "_heatMap",
+                type: "heatmap",
+                source: "geo-source",
+                maxzoom: 17,
+                paint: {
+                    "heatmap-weight": 0.3,
+                    "heatmap-intensity": [
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        4, 2,
+                        13, 4
+                    ],
+                    "heatmap-color": [
+                        "interpolate",
+                        ["linear"],
+                        ["heatmap-density"],
+                        0, "rgba(33,102,172,0)",
+                        0.2, "#f0ebe5",
+                        0.4, "#fff76a",
+                        0.6, "#ffce89",
+                        0.8, "#ffb0b0",
+                        1, "#fe7171"
+                    ],
+                    "heatmap-radius": [
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        4, 5,
+                        16, 50
+                    ],
+                    "heatmap-opacity": [
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        10, 1,
+                        16, 0.5
+                    ]
+                }
+            });
+        }
 
     }
 
@@ -385,8 +436,8 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
                     "interpolate",
                     ["linear"],
                     ["zoom"],
-                    9,2.5,
-                    16,50
+                    9, 2.5,
+                    16, 50
                 ],
                 "circle-color": TYPE_POINT_COLOR
             }

@@ -2,21 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Feature</title>
+    <title>BodyVis</title>
 </head>
+<script type="text/javascript" src="../static/lib/jquery/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../static/lib/d3/d3.js"></script>
+<link rel="stylesheet" href="../static/css/body_vis_base.css">
+<link rel="stylesheet" href="../static/css/body_vis.css">
+<link rel="stylesheet" href="../static/css/searchtool.css">
 <body>
-<p>this is feature page</p>
-<button id="back">back</button>
+    <button id="back_btn">mapView</button>
+    <div class="container" id="search_item">
+        <input type="text" placeholder="请输入病人ID或者疾病名称..." class="search_input" id="search_input" value="">
+        <div class="search"></div>
+    </div>
+
+    <div id="body_view">
+        <div id="man_background"></div>
+        <div id="woman_background"></div>
+    </div>
 </body>
-<script type="text/javascript">
-    var btn = document.getElementById("back");
-    btn.addEventListener("click",function () {
-        window.history.back(-1);
-    })
-
-
-
-
-
-</script>
+<script type="text/javascript" src="../static/js/body_view.js"></script>
+<script type="text/javascript" src="../static/js/body_vis_main.js"></script>
 </html>

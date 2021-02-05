@@ -1,0 +1,28 @@
+#body_view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#man_background {
+    position: absolute;
+    top: 140px;
+    left: 470px;
+    width: 350px;
+    height: 600px;
+    background-color: rgb(184, 215, 240, 0.2);
+    /* overflow: hidden; */
+}
+
+#woman_background {
+    position: absolute;
+    top: 140px;
+    left: 825px;
+    width: 350px;
+    height: 600px;
+    background-color: rgb(240, 185, 237, 0.2);
+    /* overflow: hidden; */
+}

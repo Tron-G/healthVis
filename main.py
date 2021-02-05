@@ -1,5 +1,3 @@
-import json
-
 from flask import Flask, render_template, url_for, redirect, jsonify, request
 import data_manager as dm
 app = Flask(__name__)
@@ -52,10 +50,9 @@ def change_hospital():
 def initSys():
     data = {"radar": dm.radar_map("all", "all"), "map": dm.season("all"), "pie": dm.job("all", "all"),
             "GDP": dm.load_static_data("GDP"), "school": dm.load_static_data("school"),
-            "health_center": dm.load_static_data("health_center")}
+            "health_center": dm.load_static_data("health_center"),
+            "pollution_company": dm.load_static_data("pollution_company")}
     # print(dm.job("all", "all"))
-    # pp = dm.top10("all","all")
-    # print(pp)
     return jsonify(data)
     pass
 
@@ -68,10 +65,13 @@ def test():
     data = request.get_json()
     # print(data["season"], data["hospital"])
     # out = dm.month(data["hospital"])
-    out = dm.age("all", "all")
-    print("\n*************test*************\n")
-    print(out)
+    # out = dm.get_disease_age("脂肪肝", 0)
+    # out = dm.get_topdisease_sex(0)
+    # print("\n*************test*************\n")
+    # print(out)
+    out = ""
     return jsonify(out)
+    pass
 
 
 if __name__ == '__main__':

@@ -1,0 +1,1669 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "艾沛克斯工具（山东）有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.44231289999999,
+          35.37988718
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市邦基三维油脂有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.53822340000002,
+          35.38255351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市德乐食品饮品配料（日照）有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.458983,
+          35.32913794
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "光大环保能源（日照）有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.574673,
+          35.46232987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市光大水务（莒县）有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.82836100000002,
+          35.63065288
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市华能国际电力有限公司日照电厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.574673,
+          35.46232987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市华仁药业（日照）有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.49694720000001,
+          35.47110337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "技宝电子（日照）有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.51814109999998,
+          35.39275282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县板纸厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.83120900000002,
+          35.57463192
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县博大植物油有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.85773780000001,
+          35.63865827
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县城市污水处理厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.8435382,
+          35.58587212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县大自然生物质能热电有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.778347,
+          35.57930088
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县第二污水处理厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.8435382,
+          35.58587212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县丰源热电有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.83722,
+          35.60953468
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县海通茧丝绸有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.876599,
+          35.60045626
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县九莲固体废物处置中心"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.8435382,
+          35.58587212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县刘官庄污水处理厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.8435382,
+          35.58587212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县中联水泥有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.93249109999998,
+          35.94380846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "青岛啤酒（日照）有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.457017,
+          35.37781584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照八方纸业有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.43346880000001,
+          35.35070477
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照昌华海产食品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.8272338,
+          35.57972331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照东升百瑞铺地材料有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.504407,
+          35.44310288
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照丰禾生物质能热电有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.5238505,
+          35.65084957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照丰华工具有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.26745090000001,
+          35.29727383
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照富凯木业有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.51246499999999,
+          35.51939788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照钢铁控股集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.380746,
+          35.16574693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照港（集团）公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.54948540000001,
+          35.41700424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照广大建筑材料有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.46380800000001,
+          35.45563889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照广源热动有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.53341540000001,
+          35.422839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照海星针织服装有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4964791,
+          35.40704581
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照恒宝食品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.85018000000001,
+          35.64636793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照华东酒业有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4416433,
+          35.34665084
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照华泰食品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.58318159999999,
+          35.56565191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照华泰纸业有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.82805420000001,
+          35.5771934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照佳食食品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.48887090000001,
+          35.46954774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照佳苑食品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.460044,
+          35.33591895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照金禾博源生化有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.84607279999999,
+          35.62140464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照锦昌固体废物处置有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.72774199999999,
+          35.46911994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照锦湖金马化学有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.55297900000001,
+          35.4075137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照经济技术开发区工业废水处理厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.53341540000001,
+          35.422839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照岚桥港口石化有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.36787700000001,
+          35.138188
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照美佳科苑食品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.5230697,
+          35.45153397
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照磐岳环保科技有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.732037,
+          35.47191315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照三木冶金矿业有限公司（热电厂）"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3079878,
+          35.11334623
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市北经济开发区净源污水处理有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.53341540000001,
+          35.422839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市金宝包装制品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.47298719999999,
+          35.33848243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市康信食品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.50059879999999,
+          35.39124097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山云通水务有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.30913799999999,
+          35.10093095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市凌云海糖业集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.512386,
+          35.40107691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市凌云海糖业集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.512386,
+          35.40107691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市三星化工有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.442842,
+          35.34923989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市水务集团污水处理有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.196578,
+          35.74158093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市水务集团污水处理有限公司大学城污水处理厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.196578,
+          35.74158093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市水务集团污水处理有限公司第二污水处理厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.196578,
+          35.74158093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市水务集团污水处理有限公司第二污水处理厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.196578,
+          35.74158093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市水务集团污水处理有限公司第三污水处理厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.196578,
+          35.74158093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市水务集团污水处理有限公司第一污水处理厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.196578,
+          35.74158093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市水务集团污水处理有限公司第一污水处理厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.196578,
+          35.74158093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市水务集团污水处理有限公司高新区污水处理厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.196578,
+          35.74158093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市水务集团污水处理有限公司高新区污水处理厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.196578,
+          35.74158093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市水务集团污水处理有限公司岚山化工园区污水处理厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.337345,
+          35.16021997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市水务集团污水处理有限公司日照经济开发区污水处理厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.196578,
+          35.74158093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市水务集团污水处理有限公司厦门路污水处理厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.34370200000001,
+          35.16339537
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市水务集团污水处理有限公司山海天污水处理厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.196578,
+          35.74158093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市万邦医疗废物处置有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.5176034,
+          35.51573011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市伟业工具有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.36724380000001,
+          35.3416724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照双港机械电子有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.50187209999999,
+          35.40765553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照太阳电子有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4647965,
+          35.3753074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照新邦粮油有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.53551159999999,
+          35.37738771
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照新创食品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4863124,
+          35.46671322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照新格有色金属有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.45926440000001,
+          35.36638149
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照新源热力有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.38094299999999,
+          35.163646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照兴合食品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.48590290000001,
+          35.46810613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照旭日电子有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.49898,
+          35.40599693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照阳光热电有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.5058483,
+          35.388179
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照中联水泥有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.84277859999999,
+          35.66359031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照中绿食品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.8314031,
+          35.60888917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照自力环保科技有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2284432,
+          35.83256266
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东彼那尼荣安水泥有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.99474199999999,
+          35.964929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市鼎昌铁塔厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.8499752,
+          35.63883258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东鼎新电子玻璃集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.50734890000001,
+          35.39102087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东丰华食品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.32555,
+          35.109251
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东浮来春生物化工有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.85244990000001,
+          35.61688062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东海右石油化工有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.726902,
+          35.449018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东浩宇能源有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.83591000000001,
+          35.639278999999995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东恒华佳业环保科技有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4589294,
+          35.33536301
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东恒隆粮油有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.52553799999998,
+          35.358021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市弘聚新能源"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.53341540000001,
+          35.422839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市建兴铁塔有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.821725,
+          35.59768356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市洁晶集团"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.502323,
+          35.43967494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东金海玻璃有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4444,
+          35.391974
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东金马工业集团股份有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.483423,
+          35.38387293
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东金石沥青股份有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3428466,
+          35.14531382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东莒州水泥有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9240561,
+          35.72628806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东凯翔生物化工有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.19933300000001,
+          35.787484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东凯翔阳光集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.1999142,
+          35.77353831
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东康洋电源科技有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.226844,
+          35.827742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东美佳集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.565017,
+          35.38925916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东日照焦电有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.29657209999999,
+          35.15913517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东日照尧王酒业集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.43569099999999,
+          35.34624991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照荣昌水产食品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3140499,
+          35.11286309
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东三汇玻璃有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.444736,
+          35.387558
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市圣运化工"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.8361902,
+          35.64790625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东石大科技石化有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.37173600000001,
+          36.84363193
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东泰山民爆器材有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.25581499999998,
+          35.784248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东腾胜精细化工有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.845017,
+          35.63887893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市中共万通液压机械有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.225291,
+          35.80818792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东五莲县鲁地矿业有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.10058659999999,
+          35.85962741
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东五征集团有限公司总部"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.507705,
+          35.628046000000005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东现代威亚汽车模具有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.47138500000001,
+          35.382598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "泰森新昌食品有限公司日照饲料分公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.855655,
+          35.647746999999995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东新良油脂有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.53551200000001,
+          35.377388
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东中大体育产业集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.46798000000001,
+          35.35439
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "斯比凯可（山东）生物制品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.20011299999999,
+          35.77298023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲北控水务有限公司（二厂）"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.19610300000001,
+          35.78435983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲北控水务有限公司（三厂）"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.19610300000001,
+          35.78435983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲森之林海藻有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.21558040000001,
+          35.7556971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲万盛电镀工业有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2249973,
+          35.83593055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县七宝山金矿有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.12034340000001,
+          35.84988509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲银河酒业有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.20857,
+          35.76518993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市现代坦迪斯自动变速箱（山东）有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.53341540000001,
+          35.422839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "亚太森博(山东)浆纸有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.5238405,
+          35.38327885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "亚太森博（山东）浆纸有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.5238405,
+          35.38327885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市浙江飞碟汽车制造有限公司五征分公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.51448500000001,
+          35.63722786
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中储粮油日照有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.006279,
+          39.23360612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东中大体育产业集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.30759990000001,
+          31.03605986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市中纺粮油（日照）有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.5380064,
+          35.38438909
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中粮黄海粮油工业（山东）有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.382159,
+          35.11736795
+        ]
+      }
+    }
+  ]
+}

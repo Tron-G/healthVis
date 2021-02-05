@@ -13,10 +13,11 @@
 #select_box{
     background: rgba(125, 126, 128, 0.2);
     position: absolute;
-    right: 45%;
+    right: 35%;
     top:1%;
-    width: 10%;
-    height: 5%;
+    width: 20%;
+    height: 3%;
+    text-align: center;
     /*border:1px solid #BFBFBF;*/
     box-shadow: 0 0 10px #888888;
     z-index: 9;
