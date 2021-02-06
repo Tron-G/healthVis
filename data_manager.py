@@ -883,7 +883,7 @@ def get_disease_age(disease_name,month):
 # 返回指定病人HEALTH_EXAM_NO的疾病列表，没有就返回空数组, 参数exam_id的值为report.csv表中的HEALTH_EXAM_NO列的数据
 # ******************************************************************************************
 def get_patient_disease(exam_id):
-    df = pd.read_csv("./files/report_out.csv")
+    df = pd.read_csv("./files/report.csv")
     with open("./files/myword.txt", "r", encoding='UTF-8') as file:
         words = file.readlines()
         for i in range(0, len(words)):
@@ -892,7 +892,7 @@ def get_patient_disease(exam_id):
     patient["exam_id"] = exam_id
     diseases = []
     col = df.iloc[:,4]
-    print(col.values)
+    # print(col.values)
     if exam_id not in col.values:
         patient["disease_list"] = diseases
         return patient

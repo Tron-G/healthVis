@@ -66,10 +66,10 @@ def test():
     # print(data["season"], data["hospital"])
     # out = dm.month(data["hospital"])
     # out = dm.get_disease_age("脂肪肝", 0)
-    # out = dm.get_topdisease_sex(0)
+    out = dm.get_patient_disease("faf04bcd232b4928c70fa26b52623279")
     # print("\n*************test*************\n")
     # print(out)
-    out = ""
+
     return jsonify(out)
     pass
 
