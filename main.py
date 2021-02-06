@@ -68,10 +68,10 @@ def test():
     # out = dm.get_disease_age("脂肪肝", 0)
     out = dm.get_patient_disease("faf04bcd232b4928c70fa26b52623279")
     # print("\n*************test*************\n")
-    # print(out)
+    print(out)
 
     return jsonify(out)
-    pass
+    # pass
 
 
 if __name__ == '__main__':

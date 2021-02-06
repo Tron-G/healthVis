@@ -417,7 +417,7 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
     function drawCategoryPlace(type_name, type_place_data) {
 
         const TYPE_POINT_COLOR = "#cd8d7b";
-        console.log(type_place_data);
+        // console.log(type_place_data);
         /////////////////////////////////////////////////////////////////////////////////
         //   Add a source and layer displaying a point which will be animated in a circle.
         map.addSource('point', {
