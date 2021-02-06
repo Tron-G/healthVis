@@ -891,12 +891,13 @@ def get_patient_disease(exam_id):
     patient = {}
     patient["exam_id"] = exam_id
     diseases = []
-    col = df.iloc[:,4]
+    col = df.iloc[:, 4]
     # print(col.values)
     if exam_id not in col.values:
         patient["disease_list"] = diseases
         return patient
     df = df[(df["HEALTH_EXAM_NO"] == exam_id)]
+    df = df.reset_index(drop=True)
     for word in words:
         if word in df["EXAM_SUMMARY"][0]:
             diseases.append(word)
