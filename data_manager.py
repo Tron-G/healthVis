@@ -918,7 +918,8 @@ def get_topdisease_sex(month):
     month = int(month)
     keywords = []
     diseases = {}
-    the_month = ["all","2019-01","2019-02","2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12"]
+    the_month = ["all", "19-Jan", "19-Feb", "19-Mar", "19-Apr", "19-May", "19-Jun", "19-Jul", "19-Aug",
+                 "19-Sep", "19-Oct", "19-Nov", "19-Dec"]
     #当参数不为0时
     if the_month[month] != "all":
         #筛选出该月的数据

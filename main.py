@@ -62,16 +62,15 @@ def initSys():
 # ******************************************************************************************
 @app.route('/test',  methods=['POST', 'GET'])
 def test():
+    print("\n*************test*************\n")
     data = request.get_json()
     # print(data["season"], data["hospital"])
     # out = dm.month(data["hospital"])
     # out = dm.get_disease_age("脂肪肝", 0)
-    out = dm.get_patient_disease("faf04bcd232b4928c70fa26b52623279")
-    # print("\n*************test*************\n")
+    out = dm.get_topdisease_sex(6)
+    # out = dm.get_patient_disease("faf04bcd232b4928c70fa26b52623279")
     print(out)
-
     return jsonify(out)
-    # pass
 
 
 if __name__ == '__main__':
