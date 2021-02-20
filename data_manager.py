@@ -365,7 +365,9 @@ def top10(season, hospital):
     the_hospital = {}
     diseases = []
     keywords = []
-    top10 = []
+    #top的数量
+    n = 10
+    top = []
     # 读取全部疾病，放入words列表中
     with open("./files/myword.txt", "r", encoding='UTF-8') as file:
         words = file.readlines()
@@ -388,20 +390,20 @@ def top10(season, hospital):
                                 if word in df["EXAM_SUMMARY"][i]:
                                     keyword['value'] = keyword['value'] + 1
                             keywords.append(keyword)
-                        for i in range(0, 10):
+                        for i in range(0, n):
                             max = {"keyword": "", "value": 0}
                             for keyword in keywords:
                                 if keyword['value'] > max['value']:
                                     max['keyword'] = keyword['keyword']
                                     max['value'] = keyword['value']
-                            top10.append(max)
+                            top.append(max)
                             for keyword in keywords:
                                 if keyword['keyword'] == max['keyword']:
                                     keyword['value'] = 0
                         the_hospital["hospital"] = hospital
-                        print(top10)
+                        print(top)
                         # 将top的疾病赋予人数和建议
-                        for one in top10:
+                        for one in top:
                             disease = {}
                             info = {}
                             # 将人数加入info中
@@ -427,19 +429,19 @@ def top10(season, hospital):
                         if word in df["EXAM_SUMMARY"][i]:
                             keyword['value'] = keyword['value'] + 1
                     keywords.append(keyword)
-                for i in range(0, 10):
+                for i in range(0, n):
                     max = {"keyword": "", "value": 0}
                     for keyword in keywords:
                         if keyword['value'] > max['value']:
                             max['keyword'] = keyword['keyword']
                             max['value'] = keyword['value']
-                    top10.append(max)
+                    top.append(max)
                     for keyword in keywords:
                         if keyword['keyword'] == max['keyword']:
                             keyword['value'] = 0
                 the_hospital["hospital"] = hospital
-                print(top10)
-                for one in top10:
+                print(top)
+                for one in top:
                     disease = {}
                     info = {}
                     info["total"] = one["value"]
@@ -467,20 +469,20 @@ def top10(season, hospital):
                         if word in df["EXAM_SUMMARY"][i]:
                             keyword['value'] = keyword['value'] + 1
                     keywords.append(keyword)
-                for i in range(0, 10):
+                for i in range(0, n):
                     max = {"keyword": "", "value": 0}
                     for keyword in keywords:
                         if keyword['value'] > max['value']:
                             max['keyword'] = keyword['keyword']
                             max['value'] = keyword['value']
-                    top10.append(max)
+                    top.append(max)
                     for keyword in keywords:
                         if keyword['keyword'] == max['keyword']:
                             keyword['value'] = 0
                 the_hospital["hospital"] = hospital
-                print(top10)
+                print(top)
                 # 将top的疾病赋予人数和建议
-                for one in top10:
+                for one in top:
                     disease = {}
                     info = {}
                     # 将人数加入info中
@@ -506,20 +508,20 @@ def top10(season, hospital):
                 if word in df["EXAM_SUMMARY"][i]:
                     keyword['value'] = keyword['value'] + 1
             keywords.append(keyword)
-        for i in range(0, 10):
+        for i in range(0, n):
             max = {"keyword": "", "value": 0}
             for keyword in keywords:
                 if keyword['value'] > max['value']:
                     max['keyword'] = keyword['keyword']
                     max['value'] = keyword['value']
-            top10.append(max)
+            top.append(max)
             for keyword in keywords:
                 if keyword['keyword'] == max['keyword']:
                     keyword['value'] = 0
         the_hospital["hospital"] = hospital
         outstr = ''
-        print(top10)
-        for one in top10:
+        print(top)
+        for one in top:
             disease = {}
             info = {}
             info["total"] = one["value"]
@@ -605,22 +607,13 @@ def age(season, hospital):
 
 
 # ******************************************************************************************
-# 根据病人id返回对应的疾病列表和医生建议
-# ******************************************************************************************
-def searchById(HEALTH_EXAM_NO):
-    list_data = pd.read_csv("./files/report.csv")
-
-    pass
-
-
-# ******************************************************************************************
 # 旭日图数据
 # ******************************************************************************************
-def month(hospital):
+def sunburst_data(hospital):
     df = pd.read_csv("./files/report.csv")
     the_hospitals = ["日照市岚山区人民医院", "日照市人民医院", "日照市中医医院", "五莲县人民医院"]
-    the_month = ["2019-01", "2019-02", "2019-03", "2019-04", "2019-05", "2019-06", "2019-07", "2019-08", "2019-09",
-                 "2019-10", "2019-11", "2019-12"]
+    the_month = ["all", "19-Jan", "19-Feb", "19-Mar", "19-Apr", "19-May", "19-Jun", "19-Jul", "19-Aug",
+                 "19-Sep", "19-Oct", "19-Nov", "19-Dec"]
     English_month = ["January.January", "February.February", "March.March", "April.April", "May.May", "June.June",
                      "July.July", "August.August", "September.September", "October.October", "November.November",
                      "December.December"]
@@ -630,7 +623,7 @@ def month(hospital):
     root = {}
     root["name"] = "root"
     # top的数量
-    n = 20
+    n = 15
     months = []
     # 读取全部疾病
     with open("./files/myword.txt", "r", encoding='UTF-8') as file:
@@ -648,7 +641,7 @@ def month(hospital):
                 one_month_df = df[(df["SUMMARIZE_TIME"] == one_month)]
                 one_month_df = one_month_df.reset_index(drop=True)
                 keywords = []
-                top20 = []
+                top = []
                 month = {}
                 month["name"] = English_month[i]
                 month["num"] = len(df["ID"])
@@ -666,7 +659,7 @@ def month(hospital):
                         if keyword['value'] > max['value']:
                             max['keyword'] = keyword['keyword']
                             max['value'] = keyword['value']
-                    top20.append(max["keyword"])
+                    top.append(max["keyword"])
                     for keyword in keywords:
                         if keyword['keyword'] == max['keyword']:
                             keyword['value'] = 0
@@ -675,7 +668,7 @@ def month(hospital):
                 girl_df = girl_df.reset_index(drop=True)
                 boy_df = one_month_df[one_month_df["SEX_CODE"] == "1"]
                 boy_df = boy_df.reset_index(drop=True)
-                for one in top20:
+                for one in top:
                     # 找出女性的人数
                     disease = {}
                     disease["name"] = random.choice(names).format(one)
@@ -713,12 +706,12 @@ def month(hospital):
         one_month_df = df[(df["SUMMARIZE_TIME"] == one_month)]
         one_month_df = one_month_df.reset_index(drop=True)
         keywords = []
-        top20 = []
+        top = []
         month = {}
         month["name"] = English_month[i]
         month["num"] = len(df["ID"])
         diseases = []
-        # 找出top20的疾病
+        # 找出top的疾病
         for word in words:
             keyword = {"keyword": word, "value": 0}
             for i in range(0, len(one_month_df["ID"])):
@@ -731,16 +724,16 @@ def month(hospital):
                 if keyword['value'] > max['value']:
                     max['keyword'] = keyword['keyword']
                     max['value'] = keyword['value']
-            top20.append(max["keyword"])
+            top.append(max["keyword"])
             for keyword in keywords:
                 if keyword['keyword'] == max['keyword']:
                     keyword['value'] = 0
-        # 找出top20疾病女性和男性的人数
+        # 找出top疾病女性和男性的人数
         girl_df = one_month_df[one_month_df["SEX_CODE"] == "2"]
         girl_df = girl_df.reset_index(drop=True)
         boy_df = one_month_df[one_month_df["SEX_CODE"] == "1"]
         boy_df = boy_df.reset_index(drop=True)
-        for one in top20:
+        for one in top:
             # 找出女性的人数
             disease = {}
             disease["name"] = random.choice(names).format(one)
@@ -789,6 +782,9 @@ def load_static_data(data_name):
             data = json.load(f)
     elif data_name == "pollution_company":
         with open("./files/category_files/pollution_company_geo.json", encoding='GBK') as f:
+            data = json.load(f)
+    elif data_name == "restaurant":
+        with open("./files/category_files/restaurant_geo.json", encoding='GBK') as f:
             data = json.load(f)
     return data
 
@@ -914,11 +910,14 @@ def get_topdisease_sex(month):
         words = file.readlines()
         for i in range(0,len(words)):
             words[i] = words[i].replace("\n","")
-    top20 = []
+    #top的数量
+    n = 20
+    top = []
     month = int(month)
     keywords = []
     diseases = {}
-    the_month = ["all","2019-01","2019-02","2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12"]
+    the_month = ["all", "19-Jan", "19-Feb", "19-Mar", "19-Apr", "19-May", "19-Jun", "19-Jul", "19-Aug",
+                 "19-Sep", "19-Oct", "19-Nov", "19-Dec"]
     #当参数不为0时
     if the_month[month] != "all":
         #筛选出该月的数据
@@ -931,13 +930,13 @@ def get_topdisease_sex(month):
                 if word in df["EXAM_SUMMARY"][i]:
                     keyword['value'] = keyword['value'] + 1
             keywords.append(keyword)
-        for i in range(0, 20):
+        for i in range(0, n):
             max = {"keyword": "", "value": 0}
             for keyword in keywords:
                 if keyword['value'] > max['value']:
                     max['keyword'] = keyword['keyword']
                     max['value'] = keyword['value']
-            top20.append(max)
+            top.append(max)
             for keyword in keywords:
                 if keyword['keyword'] == max['keyword']:
                     keyword['value'] = 0
@@ -946,7 +945,7 @@ def get_topdisease_sex(month):
         girl_df = girl_df.reset_index(drop=True)
         boy_df = df[df["SEX_CODE"] == "1"]
         boy_df = boy_df.reset_index(drop=True)
-        for one in top20:
+        for one in top:
             girl = 0
             boy = 0
             num = []
@@ -968,13 +967,13 @@ def get_topdisease_sex(month):
             if word in df["EXAM_SUMMARY"][i]:
                 keyword['value'] = keyword['value'] + 1
         keywords.append(keyword)
-    for i in range(0, 20):
+    for i in range(0, n):
         max = {"keyword": "", "value": 0}
         for keyword in keywords:
             if keyword['value'] > max['value']:
                 max['keyword'] = keyword['keyword']
                 max['value'] = keyword['value']
-        top20.append(max)
+        top.append(max)
         for keyword in keywords:
             if keyword['keyword'] == max['keyword']:
                 keyword['value'] = 0
@@ -982,7 +981,7 @@ def get_topdisease_sex(month):
     girl_df = girl_df.reset_index(drop=True)
     boy_df = df[df["SEX_CODE"] == "1"]
     boy_df = boy_df.reset_index(drop=True)
-    for one in top20:
+    for one in top:
         girl = 0
         boy = 0
         num = []
@@ -997,3 +996,4 @@ def get_topdisease_sex(month):
         num.append(girl)
         diseases[one] = num
     return diseases
+

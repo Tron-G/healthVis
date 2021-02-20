@@ -51,7 +51,8 @@ def initSys():
     data = {"radar": dm.radar_map("all", "all"), "map": dm.season("all"), "pie": dm.job("all", "all"),
             "GDP": dm.load_static_data("GDP"), "school": dm.load_static_data("school"),
             "health_center": dm.load_static_data("health_center"),
-            "pollution_company": dm.load_static_data("pollution_company")}
+            "pollution_company": dm.load_static_data("pollution_company"),
+            "restaurant": dm.load_static_data("restaurant")}
     # print(dm.job("all", "all"))
     return jsonify(data)
     pass
@@ -62,16 +63,15 @@ def initSys():
 # ******************************************************************************************
 @app.route('/test',  methods=['POST', 'GET'])
 def test():
+    print("\n*************test*************\n")
     data = request.get_json()
     # print(data["season"], data["hospital"])
     # out = dm.month(data["hospital"])
     # out = dm.get_disease_age("脂肪肝", 0)
-    out = dm.get_patient_disease("faf04bcd232b4928c70fa26b52623279")
-    # print("\n*************test*************\n")
+    # out = dm.get_topdisease_sex(0)
+    out = dm.sunburst_data("all")
     print(out)
-
     return jsonify(out)
-    # pass
 
 
 if __name__ == '__main__':

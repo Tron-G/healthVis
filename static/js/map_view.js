@@ -165,6 +165,9 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
             case "health_center":
                 drawCategoryPlace("health_center", GEO_POINT_DATA["health_center"]);
                 break;
+            case "restaurant":
+                drawCategoryPlace("restaurant", GEO_POINT_DATA["restaurant"]);
+                break;
             case "pollution_company":
                 drawHeatMap("pollution_company", GEO_POINT_DATA["pollution_company"]);
                 break;

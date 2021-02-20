@@ -44,6 +44,7 @@ function initSystem() {
             GEO_POINT_DATA["school"] = data["school"];
             GEO_POINT_DATA["health_center"] = data["health_center"];
             GEO_POINT_DATA["pollution_company"] = data["pollution_company"];
+            GEO_POINT_DATA["restaurant"] = data["restaurant"];
 
             HOSPITAL_POINT_DATA["map"] = data["map"];
 
