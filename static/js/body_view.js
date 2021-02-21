@@ -1,8 +1,7 @@
 
 
 function drawBodyMap() {
-    const disease_organs = ["brain", "nose", "lung", "heart", "liver", "stomach", "kidney",
-        "intestines"
+    const disease_organs = ["brain", "nose", "lung", "heart", "liver", "stomach", "kidney", "intestines"
     ]
     const disease_text = ["脑梗塞", "鼻中隔偏曲", "右肺上叶钙化灶", "窦性心动过缓", "脂肪肝", "胃炎", "左肾结石不排除", "直肠癌术后状态"]
     const disease_advice = [
@@ -26,84 +25,84 @@ function drawBodyMap() {
     //器官属性(位置，大小，透明度)
     const man_organs = {
         "brain": {
-            "width": 40,
-            "height": 40,
+            "width": 30,
+            "height": 30,
             "x": man_svg_width / 2.25,
             "y": man_svg_height / 16,
             "opacity": 0.5
         },
         "nose": {
-            "width": 15,
-            "height": 15,
-            "x": man_svg_width / 2.08,
-            "y": man_svg_height / 9,
+            "width": 12,
+            "height": 12,
+            "x": man_svg_width / 2.10,
+            "y": man_svg_height / 9.3,
             "opacity": 1
         },
         "lung": {
-            "width": 100,
-            "height": 100,
-            "x": man_svg_width / 2.75,
+            "width": 80,
+            "height": 80,
+            "x": man_svg_width / 2.79,
             "y": man_svg_height / 5.7,
             "opacity": 0.4
         },
         "heart": {
-            "width": 45,
-            "height": 45,
+            "width": 35,
+            "height": 35,
             "x": man_svg_width / 2.17,
-            "y": man_svg_height / 4.3,
+            "y": man_svg_height / 4.5,
             "opacity": 0.9
         },
         "liver": {
-            "width": 60,
-            "height": 60,
-            "x": man_svg_width / 2.4,
-            "y": man_svg_height / 3.4,
+            "width": 45,
+            "height": 45,
+            "x": man_svg_width / 2.45,
+            "y": man_svg_height / 3.3,
             "opacity": 0.8
         },
         "stomach": {
-            "width": 45,
-            "height": 45,
+            "width": 35,
+            "height": 35,
             "x": man_svg_width / 2.1,
-            "y": man_svg_height / 3.2,
+            "y": man_svg_height / 3.15,
             "opacity": 0.6
         },
         "kidney": {
-            "width": 45,
-            "height": 45,
+            "width": 35,
+            "height": 35,
             "x": man_svg_width / 2.24,
-            "y": man_svg_height / 2.8,
+            "y": man_svg_height / 2.75,
             "opacity": 0.8
         },
         "intestines": {
-            "width": 80,
-            "height": 80,
-            "x": man_svg_width / 2.5,
+            "width": 65,
+            "height": 65,
+            "x": man_svg_width / 2.55,
             "y": man_svg_height / 2.6,
             "opacity": 0.7
         }
-    }
+    };
 
 
     let svg = d3.select("#body_view").append("svg")
         .attr("id", "mysvg")
         .attr("class", "svg1")
         .attr("width", svg_width)
-        .attr("height", svg_height)
+        .attr("height", svg_height);
     //svg背景
     svg.append("rect")
         .attr("width", svg_width)
         .attr("height", svg_height)
-        .attr("fill", svg_background)
+        .attr("fill", svg_background);
     //////////////////////////////////////////////////////
     //添加人体图
     let man_svg = d3.select("#man_background").append("svg")
         .attr("id", "man_svg")
         .attr("width", man_svg_width)
-        .attr("height", man_svg_height)
+        .attr("height", man_svg_height);
     let woman_svg = d3.select("#woman_background").append("svg")
         .attr("id", "woman_svg")
         .attr("width", woman_svg_width)
-        .attr("height", woman_svg_height)
+        .attr("height", woman_svg_height);
 
     man_svg.append("svg:image")
         .attr("xlink:href", "./static/image/body/man.svg")
@@ -112,14 +111,14 @@ function drawBodyMap() {
         .attr("height", man_svg_height / 1.1)
         .attr("x", man_svg_width / 20)
         .attr("y", man_svg_height / 20)
-        .attr("fill", "red")
+        .attr("fill", "red");
     woman_svg.append("svg:image")
         .attr("xlink:href", "./static/image/body/woman.svg")
         .attr("id", "woman_img")
         .attr("width", woman_svg_width / 1.1)
         .attr("height", woman_svg_height / 1.1)
         .attr("x", woman_svg_width / 20)
-        .attr("y", woman_svg_height / 20)
+        .attr("y", woman_svg_height / 20);
 
     ////////////////////////////////////////////////////
     //添加人体器官
@@ -136,6 +135,7 @@ function drawBodyMap() {
 
     /////////////////////////////////////////////////////////////////////
     // 展示左边的器官排列
+    let counter = 0, col = 0;
     for (let i = 0; i < disease_organs.length; i++) {
         let disease_id = "tag_" + disease_organs[i];
         //console.log(disease_id);
@@ -145,15 +145,29 @@ function drawBodyMap() {
         // let organ_center_y = man_organs[disease_organs[i]]["y"] + man_organs[disease_organs[i]]["height"] /
         //     2;
 
+        //计算图标位置
+        let item_x = 0;
+        let item_y = 150;
+        counter++;
+        if(counter>3){
+            counter = 1;
+            col+=1;
+            item_y += col*100;
+            item_x += counter*110;
+        }
+        else{
+            item_x += counter*110;
+            item_y += col*100;
+        }
         //疾病名称
         svg.append("text")
             .text(disease_text[i])
             .attr("id", "disease_name" + i)
-            .attr("x", 160)
-            .attr("y", 70 + i * 100)
-            .attr("fill", "gray")
+            .attr("x", item_x-30)
+            .attr("y", item_y - 55)
+            .attr("fill", "#91091e")
             .attr("font-weight", "bold")
-            .style("opacity", 0)
+            .style("opacity", 0);
 
         // svg.append("line")
         //     .attr("id", "line" + i)
@@ -167,20 +181,20 @@ function drawBodyMap() {
 
         svg.append("circle")
             .attr("id", "circle" + i)
-            .attr("cx", 100)
-            .attr("cy", 65 + i * 100)
+            .attr("cx", item_x)
+            .attr("cy", item_y)
             .attr("r", 35)
             .style("stroke", "#c9d6df")
             .style("stroke-width", 3)
-            .style("fill", "#E6E6E6")
+            .style("fill", "#E6E6E6");
 
         svg.append("svg:image")
             .attr("xlink:href", "./static/image/body/" + disease_organs[i] + ".svg")
             .attr("id", disease_id)
             .attr("width", 50)
             .attr("height", 50)
-            .attr("x", 75)
-            .attr("y", 40 + i * 100)
+            .attr("x", item_x-25)
+            .attr("y", item_y-25)
             .on("mouseover", () => {
 
                 //图标放大
@@ -204,17 +218,19 @@ function drawBodyMap() {
 
                 /////////////////////////////////
                 svg.append("rect")
-                    .attr("x", svg_width / 4)
-                    .attr("y", svg_height / 1.15)
+                    .attr("x", 450)
+                    .attr("y", 600)
                     .attr("id", "disease_advice")
-                    .attr("width", 700)
-                    .attr("height", 100)
-                    .attr("fill", "#c9d6df")
+                    .attr("width", 600)
+                    .attr("height", 110)
+                    .attr("fill", "rgba(125, 126, 128, 0.2)")
+
                 //疾病建议
                 svg.append("text")
                     .text(disease_advice[i])
-                    .attr("x", svg_width / 3.9)
-                    .attr("y", svg_height / 1.12)
+                    .attr("x", 450)
+                    .attr("y", 620)
+                    .attr("id", "disease_advice_text")
                     .attr("fill", "gray")
                     .style("font-size", "12px")
 
@@ -223,7 +239,7 @@ function drawBodyMap() {
                     let show_organ = "#body_" + disease_organs[i];
                     let now_organ = "#body_" + disease_organs[j];
 
-                    if (now_organ != show_organ) {
+                    if (now_organ !== show_organ) {
                         man_svg.select(now_organ)
                             .style("opacity", 0.1)
                     }
@@ -246,6 +262,10 @@ function drawBodyMap() {
                 //     .style("opacity", 0)
                 d3.select("#disease_name" + i)
                     .style("opacity", 0)
+
+                //移除建议文字
+                $("#disease_advice").remove()
+                $("#disease_advice_text").remove()
 
                 for (let j = 0; j < disease_organs.length; j++) {
                     let now_organ = "#body_" + disease_organs[j];

@@ -612,7 +612,7 @@ def age(season, hospital):
 def sunburst_data(hospital):
     df = pd.read_csv("./files/report.csv")
     the_hospitals = ["日照市岚山区人民医院", "日照市人民医院", "日照市中医医院", "五莲县人民医院"]
-    the_month = ["all", "19-Jan", "19-Feb", "19-Mar", "19-Apr", "19-May", "19-Jun", "19-Jul", "19-Aug",
+    the_month = ["19-Jan", "19-Feb", "19-Mar", "19-Apr", "19-May", "19-Jun", "19-Jul", "19-Aug",
                  "19-Sep", "19-Oct", "19-Nov", "19-Dec"]
     English_month = ["January.January", "February.February", "March.March", "April.April", "May.May", "June.June",
                      "July.July", "August.August", "September.September", "October.October", "November.November",
@@ -768,7 +768,7 @@ def sunburst_data(hospital):
 
 
 # ******************************************************************************************
-# 加载静态数据
+# 加载地图静态数据
 # ******************************************************************************************
 def load_static_data(data_name):
     if data_name == "GDP":
@@ -792,7 +792,7 @@ def load_static_data(data_name):
 # ******************************************************************************************
 # 返回指定疾病和月份的年龄及性别分布数据，参数disease_name为指定的疾病； 参数month的值为1到12,值为0就返回一整年的数据
 # ******************************************************************************************
-def get_disease_age(disease_name,month):
+def get_disease_age(disease_name, month):
     df = pd.read_csv("./files/report.csv")
     the_month = ["all", "19-Jan", "19-Feb", "19-Mar", "19-Apr", "19-May", "19-Jun", "19-Jul", "19-Aug",
                  "19-Sep", "19-Oct", "19-Nov", "19-Dec"]

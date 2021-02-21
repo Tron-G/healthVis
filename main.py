@@ -44,7 +44,7 @@ def change_hospital():
 
 
 # ******************************************************************************************
-# 初始化系统各个视图数据
+# 初始化系统首页各个视图数据
 # ******************************************************************************************
 @app.route('/init',  methods=['POST', 'GET'])
 def initSys():
@@ -59,6 +59,16 @@ def initSys():
 
 
 # ******************************************************************************************
+# 初始化人体结构图系统
+# ******************************************************************************************
+@app.route('/init_bodyvis',  methods=['POST', 'GET'])
+def initBodyVis():
+    hospital_name = request.get_json()["hospital"]
+    data = dm.sunburst_data(hospital_name)
+    return jsonify(data)
+
+
+# ******************************************************************************************
 # 后台接口测试
 # ******************************************************************************************
 @app.route('/test',  methods=['POST', 'GET'])
@@ -69,8 +79,9 @@ def test():
     # out = dm.month(data["hospital"])
     # out = dm.get_disease_age("脂肪肝", 0)
     # out = dm.get_topdisease_sex(0)
-    out = dm.sunburst_data("all")
-    print(out)
+    # out = dm.sunburst_data("all")
+    out = ""
+    # print(out)
     return jsonify(out)
 
 

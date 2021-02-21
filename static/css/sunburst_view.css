@@ -1,0 +1,55 @@
+#sunburst{
+    position: absolute;
+    background: rgba(125, 126, 128, 0.2);
+    right: 0;
+    bottom: 0;
+    height: 350px;
+    width: 350px;
+    box-shadow: 0 0 10px #888888;
+    z-index: 1;
+}
+#main {
+  float: left;
+  width: 70%;
+}
+
+#sidebar {
+  float: right;
+  width: 20%;
+}
+
+#sequence {
+  width:70%;
+  height: 20%;
+}
+
+#legend {
+  padding: 10px 0 0 3px;
+}
+
+#sequence text, #legend text {
+  font-weight: 600;
+  fill: #fff;
+}
+
+#chart {
+  position: relative;
+}
+
+#chart path {
+  stroke: #fff;
+}
+
+#explanation {
+  position: absolute;
+  top: 10%;
+  left: 31%;
+  width: 20%;
+  text-align: center;
+  color: #666;
+  z-index: -1;
+}
+
+#percentage {
+  font-size: 2.5em;
+}

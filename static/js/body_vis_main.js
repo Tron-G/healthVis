@@ -9,13 +9,29 @@
  *
 * */
 
+//全局状态变量，保存当前医院
+var TRANSPORT_DATA = {};
+TRANSPORT_DATA["hospital"] = "all";
+
+
 /**
  * @description 初始化人体结构图系统
  */
 function initBodyVis() {
+ $.ajax({
+     type: 'POST',
+     url: "/init_bodyvis",
+     data: JSON.stringify(TRANSPORT_DATA),
+     contentType: 'application/json',
+     dataType: 'json',
+     success: function (data) {
+         // alert(JSON.stringify(data));
+         console.log("success", data);
+        drawBodyMap();
+        sunburst(data);
+     }
+ });
 
-
-    drawBodyMap();
     GoBackToMapView();
     setSearchEvent();
 }

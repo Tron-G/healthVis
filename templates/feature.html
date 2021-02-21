@@ -7,20 +7,35 @@
 <script type="text/javascript" src="../static/lib/jquery/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="../static/lib/d3/d3.js"></script>
 <link rel="stylesheet" href="../static/css/body_vis_base.css">
-<link rel="stylesheet" href="../static/css/body_vis.css">
+<link rel="stylesheet" href="../static/css/body_view.css">
+<link rel="stylesheet" href="../static/css/sunburst_view.css">
+<link rel="stylesheet" href="../static/css/diseasebar_view.css">
 <link rel="stylesheet" href="../static/css/searchtool.css">
 <body>
-    <button id="back_btn">mapView</button>
-    <div class="container" id="search_item">
-        <input type="text" placeholder="请输入病人ID或者疾病名称..." class="search_input" id="search_input" value="">
-        <div class="search"></div>
-    </div>
+<button id="back_btn">mapView</button>
+<div class="container" id="search_item">
+    <input type="text" placeholder="请输入病人ID或者疾病名称..." class="search_input" id="search_input" value="">
+    <div class="search"></div>
+</div>
 
-    <div id="body_view">
-        <div id="man_background"></div>
-        <div id="woman_background"></div>
+<div id="body_view">
+    <div id="man_background"></div>
+    <div id="woman_background"></div>
+</div>
+<div id="sunburst">
+    <div id="main">
+        <div id="sequence"></div>
+        <div id="chart">
+        </div>
     </div>
+    <div id="sidebar">
+        <input type="checkbox" id="togglelegend"> Legend<br/>
+        <div id="legend" style="visibility: hidden;"></div>
+    </div>
+</div>
+<div id="diseasebar_view"></div>
 </body>
 <script type="text/javascript" src="../static/js/body_view.js"></script>
+<script type="text/javascript" src="../static/js/sunburst_view.js"></script>
 <script type="text/javascript" src="../static/js/body_vis_main.js"></script>
 </html>
