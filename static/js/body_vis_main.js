@@ -36,6 +36,7 @@ function initBodyVis() {
 
 
             drawBodyMap("time", data["body_disease"]);
+            // drawTowBar1(data["disease_age"]);
             drawTowbar2(data["body_disease"]);
             sunburst(data["sunburst"]);
         }
