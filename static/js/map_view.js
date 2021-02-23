@@ -267,7 +267,7 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
                 console.log(hospital_name);
                 TRANSPORT_DATA["hospital"] = hospital_name;
                 redraw("/change_hospital", "select_hospital");
-                testData();
+
             });
 
             // Change the cursor to a pointer when the mouse is over the places layer.

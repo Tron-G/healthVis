@@ -15,80 +15,46 @@ app = Flask(__name__)
 # ******************************************************************************************
 # 按医院科室返回json
 # ******************************************************************************************
-# @app.route('/radar_map/<season>/<hospital>/')
-def radar_map(season, hospital):
+# @app.route('/radar_map/<season>/')
+def radar_map(season):
     df = pd.read_csv("./files/exam.csv")
     the_season = ["spring", "summer", "fall", "winter"]
     all = ["日照市岚山区人民医院", "日照市人民医院", "日照市中医医院", "五莲县人民医院"]
-    hospital = str(hospital)
     hospitals = {}
     for one_season in the_season:
         if season == one_season:
             df = df[(df["SEASON"] == season)]
             df = df.reset_index(drop=True)
-            if hospital != "all":
+            for one_hospital in all:
                 department = {}
-                department["心电"] = len(df[(df["DEPT_NAME"] == '心电室') & (df["ORG_NAME"] == hospital)]) + len(
-                    df[(df["DEPT_NAME"] == '心电图室') & (df["ORG_NAME"] == hospital)])
-                department["眼科"] = len(df[(df["DEPT_NAME"] == '眼科') & (df["ORG_NAME"] == hospital)])
-                department["外科"] = len(df[(df["DEPT_NAME"] == '外科') & (df["ORG_NAME"] == hospital)])
-                department["CT"] = len(df[(df["DEPT_NAME"] == 'CT') & (df["ORG_NAME"] == hospital)]) + len(
-                    df[(df["DEPT_NAME"] == 'CT室') & (df["ORG_NAME"] == hospital)])
-                department["彩超"] = len(df[(df["DEPT_NAME"] == '彩超') & (df["ORG_NAME"] == hospital)]) + len(
-                    df[(df["DEPT_NAME"] == '彩超室') & (df["ORG_NAME"] == hospital)])
-                department["耳鼻喉"] = len(df[(df["DEPT_NAME"] == '耳鼻喉科') & (df["ORG_NAME"] == hospital)])
-                department["口腔科"] = len(df[(df["DEPT_NAME"] == '口腔科') & (df["ORG_NAME"] == hospital)])
-                department["内科"] = len(df[(df["DEPT_NAME"] == '内科') & (df["ORG_NAME"] == hospital)])
-                hospitals[hospital] = department
-                return hospitals
-            else:
-                for one_hospital in all:
-                    department = {}
-                    department["心电"] = len(df[(df["DEPT_NAME"] == '心电室') & (df["ORG_NAME"] == one_hospital)]) + len(
-                        df[(df["DEPT_NAME"] == '心电图室') & (df["ORG_NAME"] == one_hospital)])
-                    department["眼科"] = len(df[(df["DEPT_NAME"] == '眼科') & (df["ORG_NAME"] == one_hospital)])
-                    department["外科"] = len(df[(df["DEPT_NAME"] == '外科') & (df["ORG_NAME"] == one_hospital)])
-                    department["CT"] = len(df[(df["DEPT_NAME"] == 'CT') & (df["ORG_NAME"] == one_hospital)]) + len(
-                        df[(df["DEPT_NAME"] == 'CT室') & (df["ORG_NAME"] == one_hospital)])
-                    department["彩超"] = len(df[(df["DEPT_NAME"] == '彩超') & (df["ORG_NAME"] == one_hospital)]) + len(
-                        df[(df["DEPT_NAME"] == '彩超室') & (df["ORG_NAME"] == one_hospital)])
-                    department["耳鼻喉"] = len(df[(df["DEPT_NAME"] == '耳鼻喉科') & (df["ORG_NAME"] == one_hospital)])
-                    department["口腔科"] = len(df[(df["DEPT_NAME"] == '口腔科') & (df["ORG_NAME"] == one_hospital)])
-                    department["内科"] = len(df[(df["DEPT_NAME"] == '内科') & (df["ORG_NAME"] == one_hospital)])
-                    hospitals[one_hospital] = department
-                return hospitals
-    if hospital != "all":
+                department["心电"] = len(df[(df["DEPT_NAME"] == '心电室') & (df["ORG_NAME"] == one_hospital)]) + len(
+                    df[(df["DEPT_NAME"] == '心电图室') & (df["ORG_NAME"] == one_hospital)])
+                department["眼科"] = len(df[(df["DEPT_NAME"] == '眼科') & (df["ORG_NAME"] == one_hospital)])
+                department["外科"] = len(df[(df["DEPT_NAME"] == '外科') & (df["ORG_NAME"] == one_hospital)])
+                department["CT"] = len(df[(df["DEPT_NAME"] == 'CT') & (df["ORG_NAME"] == one_hospital)]) + len(
+                    df[(df["DEPT_NAME"] == 'CT室') & (df["ORG_NAME"] == one_hospital)])
+                department["彩超"] = len(df[(df["DEPT_NAME"] == '彩超') & (df["ORG_NAME"] == one_hospital)]) + len(
+                    df[(df["DEPT_NAME"] == '彩超室') & (df["ORG_NAME"] == one_hospital)])
+                department["耳鼻喉"] = len(df[(df["DEPT_NAME"] == '耳鼻喉科') & (df["ORG_NAME"] == one_hospital)])
+                department["口腔科"] = len(df[(df["DEPT_NAME"] == '口腔科') & (df["ORG_NAME"] == one_hospital)])
+                department["内科"] = len(df[(df["DEPT_NAME"] == '内科') & (df["ORG_NAME"] == one_hospital)])
+                hospitals[one_hospital] = department
+            return hospitals
+    for one_hospital in all:
         department = {}
-        department["心电"] = len(df[(df["DEPT_NAME"] == '心电室') & (df["ORG_NAME"] == hospital)]) + len(
-            df[(df["DEPT_NAME"] == '心电图室') & (df["ORG_NAME"] == hospital)])
-        department["眼科"] = len(df[(df["DEPT_NAME"] == '眼科') & (df["ORG_NAME"] == hospital)])
-        department["外科"] = len(df[(df["DEPT_NAME"] == '外科') & (df["ORG_NAME"] == hospital)])
-        department["CT"] = len(df[(df["DEPT_NAME"] == 'CT') & (df["ORG_NAME"] == hospital)]) + len(
-            df[(df["DEPT_NAME"] == 'CT室') & (df["ORG_NAME"] == hospital)])
-        department["彩超"] = len(df[(df["DEPT_NAME"] == '彩超') & (df["ORG_NAME"] == hospital)]) + len(
-            df[(df["DEPT_NAME"] == '彩超室') & (df["ORG_NAME"] == hospital)])
-        department["耳鼻喉"] = len(df[(df["DEPT_NAME"] == '耳鼻喉科') & (df["ORG_NAME"] == hospital)])
-        department["口腔科"] = len(df[(df["DEPT_NAME"] == '口腔科') & (df["ORG_NAME"] == hospital)])
-        department["内科"] = len(df[(df["DEPT_NAME"] == '内科') & (df["ORG_NAME"] == hospital)])
-        hospitals[hospital] = department
-        return hospitals
-    else:
-        for one_hospital in all:
-            department = {}
-            department["心电"] = len(df[(df["DEPT_NAME"] == '心电室') & (df["ORG_NAME"] == one_hospital)]) + len(
-                df[(df["DEPT_NAME"] == '心电图室') & (df["ORG_NAME"] == one_hospital)])
-            department["眼科"] = len(df[(df["DEPT_NAME"] == '眼科') & (df["ORG_NAME"] == one_hospital)])
-            department["外科"] = len(df[(df["DEPT_NAME"] == '外科') & (df["ORG_NAME"] == one_hospital)])
-            department["CT"] = len(df[(df["DEPT_NAME"] == 'CT') & (df["ORG_NAME"] == one_hospital)]) + len(
-                df[(df["DEPT_NAME"] == 'CT室') & (df["ORG_NAME"] == one_hospital)])
-            department["彩超"] = len(df[(df["DEPT_NAME"] == '彩超') & (df["ORG_NAME"] == one_hospital)]) + len(
-                df[(df["DEPT_NAME"] == '彩超室') & (df["ORG_NAME"] == one_hospital)])
-            department["耳鼻喉"] = len(df[(df["DEPT_NAME"] == '耳鼻喉科') & (df["ORG_NAME"] == one_hospital)])
-            department["口腔科"] = len(df[(df["DEPT_NAME"] == '口腔科') & (df["ORG_NAME"] == one_hospital)])
-            department["内科"] = len(df[(df["DEPT_NAME"] == '内科') & (df["ORG_NAME"] == one_hospital)])
-            hospitals[one_hospital] = department
-        # print(hospitals)
-        return hospitals
+        department["心电"] = len(df[(df["DEPT_NAME"] == '心电室') & (df["ORG_NAME"] == one_hospital)]) + len(
+            df[(df["DEPT_NAME"] == '心电图室') & (df["ORG_NAME"] == one_hospital)])
+        department["眼科"] = len(df[(df["DEPT_NAME"] == '眼科') & (df["ORG_NAME"] == one_hospital)])
+        department["外科"] = len(df[(df["DEPT_NAME"] == '外科') & (df["ORG_NAME"] == one_hospital)])
+        department["CT"] = len(df[(df["DEPT_NAME"] == 'CT') & (df["ORG_NAME"] == one_hospital)]) + len(
+            df[(df["DEPT_NAME"] == 'CT室') & (df["ORG_NAME"] == one_hospital)])
+        department["彩超"] = len(df[(df["DEPT_NAME"] == '彩超') & (df["ORG_NAME"] == one_hospital)]) + len(
+            df[(df["DEPT_NAME"] == '彩超室') & (df["ORG_NAME"] == one_hospital)])
+        department["耳鼻喉"] = len(df[(df["DEPT_NAME"] == '耳鼻喉科') & (df["ORG_NAME"] == one_hospital)])
+        department["口腔科"] = len(df[(df["DEPT_NAME"] == '口腔科') & (df["ORG_NAME"] == one_hospital)])
+        department["内科"] = len(df[(df["DEPT_NAME"] == '内科') & (df["ORG_NAME"] == one_hospital)])
+        hospitals[one_hospital] = department
+    return hospitals
 
 
 # ******************************************************************************************

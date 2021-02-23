@@ -24,7 +24,7 @@ def change_season():
     print("\n*************change_season*************\n")
     data = request.get_json()
     print(data["season"], data["hospital"])
-    out_data = {"map": dm.season(data["season"]), "radar": dm.radar_map(data["season"], data["hospital"]),
+    out_data = {"map": dm.season(data["season"]), "radar": dm.radar_map(data["season"]),
                 "pie": dm.job(data["season"], data["hospital"])}
     return jsonify(out_data)
 
@@ -37,7 +37,7 @@ def change_hospital():
     data = request.get_json()
     print("\n*************change_hospital*************\n")
     print(data["season"], data["hospital"])
-    out_data = {"radar": dm.radar_map(data["season"], data["hospital"]),
+    out_data = {"radar": dm.radar_map(data["season"]),
                 "pie": dm.job(data["season"], data["hospital"])}
 
     return jsonify(out_data)
@@ -48,7 +48,7 @@ def change_hospital():
 # ******************************************************************************************
 @app.route('/init',  methods=['POST', 'GET'])
 def initSys():
-    data = {"radar": dm.radar_map("all", "all"), "map": dm.season("all"), "pie": dm.job("all", "all"),
+    data = {"radar": dm.radar_map("all"), "map": dm.season("all"), "pie": dm.job("all", "all"),
             "GDP": dm.load_static_data("GDP"), "school": dm.load_static_data("school"),
             "health_center": dm.load_static_data("health_center"),
             "pollution_company": dm.load_static_data("pollution_company"),
@@ -114,7 +114,8 @@ def test():
     # out = dm.get_topdisease_sex(0)
     # out = dm.sunburst_data("all")
     # 9a38653b2e769a84fa89ffa9da1c9e6d
-    out = dm.get_patient_disease("1e6ce7eab018584f9cbac518d4fd2824")
+    # out = dm.get_patient_disease("1e6ce7eab018584f9cbac518d4fd2824")
+    out = dm.radar_map("spring")
     print(out)
     return jsonify(out)
 

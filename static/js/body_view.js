@@ -573,7 +573,6 @@ function drawBodyMap(type, data) {
                     $("#disease_advice").remove();
                     $("#disease_advice_text").remove();
 
-
                 })
         }
     }
