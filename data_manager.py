@@ -401,7 +401,7 @@ def top10(season, hospital):
                                 if keyword['keyword'] == max['keyword']:
                                     keyword['value'] = 0
                         the_hospital["hospital"] = hospital
-                        print(top)
+                        # print(top)
                         # 将top的疾病赋予人数和建议
                         for one in top:
                             disease = {}
@@ -416,11 +416,11 @@ def top10(season, hospital):
                             for advice in advices.keys():
                                 if one["keyword"] == advice:
                                     info["advice"] = advices[advice]
-                                    print(advices[advice])
+                                    # print(advices[advice])
                             disease[one["keyword"]] = info
                             diseases.append(disease)
                         the_hospital["disease"] = diseases
-                        print(the_hospital)
+                        # print(the_hospital)
                         return the_hospital
                 # 在不选择医院的情况下将进行
                 for word in words:
@@ -440,7 +440,7 @@ def top10(season, hospital):
                         if keyword['keyword'] == max['keyword']:
                             keyword['value'] = 0
                 the_hospital["hospital"] = hospital
-                print(top)
+                # print(top)
                 for one in top:
                     disease = {}
                     info = {}
@@ -451,11 +451,11 @@ def top10(season, hospital):
                     for advice in advices.keys():
                         if one["keyword"] == advice:
                             info["advice"] = advices[advice]
-                            print(advices[advice])
+                            # print(advices[advice])
                     disease[one["keyword"]] = info
                     diseases.append(disease)
                 the_hospital["disease"] = diseases
-                print(the_hospital)
+                # print(the_hospital)
                 return the_hospital
         # 在不选择季节的情况下进行
         for one_hospital in the_hospitals:
@@ -480,7 +480,7 @@ def top10(season, hospital):
                         if keyword['keyword'] == max['keyword']:
                             keyword['value'] = 0
                 the_hospital["hospital"] = hospital
-                print(top)
+                # print(top)
                 # 将top的疾病赋予人数和建议
                 for one in top:
                     disease = {}
@@ -495,11 +495,11 @@ def top10(season, hospital):
                     for advice in advices.keys():
                         if one["keyword"] == advice:
                             info["advice"] = advices[advice]
-                            print(advices[advice])
+                            # print(advices[advice])
                     disease[one["keyword"]] = info
                     diseases.append(disease)
                 the_hospital["disease"] = diseases
-                print(the_hospital)
+                # print(the_hospital)
                 return the_hospital
         # 在不选择季节和医院的情况下将进行
         for word in words:
@@ -520,7 +520,7 @@ def top10(season, hospital):
                     keyword['value'] = 0
         the_hospital["hospital"] = hospital
         outstr = ''
-        print(top)
+        # print(top)
         for one in top:
             disease = {}
             info = {}
@@ -531,11 +531,11 @@ def top10(season, hospital):
             for advice in advices.keys():
                 if one["keyword"] == advice:
                     info["advice"] = advices[advice]
-                    print(advices[advice])
+                    # print(advices[advice])
             disease[one["keyword"]] = info
             diseases.append(disease)
         the_hospital["disease"] = diseases
-        print(the_hospital)
+        # print(the_hospital)
         return the_hospital
         # deseases = [{"yajieshi":{}},{},{}]
 
@@ -786,6 +786,12 @@ def load_static_data(data_name):
     elif data_name == "restaurant":
         with open("./files/category_files/restaurant_geo.json", encoding='GBK') as f:
             data = json.load(f)
+    elif data_name == "sunburst":
+        with open("./files/sunburst-data.json", encoding='UTF-8') as f:
+            data = json.load(f)
+    elif data_name == "disease-detail":
+        with open("./files/disease-details.json", encoding='UTF-8') as f:
+            data = json.load(f)
     return data
 
 
@@ -815,7 +821,7 @@ def get_disease_age(disease_name, month):
     if the_month[month] != "all":
         df = df[(df["SUMMARIZE_TIME"] == the_month[month])]
         df = df.reset_index(drop=True)
-        print(df)
+        # print(df)
         for i in range(0, len(df["HEALTH_EXAM_NO"])):
             if disease_name in df["EXAM_SUMMARY"][i]:
                 age = df["AGE"][i]
@@ -842,7 +848,7 @@ def get_disease_age(disease_name, month):
                         ages["80-90"][sex_code] = ages["80-90"][sex_code] + 1
                     if age > 90 and age <= 100:
                         ages["90-100"][sex_code] = ages["90-100"][sex_code] + 1
-        print(ages)
+        # print(ages)
         return ages
     #当月份参数为0时
     for i in range(0, len(df["HEALTH_EXAM_NO"])):
@@ -871,7 +877,7 @@ def get_disease_age(disease_name, month):
                     ages["80-90"][sex_code] = ages["80-90"][sex_code] + 1
                 if age > 90 and age <= 100:
                     ages["90-100"][sex_code] = ages["90-100"][sex_code] + 1
-    print(ages)
+    # print(ages)
     return ages
 
 
@@ -887,13 +893,15 @@ def get_patient_disease(exam_id):
     patient = {}
     patient["exam_id"] = exam_id
     diseases = []
-    col = df.iloc[:, 4]
+    col = df.iloc[:,4]
     # print(col.values)
     if exam_id not in col.values:
+        patient["sex"] = ""
         patient["disease_list"] = diseases
         return patient
     df = df[(df["HEALTH_EXAM_NO"] == exam_id)]
     df = df.reset_index(drop=True)
+    patient["sex"] = df["SEX_CODE"][0]
     for word in words:
         if word in df["EXAM_SUMMARY"][0]:
             diseases.append(word)
@@ -910,7 +918,7 @@ def get_topdisease_sex(month):
         words = file.readlines()
         for i in range(0,len(words)):
             words[i] = words[i].replace("\n","")
-    #top的数量
+    #topn
     n = 20
     top = []
     month = int(month)
@@ -936,11 +944,13 @@ def get_topdisease_sex(month):
                 if keyword['value'] > max['value']:
                     max['keyword'] = keyword['keyword']
                     max['value'] = keyword['value']
-            top.append(max)
+            if max['keyword']!= "":
+                top.append(max)
             for keyword in keywords:
                 if keyword['keyword'] == max['keyword']:
                     keyword['value'] = 0
         #找出男女的人数
+        # print(top)
         girl_df = df[df["SEX_CODE"] == "2"]
         girl_df = girl_df.reset_index(drop=True)
         boy_df = df[df["SEX_CODE"] == "1"]
@@ -973,7 +983,8 @@ def get_topdisease_sex(month):
             if keyword['value'] > max['value']:
                 max['keyword'] = keyword['keyword']
                 max['value'] = keyword['value']
-        top.append(max)
+        if max['keyword'] != "":
+            top.append(max)
         for keyword in keywords:
             if keyword['keyword'] == max['keyword']:
                 keyword['value'] = 0

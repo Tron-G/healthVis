@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <title>BodyVis</title>
 </head>
+<script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
 <script type="text/javascript" src="../static/lib/jquery/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="../static/lib/d3/d3.js"></script>
+<script type="text/javascript" src="../static/lib/d3/d3.v3.js"></script>
 <link rel="stylesheet" href="../static/css/body_vis_base.css">
 <link rel="stylesheet" href="../static/css/body_view.css">
 <link rel="stylesheet" href="../static/css/sunburst_view.css">
-<link rel="stylesheet" href="../static/css/diseasebar_view.css">
+<link rel="stylesheet" href="../static/css/disease_bar_view.css">
 <link rel="stylesheet" href="../static/css/searchtool.css">
 <body>
 <button id="back_btn">mapView</button>
@@ -28,14 +29,11 @@
         <div id="chart">
         </div>
     </div>
-    <div id="sidebar">
-        <input type="checkbox" id="togglelegend"> Legend<br/>
-        <div id="legend" style="visibility: hidden;"></div>
-    </div>
 </div>
-<div id="diseasebar_view"></div>
+<div id="disease_bar_view"></div>
 </body>
 <script type="text/javascript" src="../static/js/body_view.js"></script>
 <script type="text/javascript" src="../static/js/sunburst_view.js"></script>
+<script type="text/javascript" src="../static/js/disease_bar_view.js"></script>
 <script type="text/javascript" src="../static/js/body_vis_main.js"></script>
 </html>

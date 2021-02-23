@@ -1,7 +1,6 @@
 
-
 function sunburst(json) {
-
+    // console.log(json)
     var width =$("#sunburst").width();
     var height = $("#sunburst").height();
     var radius = Math.min(width, height) / 2;
@@ -10,15 +9,6 @@ function sunburst(json) {
     var b = {
         w: 150, h: 30, s: 3, t: 10
     };
-
-// Mapping of step names to colors.
-// var colors = {
-//   "picture": "#5687d1",
-//   "code": "#7b615c",
-//   "folder": "#de783b",
-//   "text": "#6ab975",
-//   "website": "#a173d1"
-// };
 
     var colors = {
         "January": "#c1cbd7",
@@ -41,11 +31,11 @@ function sunburst(json) {
     var totalSize = 0;
 
     var vis = d3.select("#chart").append("svg:svg")
-        .attr("width", width*0.7)
-        .attr("height", height*0.7)
+        .attr("width", width)
+        .attr("height", height*0.8)
         .append("svg:g")
         .attr("id", "container")
-        .attr("transform", "translate(" + width / 2 + "," + height/3  + ")");
+        .attr("transform", "translate(" + width / 2.3 + "," + height/2.5  + ")");
 
     var partition = d3.layout.partition()
         .size([2 * Math.PI, radius * radius])
@@ -62,21 +52,21 @@ function sunburst(json) {
         })
         .innerRadius(function (d) {
             if (d.depth == '3') {
-                return Math.sqrt(d.parent.parent.y / 10 + d.parent.parent.dy + d.parent.dy / 10) + d.parent.num
+                return Math.sqrt(d.parent.parent.y / 15 + d.parent.parent.dy + d.parent.dy / 15) + d.parent.num
             } else if (d.depth == '1') {
                 return Math.sqrt(d.y / 2.5)
             } else if (d.depth == '2') {
-                return Math.sqrt(d.parent.y / 10 + d.parent.dy);
+                return Math.sqrt(d.parent.y / 15 + d.parent.dy);
             }
 
         })
         .outerRadius(function (d) {
             if (d.depth == '2') {
-                return Math.sqrt(d.parent.y / 10 + d.parent.dy + d.dy / 10) + d.num
+                return Math.sqrt(d.parent.y / 15 + d.parent.dy + d.dy / 15) + d.num
             } else if (d.depth == '3') {
-                return Math.sqrt(d.parent.parent.y / 10 + d.parent.parent.dy + d.parent.dy / 10) + d.parent.num + d.num
+                return Math.sqrt(d.parent.parent.y / 15 + d.parent.parent.dy + d.parent.dy / 15) + d.parent.num + d.num*0.9
             } else if (d.depth == '1') {
-                return Math.sqrt(d.y / 10 + d.dy);
+                return Math.sqrt(d.y / 15 + d.dy);
             }
         })
 
@@ -84,7 +74,7 @@ function sunburst(json) {
 // Use d3.text and d3.csv.parseRows so that we do not need to have a header
 // row, and can receive the csv as an array of arrays.
         initializeBreadcrumbTrail();
-        drawLegend();
+
         d3.select("#togglelegend").on("click", toggleLegend);
 
         // Bounding circle underneath the sunburst, to make it easier to detect
@@ -124,8 +114,21 @@ function sunburst(json) {
             .style("opacity", 1)
             .on("mouseover", mouseover)
             .on("click",function (d) {
-                console.log(this.id)
-            })
+                let translation = {
+                    "February": 2,
+                    "March": 3,
+                    "May": 5,
+                    "June": 6,
+                    "July": 7,
+                    "August": 8,
+                    "September": 9,
+                    "October": 10,
+                    "November": 11
+                };
+                // console.log(translation[this.id]);
+                TRANSPORT_DATA["month"] = translation[this.id];
+                redraw("/get_month_data", "select_time");
+            });
 
         // Add the mouseleave handler to the bounding circle.
         d3.select("#container").on("mouseleave", mouseleave);
@@ -158,7 +161,6 @@ function sunburst(json) {
         if (percentage < 0.1) {
             percentageString = "< 0.1%";
         }
-
 
         var sequenceArray = getAncestors(d);
         updateBreadcrumbs(sequenceArray, percentageString);
@@ -214,7 +216,7 @@ function sunburst(json) {
         // Add the svg area.
         var trail = d3.select("#sequence").append("svg:svg")
             .attr("width", width)
-            .attr("height", 50)
+            .attr("height", 30)
             .attr("id", "trail");
         // Add the label at the end, for the percentage.
 
@@ -224,9 +226,9 @@ function sunburst(json) {
     function breadcrumbPoints(d, i) {
         var points = [];
         points.push("0,0");
-        points.push(b.w + ",0");
-        points.push(b.w + b.t + "," + (b.h / 2));
-        points.push(b.w + "," + b.h);
+        points.push(b.w/1.5 + ",0");
+        points.push(b.w/1.5 + b.t + "," + (b.h / 2));
+        points.push(b.w/1.5 + "," + b.h);
         points.push("0," + b.h);
         if (i > 0) { // Leftmost breadcrumb; don't include 6th vertex.
             points.push(b.t + "," + (b.h / 2));
@@ -257,7 +259,7 @@ function sunburst(json) {
             });
 
         entering.append("svg:text")
-            .attr("x", (b.w + b.t) / 2)
+            .attr("x", (b.w/1.5 + b.t) / 2)
             .attr("y", b.h / 2)
             .attr("dy", "0.35em")
             .attr("text-anchor", "middle")
@@ -267,7 +269,7 @@ function sunburst(json) {
 
         // Set position for entering and updating nodes.
         g.attr("transform", function (d, i) {
-            return "translate(" + i * (b.w + b.s) + ", 0)";
+            return "translate(" + i * (b.w/1.5 + b.s) + ", 0)";
         });
 
         // Remove exiting nodes.
@@ -287,42 +289,7 @@ function sunburst(json) {
 
     }
 
-    function drawLegend() {
 
-        // Dimensions of legend item: width, height, spacing, radius of rounded rect.
-        var li = {
-            w: 75, h: 30, s: 3, r: 3
-        };
-
-        var legend = d3.select("#legend").append("svg:svg")
-            .attr("width", li.w)
-            .attr("height", d3.keys(colors).length * (li.h + li.s));
-
-        var g = legend.selectAll("g")
-            .data(d3.entries(colors))
-            .enter().append("svg:g")
-            .attr("transform", function (d, i) {
-                return "translate(0," + i * (li.h + li.s) + ")";
-            });
-
-        g.append("svg:rect")
-            .attr("rx", li.r)
-            .attr("ry", li.r)
-            .attr("width", li.w)
-            .attr("height", li.h)
-            .style("fill", function (d) {
-                return d.value;
-            });
-
-        g.append("svg:text")
-            .attr("x", li.w / 2)
-            .attr("y", li.h / 2)
-            .attr("dy", "0.35em")
-            .attr("text-anchor", "middle")
-            .text(function (d) {
-                return d.key;
-            });
-    }
 
     function toggleLegend() {
         var legend = d3.select("#legend");

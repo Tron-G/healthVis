@@ -16,7 +16,9 @@
     background-color: rgb(184, 215, 240, 0.2);
     /* overflow: hidden; */
 }
-
+#man_background, #woman_background:hover{
+    cursor: pointer;
+}
 #woman_background {
     position: absolute;
     top: 100px;

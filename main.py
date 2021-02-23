@@ -63,8 +63,41 @@ def initSys():
 # ******************************************************************************************
 @app.route('/init_bodyvis',  methods=['POST', 'GET'])
 def initBodyVis():
-    hospital_name = request.get_json()["hospital"]
-    data = dm.sunburst_data(hospital_name)
+    month = request.get_json()["month"]
+    data = {"sunburst": dm.load_static_data("sunburst"), "disease-detail": dm.load_static_data("disease-detail"),
+            "body_disease": dm.get_topdisease_sex(month)}
+    print(dm.get_topdisease_sex(month))
+    return jsonify(data)
+
+
+# ******************************************************************************************
+# 旭日图选择月份
+# ******************************************************************************************
+@app.route('/get_month_data',  methods=['POST', 'GET'])
+def getMonthData():
+    month = request.get_json()["month"]
+    data = dm.get_topdisease_sex(month)
+    return jsonify(data)
+
+
+# ******************************************************************************************
+# 搜索病人id
+# ******************************************************************************************
+@app.route('/search_id',  methods=['POST', 'GET'])
+def searchById():
+    id = request.get_json()["id"]
+    data = dm.get_patient_disease(id)
+    return jsonify(data)
+
+
+# ******************************************************************************************
+# 搜索具体疾病
+# ******************************************************************************************
+@app.route('/search_disease',  methods=['POST', 'GET'])
+def searchBydisease():
+    disease = request.get_json()["disease"]
+    month = request.get_json()["month"]
+    data = dm.get_disease_age(disease, month)
     return jsonify(data)
 
 
@@ -80,8 +113,9 @@ def test():
     # out = dm.get_disease_age("脂肪肝", 0)
     # out = dm.get_topdisease_sex(0)
     # out = dm.sunburst_data("all")
-    out = ""
-    # print(out)
+    # 9a38653b2e769a84fa89ffa9da1c9e6d
+    out = dm.get_patient_disease("1e6ce7eab018584f9cbac518d4fd2824")
+    print(out)
     return jsonify(out)
 
 
