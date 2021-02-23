@@ -115,7 +115,7 @@ def test():
     # out = dm.sunburst_data("all")
     # 9a38653b2e769a84fa89ffa9da1c9e6d
     # out = dm.get_patient_disease("1e6ce7eab018584f9cbac518d4fd2824")
-    out = dm.radar_map("spring")
+    out = dm.job("spring", "all")
     print(out)
     return jsonify(out)
 

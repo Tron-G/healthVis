@@ -5,6 +5,15 @@ let All={"Pie1":[{named:'正常','unnormal':10}, {named:'不正常','unnormal':1
 	 "Pie5":[{named:'正常','unnormal':164}, {named:'不正常','unnormal':194}]
 };
 
+
+let job_data = {
+	"警察": {"正常": 0, "异常": 45},
+	"普通工人": {"正常": 64, "异常": 262},
+	"钢铁工人": {"正常": 0, "异常": 217},
+	"教师": {"正常": 14, "异常": 43},
+	"特别员工": {"正常": 55, "异常": 78}};
+
+
 let drawpie = function(data) {
 
 
