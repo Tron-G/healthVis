@@ -1,0 +1,1006 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照远航轻工制造有限责任公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.391925998605,
+          35.4579619420684
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照艺枫沙发制造厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.432609446677,
+          35.4393369770809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照宏冠机械制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.83863358415,
+          35.6215145236627
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照捷杰工具制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.5013101453,
+          35.4692398816011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照德信机械制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.341954880035,
+          35.4819790666002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照旭日电子有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.498980030638,
+          35.4059969296549
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照丰国电子有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.492740939549,
+          35.4059854559461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市立盈机械制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.02939298123,
+          35.6819708841928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照瑞鑫机械制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.473662996619,
+          35.3423009410339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照鸿本机械制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.514588627857,
+          35.395957098545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照鸿宇标牌制作有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.510644976838,
+          35.4935878907411
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "威而德(日照)园林机械公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.466727898421,
+          35.3751928399029
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照瑞荣机械有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.465986976037,
+          35.3734020843123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "欧亚(日照)专用车制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.463218039133,
+          35.3839949044498
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照超捷机械制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.526788964141,
+          35.4635729254289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照金丰机械制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.838492280694,
+          35.6191169539972
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东沪鸽口腔材料股份有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.495634471427,
+          35.4763751842702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东康力生药业有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.494793028656,
+          35.4058529197796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照三奇医疗卫生用品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.533415404566,
+          35.4228389984377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市东港区朝阳机床加工厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.470347171321,
+          35.4516611414175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照汇丰电子有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.371400795669,
+          35.2886057110362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照中科美阳太阳能制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.211877098121,
+          35.7935440720502
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照医药集团公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.463639074925,
+          35.431524570881
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市中富机械制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.516812203486,
+          35.3885280649288
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "国药控股日照有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.50695105475,
+          35.395882583595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照金泰机械制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.484783659511,
+          35.383487640021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照正源化工机械制造"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.489972990781,
+          35.3851659041844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照青木服装有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.504724963866,
+          35.4597288994296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照中意华坤金属制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.367346742903,
+          35.3411882746337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照阳光合源电气制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.505265025138,
+          35.3855678819192
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照星明制衣有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.482729414471,
+          35.4393356537443
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县展鹏制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.218917298064,
+          35.7907965098802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "技宝电子(日照)有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.518141066827,
+          35.3927528193915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市海诺办公设备制造厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.534297001593,
+          35.54173189844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照盛宇金属制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.507052024289,
+          35.4944539348404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市汇力机械制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.373956025692,
+          35.4178489055177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市双驱机械制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.291250025525,
+          35.203853892694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照原野机械制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.481345664663,
+          35.4558051573095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照日发车辆制造有限公司(兖州路)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.502890444353,
+          35.4257708147651
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "昌信(五莲)林业机械有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.22636398125,
+          35.8327399113176
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县华兴机械制造公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2088428916,
+          35.8191205858496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县安旭机械制造公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.190633520268,
+          35.7848515110004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市盛唐游乐设备制造有限责任公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.368930186025,
+          35.2799313541091
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市盛唐游乐设备制造有限责任公司(营销部)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.51719281553,
+          35.3945249723011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照中顺钢管制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.511211717784,
+          35.4816776535719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市冠荣针织服装有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.513640646052,
+          35.4001604236517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照永裕球体制造有限责任公司-西门"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.500013531127,
+          35.4730349471324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照三维医疗器械有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.492721985302,
+          35.4659328587373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县欧式艺术围栏制造厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.856339904396,
+          35.4777592539108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照德福机械制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.937430032613,
+          35.4680229325453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照永裕球体制造有限责任公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.500013531127,
+          35.4730349471324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照格瑞菲斯纺织有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.488233601822,
+          35.469099880859
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲金涛机械制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.191869858142,
+          35.7885610028531
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县瑞鑫机械厂分厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.772479042665,
+          35.5344439153253
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照旗凯环保机械制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.533415404566,
+          35.4228389984377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东万通液压股份有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.225290955318,
+          35.8081879222606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照铸成机械制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.533415404566,
+          35.4228389984377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市中富机械制造有限公司-东门"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.517757131052,
+          35.3886028809975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东国恩仓储设备制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.505877400004,
+          35.3982890209326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市钰晟机械制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.533415404566,
+          35.4228389984377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照艺枫沙发制造厂-南门"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.432609446677,
+          35.4393369770809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲金开机械制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.215580362586,
+          35.7556971041043
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照福民收割机制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.345748514034,
+          35.3420533233075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照诚信建设工程机械"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.505734030445,
+          35.3941488592842
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市宏金模具制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.429366563786,
+          35.3740030050822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照鑫隆机械制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.580678850668,
+          35.5613138585035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "鑫博机械"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.326442670997,
+          35.1080953881648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "德盛机械"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.985484706208,
+          35.8036388692698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照福川机械制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.046294958722,
+          35.6797668885916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲庚辰机械制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.202139646054,
+          35.7914632996721
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "富元电子"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.465200240071,
+          35.3834702774687
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市宏金模具制造有限公司-西北门"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.42921879253,
+          35.3740235335802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照兴发汽车零部件制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.993028316558,
+          35.8050769466899
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "锦浩机械有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.331853344745,
+          35.7506398754115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县金汇制造机械有限公司(北门)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.215580362586,
+          35.7556971041043
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照原野机械制造有限公司-西门"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.481345664663,
+          35.4558051573095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市州泰金属制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.72845937776,
+          35.4684822578517
+        ]
+      }
+    }
+  ]
+}

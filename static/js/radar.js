@@ -79,29 +79,35 @@ function drawRose(obj) {
 	let option = {
 		// backgroundColor: '#19181d',
 		title: [{//医院名称位置
-				subtext: Object.keys(obj)[0],
+				text: Object.keys(obj)[0],
 				left: "6%",
-				top: "1%"
+				top: "1%",
+//				color:"black"
+
 			},
 			{
-				subtext: Object.keys(obj)[1],
-				left: "50%",
+				text: Object.keys(obj)[1],
+				left: "60%",
 				top: "1%"
 			}, {
-				subtext: Object.keys(obj)[2],
+				text: Object.keys(obj)[2],
 				left: "6%",
-				top: "45%"
+				top: "48%"
 			},
 			{
-				subtext: Object.keys(obj)[3],
-				left: "50%",
-				top: "45%"
+				text: Object.keys(obj)[3],
+				left: "60%",
+				top: "48%"
 			}
 		],
 		color: [
 			"#f9ed69", "#f08a5d", "#b83b5e", "#6a2c70", "#6DBC49",
 			"#37B44E", "#3DBA78", "#14ADCF"
 		],
+		tooltip:{
+		    show:true,
+		    formatter: '{b}:{c}',
+		},
 		legend: {
 			left: 'left',
 			// orient: 'vertical',
@@ -120,11 +126,11 @@ function drawRose(obj) {
 				startAngle: 0,
 				clockwise: false,
 				radius: ["10%", "40%"],
-				center: ['10%', '25%'],
+				center: ['15%', '30%'],
 				roseType: 'area',
 				avoidLabelOverlap: false,
 				label: {
-					show: true,
+					show: false,
 					position: 'inside',
 					formatter: '{c}',
 
@@ -161,11 +167,11 @@ function drawRose(obj) {
 				startAngle: 0,
 				clockwise: false,
 				radius: ["10%", "40%"],
-				center: ['50%', '25%'],
+				center: ['70%', '30%'],
 				roseType: 'area',
 				avoidLabelOverlap: false,
 				label: {
-					show: true,
+					show: false,
 					position: 'inside',
 					formatter: '{c}',
 
@@ -202,11 +208,11 @@ function drawRose(obj) {
 				startAngle: 0,
 				clockwise: false,
 				radius: ["10%", "40%"],
-				center: ['10%', '65%'],
+				center: ['15%', '70%'],
 				roseType: 'area',
 				avoidLabelOverlap: false,
 				label: {
-					show: true,
+					show: false,
 					position: 'inside',
 					formatter: '{c}',
 
@@ -243,11 +249,11 @@ function drawRose(obj) {
 				startAngle: 0,
 				clockwise: false,
 				radius: ["10%", "40%"],
-				center: ['50%', '65%'],
+				center: ['70%', '70%'],
 				roseType: 'area',
 				avoidLabelOverlap: false,
 				label: {
-					show: true,
+					show: false,
 					position: 'inside',
 					formatter: '{c}',
 

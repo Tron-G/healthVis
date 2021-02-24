@@ -89,6 +89,7 @@ function setSearchEvent() {
  *                 search_id: 搜索指定病人，重绘人体结构图
  *                 search_disease: 搜索指定疾病，重绘人体结构图和年龄分布图
  *                 select_time: 选择月份操作，重绘人体结构图和性别分布图
+ *                 disease_bar_back: 年龄分布图返回到性别分布图，仅重绘直方图
  */
 function redraw(url, redraw_type) {
     $.ajax({
@@ -104,8 +105,11 @@ function redraw(url, redraw_type) {
                 drawBodyMap("search", data);
             } else if (redraw_type === "search_disease") {
                 drawBodyMap("search", data);
+                drawTowBar1(data);
             } else if (redraw_type === "select_time") {
                 drawBodyMap("time", data);
+                drawTowbar2(data);
+            } else if(redraw_type === "disease_bar_back") {
                 drawTowbar2(data);
             }
 

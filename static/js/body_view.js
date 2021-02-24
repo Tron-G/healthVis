@@ -97,6 +97,13 @@ function drawBodyMap(type, data) {
             "y": man_svg_height / 5.7,
             "opacity": 1
         },
+        "breast": {
+            "width": 60,
+            "height": 60,
+            "x": man_svg_width / 2.5,
+            "y": man_svg_height / 4.5,
+            "opacity": 1
+        },
         "heart": {
             "width": 35,
             "height": 35,

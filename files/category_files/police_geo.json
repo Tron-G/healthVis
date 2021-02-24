@@ -1,0 +1,1643 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市东港公安分局大学科技园派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.541888,
+          35.454046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市莒县夏庄派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.699761,
+          35.419705
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市莒县公安局定林寺派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.74986,
+          35.602162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市果庄派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.76988,
+          35.778771
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市莒县浮来山派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.78009,
+          35.596855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市莒县公安局小店派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.809691,
+          35.418501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市刘官庄派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.810115,
+          35.536331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市安庄派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.815878,
+          35.812238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市洛河派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.834035,
+          35.753591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市阎庄派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.834173,
+          35.670814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市莒县公安局(城西派出所)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.8362,
+          35.59484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市莒县公安局城西派出所莒县实验二小警务室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.8362,
+          35.59484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市莒县公安局城西派出所第一中学警务室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.8362,
+          35.59484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市莒县公安局(城关派出所)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.836384,
+          35.581144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市莒县公安局城关派出所警区"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.836384,
+          35.581144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市莒县公安局城建派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.837966,
+          35.589652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市莒县长岭派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.843497,
+          35.484566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市莒县公安局(城北派出所)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.847057,
+          35.615958
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市莒县公安局城东派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.855539,
+          35.593945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市阎庄派出所盛凯食品警务室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.857503,
+          35.650137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市莒县公安局城东派出所莒县四中警务室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.860595,
+          35.591215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市莒县公安局陵阳派出所户政大厅"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.891253,
+          35.544761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市莒县公安局陵阳派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.891253,
+          35.544761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市莒县棋山派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.893081,
+          35.877194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市莒县公安局店子集派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.906568,
+          35.584422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市店子小学公安派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.91186,
+          35.585674
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市招贤派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.929561,
+          35.723036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市寨里河派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.932156,
+          35.46861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市峤山派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.940841,
+          35.644658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市峤山中心初中警务室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.944421,
+          35.657681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市莒县东莞派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.971463,
+          35.991826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市莒县库山派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.979759,
+          35.922501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市于里派出所友和车辆有限公司警务室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.000565,
+          35.813882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市五莲县于里派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.000824,
+          35.808031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市莒县公安局龙山派出所龙山镇中心小学执勤室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.007137,
+          35.511017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市龙山派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.009473,
+          35.512421
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市桑园派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.041555,
+          35.679402
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市莒县公安局桑园派出所中心小学警务室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.047405,
+          35.678102
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市五莲县汪湖派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.114269,
+          35.916369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市五莲县中至镇派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.126732,
+          35.788238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市黄墩派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.137883,
+          35.406226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市石场派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.145153,
+          35.65646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市三庄派出所户籍室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.183534,
+          35.51001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市三庄派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.18364,
+          35.510016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市五莲县公安局城北派出所三中警区"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.195321,
+          35.776082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市五莲县城北派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.202636,
+          35.776869
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市五莲县公安局城关派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.20842,
+          35.75896
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市五莲县公安局城关派出所富强社区警务室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.20842,
+          35.75896
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市五莲县公安局城关派出所芙蓉社区警务室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.20842,
+          35.75896
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市五莲县公安局城关派出所暂住人口管理站"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.20842,
+          35.75896
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市北京路派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.209442,
+          35.771349
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市五莲县公安局交通派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.21266,
+          35.77079
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市五莲县公安局景区派出所九仙山警务室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.21266,
+          35.77079
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市五莲县公安局城建派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.214877,
+          35.75851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市五莲县公安局洪凝派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.217223,
+          35.744265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市五莲县公安局高泽派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.219721,
+          35.828282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市五莲县公安局城关派出所二中警务室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.219757,
+          35.761202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市城关派出所警务室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.223411,
+          35.769237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市西湖派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.247817,
+          35.455164
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市陈疃派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.271158,
+          35.515573
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市街头派出所街头初中警务室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.271931,
+          35.615919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市巨峰派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.27269,
+          35.297883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市陈疃镇中心小学学校警卫室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.274751,
+          35.517474
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市五莲县街头镇派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.27606,
+          35.612212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市汾水派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.298827,
+          35.137858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市后村派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.303592,
+          35.393178
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市安东卫派出所户籍服务室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.317933,
+          35.113402
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山公安分局碑廓派出所碑廓社区警务助理办公室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.318046,
+          35.125597
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山公安分局巨峰派出所综合警务大厅"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.318046,
+          35.125597
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市安东卫派出所明珠广场警务室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.318094,
+          35.115123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市公安局岚山分局安东卫派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.319961,
+          35.112914
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市日照水库派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.326351,
+          35.437841
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市虎山派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.333892,
+          35.174612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市五莲县许孟派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.33474,
+          35.866636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市五莲县松柏派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.336044,
+          35.74516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山头派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.347284,
+          35.103044
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山边防派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.354778,
+          35.103334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市南湖派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.361946,
+          35.468845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市高兴派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.370477,
+          35.342228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市秦海家园公安综合警卫室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.378481,
+          35.132796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市王家海屋边防派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.38305,
+          35.13391
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市公安局东港分局涛雒派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.385371,
+          35.284451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市韩家营边防派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.388211,
+          35.178493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市韩家营子派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.388262,
+          35.178589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市五莲县公安局五莲山旅游风景区派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.402077,
+          35.71054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市小海边防派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.409554,
+          35.272502
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市户部派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.424218,
+          35.736337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市夹仓边防派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.428756,
+          35.345459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市奎山派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.436112,
+          35.388092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市五莲县公安局叩官派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.460514,
+          35.685449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市公安局东港分局日照路派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.460897,
+          35.430037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市公安局东港分局大沙洼林场派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.466072,
+          35.424624
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市东港分局望海路派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.468951,
+          35.424289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市东港分局望海路派出所-监控中心"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.468951,
+          35.424289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市公安局日照经济开发区分局中心(渔港边防派出所)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.475265,
+          35.335898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市公安局东港分局青海路派出所铁路黄海小区警务室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.479591,
+          35.426354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市高新技术产业开发区派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.486505,
+          35.46981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市昭阳路派出所第三人民医院警务室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.492303,
+          35.446415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市公安局东港分局昭阳路派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.493595,
+          35.432092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市昭阳路派出所第七警务办公室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.493595,
+          35.432092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市潮河派出所莲海嘉园警务处"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.504933,
+          35.656377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市五莲县公安局潮河派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.505005,
+          35.656421
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市臧家荒边防派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.511663,
+          35.360121
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市公安局东海分局泰安路派出所金海社区警务室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.518301,
+          35.423556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市河山派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.525408,
+          35.529207
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市泰安路派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.52649,
+          35.422485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市公安局东港分局泰安路派出所泰安路社区警务室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.52649,
+          35.422485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市卧龙山派出所(庙山中心警务室)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.527405,
+          35.478257
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市秦楼派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.529806,
+          35.465578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市公安局东港分局秦楼派出所银河社区警务室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.529806,
+          35.465578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市秦楼派出所第一警区"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.537371,
+          35.46807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市济南铁路公安处巨峰站派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.539874,
+          35.409607
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市日照港公安局第二派出所第三警务室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.544657,
+          35.400098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市新营小学警务室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.544823,
+          35.421239
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市公安局东港分局泰安路派出所城建花园社区警务室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.547874,
+          35.423927
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市滨海社区警务室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.554905,
+          35.406536
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市东港公安分局石臼边防派出所鑫鑫社区警务室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.556619,
+          35.393667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市石臼边防派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.563349,
+          35.394562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市公安局山海天旅游度假区分局卧龙山派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.574508,
+          35.463421
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市万平口风景区派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.574605,
+          35.425467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市两城派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.575276,
+          35.577416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市公安局海岸警察支队山海天派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.587028,
+          35.453278
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市公安局山海天边防派出所第五警区"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.590635,
+          35.468268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市山海天边防派出所治安办公室"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.616086,
+          35.480092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市公安局山海天旅游度假区分局任家台边防派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.629801,
+          35.515213
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市王家滩边防派出所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.63232,
+          35.594435
+        ]
+      }
+    }
+  ]
+}

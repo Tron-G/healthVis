@@ -439,8 +439,8 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
                     "interpolate",
                     ["linear"],
                     ["zoom"],
-                    9, 2.5,
-                    16, 50
+                    9, 1.5,
+                    16, 20
                 ],
                 "circle-color": TYPE_POINT_COLOR
             }

@@ -1,0 +1,421 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照钢铁"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.388050978127,
+          35.1747269604895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东钢铁集团日照有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.383031965582,
+          35.1846388960418
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照钢铁控股集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.38074595772,
+          35.1657469270091
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照尚峰钢铁有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.379583999543,
+          35.2192479330535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "伟祥钢铁"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.301658781299,
+          35.1439605251367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "钢铁集团日照有限公司轧钢大临办公区"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.528588359908,
+          35.4411854363965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照智创钢材贸易有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.533415404566,
+          35.4228389984377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东日照钢厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.533415404566,
+          35.4228389984377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照龙立钢铁有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.387573528748,
+          35.1607768914489
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东钢铁集团日照有限公司现场指挥部"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.383031965582,
+          35.1846388960418
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照钢铁控股集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.38074595772,
+          35.1657469270091
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照佩齐钢铁有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.387573528748,
+          35.1607768914489
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东嘉银钢材贸易城"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.318267372212,
+          35.1635962826181
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照尺寸钢铁贸易有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.528208017355,
+          35.3954888963482
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东钢铁集团日照有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.383031965582,
+          35.1846388960418
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照舒航钢铁贸易有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.511317717834,
+          35.3531091059895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照正奇钢铁贸易有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.533415404566,
+          35.4228389984377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照钢铁电控处"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.388050978127,
+          35.1747269604895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照钢铁有限公司冷板制造部综合楼"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.387573528748,
+          35.1607768914489
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东钢铁集团日照公司炼钢部"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.394666818547,
+          35.2251897703125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市强丰机械贸易有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.292314068401,
+          35.1341919959394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市钢铁配套产业园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.533415404566,
+          35.4228389984377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东钢铁集团日照有限公司焦化厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.383031965582,
+          35.1846388960418
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照钢铁第一炼铁厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.388050978127,
+          35.1747269604895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照荣灿钢铁有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.387573528748,
+          35.1607768914489
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲富达钢材贸易公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.19313628925,
+          35.79503532309
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "安丘鑫源玻璃钢厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.193124072295,
+          36.4705089455482
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县金宏钢材有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.82791572145,
+          35.5918608663625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲利业钢铁有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.215580362586,
+          35.7556971041043
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县德诺工贸有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.826203191825,
+          35.5919798118533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照顺恒钢材加工有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.533415404566,
+          35.4228389984377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照钢铁控股集团有限公司厂内站信号楼"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.38074595772,
+          35.1657469270091
+        ]
+      }
+    }
+  ]
+}

@@ -1,6 +1,5 @@
 //疾病年龄分布
 function drawTowBar1(obj) { //改参数
-
 	var TwoBar2 = echarts.init(document.getElementById("disease_bar_view"))
 	TwoBar2.clear()
 	/**
@@ -8,10 +7,10 @@ function drawTowBar1(obj) { //改参数
 	 * 增加下面的数值显示
 	 * */
 	list = (Object.keys(obj))
-	console.log(list.length)
+	// console.log(list.length)
 
-	list.splice(0, 1);
-	console.log(list)
+	list.splice(9, 9);
+	// console.log(list)
 	let nums1 = []
 	let nums2 = []
 	for (let i = 0; i < list.length; i++) {
@@ -19,13 +18,13 @@ function drawTowBar1(obj) { //改参数
 		nums1.push(obj[list[i]][0])
 		nums2.push(obj[list[i]][1])
 	}
-	console.log(Math.max.apply(null, nums1))
+	// console.log(Math.max.apply(null, nums1))
 	var num1 = Math.max.apply(null, nums1)
 	var num2 = Math.max.apply(null, nums2)
 	if (num1 >= num2) {
-		var num = num1 + 5;
+		var num = num1 + 10;
 	} else {
-		var num = num2 + 5;
+		var num = num2 + 10;
 	}
 	var myData = ['0-10', '11-20', '21-30', '31-40', '41-50', '51-60', '61-70', '71-80', '81-90', '91以上']
 	var lineData = []
@@ -64,10 +63,10 @@ function drawTowBar1(obj) { //改参数
 			},
 			toolbox: {
 				show: true,
-				itemSize: 20,
+				itemSize: 10,
 				// left:20,
 				// itemGap: 30,
-				right: 100,
+				right: 10,
 				feature: {
 					myTool: {
 						show: true,
@@ -75,7 +74,9 @@ function drawTowBar1(obj) { //改参数
 						icon: 'path://M653.582491 221.106717L353.02883 521.660377l300.553661 300.553661L598.943396 876.872453 243.731321 521.660377 598.943396 166.448302z',
 
 						onclick: function () {
-							drawTowbar2(obj2, obj) //改参数
+						// console.log("返回")
+							redraw("/get_month_data", "disease_bar_back");
+//							drawTowbar2(obj2, obj) //改参数
 						}
 					}
 				}
@@ -83,36 +84,36 @@ function drawTowBar1(obj) { //改参数
 			legend: {
 				top: '5%',
 				left: '31%',
-				itemWidth: 22,
-				itemHeight: 22,
-				itemGap: 343,
+				itemWidth: 10,
+				itemHeight: 10,
+				itemGap: 100,
 				icon: 'horizontal',
 				textStyle: {
 					color: '#000',
-					fontSize: 20,
+					fontSize: 8,
 				},
 				data: ['男性', '女性']
 			},
 			grid: [{
 				show: false,
-				left: '5%',
-				top: '9%',
-				bottom: '8%',
+				left: '2%',
+				top: '14%',
+				bottom: '15%',
 				containLabel: true,
-				width: '37%'
+				width: '35%'
 			}, {
 				show: false,
 				left: '51%',
-				top: '10%',
+				top: '11%',
 				bottom: '11%',
 				width: '0%'
 			}, {
 				show: false,
 				right: '2%',
-				top: '9%',
-				bottom: '8%',
+				top: '14%',
+				bottom: '14%',
 				containLabel: true,
-				width: '37%'
+				width: '35%'
 			}],
 			xAxis: [{
 				// show:"false",
@@ -209,7 +210,7 @@ function drawTowBar1(obj) { //改参数
 					//   },
 					textStyle: {
 						color: '#000',
-						fontSize: 20
+						fontSize: 10
 					}
 
 				},
@@ -272,23 +273,23 @@ function drawTowBar1(obj) { //改参数
 						position: 'insideTopLeft',
 						textStyle: {
 							color: '#000',
-							fontSize: 20,
+							fontSize: 10,
 						},
 						offset: [0, -10],
 					}
 				},
 				z: -100,
-				animationEasing: 'elasticOut',
-				animationDelay: function (dataIndex, params) {
-					return params.index * 30;
-				}
+//				animationEasing: 'elasticOut',
+//				animationDelay: function (dataIndex, params) {
+//					return params.index * 30;
+//				}
 			}, {
 				name: '男性',
 				type: 'bar',
 				xAxisIndex: 0,
 				yAxisIndex: 0,
 				//  symbol: 'rect',
-				barWidth: 10,
+				barWidth: 5,
 				itemStyle: {
 					normal: {
 						color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{
@@ -320,7 +321,7 @@ function drawTowBar1(obj) { //改参数
 						color: 'rgba(0,0,0,0)'
 					}
 				},
-				barWidth: 10,
+				barWidth: 15,
 				symbolRepeat: true,
 				symbolSize: 14,
 				data: lineData,
@@ -335,7 +336,7 @@ function drawTowBar1(obj) { //改参数
 						position: 'insideTopRight',
 						textStyle: {
 							color: '#000',
-							fontSize: 20,
+							fontSize: 10,
 						},
 						offset: [0, -10],
 					}
@@ -351,7 +352,7 @@ function drawTowBar1(obj) { //改参数
 				xAxisIndex: 2,
 				yAxisIndex: 2,
 				//   symbol: 'rect',
-				barWidth: 10,
+				barWidth: 5,
 				itemStyle: {
 					normal: {
 						color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{
@@ -382,10 +383,11 @@ function drawTowBar1(obj) { //改参数
 
 //月份疾病性别分布
 function drawTowbar2(obj) { //改参数
+
 	var TwoBar = echarts.init(document.getElementById("disease_bar_view"))
 	list = (Object.keys(obj))
 	// list.splice(0,1);
-	console.log(list)
+	// console.log(list)
 	let nums1 = []
 	let nums2 = []
 	for (let i = 0; i < list.length; i++) {
@@ -393,7 +395,7 @@ function drawTowbar2(obj) { //改参数
 		nums1.push(obj[list[i]][0])
 		nums2.push(obj[list[i]][1])
 	}
-	console.log(nums1)
+	// console.log(nums1)
 	for (let i = 0; i < nums1.length - 1; i++) {
 		for (let j = i + 1; j < nums1.length; j++) {
 			if ((nums1[i] + nums2[i]) < (nums1[j] + nums2[j])) {
@@ -409,13 +411,13 @@ function drawTowbar2(obj) { //改参数
 			}
 		}
 	}
-	console.log(nums1)
+	// console.log(nums1)
 	var num1 = Math.max.apply(null, nums1)
 	var num2 = Math.max.apply(null, nums2)
 	if (num1 >= num2) {
-		var num = num1 + 50;
+		var num = num1 +5;
 	} else {
-		var num = num2 + 50;
+		var num = num2 +5;
 	}
 	var myData = ['0-10', '11-20', '21-30', '31-40', '41-50', '51-60', '61-70', '71-80', '81-90', '91以上']
 	var lineData = []
@@ -443,9 +445,12 @@ function drawTowbar2(obj) { //改参数
 	];
 	var option = {
 		baseOption: {
-			title: {
-				text: "全年的高发疾病数据"
-			},
+//			title: {
+//				text: "全年的高发疾病数据",
+//				textStyle:{
+//				    fontSize:8
+//				}
+//			},
 			// backgroundColor: background,
 			timeline: {
 				show: false,
@@ -455,36 +460,36 @@ function drawTowbar2(obj) { //改参数
 			legend: {
 				top: '1%',
 				left: '31%',
-				itemWidth: 22,
-				itemHeight: 22,
-				itemGap: 343,
+				itemWidth: 10,
+				itemHeight: 10,
+				itemGap: 100,
 				icon: 'horizontal',
 				textStyle: {
 					color: '#000',
-					fontSize: 20,
+					fontSize: 8
 				},
 				data: ['男性', '女性']
 			},
 			grid: [{
 				show: false,
-				left: '20%',
-				top: '10%',
-				bottom: '8%',
+				left: '0%',
+				top: '11%',
+				bottom: '10%',
 				containLabel: true,
-				width: '20%'
+				width: '35%'
 			}, {
 				show: false,
-				left: '58%',
+				left: '50%',
 				top: '11%',
 				bottom: '11%',
 				width: '0%'
 			}, {
 				show: false,
-				left: '72%',
-				top: '10%',
-				bottom: '8%',
+				left: '61%',
+				top: '11%',
+				bottom: '10%',
 				containLabel: true,
-				width: '20%'
+				width: '38%'
 			}],
 			xAxis: [{
 				// show:"false",
@@ -556,7 +561,8 @@ function drawTowbar2(obj) { //改参数
 					show: false
 				},
 				axisLabel: {
-					show: false
+					show: false,
+
 				},
 				data: list
 			}, {
@@ -581,7 +587,7 @@ function drawTowbar2(obj) { //改参数
 					//   },
 					textStyle: {
 						color: '#000',
-						fontSize: 12,
+						fontSize: 8,
 						// lineHeight:2
 					}
 
@@ -629,7 +635,7 @@ function drawTowbar2(obj) { //改参数
 						color: 'rgba(0,0,0,0)'
 					}
 				},
-				barWidth: 10,
+				barWidth: 5,
 				calculable: true,
 				// symbolRepeat: true,
 				// symbolSize: 14,
@@ -645,7 +651,7 @@ function drawTowbar2(obj) { //改参数
 						position: 'insideTopLeft',
 						textStyle: {
 							color: '#000',
-							fontSize: 16,
+							fontSize: 8,
 						},
 						offset: [0, -10],
 					}
@@ -661,7 +667,7 @@ function drawTowbar2(obj) { //改参数
 				xAxisIndex: 0,
 				yAxisIndex: 0,
 				//  symbol: 'rect',
-				barWidth: 10,
+				barWidth: 5,
 				itemStyle: {
 					normal: {
 						color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{
@@ -678,10 +684,10 @@ function drawTowbar2(obj) { //改参数
 				// symbolRepeat: true,
 				// symbolSize: 14,
 				data: lastYearData[timeLineData[0]]
-				// animationEasing: 'elasticOut',
-				// animationDelay: function (dataIndex, params) {
-				//     return params.index * 30 * 1.1;
-				// }
+//				 animationEasing: 'elasticOut',
+//				 animationDelay: function (dataIndex, params) {
+//				     return params.index * 30 * 1.1;
+//				 }
 			},
 			{
 				type: 'pictorialBar',
@@ -693,7 +699,7 @@ function drawTowbar2(obj) { //改参数
 						color: 'rgba(0,0,0,0)'
 					}
 				},
-				barWidth: 10,
+				barWidth: 5,
 				symbolRepeat: true,
 				symbolSize: 14,
 				data: lineData,
@@ -708,7 +714,7 @@ function drawTowbar2(obj) { //改参数
 						position: 'insideTopRight',
 						textStyle: {
 							color: '#000',
-							fontSize: 16,
+							fontSize: 8,
 						},
 						offset: [0, -10],
 					}
@@ -724,7 +730,7 @@ function drawTowbar2(obj) { //改参数
 				xAxisIndex: 2,
 				yAxisIndex: 2,
 				//   symbol: 'rect',
-				barWidth: 10,
+				barWidth: 5,
 				itemStyle: {
 					normal: {
 						color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{
@@ -750,7 +756,11 @@ function drawTowbar2(obj) { //改参数
 	});
 	TwoBar.setOption(option)
 	TwoBar.on("click", function (params) {
-		console.log(params.name)
+		console.log("---->", params.name);
+		TRANSPORT_DATA["disease"] = params.name;
+		TRANSPORT_DATA["id"] = "";
+		console.log(TRANSPORT_DATA);
+		redraw("/search_disease", "search_disease");
 
 		// drawTowBar1(params.name, o) //改参数
 	})
