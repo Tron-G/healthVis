@@ -66,7 +66,7 @@ function drawBodyMap(type, data) {
             "width": 30,
             "height": 30,
             "x": man_svg_width / 2.22,
-            "y": man_svg_height / 15,
+            "y": man_svg_height / 14,
             "opacity": 1
         },
         "nose": {
@@ -174,7 +174,7 @@ function drawBodyMap(type, data) {
             "width": 30,
             "height": 30,
             "x": woman_svg_width / 2.22,
-            "y": woman_svg_height / 15,
+            "y": woman_svg_height / 14,
             "opacity": 1
         },
         "nose": {

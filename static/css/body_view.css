@@ -13,7 +13,7 @@
     left: 450px;
     width: 270px;
     height: 450px;
-    background-color: rgb(184, 215, 240, 0.2);
+    background-color: rgb(184, 215, 240, 0.1);
     /* overflow: hidden; */
 }
 #man_background, #woman_background:hover{
@@ -25,6 +25,6 @@
     left: 755px;
     width: 270px;
     height: 450px;
-    background-color: rgb(240, 185, 237, 0.2);
+    background-color: rgb(240, 185, 237, 0.1);
     /* overflow: hidden; */
 }
