@@ -8,7 +8,7 @@
         "name": "February.February",
         "num": 6854,
         "children": [{
-            "name": "girl(牙结石).September",
+            "name": "girl(牙结石).December",
             "num": 11,
             "children": [{
                 "name": "boy(牙结石).man",
@@ -24,7 +24,7 @@
                 "num": 7
             }]
         }, {
-            "name": "girl(总胆固醇(CHOL)偏高).May",
+            "name": "girl(总胆固醇(CHOL)偏高).February",
             "num": 5,
             "children": [{
                 "name": "boy(总胆固醇(CHOL)偏高).man",
@@ -32,7 +32,7 @@
                 "num": 5
             }]
         }, {
-            "name": "girl(高密度脂蛋白(HDL-C)偏低).November",
+            "name": "girl(高密度脂蛋白(HDL-C)偏低).October",
             "num": 3,
             "children": [{
                 "name": "boy(高密度脂蛋白(HDL-C)偏低).man",
@@ -40,7 +40,7 @@
                 "num": 5
             }]
         }, {
-            "name": "girl(血压高).December",
+            "name": "girl(血压高).wonmen",
             "num": 5,
             "children": [{
                 "name": "boy(血压高).man",
@@ -48,7 +48,7 @@
                 "num": 3
             }]
         }, {
-            "name": "girl(肥胖).September",
+            "name": "girl(肥胖).June",
             "num": 1,
             "children": [{
                 "name": "boy(肥胖).man",
@@ -56,7 +56,7 @@
                 "num": 6
             }]
         }, {
-            "name": "girl(双乳腺增生症).July",
+            "name": "girl(双乳腺增生症).wonmen",
             "num": 7,
             "children": [{
                 "name": "boy(双乳腺增生症).man",
@@ -64,7 +64,7 @@
                 "num": 0
             }]
         }, {
-            "name": "girl(乳腺增生症).wonmen",
+            "name": "girl(乳腺增生症).December",
             "num": 7,
             "children": [{
                 "name": "boy(乳腺增生症).man",
@@ -72,7 +72,15 @@
                 "num": 0
             }]
         }, {
-            "name": "girl(窦性心动过缓).February",
+            "name": "girl(双乳腺增生症超声改变).August",
+            "num": 7,
+            "children": [{
+                "name": "boy(双乳腺增生症超声改变).man",
+                "size": 100,
+                "num": 0
+            }]
+        }, {
+            "name": "girl(窦性心动过缓).August",
             "num": 1,
             "children": [{
                 "name": "boy(窦性心动过缓).man",
@@ -80,7 +88,7 @@
                 "num": 4
             }]
         }, {
-            "name": "girl(牙色素附着).May",
+            "name": "girl(牙色素附着).July",
             "num": 2,
             "children": [{
                 "name": "boy(牙色素附着).man",
@@ -88,7 +96,7 @@
                 "num": 3
             }]
         }, {
-            "name": "girl(肌酐(CREA)偏低).July",
+            "name": "girl(肌酐(CREA)偏低).September",
             "num": 2,
             "children": [{
                 "name": "boy(肌酐(CREA)偏低).man",
@@ -104,7 +112,7 @@
                 "num": 0
             }]
         }, {
-            "name": "girl(肝囊肿).September",
+            "name": "girl(肝囊肿).April",
             "num": 2,
             "children": [{
                 "name": "boy(肝囊肿).man",
@@ -112,27 +120,19 @@
                 "num": 2
             }]
         }, {
-            "name": "girl(T波异常).March",
+            "name": "girl(T波异常).November",
             "num": 3,
             "children": [{
                 "name": "boy(T波异常).man",
                 "size": 100,
                 "num": 1
             }]
-        }, {
-            "name": "girl(淋巴细胞%(LYMPH%)偏高).wonmen",
-            "num": 2,
-            "children": [{
-                "name": "boy(淋巴细胞%(LYMPH%)偏高).man",
-                "size": 100,
-                "num": 2
-            }]
         }]
     }, {
         "name": "March.March",
         "num": 6854,
         "children": [{
-            "name": "girl(双乳腺增生症).September",
+            "name": "girl(双乳腺增生症).November",
             "num": 1,
             "children": [{
                 "name": "boy(双乳腺增生症).man",
@@ -140,7 +140,7 @@
                 "num": 0
             }]
         }, {
-            "name": "girl(椎间盘突出).March",
+            "name": "girl(椎间盘突出).July",
             "num": 1,
             "children": [{
                 "name": "boy(椎间盘突出).man",
@@ -148,7 +148,7 @@
                 "num": 0
             }]
         }, {
-            "name": "girl(左肾小结石).June",
+            "name": "girl(左肾小结石).May",
             "num": 1,
             "children": [{
                 "name": "boy(左肾小结石).man",
@@ -156,10 +156,34 @@
                 "num": 0
             }]
         }, {
-            "name": "girl(乳腺增生症).December",
+            "name": "girl(乳腺增生症).November",
             "num": 1,
             "children": [{
                 "name": "boy(乳腺增生症).man",
+                "size": 100,
+                "num": 0
+            }]
+        }, {
+            "name": "girl(椎管狭窄).June",
+            "num": 1,
+            "children": [{
+                "name": "boy(椎管狭窄).man",
+                "size": 100,
+                "num": 0
+            }]
+        }, {
+            "name": "girl(椎体退行性变).September",
+            "num": 1,
+            "children": [{
+                "name": "boy(椎体退行性变).man",
+                "size": 100,
+                "num": 0
+            }]
+        }, {
+            "name": "girl(双乳腺增生症超声改变).June",
+            "num": 1,
+            "children": [{
+                "name": "boy(双乳腺增生症超声改变).man",
                 "size": 100,
                 "num": 0
             }]
@@ -172,7 +196,7 @@
         "name": "May.May",
         "num": 6854,
         "children": [{
-            "name": "girl(总胆固醇(CHOL)偏高).September",
+            "name": "girl(总胆固醇(CHOL)偏高).January",
             "num": 35,
             "children": [{
                 "name": "boy(总胆固醇(CHOL)偏高).man",
@@ -180,7 +204,7 @@
                 "num": 44
             }]
         }, {
-            "name": "girl(载脂蛋白A1(ApoA1)偏低).April",
+            "name": "girl(载脂蛋白A1(ApoA1)偏低).October",
             "num": 24,
             "children": [{
                 "name": "boy(载脂蛋白A1(ApoA1)偏低).man",
@@ -188,7 +212,7 @@
                 "num": 31
             }]
         }, {
-            "name": "girl(高密度脂蛋白(HDL-C)偏低).November",
+            "name": "girl(高密度脂蛋白(HDL-C)偏低).October",
             "num": 14,
             "children": [{
                 "name": "boy(高密度脂蛋白(HDL-C)偏低).man",
@@ -196,7 +220,7 @@
                 "num": 37
             }]
         }, {
-            "name": "girl(脂肪肝).February",
+            "name": "girl(脂肪肝).May",
             "num": 10,
             "children": [{
                 "name": "boy(脂肪肝).man",
@@ -204,15 +228,7 @@
                 "num": 35
             }]
         }, {
-            "name": "girl(囊肿).January",
-            "num": 10,
-            "children": [{
-                "name": "boy(囊肿).man",
-                "size": 100,
-                "num": 29
-            }]
-        }, {
-            "name": "girl(窦性心动过缓).November",
+            "name": "girl(窦性心动过缓).April",
             "num": 14,
             "children": [{
                 "name": "boy(窦性心动过缓).man",
@@ -220,7 +236,7 @@
                 "num": 21
             }]
         }, {
-            "name": "girl(咽炎).May",
+            "name": "girl(咽炎).April",
             "num": 10,
             "children": [{
                 "name": "boy(咽炎).man",
@@ -228,7 +244,7 @@
                 "num": 21
             }]
         }, {
-            "name": "girl(前列腺增生).August",
+            "name": "girl(前列腺增生).February",
             "num": 0,
             "children": [{
                 "name": "boy(前列腺增生).man",
@@ -236,7 +252,15 @@
                 "num": 30
             }]
         }, {
-            "name": "girl(脂蛋白a(LPa)偏高).December",
+            "name": "girl(胆红素(TBIL)偏高).November",
+            "num": 3,
+            "children": [{
+                "name": "boy(胆红素(TBIL)偏高).man",
+                "size": 100,
+                "num": 24
+            }]
+        }, {
+            "name": "girl(脂蛋白a(LPa)偏高).August",
             "num": 17,
             "children": [{
                 "name": "boy(脂蛋白a(LPa)偏高).man",
@@ -244,7 +268,7 @@
                 "num": 10
             }]
         }, {
-            "name": "girl(超重).August",
+            "name": "girl(超重).May",
             "num": 6,
             "children": [{
                 "name": "boy(超重).man",
@@ -252,7 +276,7 @@
                 "num": 21
             }]
         }, {
-            "name": "girl(血压高).August",
+            "name": "girl(血压高).November",
             "num": 9,
             "children": [{
                 "name": "boy(血压高).man",
@@ -260,7 +284,7 @@
                 "num": 18
             }]
         }, {
-            "name": "girl(三尖瓣少量反流).March",
+            "name": "girl(三尖瓣少量反流).February",
             "num": 7,
             "children": [{
                 "name": "boy(三尖瓣少量反流).man",
@@ -268,35 +292,35 @@
                 "num": 20
             }]
         }, {
-            "name": "girl(直接胆红素(DBIL)偏高).September",
-            "num": 3,
+            "name": "girl(肝囊肿).January",
+            "num": 5,
             "children": [{
-                "name": "boy(直接胆红素(DBIL)偏高).man",
+                "name": "boy(肝囊肿).man",
                 "size": 100,
-                "num": 21
+                "num": 16
             }]
         }, {
-            "name": "girl(总胆红素(TBIL)偏高).June",
-            "num": 3,
+            "name": "girl(尿酸(UA)偏高).July",
+            "num": 5,
             "children": [{
-                "name": "boy(总胆红素(TBIL)偏高).man",
+                "name": "boy(尿酸(UA)偏高).man",
                 "size": 100,
-                "num": 20
+                "num": 14
             }]
         }, {
-            "name": "girl(胆红素(TBIL)偏高).June",
-            "num": 3,
+            "name": "girl(低密度脂蛋白(LDL--C)偏高).October",
+            "num": 9,
             "children": [{
-                "name": "boy(胆红素(TBIL)偏高).man",
+                "name": "boy(低密度脂蛋白(LDL--C)偏高).man",
                 "size": 100,
-                "num": 20
+                "num": 9
             }]
         }]
     }, {
         "name": "June.June",
         "num": 6854,
         "children": [{
-            "name": "girl(牙结石).November",
+            "name": "girl(牙结石).May",
             "num": 28,
             "children": [{
                 "name": "boy(牙结石).man",
@@ -304,7 +328,7 @@
                 "num": 80
             }]
         }, {
-            "name": "girl(总胆固醇(CHOL)偏高).wonmen",
+            "name": "girl(总胆固醇(CHOL)偏高).October",
             "num": 40,
             "children": [{
                 "name": "boy(总胆固醇(CHOL)偏高).man",
@@ -312,7 +336,7 @@
                 "num": 56
             }]
         }, {
-            "name": "girl(高密度脂蛋白(HDL-C)偏低).July",
+            "name": "girl(高密度脂蛋白(HDL-C)偏低).May",
             "num": 20,
             "children": [{
                 "name": "boy(高密度脂蛋白(HDL-C)偏低).man",
@@ -320,7 +344,7 @@
                 "num": 56
             }]
         }, {
-            "name": "girl(脂肪肝).July",
+            "name": "girl(脂肪肝).wonmen",
             "num": 13,
             "children": [{
                 "name": "boy(脂肪肝).man",
@@ -328,7 +352,7 @@
                 "num": 57
             }]
         }, {
-            "name": "girl(窦性心动过缓).April",
+            "name": "girl(窦性心动过缓).September",
             "num": 24,
             "children": [{
                 "name": "boy(窦性心动过缓).man",
@@ -336,7 +360,7 @@
                 "num": 45
             }]
         }, {
-            "name": "girl(智齿).January",
+            "name": "girl(智齿).June",
             "num": 17,
             "children": [{
                 "name": "boy(智齿).man",
@@ -344,15 +368,7 @@
                 "num": 37
             }]
         }, {
-            "name": "girl(囊肿).wonmen",
-            "num": 21,
-            "children": [{
-                "name": "boy(囊肿).man",
-                "size": 100,
-                "num": 22
-            }]
-        }, {
-            "name": "girl(咽炎).October",
+            "name": "girl(咽炎).June",
             "num": 8,
             "children": [{
                 "name": "boy(咽炎).man",
@@ -360,7 +376,7 @@
                 "num": 37
             }]
         }, {
-            "name": "girl(尿酸(UA)偏高).February",
+            "name": "girl(尿酸(UA)偏高).June",
             "num": 8,
             "children": [{
                 "name": "boy(尿酸(UA)偏高).man",
@@ -376,7 +392,15 @@
                 "num": 24
             }]
         }, {
-            "name": "girl(载脂蛋白A1(ApoA1)偏低).March",
+            "name": "girl(胆红素(TBIL)偏高).October",
+            "num": 9,
+            "children": [{
+                "name": "boy(胆红素(TBIL)偏高).man",
+                "size": 100,
+                "num": 28
+            }]
+        }, {
+            "name": "girl(载脂蛋白A1(ApoA1)偏低).December",
             "num": 12,
             "children": [{
                 "name": "boy(载脂蛋白A1(ApoA1)偏低).man",
@@ -384,7 +408,7 @@
                 "num": 23
             }]
         }, {
-            "name": "girl(血压高).January",
+            "name": "girl(血压高).May",
             "num": 10,
             "children": [{
                 "name": "boy(血压高).man",
@@ -392,7 +416,7 @@
                 "num": 25
             }]
         }, {
-            "name": "girl(龋齿).August",
+            "name": "girl(龋齿).April",
             "num": 15,
             "children": [{
                 "name": "boy(龋齿).man",
@@ -400,27 +424,27 @@
                 "num": 19
             }]
         }, {
-            "name": "girl(总胆红素(TBIL)偏高).August",
-            "num": 8,
+            "name": "girl(平均血红蛋白浓度(MCHC)偏高).August",
+            "num": 5,
             "children": [{
-                "name": "boy(总胆红素(TBIL)偏高).man",
+                "name": "boy(平均血红蛋白浓度(MCHC)偏高).man",
                 "size": 100,
-                "num": 24
+                "num": 23
             }]
         }, {
-            "name": "girl(胆红素(TBIL)偏高).wonmen",
-            "num": 8,
+            "name": "girl(超重).September",
+            "num": 5,
             "children": [{
-                "name": "boy(胆红素(TBIL)偏高).man",
+                "name": "boy(超重).man",
                 "size": 100,
-                "num": 24
+                "num": 22
             }]
         }]
     }, {
         "name": "July.July",
         "num": 6854,
         "children": [{
-            "name": "girl(高密度脂蛋白(HDL-C)偏低).September",
+            "name": "girl(高密度脂蛋白(HDL-C)偏低).wonmen",
             "num": 27,
             "children": [{
                 "name": "boy(高密度脂蛋白(HDL-C)偏低).man",
@@ -436,7 +460,7 @@
                 "num": 67
             }]
         }, {
-            "name": "girl(脂肪肝).January",
+            "name": "girl(脂肪肝).May",
             "num": 15,
             "children": [{
                 "name": "boy(脂肪肝).man",
@@ -444,7 +468,7 @@
                 "num": 76
             }]
         }, {
-            "name": "girl(窦性心动过缓).April",
+            "name": "girl(窦性心动过缓).wonmen",
             "num": 30,
             "children": [{
                 "name": "boy(窦性心动过缓).man",
@@ -460,7 +484,7 @@
                 "num": 63
             }]
         }, {
-            "name": "girl(尿酸(UA)偏高).October",
+            "name": "girl(尿酸(UA)偏高).September",
             "num": 10,
             "children": [{
                 "name": "boy(尿酸(UA)偏高).man",
@@ -468,7 +492,7 @@
                 "num": 64
             }]
         }, {
-            "name": "girl(超重).May",
+            "name": "girl(超重).March",
             "num": 15,
             "children": [{
                 "name": "boy(超重).man",
@@ -476,7 +500,7 @@
                 "num": 56
             }]
         }, {
-            "name": "girl(平均血红蛋白浓度(MCHC)偏高).January",
+            "name": "girl(平均血红蛋白浓度(MCHC)偏高).December",
             "num": 4,
             "children": [{
                 "name": "boy(平均血红蛋白浓度(MCHC)偏高).man",
@@ -484,7 +508,7 @@
                 "num": 57
             }]
         }, {
-            "name": "girl(智齿).October",
+            "name": "girl(智齿).May",
             "num": 23,
             "children": [{
                 "name": "boy(智齿).man",
@@ -492,7 +516,7 @@
                 "num": 38
             }]
         }, {
-            "name": "girl(载脂蛋白A1(ApoA1)偏低).May",
+            "name": "girl(载脂蛋白A1(ApoA1)偏低).wonmen",
             "num": 29,
             "children": [{
                 "name": "boy(载脂蛋白A1(ApoA1)偏低).man",
@@ -500,15 +524,7 @@
                 "num": 30
             }]
         }, {
-            "name": "girl(囊肿).October",
-            "num": 22,
-            "children": [{
-                "name": "boy(囊肿).man",
-                "size": 100,
-                "num": 36
-            }]
-        }, {
-            "name": "girl(咽炎).June",
+            "name": "girl(咽炎).November",
             "num": 19,
             "children": [{
                 "name": "boy(咽炎).man",
@@ -516,7 +532,15 @@
                 "num": 38
             }]
         }, {
-            "name": "girl(脂蛋白a(LPa)偏高).February",
+            "name": "girl(胆红素(TBIL)偏高).September",
+            "num": 25,
+            "children": [{
+                "name": "boy(胆红素(TBIL)偏高).man",
+                "size": 100,
+                "num": 29
+            }]
+        }, {
+            "name": "girl(脂蛋白a(LPa)偏高).October",
             "num": 18,
             "children": [{
                 "name": "boy(脂蛋白a(LPa)偏高).man",
@@ -524,20 +548,20 @@
                 "num": 33
             }]
         }, {
-            "name": "girl(总胆红素(TBIL)偏高).June",
-            "num": 20,
+            "name": "girl(谷丙转氨酶(ALT)偏高).September",
+            "num": 10,
             "children": [{
-                "name": "boy(总胆红素(TBIL)偏高).man",
+                "name": "boy(谷丙转氨酶(ALT)偏高).man",
                 "size": 100,
-                "num": 27
+                "num": 36
             }]
         }, {
-            "name": "girl(胆红素(TBIL)偏高).June",
-            "num": 20,
+            "name": "girl(牙色素附着).May",
+            "num": 21,
             "children": [{
-                "name": "boy(胆红素(TBIL)偏高).man",
+                "name": "boy(牙色素附着).man",
                 "size": 100,
-                "num": 27
+                "num": 17
             }]
         }]
     }, {
@@ -552,7 +576,7 @@
                 "num": 30
             }]
         }, {
-            "name": "girl(高密度脂蛋白(HDL-C)偏低).September",
+            "name": "girl(高密度脂蛋白(HDL-C)偏低).January",
             "num": 20,
             "children": [{
                 "name": "boy(高密度脂蛋白(HDL-C)偏低).man",
@@ -560,15 +584,7 @@
                 "num": 17
             }]
         }, {
-            "name": "girl(囊肿).July",
-            "num": 15,
-            "children": [{
-                "name": "boy(囊肿).man",
-                "size": 100,
-                "num": 13
-            }]
-        }, {
-            "name": "girl(牙结石).May",
+            "name": "girl(牙结石).October",
             "num": 6,
             "children": [{
                 "name": "boy(牙结石).man",
@@ -576,31 +592,15 @@
                 "num": 19
             }]
         }, {
-            "name": "girl(总胆红素(TBIL)偏高).wonmen",
-            "num": 4,
-            "children": [{
-                "name": "boy(总胆红素(TBIL)偏高).man",
-                "size": 100,
-                "num": 18
-            }]
-        }, {
-            "name": "girl(直接胆红素(DBIL)偏高).February",
-            "num": 5,
-            "children": [{
-                "name": "boy(直接胆红素(DBIL)偏高).man",
-                "size": 100,
-                "num": 17
-            }]
-        }, {
-            "name": "girl(胆红素(TBIL)偏高).May",
-            "num": 4,
+            "name": "girl(胆红素(TBIL)偏高).November",
+            "num": 6,
             "children": [{
                 "name": "boy(胆红素(TBIL)偏高).man",
                 "size": 100,
                 "num": 18
             }]
         }, {
-            "name": "girl(脂肪肝).May",
+            "name": "girl(脂肪肝).March",
             "num": 5,
             "children": [{
                 "name": "boy(脂肪肝).man",
@@ -608,7 +608,7 @@
                 "num": 15
             }]
         }, {
-            "name": "girl(谷丙转氨酶(ALT)偏高).April",
+            "name": "girl(谷丙转氨酶(ALT)偏高).December",
             "num": 1,
             "children": [{
                 "name": "boy(谷丙转氨酶(ALT)偏高).man",
@@ -616,7 +616,7 @@
                 "num": 18
             }]
         }, {
-            "name": "girl(平均血红蛋白浓度(MCHC)偏高).August",
+            "name": "girl(平均血红蛋白浓度(MCHC)偏高).October",
             "num": 4,
             "children": [{
                 "name": "boy(平均血红蛋白浓度(MCHC)偏高).man",
@@ -624,7 +624,7 @@
                 "num": 14
             }]
         }, {
-            "name": "girl(超重).February",
+            "name": "girl(超重).July",
             "num": 7,
             "children": [{
                 "name": "boy(超重).man",
@@ -632,7 +632,7 @@
                 "num": 10
             }]
         }, {
-            "name": "girl(肝囊肿).March",
+            "name": "girl(肝囊肿).wonmen",
             "num": 9,
             "children": [{
                 "name": "boy(肝囊肿).man",
@@ -640,7 +640,7 @@
                 "num": 7
             }]
         }, {
-            "name": "girl(尿酸(UA)偏高).July",
+            "name": "girl(尿酸(UA)偏高).wonmen",
             "num": 4,
             "children": [{
                 "name": "boy(尿酸(UA)偏高).man",
@@ -648,27 +648,51 @@
                 "num": 11
             }]
         }, {
-            "name": "girl(间接胆红素(IBIL)偏高).November",
-            "num": 3,
-            "children": [{
-                "name": "boy(间接胆红素(IBIL)偏高).man",
-                "size": 100,
-                "num": 12
-            }]
-        }, {
-            "name": "girl(智齿).June",
+            "name": "girl(智齿).December",
             "num": 8,
             "children": [{
                 "name": "boy(智齿).man",
                 "size": 100,
                 "num": 7
             }]
+        }, {
+            "name": "girl(载脂蛋白A1(ApoA1)偏低).November",
+            "num": 6,
+            "children": [{
+                "name": "boy(载脂蛋白A1(ApoA1)偏低).man",
+                "size": 100,
+                "num": 8
+            }]
+        }, {
+            "name": "girl(总胆固醇(CHOL)偏高).June",
+            "num": 7,
+            "children": [{
+                "name": "boy(总胆固醇(CHOL)偏高).man",
+                "size": 100,
+                "num": 7
+            }]
+        }, {
+            "name": "girl(甲状腺双侧叶结节).January",
+            "num": 9,
+            "children": [{
+                "name": "boy(甲状腺双侧叶结节).man",
+                "size": 100,
+                "num": 4
+            }]
+        }, {
+            "name": "girl(血压高).July",
+            "num": 4,
+            "children": [{
+                "name": "boy(血压高).man",
+                "size": 100,
+                "num": 9
+            }]
         }]
     }, {
         "name": "September.September",
         "num": 6854,
         "children": [{
-            "name": "girl(高密度脂蛋白(HDL-C)偏低).July",
+            "name": "girl(高密度脂蛋白(HDL-C)偏低).March",
             "num": 20,
             "children": [{
                 "name": "boy(高密度脂蛋白(HDL-C)偏低).man",
@@ -676,7 +700,7 @@
                 "num": 47
             }]
         }, {
-            "name": "girl(牙结石).wonmen",
+            "name": "girl(牙结石).September",
             "num": 13,
             "children": [{
                 "name": "boy(牙结石).man",
@@ -684,7 +708,7 @@
                 "num": 51
             }]
         }, {
-            "name": "girl(窦性心动过缓).March",
+            "name": "girl(窦性心动过缓).February",
             "num": 15,
             "children": [{
                 "name": "boy(窦性心动过缓).man",
@@ -692,7 +716,7 @@
                 "num": 31
             }]
         }, {
-            "name": "girl(脂肪肝).wonmen",
+            "name": "girl(脂肪肝).July",
             "num": 10,
             "children": [{
                 "name": "boy(脂肪肝).man",
@@ -700,7 +724,7 @@
                 "num": 29
             }]
         }, {
-            "name": "girl(尿酸(UA)偏高).April",
+            "name": "girl(尿酸(UA)偏高).March",
             "num": 2,
             "children": [{
                 "name": "boy(尿酸(UA)偏高).man",
@@ -708,7 +732,7 @@
                 "num": 31
             }]
         }, {
-            "name": "girl(智齿).April",
+            "name": "girl(智齿).January",
             "num": 13,
             "children": [{
                 "name": "boy(智齿).man",
@@ -716,7 +740,7 @@
                 "num": 19
             }]
         }, {
-            "name": "girl(谷丙转氨酶(ALT)偏高).August",
+            "name": "girl(谷丙转氨酶(ALT)偏高).May",
             "num": 5,
             "children": [{
                 "name": "boy(谷丙转氨酶(ALT)偏高).man",
@@ -724,15 +748,7 @@
                 "num": 24
             }]
         }, {
-            "name": "girl(囊肿).February",
-            "num": 12,
-            "children": [{
-                "name": "boy(囊肿).man",
-                "size": 100,
-                "num": 17
-            }]
-        }, {
-            "name": "girl(平均血红蛋白浓度(MCHC)偏高).January",
+            "name": "girl(平均血红蛋白浓度(MCHC)偏高).wonmen",
             "num": 1,
             "children": [{
                 "name": "boy(平均血红蛋白浓度(MCHC)偏高).man",
@@ -740,7 +756,7 @@
                 "num": 26
             }]
         }, {
-            "name": "girl(咽炎).June",
+            "name": "girl(咽炎).September",
             "num": 4,
             "children": [{
                 "name": "boy(咽炎).man",
@@ -748,7 +764,7 @@
                 "num": 18
             }]
         }, {
-            "name": "girl(牙色素附着).February",
+            "name": "girl(牙色素附着).August",
             "num": 6,
             "children": [{
                 "name": "boy(牙色素附着).man",
@@ -756,7 +772,15 @@
                 "num": 14
             }]
         }, {
-            "name": "girl(血压高).wonmen",
+            "name": "girl(胆红素(TBIL)偏高).wonmen",
+            "num": 9,
+            "children": [{
+                "name": "boy(胆红素(TBIL)偏高).man",
+                "size": 100,
+                "num": 11
+            }]
+        }, {
+            "name": "girl(血压高).February",
             "num": 9,
             "children": [{
                 "name": "boy(血压高).man",
@@ -764,7 +788,7 @@
                 "num": 10
             }]
         }, {
-            "name": "girl(肝囊肿).August",
+            "name": "girl(肝囊肿).wonmen",
             "num": 9,
             "children": [{
                 "name": "boy(肝囊肿).man",
@@ -772,7 +796,7 @@
                 "num": 9
             }]
         }, {
-            "name": "girl(乙肝表面抗体偏高).February",
+            "name": "girl(乙肝表面抗体偏高).May",
             "num": 10,
             "children": [{
                 "name": "boy(乙肝表面抗体偏高).man",
@@ -780,7 +804,7 @@
                 "num": 8
             }]
         }, {
-            "name": "girl(总胆固醇(CHOL)偏高).March",
+            "name": "girl(总胆固醇(CHOL)偏高).August",
             "num": 7,
             "children": [{
                 "name": "boy(总胆固醇(CHOL)偏高).man",
@@ -800,7 +824,7 @@
                 "num": 41
             }]
         }, {
-            "name": "girl(高密度脂蛋白(HDL-C)偏低).August",
+            "name": "girl(高密度脂蛋白(HDL-C)偏低).February",
             "num": 17,
             "children": [{
                 "name": "boy(高密度脂蛋白(HDL-C)偏低).man",
@@ -808,7 +832,7 @@
                 "num": 39
             }]
         }, {
-            "name": "girl(咽炎).October",
+            "name": "girl(咽炎).wonmen",
             "num": 9,
             "children": [{
                 "name": "boy(咽炎).man",
@@ -816,15 +840,7 @@
                 "num": 43
             }]
         }, {
-            "name": "girl(囊肿).October",
-            "num": 23,
-            "children": [{
-                "name": "boy(囊肿).man",
-                "size": 100,
-                "num": 29
-            }]
-        }, {
-            "name": "girl(脂肪肝).November",
+            "name": "girl(脂肪肝).July",
             "num": 12,
             "children": [{
                 "name": "boy(脂肪肝).man",
@@ -832,7 +848,7 @@
                 "num": 36
             }]
         }, {
-            "name": "girl(谷丙转氨酶(ALT)偏高).March",
+            "name": "girl(谷丙转氨酶(ALT)偏高).wonmen",
             "num": 9,
             "children": [{
                 "name": "boy(谷丙转氨酶(ALT)偏高).man",
@@ -840,7 +856,7 @@
                 "num": 33
             }]
         }, {
-            "name": "girl(总胆固醇(CHOL)偏高).September",
+            "name": "girl(总胆固醇(CHOL)偏高).June",
             "num": 12,
             "children": [{
                 "name": "boy(总胆固醇(CHOL)偏高).man",
@@ -848,7 +864,7 @@
                 "num": 24
             }]
         }, {
-            "name": "girl(牙结石).December",
+            "name": "girl(牙结石).May",
             "num": 10,
             "children": [{
                 "name": "boy(牙结石).man",
@@ -856,7 +872,7 @@
                 "num": 26
             }]
         }, {
-            "name": "girl(尿酸(UA)偏高).December",
+            "name": "girl(尿酸(UA)偏高).July",
             "num": 8,
             "children": [{
                 "name": "boy(尿酸(UA)偏高).man",
@@ -864,31 +880,15 @@
                 "num": 27
             }]
         }, {
-            "name": "girl(直接胆红素(DBIL)偏高).April",
-            "num": 3,
-            "children": [{
-                "name": "boy(直接胆红素(DBIL)偏高).man",
-                "size": 100,
-                "num": 25
-            }]
-        }, {
-            "name": "girl(总胆红素(TBIL)偏高).wonmen",
-            "num": 3,
-            "children": [{
-                "name": "boy(总胆红素(TBIL)偏高).man",
-                "size": 100,
-                "num": 24
-            }]
-        }, {
-            "name": "girl(胆红素(TBIL)偏高).wonmen",
-            "num": 3,
+            "name": "girl(胆红素(TBIL)偏高).March",
+            "num": 6,
             "children": [{
                 "name": "boy(胆红素(TBIL)偏高).man",
                 "size": 100,
-                "num": 24
+                "num": 27
             }]
         }, {
-            "name": "girl(甲状腺双侧叶结节).November",
+            "name": "girl(甲状腺双侧叶结节).June",
             "num": 13,
             "children": [{
                 "name": "boy(甲状腺双侧叶结节).man",
@@ -896,7 +896,7 @@
                 "num": 13
             }]
         }, {
-            "name": "girl(肝囊肿).January",
+            "name": "girl(肝囊肿).July",
             "num": 13,
             "children": [{
                 "name": "boy(肝囊肿).man",
@@ -904,19 +904,43 @@
                 "num": 12
             }]
         }, {
-            "name": "girl(血压高).January",
+            "name": "girl(血压高).wonmen",
             "num": 6,
             "children": [{
                 "name": "boy(血压高).man",
                 "size": 100,
                 "num": 19
             }]
+        }, {
+            "name": "girl(肾囊肿).May",
+            "num": 6,
+            "children": [{
+                "name": "boy(肾囊肿).man",
+                "size": 100,
+                "num": 17
+            }]
+        }, {
+            "name": "girl(平均血红蛋白浓度(MCHC)偏高).March",
+            "num": 2,
+            "children": [{
+                "name": "boy(平均血红蛋白浓度(MCHC)偏高).man",
+                "size": 100,
+                "num": 20
+            }]
+        }, {
+            "name": "girl(γ-谷氨酰转肽酶(GGT)偏高).December",
+            "num": 3,
+            "children": [{
+                "name": "boy(γ-谷氨酰转肽酶(GGT)偏高).man",
+                "size": 100,
+                "num": 18
+            }]
         }]
     }, {
         "name": "November.November",
         "num": 6854,
         "children": [{
-            "name": "girl(牙结石).October",
+            "name": "girl(牙结石).November",
             "num": 9,
             "children": [{
                 "name": "boy(牙结石).man",
@@ -924,7 +948,7 @@
                 "num": 26
             }]
         }, {
-            "name": "girl(窦性心动过缓).August",
+            "name": "girl(窦性心动过缓).December",
             "num": 1,
             "children": [{
                 "name": "boy(窦性心动过缓).man",
@@ -932,7 +956,7 @@
                 "num": 33
             }]
         }, {
-            "name": "girl(脂肪肝).wonmen",
+            "name": "girl(脂肪肝).February",
             "num": 12,
             "children": [{
                 "name": "boy(脂肪肝).man",
@@ -940,7 +964,7 @@
                 "num": 11
             }]
         }, {
-            "name": "girl(平均血红蛋白浓度(MCHC)偏高).August",
+            "name": "girl(平均血红蛋白浓度(MCHC)偏高).July",
             "num": 1,
             "children": [{
                 "name": "boy(平均血红蛋白浓度(MCHC)偏高).man",
@@ -948,7 +972,7 @@
                 "num": 21
             }]
         }, {
-            "name": "girl(智齿).April",
+            "name": "girl(智齿).March",
             "num": 6,
             "children": [{
                 "name": "boy(智齿).man",
@@ -956,7 +980,7 @@
                 "num": 16
             }]
         }, {
-            "name": "girl(血压高).wonmen",
+            "name": "girl(血压高).August",
             "num": 5,
             "children": [{
                 "name": "boy(血压高).man",
@@ -964,7 +988,7 @@
                 "num": 17
             }]
         }, {
-            "name": "girl(高密度脂蛋白(HDL-C)偏低).August",
+            "name": "girl(高密度脂蛋白(HDL-C)偏低).July",
             "num": 4,
             "children": [{
                 "name": "boy(高密度脂蛋白(HDL-C)偏低).man",
@@ -972,7 +996,7 @@
                 "num": 16
             }]
         }, {
-            "name": "girl(总胆固醇(CHOL)偏高).February",
+            "name": "girl(总胆固醇(CHOL)偏高).January",
             "num": 5,
             "children": [{
                 "name": "boy(总胆固醇(CHOL)偏高).man",
@@ -980,7 +1004,7 @@
                 "num": 12
             }]
         }, {
-            "name": "girl(低密度脂蛋白(LDL--C)偏高).May",
+            "name": "girl(低密度脂蛋白(LDL--C)偏高).October",
             "num": 5,
             "children": [{
                 "name": "boy(低密度脂蛋白(LDL--C)偏高).man",
@@ -996,7 +1020,7 @@
                 "num": 12
             }]
         }, {
-            "name": "girl(谷丙转氨酶(ALT)偏高).March",
+            "name": "girl(谷丙转氨酶(ALT)偏高).September",
             "num": 3,
             "children": [{
                 "name": "boy(谷丙转氨酶(ALT)偏高).man",
@@ -1004,7 +1028,7 @@
                 "num": 10
             }]
         }, {
-            "name": "girl(窦性心律不齐).April",
+            "name": "girl(窦性心律不齐).March",
             "num": 2,
             "children": [{
                 "name": "boy(窦性心律不齐).man",
@@ -1012,15 +1036,7 @@
                 "num": 10
             }]
         }, {
-            "name": "girl(囊肿).December",
-            "num": 5,
-            "children": [{
-                "name": "boy(囊肿).man",
-                "size": 100,
-                "num": 7
-            }]
-        }, {
-            "name": "girl(咽炎).January",
+            "name": "girl(咽炎).February",
             "num": 1,
             "children": [{
                 "name": "boy(咽炎).man",
@@ -1028,12 +1044,20 @@
                 "num": 9
             }]
         }, {
-            "name": "girl(电轴右偏).July",
+            "name": "girl(电轴右偏).April",
             "num": 0,
             "children": [{
                 "name": "boy(电轴右偏).man",
                 "size": 100,
                 "num": 10
+            }]
+        }, {
+            "name": "girl(γ-谷氨酰转肽酶(GGT)偏高).December",
+            "num": 2,
+            "children": [{
+                "name": "boy(γ-谷氨酰转肽酶(GGT)偏高).man",
+                "size": 100,
+                "num": 8
             }]
         }]
     }, {

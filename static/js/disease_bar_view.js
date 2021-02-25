@@ -53,7 +53,10 @@ function drawTowBar1(obj) { //改参数
 	var option = {
 		baseOption: {
 			title: {
-				text: obj['disease_name']
+				text: obj['disease_name'],
+				textStyle:{
+				    fontSize:10
+				}
 			},
 			// backgroundColor: background,
 			timeline: {
@@ -385,6 +388,7 @@ function drawTowBar1(obj) { //改参数
 function drawTowbar2(obj) { //改参数
 
 	var TwoBar = echarts.init(document.getElementById("disease_bar_view"))
+	TwoBar.clear()
 	list = (Object.keys(obj))
 	// list.splice(0,1);
 	// console.log(list)
@@ -443,14 +447,21 @@ function drawTowbar2(obj) { //改参数
 			end: "rgba(0,222,255,0.4)"
 		},
 	];
+	var month;
+	if(TRANSPORT_DATA["month"]==0){
+	    month="全年"
+	}
+	else{
+	    month=TRANSPORT_DATA["month"]+"月"
+	}
 	var option = {
 		baseOption: {
-//			title: {
-//				text: "全年的高发疾病数据",
-//				textStyle:{
-//				    fontSize:8
-//				}
-//			},
+			title: {
+				text: month+"高发疾病数据",
+				textStyle:{
+				    fontSize:10
+				}
+			},
 			// backgroundColor: background,
 			timeline: {
 				show: false,
@@ -756,10 +767,10 @@ function drawTowbar2(obj) { //改参数
 	});
 	TwoBar.setOption(option)
 	TwoBar.on("click", function (params) {
-		console.log("---->", params.name);
+		// console.log("---->", params.name);
 		TRANSPORT_DATA["disease"] = params.name;
 		TRANSPORT_DATA["id"] = "";
-		console.log(TRANSPORT_DATA);
+		// console.log(TRANSPORT_DATA);
 		redraw("/search_disease", "search_disease");
 
 		// drawTowBar1(params.name, o) //改参数

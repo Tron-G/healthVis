@@ -448,6 +448,7 @@ function drawBodyMap(type, data) {
     // 展示左边的器官排列
     function showOrganList(sex) {
         let disease_organs, organs_list, disease_name, disease_advice, body_svg;
+
         if (sex === "man") {
             disease_organs = man_disease_organs;
             organs_list = man_organs;
@@ -481,6 +482,30 @@ function drawBodyMap(type, data) {
                 item_x += counter * 110;
                 item_y += col * 100;
             }
+
+            //疾病建议分段
+            let advice_texts = [];
+            let words_count = 0;
+            let text_line = "";
+            for (let i = 0; i < disease_advice[organ_name].length; i++) {
+                if (disease_advice[organ_name][i] === "#") {
+                    if (text_line !== "") {
+                        advice_texts.push(text_line);
+                        text_line = "";
+                        words_count = 0;
+                    }
+                    continue;
+                }
+                text_line += disease_advice[organ_name][i];
+                words_count++;
+                if (words_count > 50) {
+                    advice_texts.push(text_line);
+                    words_count = 0;
+                    text_line = "";
+                }
+            }
+            advice_texts.push(text_line);
+
             //疾病名称
             svg.append("text")
                 .text(disease_name[organ_name])
@@ -529,21 +554,24 @@ function drawBodyMap(type, data) {
 
                     /////////////////////////////////
                     svg.append("rect")
-                        .attr("x", 450)
-                        .attr("y", 600)
+                        .attr("x", 400)
+                        .attr("y", 580)
                         .attr("id", "disease_advice")
-                        .attr("width", 600)
-                        .attr("height", 110)
+                        .attr("width", 650)
+                        .attr("height", 130)
                         .attr("fill", "rgba(125, 126, 128, 0.2)");
 
                     //疾病建议
-                    svg.append("text")
-                        .text(disease_advice[organ_name])
-                        .attr("x", 450)
-                        .attr("y", 620)
-                        .attr("id", "disease_advice_text")
-                        .attr("fill", "gray")
-                        .style("font-size", "12px");
+                    for (let i = 0; i < advice_texts.length; i++) {
+                        svg.append("text")
+                            .text(advice_texts[i])
+                            .attr("x", 400)
+                            .attr("y", 600 + i * 15)
+                            .attr("class", "disease_advice_text")
+                            .attr("fill", "black")
+                            .style("font-size", "12px");
+                    }
+
 
                     //隐藏其他未选择的器官
                     for (let j = 0; j < disease_organs.length; j++) {
@@ -578,7 +606,7 @@ function drawBodyMap(type, data) {
 
                     //移除建议文字
                     $("#disease_advice").remove();
-                    $("#disease_advice_text").remove();
+                    $(".disease_advice_text").remove();
 
                 })
         }
