@@ -2,10 +2,10 @@
 
 .container {
   position: absolute;
-  right: 20%;
-  top: 2%;
+  left: 4%;
+  top: 5%;
   width: 200px;
-  height: 50px;
+  height: 40px;
 }
 /*.container .search {*/
 /*  position: absolute;*/

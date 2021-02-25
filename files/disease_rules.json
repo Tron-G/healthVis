@@ -1,0 +1,4911 @@
+[
+    {
+        "condition": [
+            "ÑÊÑ×"
+        ],
+        "conclusion": [
+            "Ç°ÁÐÏÙÔöÉú"
+        ],
+        "possibility": 0.1004566210045662
+    },
+    {
+        "condition": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "¸ÎÄÒÖ×"
+        ],
+        "possibility": 0.10057471264367816
+    },
+    {
+        "condition": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "µ¨ºìËØ(TBIL)Æ«¸ß"
+        ],
+        "possibility": 0.10057471264367816
+    },
+    {
+        "condition": [
+            "ÑÀ½áÊ¯"
+        ],
+        "conclusion": [
+            "µ¨ºìËØ(TBIL)Æ«¸ß"
+        ],
+        "possibility": 0.10059171597633135
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "possibility": 0.10174418604651163
+    },
+    {
+        "condition": [
+            "Æ½¾ùÑªºìµ°°×Å¨¶È(MCHC)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ºìÏ¸°û·Ö²¼¿í¶ÈÆ«µÍ"
+        ],
+        "possibility": 0.10326086956521739
+    },
+    {
+        "condition": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "ÑªÑ¹¸ß"
+        ],
+        "possibility": 0.10344827586206896
+    },
+    {
+        "condition": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "Æ½¾ùÑªºìµ°°×Å¨¶È(MCHC)Æ«¸ß"
+        ],
+        "possibility": 0.10344827586206896
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "¶þ¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "possibility": 0.10416666666666667
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ç°ÁÐÏÙÔöÉú"
+        ],
+        "possibility": 0.10436893203883495
+    },
+    {
+        "condition": [
+            "ÑÊÑ×"
+        ],
+        "conclusion": [
+            "Æ½¾ùÑªºìµ°°×Å¨¶È(MCHC)Æ«¸ß"
+        ],
+        "possibility": 0.1050228310502283
+    },
+    {
+        "condition": [
+            "ÑÊÑ×"
+        ],
+        "conclusion": [
+            "µ¨ºìËØ(TBIL)Æ«¸ß"
+        ],
+        "possibility": 0.1050228310502283
+    },
+    {
+        "condition": [
+            "Æ½¾ùÑªºìµ°°×Å¨¶È(MCHC)Æ«¸ß"
+        ],
+        "conclusion": [
+            "³¬ÖØ"
+        ],
+        "possibility": 0.10869565217391305
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "×óÊÒ³äÓ¯Òì³£"
+        ],
+        "possibility": 0.109375
+    },
+    {
+        "condition": [
+            "ÑÀ½áÊ¯"
+        ],
+        "conclusion": [
+            "ÑÊÑ×"
+        ],
+        "possibility": 0.10946745562130178
+    },
+    {
+        "condition": [
+            "³¬ÖØ"
+        ],
+        "conclusion": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß"
+        ],
+        "possibility": 0.11046511627906977
+    },
+    {
+        "condition": [
+            "³¬ÖØ"
+        ],
+        "conclusion": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "possibility": 0.11046511627906977
+    },
+    {
+        "condition": [
+            "³¬ÖØ"
+        ],
+        "conclusion": [
+            "¦Ã-¹È°±õ£×ªëÄÃ¸(GGT)Æ«¸ß"
+        ],
+        "possibility": 0.11046511627906977
+    },
+    {
+        "condition": [
+            "ÑªÑ¹¸ß"
+        ],
+        "conclusion": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "possibility": 0.1130952380952381
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "Ç°ÁÐÏÙÔöÉú"
+        ],
+        "possibility": 0.11337209302325582
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×B(ApoB)Æ«¸ß"
+        ],
+        "possibility": 0.11407766990291263
+    },
+    {
+        "condition": [
+            "Æ½¾ùÑªºìµ°°×Å¨¶È(MCHC)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑÀ½áÊ¯"
+        ],
+        "possibility": 0.1141304347826087
+    },
+    {
+        "condition": [
+            "ÑÊÑ×"
+        ],
+        "conclusion": [
+            "ÎüÑÌ"
+        ],
+        "possibility": 0.11415525114155252
+    },
+    {
+        "condition": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß"
+        ],
+        "conclusion": [
+            "³¬ÖØ"
+        ],
+        "possibility": 0.11445783132530118
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "³¬ÖØ"
+        ],
+        "possibility": 0.11458333333333333
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "possibility": 0.11458333333333333
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "¸ÎÄÒÖ×"
+        ],
+        "possibility": 0.11458333333333333
+    },
+    {
+        "condition": [
+            "ÑÀ½áÊ¯"
+        ],
+        "conclusion": [
+            "ÑÀ²Ð¸ù"
+        ],
+        "possibility": 0.11538461538461538
+    },
+    {
+        "condition": [
+            "ÑÀ½áÊ¯"
+        ],
+        "conclusion": [
+            "³¬ÖØ"
+        ],
+        "possibility": 0.11538461538461538
+    },
+    {
+        "condition": [
+            "³¬ÖØ"
+        ],
+        "conclusion": [
+            "±Ç¼×·Ê´ó"
+        ],
+        "possibility": 0.11627906976744187
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "Æ½¾ùÑªºìµ°°×Å¨¶È(MCHC)Æ«¸ß"
+        ],
+        "possibility": 0.11627906976744187
+    },
+    {
+        "condition": [
+            "³¬ÖØ"
+        ],
+        "conclusion": [
+            "Æ½¾ùÑªºìµ°°×Å¨¶È(MCHC)Æ«¸ß"
+        ],
+        "possibility": 0.11627906976744187
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "³¬ÖØ"
+        ],
+        "possibility": 0.11650485436893204
+    },
+    {
+        "condition": [
+            "ÑÊÑ×"
+        ],
+        "conclusion": [
+            "±ÇÖÐ¸ôÆ«Çú"
+        ],
+        "possibility": 0.1187214611872146
+    },
+    {
+        "condition": [
+            "ÑªÑ¹¸ß"
+        ],
+        "conclusion": [
+            "Ç°ÁÐÏÙÔöÉú"
+        ],
+        "possibility": 0.11904761904761905
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "¦Ã-¹È°±õ£×ªëÄÃ¸(GGT)Æ«¸ß"
+        ],
+        "possibility": 0.11918604651162791
+    },
+    {
+        "condition": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "possibility": 0.11926605504587155
+    },
+    {
+        "condition": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß"
+        ],
+        "conclusion": [
+            "·ÊÅÖ"
+        ],
+        "possibility": 0.12048192771084337
+    },
+    {
+        "condition": [
+            "µ¨ºìËØ(TBIL)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑÊÑ×"
+        ],
+        "possibility": 0.12169312169312169
+    },
+    {
+        "condition": [
+            "³¬ÖØ"
+        ],
+        "conclusion": [
+            "Ç°ÁÐÏÙÔöÉú"
+        ],
+        "possibility": 0.12209302325581395
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "possibility": 0.1226993865030675
+    },
+    {
+        "condition": [
+            "Æ½¾ùÑªºìµ°°×Å¨¶È(MCHC)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑªÑ¹¸ß"
+        ],
+        "possibility": 0.125
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "¼××´ÏÙË«²àÒ¶½á½Ú"
+        ],
+        "possibility": 0.125
+    },
+    {
+        "condition": [
+            "Æ½¾ùÑªºìµ°°×Å¨¶È(MCHC)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑÊÑ×"
+        ],
+        "possibility": 0.125
+    },
+    {
+        "condition": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "conclusion": [
+            "³¬ÖØ"
+        ],
+        "possibility": 0.12751677852348992
+    },
+    {
+        "condition": [
+            "³¬ÖØ"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "possibility": 0.12790697674418605
+    },
+    {
+        "condition": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "possibility": 0.12844036697247704
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "conclusion": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "possibility": 0.12967032967032965
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "µ¨ºìËØ(TBIL)Æ«¸ß"
+        ],
+        "possibility": 0.13020833333333334
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ÊÓÍÈýõ¥(TG)Æ«¸ß"
+        ],
+        "possibility": 0.13106796116504854
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "conclusion": [
+            "ÑªÑ¹¸ß"
+        ],
+        "possibility": 0.13186813186813187
+    },
+    {
+        "condition": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "possibility": 0.13218390804597702
+    },
+    {
+        "condition": [
+            "µ¨ºìËØ(TBIL)Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.13227513227513227
+    },
+    {
+        "condition": [
+            "µ¨ºìËØ(TBIL)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "possibility": 0.13227513227513227
+    },
+    {
+        "condition": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ÎÄÒÖ×"
+        ],
+        "possibility": 0.1342281879194631
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "Ç°ÁÐÏÙÔöÉú"
+        ],
+        "possibility": 0.13496932515337423
+    },
+    {
+        "condition": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "possibility": 0.13505747126436782
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "Ç°ÁÐÏÙÔöÉú"
+        ],
+        "possibility": 0.13541666666666666
+    },
+    {
+        "condition": [
+            "Æ½¾ùÑªºìµ°°×Å¨¶È(MCHC)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.13586956521739132
+    },
+    {
+        "condition": [
+            "ÑÀ½áÊ¯"
+        ],
+        "conclusion": [
+            "ÑªÑ¹¸ß"
+        ],
+        "possibility": 0.13609467455621302
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "¸ÊÓÍÈýõ¥(TG)Æ«¸ß"
+        ],
+        "possibility": 0.13662790697674418
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "possibility": 0.13662790697674418
+    },
+    {
+        "condition": [
+            "ÑªÑ¹¸ß"
+        ],
+        "conclusion": [
+            "Æ½¾ùÑªºìµ°°×Å¨¶È(MCHC)Æ«¸ß"
+        ],
+        "possibility": 0.1369047619047619
+    },
+    {
+        "condition": [
+            "ÑªÑ¹¸ß"
+        ],
+        "conclusion": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "possibility": 0.1369047619047619
+    },
+    {
+        "condition": [
+            "µ¨ºìËØ(TBIL)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.13756613756613756
+    },
+    {
+        "condition": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "conclusion": [
+            "³¬ÖØ"
+        ],
+        "possibility": 0.13761467889908255
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ÎÄÒÖ×"
+        ],
+        "possibility": 0.1383495145631068
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "conclusion": [
+            "³¬ÖØ"
+        ],
+        "possibility": 0.13846153846153847
+    },
+    {
+        "condition": [
+            "¸ÎÄÒÖ×"
+        ],
+        "conclusion": [
+            "ÑÊÑ×"
+        ],
+        "possibility": 0.1388888888888889
+    },
+    {
+        "condition": [
+            "¸ÎÄÒÖ×"
+        ],
+        "conclusion": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "possibility": 0.1388888888888889
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "conclusion": [
+            "¸ÊÓÍÈýõ¥(TG)Æ«¸ß"
+        ],
+        "possibility": 0.14065934065934066
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "conclusion": [
+            "Æ½¾ùÑªºìµ°°×Å¨¶È(MCHC)Æ«¸ß"
+        ],
+        "possibility": 0.14065934065934066
+    },
+    {
+        "condition": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "ÑÀ½áÊ¯"
+        ],
+        "possibility": 0.14080459770114942
+    },
+    {
+        "condition": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑÀ½áÊ¯"
+        ],
+        "possibility": 0.14093959731543623
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "¿Õ¸¹ÑªÌÇ(GLU)Æ«¸ß"
+        ],
+        "possibility": 0.1411042944785276
+    },
+    {
+        "condition": [
+            "ÑÊÑ×"
+        ],
+        "conclusion": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "possibility": 0.1415525114155251
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß"
+        ],
+        "possibility": 0.1417910447761194
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑÊÑ×"
+        ],
+        "possibility": 0.14320388349514562
+    },
+    {
+        "condition": [
+            "ÑÀ½áÊ¯"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.14497041420118342
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "possibility": 0.14583333333333334
+    },
+    {
+        "condition": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß"
+        ],
+        "possibility": 0.14678899082568808
+    },
+    {
+        "condition": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "conclusion": [
+            "Æ½¾ùÑªºìµ°°×Å¨¶È(MCHC)Æ«¸ß"
+        ],
+        "possibility": 0.14678899082568808
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "possibility": 0.147239263803681
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "Æ½¾ùÑªºìµ°°×Å¨¶È(MCHC)Æ«¸ß"
+        ],
+        "possibility": 0.147239263803681
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑªÑ¹¸ß"
+        ],
+        "possibility": 0.1492537313432836
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ç°ÁÐÏÙÔöÉú"
+        ],
+        "possibility": 0.1492537313432836
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "³¬ÖØ"
+        ],
+        "possibility": 0.1492537313432836
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "conclusion": [
+            "ÑÊÑ×"
+        ],
+        "possibility": 0.14945054945054945
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "ÑªÑ¹¸ß"
+        ],
+        "possibility": 0.1511627906976744
+    },
+    {
+        "condition": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "³¬ÖØ"
+        ],
+        "possibility": 0.15229885057471265
+    },
+    {
+        "condition": [
+            "¸ÎÄÒÖ×"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "possibility": 0.15277777777777776
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "ÑÀ½áÊ¯"
+        ],
+        "possibility": 0.15406976744186046
+    },
+    {
+        "condition": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑªÑ¹¸ß"
+        ],
+        "possibility": 0.15436241610738255
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑªÑ¹¸ß"
+        ],
+        "possibility": 0.15533980582524273
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑÀ½áÊ¯"
+        ],
+        "possibility": 0.15533980582524273
+    },
+    {
+        "condition": [
+            "ÑÀ½áÊ¯"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.15680473372781065
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "ÑÊÑ×"
+        ],
+        "possibility": 0.15950920245398773
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "¦Ã-¹È°±õ£×ªëÄÃ¸(GGT)Æ«¸ß"
+        ],
+        "possibility": 0.15950920245398773
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "ÑÀ½áÊ¯"
+        ],
+        "possibility": 0.15950920245398773
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×B(ApoB)Æ«¸ß"
+        ],
+        "possibility": 0.15966386554621848
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑÊÑ×"
+        ],
+        "possibility": 0.15966386554621848
+    },
+    {
+        "condition": [
+            "ÑÊÑ×"
+        ],
+        "conclusion": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "possibility": 0.1598173515981735
+    },
+    {
+        "condition": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑÊÑ×"
+        ],
+        "possibility": 0.1605504587155963
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "Èý¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "possibility": 0.16145833333333334
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "conclusion": [
+            "ÑÀ½áÊ¯"
+        ],
+        "possibility": 0.16263736263736264
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "ÑÊÑ×"
+        ],
+        "possibility": 0.16279069767441862
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑÊÑ×"
+        ],
+        "possibility": 0.16417910447761194
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "possibility": 0.16417910447761194
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑÊÑ×"
+        ],
+        "possibility": 0.16521739130434782
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×B(ApoB)Æ«¸ß"
+        ],
+        "possibility": 0.16521739130434782
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "possibility": 0.16569767441860467
+    },
+    {
+        "condition": [
+            "¦Ã-¹È°±õ£×ªëÄÃ¸(GGT)Æ«¸ß"
+        ],
+        "conclusion": [
+            "³¬ÖØ"
+        ],
+        "possibility": 0.16666666666666666
+    },
+    {
+        "condition": [
+            "ÑªÑ¹¸ß"
+        ],
+        "conclusion": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "possibility": 0.16666666666666669
+    },
+    {
+        "condition": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "ÑÊÑ×"
+        ],
+        "possibility": 0.16666666666666669
+    },
+    {
+        "condition": [
+            "³¬ÖØ"
+        ],
+        "conclusion": [
+            "ÎüÑÌ"
+        ],
+        "possibility": 0.16860465116279072
+    },
+    {
+        "condition": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑÀ½áÊ¯"
+        ],
+        "possibility": 0.1686746987951807
+    },
+    {
+        "condition": [
+            "ÑÊÑ×"
+        ],
+        "conclusion": [
+            "ÑÀ½áÊ¯"
+        ],
+        "possibility": 0.16894977168949774
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "possibility": 0.16949152542372883
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "possibility": 0.16990291262135923
+    },
+    {
+        "condition": [
+            "ÖÇ³Ý"
+        ],
+        "conclusion": [
+            "È£³Ý"
+        ],
+        "possibility": 0.17032967032967034
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß"
+        ],
+        "possibility": 0.17151162790697674
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.17164179104477612
+    },
+    {
+        "condition": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.17241379310344826
+    },
+    {
+        "condition": [
+            "ÑÊÑ×"
+        ],
+        "conclusion": [
+            "ÑªÑ¹¸ß"
+        ],
+        "possibility": 0.1735159817351598
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.17391304347826086
+    },
+    {
+        "condition": [
+            "Æ½¾ùÑªºìµ°°×Å¨¶È(MCHC)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "possibility": 0.1739130434782609
+    },
+    {
+        "condition": [
+            "³¬ÖØ"
+        ],
+        "conclusion": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "possibility": 0.1744186046511628
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.1744186046511628
+    },
+    {
+        "condition": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "possibility": 0.174496644295302
+    },
+    {
+        "condition": [
+            "µ¨ºìËØ(TBIL)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.1746031746031746
+    },
+    {
+        "condition": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.17469879518072287
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "possibility": 0.1764705882352941
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "³¬ÖØ"
+        ],
+        "possibility": 0.17732558139534885
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß"
+        ],
+        "possibility": 0.17791411042944785
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "³¬ÖØ"
+        ],
+        "possibility": 0.17796610169491525
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "¦Ã-¹È°±õ£×ªëÄÃ¸(GGT)Æ«¸ß"
+        ],
+        "possibility": 0.17910447761194032
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑÀ½áÊ¯"
+        ],
+        "possibility": 0.17910447761194032
+    },
+    {
+        "condition": [
+            "µ¨ºìËØ(TBIL)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑÀ½áÊ¯"
+        ],
+        "possibility": 0.17989417989417988
+    },
+    {
+        "condition": [
+            "ÖÇ³Ý"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.18131868131868129
+    },
+    {
+        "condition": [
+            "ÖÇ³Ý"
+        ],
+        "conclusion": [
+            "ÑÀÉ«ËØ¸½×Å"
+        ],
+        "possibility": 0.18131868131868129
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "possibility": 0.18260869565217389
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "ÑªÑ¹¸ß"
+        ],
+        "possibility": 0.18404907975460122
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "possibility": 0.1846153846153846
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑÀ½áÊ¯"
+        ],
+        "possibility": 0.18487394957983191
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "possibility": 0.18487394957983191
+    },
+    {
+        "condition": [
+            "µ¨ºìËØ(TBIL)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.18518518518518517
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑÀ½áÊ¯"
+        ],
+        "possibility": 0.1864406779661017
+    },
+    {
+        "condition": [
+            "¸ÎÄÒÖ×"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.1875
+    },
+    {
+        "condition": [
+            "ÑÀ½áÊ¯"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.1893491124260355
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑÀ½áÊ¯"
+        ],
+        "possibility": 0.19130434782608696
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "possibility": 0.19130434782608696
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "possibility": 0.19270833333333334
+    },
+    {
+        "condition": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "possibility": 0.1927710843373494
+    },
+    {
+        "condition": [
+            "ÑÀÉ«ËØ¸½×Å"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.19327731092436973
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.19327731092436973
+    },
+    {
+        "condition": [
+            "ÄòÒþÑª"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.19387755102040816
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.19387755102040816
+    },
+    {
+        "condition": [
+            "Æ½¾ùÑªºìµ°°×Å¨¶È(MCHC)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.1956521739130435
+    },
+    {
+        "condition": [
+            "Ç°ÁÐÏÙÔöÉú"
+        ],
+        "conclusion": [
+            "ÑªÑ¹¸ß"
+        ],
+        "possibility": 0.19607843137254904
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.19631901840490798
+    },
+    {
+        "condition": [
+            "ÑÊÑ×"
+        ],
+        "conclusion": [
+            "±Ç¼×·Ê´ó"
+        ],
+        "possibility": 0.1963470319634703
+    },
+    {
+        "condition": [
+            "ÑÊÑ×"
+        ],
+        "conclusion": [
+            "³¬ÖØ"
+        ],
+        "possibility": 0.1963470319634703
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "possibility": 0.19902912621359226
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "conclusion": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "possibility": 0.2021978021978022
+    },
+    {
+        "condition": [
+            "Ç°ÁÐÏÙÔöÉú"
+        ],
+        "conclusion": [
+            "³¬ÖØ"
+        ],
+        "possibility": 0.20588235294117646
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.20659340659340658
+    },
+    {
+        "condition": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑÊÑ×"
+        ],
+        "possibility": 0.2080536912751678
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "³¬ÖØ"
+        ],
+        "possibility": 0.2085889570552147
+    },
+    {
+        "condition": [
+            "¼¡ôû(CREA)Æ«µÍ"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.20879120879120877
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ÊÓÍÈýõ¥(TG)Æ«¸ß"
+        ],
+        "possibility": 0.20895522388059704
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "³¬ÖØ"
+        ],
+        "possibility": 0.21111111111111108
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "possibility": 0.21111111111111108
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "possibility": 0.21111111111111108
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "possibility": 0.21186440677966104
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "possibility": 0.2127659574468085
+    },
+    {
+        "condition": [
+            "ÑªÑ¹¸ß"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.2142857142857143
+    },
+    {
+        "condition": [
+            "³¬ÖØ"
+        ],
+        "conclusion": [
+            "ÑªÑ¹¸ß"
+        ],
+        "possibility": 0.21511627906976746
+    },
+    {
+        "condition": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.21559633027522934
+    },
+    {
+        "condition": [
+            "Ç°ÁÐÏÙÔöÉú"
+        ],
+        "conclusion": [
+            "ÑÊÑ×"
+        ],
+        "possibility": 0.21568627450980393
+    },
+    {
+        "condition": [
+            "ÁÜ°ÍÏ¸°ûÊý(LYMPH#)Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.21590909090909088
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "possibility": 0.2164179104477612
+    },
+    {
+        "condition": [
+            "Æ½¾ùÑªºìµ°°×Å¨¶È(MCHC)Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.2173913043478261
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.2173913043478261
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "possibility": 0.2184466019417476
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.2184466019417476
+    },
+    {
+        "condition": [
+            "ÑÀ½áÊ¯"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.21893491124260356
+    },
+    {
+        "condition": [
+            "¦Ã-¹È°±õ£×ªëÄÃ¸(GGT)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑÀ½áÊ¯"
+        ],
+        "possibility": 0.2192982456140351
+    },
+    {
+        "condition": [
+            "¼××´ÏÙË«²àÒ¶½á½Ú"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.22
+    },
+    {
+        "condition": [
+            "¼××´ÏÙË«²àÒ¶½á½Ú"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.22
+    },
+    {
+        "condition": [
+            "ÑªÑ¹¸ß"
+        ],
+        "conclusion": [
+            "³¬ÖØ"
+        ],
+        "possibility": 0.22023809523809526
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß",
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.2222222222222222
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "possibility": 0.2222222222222222
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "possibility": 0.2222222222222222
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "ÑÊÑ×"
+        ],
+        "possibility": 0.22340425531914893
+    },
+    {
+        "condition": [
+            "¸ÊÓÍÈýõ¥(TG)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "possibility": 0.2235294117647059
+    },
+    {
+        "condition": [
+            "ÑªÑ¹¸ß"
+        ],
+        "conclusion": [
+            "ÑÊÑ×"
+        ],
+        "possibility": 0.2261904761904762
+    },
+    {
+        "condition": [
+            "³¬ÖØ"
+        ],
+        "conclusion": [
+            "ÑÀ½áÊ¯"
+        ],
+        "possibility": 0.22674418604651164
+    },
+    {
+        "condition": [
+            "ÁÜ°ÍÏ¸°ûÊý(LYMPH#)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.22727272727272727
+    },
+    {
+        "condition": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.22818791946308722
+    },
+    {
+        "condition": [
+            "µ¨ÄÒÏ¢Èâ"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.23157894736842105
+    },
+    {
+        "condition": [
+            "·ÊÅÖ"
+        ],
+        "conclusion": [
+            "ÑÀ½áÊ¯"
+        ],
+        "possibility": 0.23170731707317072
+    },
+    {
+        "condition": [
+            "·ÊÅÖ"
+        ],
+        "conclusion": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "possibility": 0.23170731707317072
+    },
+    {
+        "condition": [
+            "·ÊÅÖ"
+        ],
+        "conclusion": [
+            "ÑÊÑ×"
+        ],
+        "possibility": 0.23170731707317072
+    },
+    {
+        "condition": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.23170731707317072
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "¸ÊÓÍÈýõ¥(TG)Æ«¸ß"
+        ],
+        "possibility": 0.2331288343558282
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑªÑ¹¸ß"
+        ],
+        "possibility": 0.23478260869565218
+    },
+    {
+        "condition": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.2348993288590604
+    },
+    {
+        "condition": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.23493975903614456
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑªÑ¹¸ß"
+        ],
+        "possibility": 0.2352941176470588
+    },
+    {
+        "condition": [
+            "ÑÀ½áÊ¯"
+        ],
+        "conclusion": [
+            "ÖÇ³Ý"
+        ],
+        "possibility": 0.23668639053254437
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "possibility": 0.23728813559322035
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.23958333333333331
+    },
+    {
+        "condition": [
+            "¼××´ÏÙË«²àÒ¶½á½Ú"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "possibility": 0.24
+    },
+    {
+        "condition": [
+            "¸ÎÄÒÖ×"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.24305555555555555
+    },
+    {
+        "condition": [
+            "·ÊÅÖ"
+        ],
+        "conclusion": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß"
+        ],
+        "possibility": 0.24390243902439024
+    },
+    {
+        "condition": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.24390243902439024
+    },
+    {
+        "condition": [
+            "Èý¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.24444444444444444
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß",
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "possibility": 0.24444444444444444
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "³¬ÖØ"
+        ],
+        "possibility": 0.24468085106382978
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "possibility": 0.245398773006135
+    },
+    {
+        "condition": [
+            "¦Ã-¹È°±õ£×ªëÄÃ¸(GGT)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¹È²Ý×ª°±Ã¸(AST)Æ«¸ß"
+        ],
+        "possibility": 0.24561403508771928
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.2457627118644068
+    },
+    {
+        "condition": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "possibility": 0.24832214765100674
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×B(ApoB)Æ«¸ß"
+        ],
+        "possibility": 0.25
+    },
+    {
+        "condition": [
+            "³¬ÖØ"
+        ],
+        "conclusion": [
+            "ÑÊÑ×"
+        ],
+        "possibility": 0.25
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×B(ApoB)Æ«¸ß"
+        ],
+        "possibility": 0.25
+    },
+    {
+        "condition": [
+            "Ç°ÁÐÏÙÔöÉú"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "possibility": 0.2549019607843137
+    },
+    {
+        "condition": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "possibility": 0.25503355704697983
+    },
+    {
+        "condition": [
+            "ÄòÒþÑª"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.25510204081632654
+    },
+    {
+        "condition": [
+            "Èý¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.25555555555555554
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.25555555555555554
+    },
+    {
+        "condition": [
+            "ÑÊÑ×"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.2557077625570776
+    },
+    {
+        "condition": [
+            "¸ÎÄÒÖ×"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.2569444444444445
+    },
+    {
+        "condition": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.25862068965517243
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.2593406593406593
+    },
+    {
+        "condition": [
+            "È£³Ý"
+        ],
+        "conclusion": [
+            "ÑÀ½áÊ¯"
+        ],
+        "possibility": 0.26126126126126126
+    },
+    {
+        "condition": [
+            "ÁÜ°ÍÏ¸°ûÊý(LYMPH#)Æ«¸ß"
+        ],
+        "conclusion": [
+            "°×Ï¸°û(WBC)Æ«¸ß"
+        ],
+        "possibility": 0.26136363636363635
+    },
+    {
+        "condition": [
+            "¹È²Ý/¹È±û(AST/ALT)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.2619047619047619
+    },
+    {
+        "condition": [
+            "Ç°ÁÐÏÙÔöÉú"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.2647058823529412
+    },
+    {
+        "condition": [
+            "ÑÊÑ×"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.2648401826484018
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß"
+        ],
+        "possibility": 0.26530612244897955
+    },
+    {
+        "condition": [
+            "Èý¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "conclusion": [
+            "Ö÷¶¯Âö°êÉÙÁ¿·´Á÷"
+        ],
+        "possibility": 0.26666666666666666
+    },
+    {
+        "condition": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.26829268292682923
+    },
+    {
+        "condition": [
+            "ÑÊÑ×"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.2694063926940639
+    },
+    {
+        "condition": [
+            "ÉöÄÒÖ×"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.2696629213483146
+    },
+    {
+        "condition": [
+            "¼××´ÏÙË«²àÒ¶½á½Ú"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.27
+    },
+    {
+        "condition": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.27011494252873564
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß",
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.2714285714285714
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.27173913043478265
+    },
+    {
+        "condition": [
+            "µ¨ÄÒÏ¢Èâ"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.2736842105263158
+    },
+    {
+        "condition": [
+            "ÑªÑ¹¸ß"
+        ],
+        "conclusion": [
+            "ÑÀ½áÊ¯"
+        ],
+        "possibility": 0.2738095238095238
+    },
+    {
+        "condition": [
+            "¹È²Ý×ª°±Ã¸(AST)Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.273972602739726
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "possibility": 0.27611940298507465
+    },
+    {
+        "condition": [
+            "ÑÀÉ«ËØ¸½×Å"
+        ],
+        "conclusion": [
+            "ÖÇ³Ý"
+        ],
+        "possibility": 0.27731092436974786
+    },
+    {
+        "condition": [
+            "ÈéÏÙÔöÉúÖ¢"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.27848101265822783
+    },
+    {
+        "condition": [
+            "³¬ÖØ"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.27906976744186046
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "possibility": 0.279126213592233
+    },
+    {
+        "condition": [
+            "È£³Ý"
+        ],
+        "conclusion": [
+            "ÖÇ³Ý"
+        ],
+        "possibility": 0.2792792792792793
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "ÑÊÑ×"
+        ],
+        "conclusion": [
+            "³¬ÖØ"
+        ],
+        "possibility": 0.27941176470588236
+    },
+    {
+        "condition": [
+            "µ¨ÄÒÏ¢Èâ"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.28421052631578947
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "possibility": 0.28488372093023256
+    },
+    {
+        "condition": [
+            "ÄòÒþÑª"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.2857142857142857
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.28640776699029125
+    },
+    {
+        "condition": [
+            "ºìÏ¸°û·Ö²¼¿í¶ÈÆ«µÍ"
+        ],
+        "conclusion": [
+            "Æ½¾ùÑªºìµ°°×Å¨¶È(MCHC)Æ«¸ß"
+        ],
+        "possibility": 0.2878787878787879
+    },
+    {
+        "condition": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß",
+            "¹È²Ý×ª°±Ã¸(AST)Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.2878787878787879
+    },
+    {
+        "condition": [
+            "¦Ã-¹È°±õ£×ªëÄÃ¸(GGT)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.28947368421052627
+    },
+    {
+        "condition": [
+            "·ÊÅÖ"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.2926829268292683
+    },
+    {
+        "condition": [
+            "¼××´ÏÙÓÒ²àÒ¶½á½Ú"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.29577464788732394
+    },
+    {
+        "condition": [
+            "¼××´ÏÙÓÒ²àÒ¶½á½Ú"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.29577464788732394
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ÊÓÍÈýõ¥(TG)Æ«¸ß"
+        ],
+        "possibility": 0.29661016949152547
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.296875
+    },
+    {
+        "condition": [
+            "ÑÀ½áÊ¯",
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.29729729729729726
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß",
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "possibility": 0.3
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "³¬ÖØ"
+        ],
+        "conclusion": [
+            "ÑÊÑ×"
+        ],
+        "possibility": 0.30158730158730157
+    },
+    {
+        "condition": [
+            "ÉöÄÒÖ×"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.30337078651685395
+    },
+    {
+        "condition": [
+            "ÉöÄÒÖ×"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.30337078651685395
+    },
+    {
+        "condition": [
+            "ÁÜ°ÍÏ¸°ûÊý(LYMPH#)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.3068181818181818
+    },
+    {
+        "condition": [
+            "¼¡ôû(CREA)Æ«µÍ"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.30769230769230765
+    },
+    {
+        "condition": [
+            "³¬ÖØ"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.3081395348837209
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.30851063829787234
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "ÑÊÑ×"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.3088235294117647
+    },
+    {
+        "condition": [
+            "ÑªÑ¹¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.30952380952380953
+    },
+    {
+        "condition": [
+            "¼××´ÏÙË«²àÒ¶½á½Ú"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.31
+    },
+    {
+        "condition": [
+            "ÑÊÑ×"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.3105022831050228
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß",
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.3111111111111111
+    },
+    {
+        "condition": [
+            "ÑªÑ¹¸ß",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.3125
+    },
+    {
+        "condition": [
+            "ÑÀ½áÊ¯",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑªÑ¹¸ß"
+        ],
+        "possibility": 0.3125
+    },
+    {
+        "condition": [
+            "ÑªÑ¹¸ß",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÑÀ½áÊ¯"
+        ],
+        "possibility": 0.3125
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "possibility": 0.31288343558282206
+    },
+    {
+        "condition": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¦Ã-¹È°±õ£×ªëÄÃ¸(GGT)Æ«¸ß"
+        ],
+        "possibility": 0.3132530120481927
+    },
+    {
+        "condition": [
+            "¼îÐÔÁ×ËáÃ¸(ALP)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.31343283582089554
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "possibility": 0.31355932203389836
+    },
+    {
+        "condition": [
+            "±Ç¼×·Ê´ó"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.31666666666666665
+    },
+    {
+        "condition": [
+            "±Ç¼×·Ê´ó"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.31666666666666665
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "ÑÊÑ×"
+        ],
+        "possibility": 0.31666666666666665
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "possibility": 0.31666666666666665
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "possibility": 0.31932773109243695
+    },
+    {
+        "condition": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.3211009174311926
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "possibility": 0.32173913043478264
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.32173913043478264
+    },
+    {
+        "condition": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.3220338983050847
+    },
+    {
+        "condition": [
+            "ÑÊÑ×",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "possibility": 0.3220338983050847
+    },
+    {
+        "condition": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "¹È²Ý×ª°±Ã¸(AST)Æ«¸ß"
+        ],
+        "possibility": 0.3220338983050847
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß",
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.32222222222222224
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.32222222222222224
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "Ö¬·¾¸Î",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ÊÓÍÈýõ¥(TG)Æ«¸ß"
+        ],
+        "possibility": 0.3225806451612903
+    },
+    {
+        "condition": [
+            "¼××´ÏÙÓÒ²àÒ¶½á½Ú"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.32394366197183094
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.3252427184466019
+    },
+    {
+        "condition": [
+            "ÑÊÑ×",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "³¬ÖØ"
+        ],
+        "possibility": 0.3275862068965517
+    },
+    {
+        "condition": [
+            "ÑÊÑ×",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.3275862068965517
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "³¬ÖØ"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.3278688524590164
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "³¬ÖØ"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.3333333333333333
+    },
+    {
+        "condition": [
+            "±Ç¼×·Ê´ó"
+        ],
+        "conclusion": [
+            "³¬ÖØ"
+        ],
+        "possibility": 0.33333333333333337
+    },
+    {
+        "condition": [
+            "ºìÏ¸°û·Ö²¼¿í¶ÈÆ«µÍ"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.33333333333333337
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.33333333333333337
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.3361344537815126
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.33898305084745767
+    },
+    {
+        "condition": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß",
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.33898305084745767
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "ÑÊÑ×"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.3392857142857143
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.34042553191489366
+    },
+    {
+        "condition": [
+            "¼¡ôû(CREA)Æ«µÍ"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.34065934065934067
+    },
+    {
+        "condition": [
+            "¦Ã-¹È°±õ£×ªëÄÃ¸(GGT)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.34210526315789475
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "possibility": 0.34328358208955223
+    },
+    {
+        "condition": [
+            "ÑÀ½áÊ¯",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.34375
+    },
+    {
+        "condition": [
+            "ÑÀ½áÊ¯",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "possibility": 0.34375
+    },
+    {
+        "condition": [
+            "³¬ÖØ",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.3442622950819672
+    },
+    {
+        "condition": [
+            "Èý¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "possibility": 0.34444444444444444
+    },
+    {
+        "condition": [
+            "×Üµ°°×(TP)Æ«µÍ"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.34545454545454546
+    },
+    {
+        "condition": [
+            "Æ½¾ùÑªºìµ°°×Å¨¶È(MCHC)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.3478260869565218
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "³¬ÖØ"
+        ],
+        "possibility": 0.35
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×B(ApoB)Æ«¸ß"
+        ],
+        "possibility": 0.3508771929824561
+    },
+    {
+        "condition": [
+            "ÑÀ½áÊ¯",
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.3513513513513513
+    },
+    {
+        "condition": [
+            "³¬ÖØ"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.3546511627906977
+    },
+    {
+        "condition": [
+            "ÎüÑÌ"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.3548387096774194
+    },
+    {
+        "condition": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.35542168674698793
+    },
+    {
+        "condition": [
+            "Èý¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.35555555555555557
+    },
+    {
+        "condition": [
+            "ÑªÑ¹¸ß"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.35714285714285715
+    },
+    {
+        "condition": [
+            "¹È²Ý/¹È±û(AST/ALT)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.35714285714285715
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß",
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.35714285714285715
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.35824175824175825
+    },
+    {
+        "condition": [
+            "³¬ÖØ",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.3584905660377358
+    },
+    {
+        "condition": [
+            "³¬ÖØ",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "ÑÊÑ×"
+        ],
+        "possibility": 0.3584905660377358
+    },
+    {
+        "condition": [
+            "°×Ï¸°û(WBC)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÁÜ°ÍÏ¸°ûÊý(LYMPH#)Æ«¸ß"
+        ],
+        "possibility": 0.35937499999999994
+    },
+    {
+        "condition": [
+            "¦Ã-¹È°±õ£×ªëÄÃ¸(GGT)Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.35964912280701755
+    },
+    {
+        "condition": [
+            "ÑÊÑ×",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.3620689655172413
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "³¬ÖØ"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.36507936507936506
+    },
+    {
+        "condition": [
+            "³¬ÖØ"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.3662790697674419
+    },
+    {
+        "condition": [
+            "Èý¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.36666666666666664
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "Ö¬·¾¸Î",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "possibility": 0.3709677419354838
+    },
+    {
+        "condition": [
+            "¶þ¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.37254901960784315
+    },
+    {
+        "condition": [
+            "ÑÊÑ×",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.3728813559322034
+    },
+    {
+        "condition": [
+            "Æ½¾ùÑªºìµ°°×Å¨¶È(MCHC)Æ«¸ß",
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.375
+    },
+    {
+        "condition": [
+            "ÑÀ½áÊ¯",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.375
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.3775510204081633
+    },
+    {
+        "condition": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß",
+            "¹È²Ý×ª°±Ã¸(AST)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¦Ã-¹È°±õ£×ªëÄÃ¸(GGT)Æ«¸ß"
+        ],
+        "possibility": 0.37878787878787884
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×B(ApoB)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "possibility": 0.37999999999999995
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.3803680981595092
+    },
+    {
+        "condition": [
+            "ÑªÑ¹¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.380952380952381
+    },
+    {
+        "condition": [
+            "×óÊÒ³äÓ¯Òì³£"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "possibility": 0.38181818181818183
+    },
+    {
+        "condition": [
+            "Ç°ÁÐÏÙÔöÉú"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.3823529411764706
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "ÑÊÑ×"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.3823529411764706
+    },
+    {
+        "condition": [
+            "¶¯ÂöÓ²»¯"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.3833333333333333
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.3833333333333333
+    },
+    {
+        "condition": [
+            "¹È²Ý×ª°±Ã¸(AST)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¦Ã-¹È°±õ£×ªëÄÃ¸(GGT)Æ«¸ß"
+        ],
+        "possibility": 0.3835616438356164
+    },
+    {
+        "condition": [
+            "ÑªÑ¹¸ß",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.38461538461538464
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.3895348837209302
+    },
+    {
+        "condition": [
+            "¶þ¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "possibility": 0.3921568627450981
+    },
+    {
+        "condition": [
+            "¶þ¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.3921568627450981
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "ÑÊÑ×"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.39285714285714285
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.3949579831932773
+    },
+    {
+        "condition": [
+            "¸ÎÄÒÖ×"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.3958333333333333
+    },
+    {
+        "condition": [
+            "³¬ÖØ",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.3958333333333333
+    },
+    {
+        "condition": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.3959731543624161
+    },
+    {
+        "condition": [
+            "³¬ÖØ",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.3962264150943396
+    },
+    {
+        "condition": [
+            "¿Õ¸¹ÑªÌÇ(GLU)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.3972602739726027
+    },
+    {
+        "condition": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¹È²Ý×ª°±Ã¸(AST)Æ«¸ß"
+        ],
+        "possibility": 0.3975903614457831
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×B(ApoB)Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.39999999999999997
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.39999999999999997
+    },
+    {
+        "condition": [
+            "×óÊÒ³äÓ¯Òì³£"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.4
+    },
+    {
+        "condition": [
+            "×óÊÒ³äÓ¯Òì³£"
+        ],
+        "conclusion": [
+            "Ö÷¶¯Âö°êÉÙÁ¿·´Á÷"
+        ],
+        "possibility": 0.4
+    },
+    {
+        "condition": [
+            "·ÊÅÖ"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.4024390243902438
+    },
+    {
+        "condition": [
+            "ÎüÑÌ"
+        ],
+        "conclusion": [
+            "ÑÊÑ×"
+        ],
+        "possibility": 0.40322580645161293
+    },
+    {
+        "condition": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º",
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.40425531914893614
+    },
+    {
+        "condition": [
+            "Èý¼â°êÉÙÁ¿·´Á÷",
+            "×óÊÒ³äÓ¯Òì³£"
+        ],
+        "conclusion": [
+            "Ö÷¶¯Âö°êÉÙÁ¿·´Á÷"
+        ],
+        "possibility": 0.40425531914893614
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×B(ApoB)Æ«¸ß",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "possibility": 0.40425531914893614
+    },
+    {
+        "condition": [
+            "ÄòËá(UA)Æ«¸ß",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.40425531914893614
+    },
+    {
+        "condition": [
+            "¿Õ¸¹ÑªÌÇ(GLU)Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.410958904109589
+    },
+    {
+        "condition": [
+            "¸ßÑªÑ¹²¡"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.41304347826086957
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×B(ApoB)Æ«¸ß",
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.4166666666666667
+    },
+    {
+        "condition": [
+            "³¬ÖØ",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.4166666666666667
+    },
+    {
+        "condition": [
+            "ÎüÑÌ"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.4193548387096774
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×B(ApoB)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.41999999999999993
+    },
+    {
+        "condition": [
+            "Ç°ÁÐÏÙÔöÉú"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.4215686274509804
+    },
+    {
+        "condition": [
+            "ÑªÑ¹¸ß",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "possibility": 0.421875
+    },
+    {
+        "condition": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.4220183486238532
+    },
+    {
+        "condition": [
+            "Èý¼â°êÉÙÁ¿·´Á÷",
+            "×óÊÒ³äÓ¯Òì³£"
+        ],
+        "conclusion": [
+            "¶þ¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "possibility": 0.425531914893617
+    },
+    {
+        "condition": [
+            "ÄòËá(UA)Æ«¸ß",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.425531914893617
+    },
+    {
+        "condition": [
+            "Èý¼â°êÉÙÁ¿·´Á÷",
+            "×óÊÒ³äÓ¯Òì³£"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.425531914893617
+    },
+    {
+        "condition": [
+            "ÉöÄÒÖ×"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.42696629213483145
+    },
+    {
+        "condition": [
+            "µ¨ÄÒÏ¢Èâ"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.43157894736842106
+    },
+    {
+        "condition": [
+            "¶¯ÂöÓ²»¯"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.43333333333333335
+    },
+    {
+        "condition": [
+            "³¬ÖØ",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.43396226415094336
+    },
+    {
+        "condition": [
+            "ÑÀ½áÊ¯",
+            "ÑªÑ¹¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.4347826086956522
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.4347826086956522
+    },
+    {
+        "condition": [
+            "×óÊÒ³äÓ¯Òì³£"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.4363636363636364
+    },
+    {
+        "condition": [
+            "×óÊÒ³äÓ¯Òì³£"
+        ],
+        "conclusion": [
+            "¶þ¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "possibility": 0.4363636363636364
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.4375
+    },
+    {
+        "condition": [
+            "³¬ÖØ",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.4375
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×B(ApoB)Æ«¸ß",
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.4375
+    },
+    {
+        "condition": [
+            "ÖÇ³Ý"
+        ],
+        "conclusion": [
+            "ÑÀ½áÊ¯"
+        ],
+        "possibility": 0.43956043956043955
+    },
+    {
+        "condition": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "possibility": 0.4406779661016949
+    },
+    {
+        "condition": [
+            "Ç°ÁÐÏÙÔöÉú"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.44117647058823534
+    },
+    {
+        "condition": [
+            "³¬ÖØ",
+            "ÑÊÑ×"
+        ],
+        "conclusion": [
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "possibility": 0.4418604651162791
+    },
+    {
+        "condition": [
+            "³¬ÖØ",
+            "ÑÊÑ×"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.4418604651162791
+    },
+    {
+        "condition": [
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.4495412844036697
+    },
+    {
+        "condition": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "possibility": 0.45121951219512196
+    },
+    {
+        "condition": [
+            "ÑÀ½áÊ¯",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.4528301886792453
+    },
+    {
+        "condition": [
+            "¦Ã-¹È°±õ£×ªëÄÃ¸(GGT)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß"
+        ],
+        "possibility": 0.45614035087719296
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.46268656716417916
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "ÑÊÑ×"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.4642857142857143
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß",
+            "Ç°ÁÐÏÙÔöÉú"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.4651162790697675
+    },
+    {
+        "condition": [
+            "Èý¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "conclusion": [
+            "¶þ¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "possibility": 0.4666666666666666
+    },
+    {
+        "condition": [
+            "ÎüÑÌ"
+        ],
+        "conclusion": [
+            "³¬ÖØ"
+        ],
+        "possibility": 0.467741935483871
+    },
+    {
+        "condition": [
+            "Èý¼â°êÉÙÁ¿·´Á÷",
+            "×óÊÒ³äÓ¯Òì³£"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.46808510638297873
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.46875
+    },
+    {
+        "condition": [
+            "¶þ¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "conclusion": [
+            "×óÊÒ³äÓ¯Òì³£"
+        ],
+        "possibility": 0.47058823529411764
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.4738372093023256
+    },
+    {
+        "condition": [
+            "Èý¼â°êÉÙÁ¿·´Á÷",
+            "¶þ¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "conclusion": [
+            "×óÊÒ³äÓ¯Òì³£"
+        ],
+        "possibility": 0.4761904761904762
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.4761904761904762
+    },
+    {
+        "condition": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß",
+            "¦Ã-¹È°±õ£×ªëÄÃ¸(GGT)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¹È²Ý×ª°±Ã¸(AST)Æ«¸ß"
+        ],
+        "possibility": 0.4807692307692308
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "Ç°ÁÐÏÙÔöÉú"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.4888888888888889
+    },
+    {
+        "condition": [
+            "ÑÀÈ±Ê§"
+        ],
+        "conclusion": [
+            "ÑÀ½áÊ¯"
+        ],
+        "possibility": 0.48936170212765956
+    },
+    {
+        "condition": [
+            "ÑÀ½áÊ¯",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.49056603773584906
+    },
+    {
+        "condition": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.4915254237288136
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß",
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×B(ApoB)Æ«¸ß"
+        ],
+        "possibility": 0.5
+    },
+    {
+        "condition": [
+            "ÑªÑ¹¸ß",
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.5
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß",
+            "Ö¬·¾¸Î",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.5
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.5087719298245614
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.5106382978723405
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "Ç°ÁÐÏÙÔöÉú"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.5128205128205129
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß",
+            "¸ÊÓÍÈýõ¥(TG)Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.5185185185185185
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.520408163265306
+    },
+    {
+        "condition": [
+            "¿Õ¸¹ÑªÌÇ(GLU)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.5205479452054794
+    },
+    {
+        "condition": [
+            "Èý¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "conclusion": [
+            "×óÊÒ³äÓ¯Òì³£"
+        ],
+        "possibility": 0.5222222222222221
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.5254237288135594
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "Ö¬·¾¸Î",
+            "¸ÊÓÍÈýõ¥(TG)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.5263157894736843
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß",
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.5285714285714286
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.5333333333333334
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "³¬ÖØ"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.5396825396825397
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "¸ÊÓÍÈýõ¥(TG)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.546875
+    },
+    {
+        "condition": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.5503355704697986
+    },
+    {
+        "condition": [
+            "¸ÊÓÍÈýõ¥(TG)Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.5529411764705883
+    },
+    {
+        "condition": [
+            "±ÇÖÐ¸ôÆ«Çú"
+        ],
+        "conclusion": [
+            "ÑÊÑ×"
+        ],
+        "possibility": 0.5531914893617021
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.5543478260869565
+    },
+    {
+        "condition": [
+            "³¬ÖØ",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.5573770491803278
+    },
+    {
+        "condition": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.5588235294117647
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "Ç°ÁÐÏÙÔöÉú"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.5641025641025641
+    },
+    {
+        "condition": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.5714285714285714
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "µ¨¹Ì´¼Æ«¸ß",
+            "¸ÊÓÍÈýõ¥(TG)Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.5714285714285714
+    },
+    {
+        "condition": [
+            "ÑªÑ¹¸ß",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.5769230769230769
+    },
+    {
+        "condition": [
+            "¦Ã-¹È°±õ£×ªëÄÃ¸(GGT)Æ«¸ß",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.5853658536585366
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "¸ÊÓÍÈýõ¥(TG)Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.5937499999999999
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "¸ÊÓÍÈýõ¥(TG)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.5957446808510638
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.6
+    },
+    {
+        "condition": [
+            "Æ½¾ùÑªºìµ°°×Å¨¶È(MCHC)Æ«¸ß",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.6
+    },
+    {
+        "condition": [
+            "¿Õ¸¹ÑªÌÇ(GLU)Æ«¸ß",
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.6052631578947368
+    },
+    {
+        "condition": [
+            "¦Ã-¹È°±õ£×ªëÄÃ¸(GGT)Æ«¸ß",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.6153846153846154
+    },
+    {
+        "condition": [
+            "ÁÜ°ÍÏ¸°û±ÈÂÊÆ«¸ß"
+        ],
+        "conclusion": [
+            "ÖÐÐÔÏ¸°û±ÈÂÊÆ«µÍ"
+        ],
+        "possibility": 0.6190476190476191
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.6216216216216215
+    },
+    {
+        "condition": [
+            "Èý¼â°êÉÙÁ¿·´Á÷",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "×óÊÒ³äÓ¯Òì³£"
+        ],
+        "possibility": 0.625
+    },
+    {
+        "condition": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.6285714285714286
+    },
+    {
+        "condition": [
+            "¦Ã-¹È°±õ£×ªëÄÃ¸(GGT)Æ«¸ß",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.6341463414634146
+    },
+    {
+        "condition": [
+            "¸ÊÓÍÈýõ¥(TG)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.6352941176470589
+    },
+    {
+        "condition": [
+            "µ¨¹Ì´¼Æ«¸ß",
+            "¸ÊÓÍÈýõ¥(TG)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.6481481481481481
+    },
+    {
+        "condition": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.6551724137931034
+    },
+    {
+        "condition": [
+            "²»Á¼ÐÞ¸´Ìå"
+        ],
+        "conclusion": [
+            "ÑÀ½áÊ¯"
+        ],
+        "possibility": 0.6595744680851064
+    },
+    {
+        "condition": [
+            "Èý¼â°êÉÙÁ¿·´Á÷",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "×óÊÒ³äÓ¯Òì³£"
+        ],
+        "possibility": 0.6666666666666667
+    },
+    {
+        "condition": [
+            "ÑÀ²Ð¸ù"
+        ],
+        "conclusion": [
+            "ÑÀ½áÊ¯"
+        ],
+        "possibility": 0.6842105263157895
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.7017543859649122
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "µ¨¹Ì´¼Æ«¸ß",
+            "¸ÊÓÍÈýõ¥(TG)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.7142857142857143
+    },
+    {
+        "condition": [
+            "±Ç¼×·Ê´ó"
+        ],
+        "conclusion": [
+            "ÑÊÑ×"
+        ],
+        "possibility": 0.7166666666666667
+    },
+    {
+        "condition": [
+            "Ö÷¶¯Âö°êÉÙÁ¿·´Á÷"
+        ],
+        "conclusion": [
+            "×óÊÒ³äÓ¯Òì³£"
+        ],
+        "possibility": 0.7333333333333334
+    },
+    {
+        "condition": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß",
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.7435897435897436
+    },
+    {
+        "condition": [
+            "¸ÊÓÍÈýõ¥(TG)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.7529411764705883
+    },
+    {
+        "condition": [
+            "¿Õ¸¹ÑªÌÇ(GLU)Æ«¸ß",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.7666666666666666
+    },
+    {
+        "condition": [
+            "¦Ã-¹È°±õ£×ªëÄÃ¸(GGT)Æ«¸ß",
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.787878787878788
+    },
+    {
+        "condition": [
+            "Èý¼â°êÉÙÁ¿·´Á÷",
+            "Ö÷¶¯Âö°êÉÙÁ¿·´Á÷"
+        ],
+        "conclusion": [
+            "×óÊÒ³äÓ¯Òì³£"
+        ],
+        "possibility": 0.7916666666666666
+    },
+    {
+        "condition": [
+            "Ö÷¶¯Âö°êÉÙÁ¿·´Á÷"
+        ],
+        "conclusion": [
+            "Èý¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "possibility": 0.8
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "¸ÊÓÍÈýõ¥(TG)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ"
+        ],
+        "possibility": 0.8085106382978723
+    },
+    {
+        "condition": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß",
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "conclusion": [
+            "Ö¬·¾¸Î"
+        ],
+        "possibility": 0.8124999999999999
+    },
+    {
+        "condition": [
+            "¶þ¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "conclusion": [
+            "Èý¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "possibility": 0.8235294117647058
+    },
+    {
+        "condition": [
+            "¶þ¼â°ê·´Á÷"
+        ],
+        "conclusion": [
+            "Èý¼â°ê·´Á÷"
+        ],
+        "possibility": 0.8333333333333334
+    },
+    {
+        "condition": [
+            "×óÊÒ³äÓ¯Òì³£",
+            "¶þ¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "conclusion": [
+            "Èý¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "possibility": 0.8333333333333334
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.8461538461538461
+    },
+    {
+        "condition": [
+            "×óÊÒ³äÓ¯Òì³£"
+        ],
+        "conclusion": [
+            "Èý¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "possibility": 0.8545454545454546
+    },
+    {
+        "condition": [
+            "Ö÷¶¯Âö°êÉÙÁ¿·´Á÷",
+            "×óÊÒ³äÓ¯Òì³£"
+        ],
+        "conclusion": [
+            "Èý¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "possibility": 0.8636363636363635
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß",
+            "ñ¼ÐÔÐÄ¶¯¹ý»º"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.8695652173913044
+    },
+    {
+        "condition": [
+            "¦Ã-¹È°±õ£×ªëÄÃ¸(GGT)Æ«¸ß",
+            "¹È²Ý×ª°±Ã¸(AST)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß"
+        ],
+        "possibility": 0.8928571428571429
+    },
+    {
+        "condition": [
+            "¹È²Ý×ª°±Ã¸(AST)Æ«¸ß"
+        ],
+        "conclusion": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß"
+        ],
+        "possibility": 0.9041095890410957
+    },
+    {
+        "condition": [
+            "×óÊÒ³äÓ¯Òì³£",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "Èý¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "possibility": 0.9090909090909091
+    },
+    {
+        "condition": [
+            "Ö¬·¾¸Î",
+            "×óÊÒ³äÓ¯Òì³£"
+        ],
+        "conclusion": [
+            "Èý¼â°êÉÙÁ¿·´Á÷"
+        ],
+        "possibility": 0.9166666666666666
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.925
+    },
+    {
+        "condition": [
+            "ÖÐÐÔÏ¸°û±ÈÂÊÆ«µÍ"
+        ],
+        "conclusion": [
+            "ÁÜ°ÍÏ¸°û±ÈÂÊÆ«¸ß"
+        ],
+        "possibility": 0.9285714285714286
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×B(ApoB)Æ«¸ß",
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.9375
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×B(ApoB)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.94
+    },
+    {
+        "condition": [
+            "¹È²Ý×ª°±Ã¸(AST)Æ«¸ß",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "¹È±û×ª°±Ã¸(ALT)Æ«¸ß"
+        ],
+        "possibility": 0.95
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×B(ApoB)Æ«¸ß",
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "possibility": 0.9574468085106383
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß",
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.9583333333333333
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×B(ApoB)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "possibility": 0.96
+    },
+    {
+        "condition": [
+            "ÑªÑ¹¸ß",
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.9642857142857143
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.9663865546218486
+    },
+    {
+        "condition": [
+            "Ö¬µ°°×a(LPa)Æ«¸ß",
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.9736842105263159
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 0.9787234042553191
+    },
+    {
+        "condition": [
+            "Èý¼â°ê·´Á÷"
+        ],
+        "conclusion": [
+            "¶þ¼â°ê·´Á÷"
+        ],
+        "possibility": 1.0
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×B(ApoB)Æ«¸ß",
+            "Ö¬·¾¸Î"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "possibility": 1.0
+    },
+    {
+        "condition": [
+            "ÑÀ½áÊ¯",
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 1.0
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß",
+            "ÑÊÑ×"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 1.0
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß",
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 1.0
+    },
+    {
+        "condition": [
+            "ÔØÖ¬µ°°×B(ApoB)Æ«¸ß",
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 1.0
+    },
+    {
+        "condition": [
+            "¸ßÃÜ¶ÈÖ¬µ°°×(HDL-C)Æ«µÍ",
+            "ÔØÖ¬µ°°×B(ApoB)Æ«¸ß"
+        ],
+        "conclusion": [
+            "ÔØÖ¬µ°°×A1(ApoA1)Æ«µÍ"
+        ],
+        "possibility": 1.0
+    },
+    {
+        "condition": [
+            "µÍÃÜ¶ÈÖ¬µ°°×(LDL--C)Æ«¸ß",
+            "ÄòËá(UA)Æ«¸ß"
+        ],
+        "conclusion": [
+            "µ¨¹Ì´¼Æ«¸ß"
+        ],
+        "possibility": 1.0
+    }
+]

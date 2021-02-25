@@ -1,0 +1,10 @@
+#force_map_view{
+    position: absolute;
+    background: rgba(224, 225, 227, 0.2);
+    left: 0;
+    bottom: 0;
+    height: 350px;
+    width: 350px;
+    box-shadow: 0 0 10px #888888;
+    z-index: 1;
+}

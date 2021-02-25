@@ -470,8 +470,8 @@ function drawBodyMap(type, data) {
 
             let disease_id = "tag_" + organ_name;
             //计算图标位置
-            let item_x = 0;
-            let item_y = 150;
+            let item_x = -20;
+            let item_y = 130;
             counter++;
             if (counter > 3) {
                 counter = 1;

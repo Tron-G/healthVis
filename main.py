@@ -65,8 +65,8 @@ def initSys():
 def initBodyVis():
     month = request.get_json()["month"]
     data = {"sunburst": dm.load_static_data("sunburst"), "disease-detail": dm.load_static_data("disease-detail"),
-            "body_disease": dm.get_topdisease_sex(month), "disease_age": dm.get_disease_age("咽炎", 0)}
-    # print(dm.get_topdisease_sex(month))
+            "body_disease": dm.get_topdisease_sex(month), "disease_rules": dm.load_static_data("disease_rules")}
+    print(dm.load_static_data("disease_rules"))
     return jsonify(data)
 
 

@@ -11,11 +11,16 @@
 <link rel="stylesheet" href="../static/css/body_view.css">
 <link rel="stylesheet" href="../static/css/sunburst_view.css">
 <link rel="stylesheet" href="../static/css/disease_bar_view.css">
+<link rel="stylesheet" href="../static/css/force_map_view.css">
 <link rel="stylesheet" href="../static/css/searchtool.css">
+
 <body>
-<button id="back_btn">mapView</button>
+<div id="title">
+    <span id="system_title">日照市疾病可视分析系统</span>
+    <button id="back_btn">mapView</button>
+</div>
 <div class="container" id="search_item">
-    <input type="text" placeholder="请输入病人ID或者疾病名称..." class="search_input" id="search_input" value="">
+    <input type="text" placeholder="请输入病人ID或疾病名称..." class="search_input" id="search_input" value="">
     <div class="search"></div>
 </div>
 
@@ -31,9 +36,12 @@
     </div>
 </div>
 <div id="disease_bar_view"></div>
+<div id="force_map_view"></div>
 </body>
+
 <script type="text/javascript" src="../static/js/body_view.js"></script>
 <script type="text/javascript" src="../static/js/sunburst_view.js"></script>
 <script type="text/javascript" src="../static/js/disease_bar_view.js"></script>
+<script type="text/javascript" src="../static/js/force_map_view.js"></script>
 <script type="text/javascript" src="../static/js/body_vis_main.js"></script>
 </html>

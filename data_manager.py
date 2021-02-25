@@ -758,6 +758,9 @@ def load_static_data(data_name):
     elif data_name == "disease-detail":
         with open("./files/disease-details.json", encoding='UTF-8') as f:
             data = json.load(f)
+    elif data_name == "disease_rules":
+        with open("./files/disease_rules.json", encoding='GBK') as f:
+            data = json.load(f)
     return data
 
 

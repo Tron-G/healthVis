@@ -39,6 +39,7 @@ function initBodyVis() {
             // drawTowBar1(data["disease_age"]);
             drawTowbar2(data["body_disease"]);
             sunburst(data["sunburst"]);
+            drawForceMap(data["disease_rules"]);
         }
     });
 
