@@ -21,11 +21,12 @@ def feature():
 # ******************************************************************************************
 @app.route('/change_season',  methods=['POST', 'GET'])
 def change_season():
-    print("\n*************change_season*************\n")
+    print("\n*************change_season*************")
     data = request.get_json()
     print(data["season"], data["hospital"])
     out_data = {"map": dm.season(data["season"]), "radar": dm.radar_map(data["season"]),
-                "pie": dm.job(data["season"], data["hospital"])}
+                "pie": dm.job(data["season"], data["hospital"]),
+                "disease_bar": dm.top10(data["season"], data["hospital"])}
     return jsonify(out_data)
 
 
@@ -35,11 +36,10 @@ def change_season():
 @app.route('/change_hospital',  methods=['POST', 'GET'])
 def change_hospital():
     data = request.get_json()
-    print("\n*************change_hospital*************\n")
+    print("\n*************change_hospital*************")
     print(data["season"], data["hospital"])
-    out_data = {"radar": dm.radar_map(data["season"]),
-                "pie": dm.job(data["season"], data["hospital"])}
-
+    out_data = {"pie": dm.job(data["season"], data["hospital"]),
+                "disease_bar": dm.top10(data["season"], data["hospital"])}
     return jsonify(out_data)
 
 
@@ -52,8 +52,8 @@ def initSys():
             "GDP": dm.load_static_data("GDP"), "school": dm.load_static_data("school"),
             "health_center": dm.load_static_data("health_center"),
             "pollution_company": dm.load_static_data("pollution_company"),
-            "restaurant": dm.load_static_data("restaurant")}
-    # print(dm.job("all", "all"))
+            "restaurant": dm.load_static_data("restaurant"), "disease_bar": dm.load_static_data("disease-data")}
+
     return jsonify(data)
     pass
 
@@ -106,7 +106,7 @@ def searchBydisease():
 # ******************************************************************************************
 @app.route('/test',  methods=['POST', 'GET'])
 def test():
-    print("\n*************test*************\n")
+    print("\n*************test*************")
     data = request.get_json()
     # print(data["season"], data["hospital"])
     # out = dm.month(data["hospital"])
@@ -115,7 +115,7 @@ def test():
     # out = dm.sunburst_data("all")
     # 9a38653b2e769a84fa89ffa9da1c9e6d
     # out = dm.get_patient_disease("1e6ce7eab018584f9cbac518d4fd2824")
-    out = dm.top10("all", "日照市中医医院")
+    out = dm.top10("spring", "日照市人民医院")
     print(out)
     return jsonify(out)
 

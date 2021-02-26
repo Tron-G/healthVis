@@ -523,7 +523,7 @@ function drawBodyMap(type, data) {
                 .attr("cy", item_y)
                 .attr("r", 35)
                 .style("stroke", "#c9d6df")
-                .style("stroke-width", 3)
+                .style("stroke-width", 2)
                 .style("fill", "#E6E6E6");
 
             svg.append("svg:image")

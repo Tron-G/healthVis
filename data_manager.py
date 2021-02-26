@@ -332,7 +332,7 @@ def top10(season, hospital):
     diseases = []
     keywords = []
     #top的数量
-    n = 10
+    n = 15
     top = []
     # 读取全部疾病，放入words列表中
     with open("./files/myword.txt", "r", encoding='UTF-8') as file:
@@ -760,6 +760,10 @@ def load_static_data(data_name):
             data = json.load(f)
     elif data_name == "disease_rules":
         with open("./files/disease_rules.json", encoding='GBK') as f:
+            data = json.load(f)
+    elif data_name == "disease-data":
+        # 本地储存一整年的所有医院的高发疾病
+        with open("./files/disease-data.json", encoding='UTF-8') as f:
             data = json.load(f)
     return data
 

@@ -52,6 +52,7 @@ function initSystem() {
             drawMap(HOSPITAL_POINT_DATA["map"], GEO_POINT_DATA);
             drawBar(AHQ, tem, rain);
             drawRose(data["radar"]);
+            drawHospitalBar(data["disease_bar"]);
 
         }
     });
@@ -100,10 +101,12 @@ function redraw(url, redraw_type) {
             console.log("success", data);
 
             if (redraw_type === "select_hospital") {
-                drawRose(data["radar"]);
+                // drawRose(data["radar"]);
+                drawHospitalBar(data["disease_bar"]);
             } else if (redraw_type === "select_time") {
                 drawMap(HOSPITAL_POINT_DATA["map"], GEO_POINT_DATA);
                 drawRose(data["radar"]);
+                drawHospitalBar(data["disease_bar"]);
             } else if (redraw_type === "select_category") {
                 drawMap(HOSPITAL_POINT_DATA["map"], GEO_POINT_DATA);
             }

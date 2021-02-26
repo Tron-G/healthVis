@@ -5,12 +5,6 @@ body{
     overflow: hidden;
     background-color: white;
 }
-#back_btn{
-    position: absolute;
-    top: 3%;
-    right: 5%;
-    z-index: 9;
-}
 #title{
     background-color: gray;
     position: absolute;
@@ -27,4 +21,18 @@ body{
     left: 43%;
     font-size: 20px;
     font-weight: bold;
+}
+#back_btn{
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    width: 90px;
+    height: 24px;
+    background-color: whitesmoke;
+    cursor: pointer;
+    border-radius:25px;
+    box-shadow: 0 0 5px #2b2b2b;
+}
+#back_btn:hover {
+    background-color: #f05454
 }
