@@ -7,9 +7,14 @@
     height: 96%;
     z-index: 0;
 }
-.mapboxgl-ctrl {
-    display: none !important;
+/*.mapboxgl-ctrl {*/
+/*    display: none !important;*/
+/*}*/
+
+a.mapboxgl-ctrl-logo,.mapboxgl-ctrl-bottom-right{
+     display: none !important;
 }
+
 #select_box{
     background: rgba(125, 126, 128, 0.2);
     position: absolute;
@@ -20,5 +25,18 @@
     text-align: center;
     /*border:1px solid #BFBFBF;*/
     box-shadow: 0 0 10px #888888;
+    z-index: 9;
+}
+.mapboxgl-ctrl-top-right {
+    position: absolute;
+    right: 30%;
+    top: 5%;
+    z-index: 9;
+}
+
+.mapboxgl-ctrl-top-left {
+    position: absolute;
+    left: 23%;
+    top: 3%;
     z-index: 9;
 }

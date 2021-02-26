@@ -94,6 +94,4 @@ function drawHospitalBar(disease) {
     if (option && typeof option === 'object') {
         myChart.setOption(option);
     }
-
-
 }

@@ -87,6 +87,21 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
         zoom: 9.2
     });
 
+    map.addControl(new mapboxgl.NavigationControl(), 'top-left');
+
+    var draw = new MapboxDraw({
+        displayControlsDefault: false,
+        controls: {
+            polygon: true,
+            trash: true
+        }
+
+    });
+    window.Draw = draw;
+    map.addControl(draw, "top-left");
+    map.on("draw.create", updateArea);
+    map.on("draw.update", updateArea);
+    map.on("draw.delete", delArea);
     //////////////////////////////////////////////////////////////////////
     // 四大医院坐标点动画图标生成
     //////////////////////////////////////////////////////////////////////
@@ -283,6 +298,62 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
 
     });
 
+    /**
+     * @description 刷选地图显示弹窗
+     */
+    function updateArea(e) {
+        var data = draw.getAll();
+        if (data.features.length > 0) {
+
+            //查询选中要素
+            var draw_polygon = turf.bbox(e.features[0]);
+            var southWest = [draw_polygon[0], draw_polygon[1]];
+            var northEast = [draw_polygon[2], draw_polygon[3]];
+
+            var northEastPointPixel = map.project(northEast);
+            var southWestPointPixel = map.project(southWest);
+
+            var features = map.queryRenderedFeatures([southWestPointPixel, northEastPointPixel], {
+                layers: [GEO_POINT_DATA["map_checked_type"]]
+            });
+            console.log(GEO_POINT_DATA["map_checked_type"]);
+            var features1 = map.queryRenderedFeatures({
+                layers: [GEO_POINT_DATA["map_checked_type"]]
+            });
+            //框选结果
+            console.log(features1);
+
+            var filter_hp = features.reduce(
+                function (memo, feature) {
+                    //console.log(feature);
+                    // if (feature.properties.hasOwnProperty("category")) {
+                    //     console.log(feature.properties.category);
+                    // }
+
+                    let popup = new mapboxgl.Popup({
+                        closeOnClick: false,
+                        className: "popUp"
+                    })
+                        .setLngLat(feature.geometry["coordinates"])
+                        .setText(feature.properties.name)
+                        .addTo(map);
+
+                    return memo;
+                },["name"]
+            );
+
+
+        } else {
+            if (e.type !== 'draw.delete') alert("请用绘制工具绘制图形后再试!");
+        }
+    }
+
+    /**
+     * @description 删除按钮去掉弹窗
+     */
+    function delArea() {
+        $(".popUp").remove();
+    }
 
     /**
      * @description 绘制系统首页地图GDP数据热力图层
@@ -305,16 +376,16 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
             });
             let max_gdp = heat_list[heat_list.length - 10];
             let min_gdp = heat_list[0];
-            map.addSource('geo-source', {
+            map.addSource('heatmap_data', {
                 "type": "geojson",
                 "data": geo_data
             });
             map.addLayer({
-                id: type_name + "_heatMap",
-                type: "heatmap",
-                source: "geo-source",
-                maxzoom: 17,
-                paint: {
+                "id": type_name + "-heat",
+                "type": "heatmap",
+                "source": "heatmap_data",
+                "maxzoom": 15,
+                "paint": {
                     "heatmap-weight": [
                         "interpolate",
                         ["linear"],
@@ -356,23 +427,23 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
                         "interpolate",
                         ["linear"],
                         ["zoom"],
-                        10, 1,
-                        16, 0.5
+                        9, 1,
+                        13.5, 0
                     ]
                 }
             });
         }
-        else{
-             map.addSource('geo-source', {
+        else {
+            map.addSource('heatmap_data', {
                 "type": "geojson",
                 "data": geo_data
             });
             map.addLayer({
-                id: type_name + "_heatMap",
-                type: "heatmap",
-                source: "geo-source",
-                maxzoom: 17,
-                paint: {
+                "id": type_name + "-heat",
+                "type": "heatmap",
+                "source": "heatmap_data",
+                "maxzoom": 17,
+                "paint": {
                     "heatmap-weight": 0.3,
                     "heatmap-intensity": [
                         "interpolate",
@@ -403,13 +474,42 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
                         "interpolate",
                         ["linear"],
                         ["zoom"],
-                        10, 1,
-                        16, 0.5
+                        9, 1,
+                        13.5, 0
                     ]
                 }
             });
         }
 
+        map.addSource('point', {
+            "type": "geojson",
+            "data": geo_data
+        });
+
+        map.addLayer({
+            "id": type_name,
+            "source": "point",
+            "type": "circle",
+            "minzoom": 6,
+            "paint": {
+                // 圆圈半径动态更改，根据缩放等级从9到16，将数据中的radius属性，线性映射[20, 50] -> [2,5] ->[20,50]
+                "circle-radius": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    9, 2,
+                    16, 17
+                ],
+                "circle-opacity": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    11, 0,
+                    13.5, 1
+                ],
+                "circle-color": "#f6416c"
+            }
+        });
     }
 
     /**
@@ -419,7 +519,18 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
      */
     function drawCategoryPlace(type_name, type_place_data) {
 
-        const TYPE_POINT_COLOR = "#cd8d7b";
+        let TYPE_POINT_COLOR = "#cd8d7b";
+        switch (type_name) {
+            case "school":
+                TYPE_POINT_COLOR = "#625261";
+                break;
+            case "health_center":
+                TYPE_POINT_COLOR = "#e40017";
+                break;
+            case "restaurant":
+                TYPE_POINT_COLOR = "#00917c";
+                break;
+        }
         // console.log(type_place_data);
         /////////////////////////////////////////////////////////////////////////////////
         //   Add a source and layer displaying a point which will be animated in a circle.
@@ -439,7 +550,7 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
                     "interpolate",
                     ["linear"],
                     ["zoom"],
-                    9, 1.5,
+                    9, 2,
                     16, 20
                 ],
                 "circle-color": TYPE_POINT_COLOR
