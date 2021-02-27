@@ -3,10 +3,10 @@
 var TRANSPORT_DATA = {};
 TRANSPORT_DATA["season"] = "all";
 TRANSPORT_DATA["hospital"] = "all";
-
-//缓存几种地图上显示的热力图和点集数据
-var GEO_POINT_DATA = {};
-GEO_POINT_DATA["map_checked_type"] = $('.radio_box :radio:checked').val();
+TRANSPORT_DATA["map_checked_type"] = $('.radio_box :radio:checked').val();
+// //缓存几种地图上显示的热力图和点集数据
+// var GEO_POINT_DATA = {};
+// GEO_POINT_DATA["map_checked_type"] = $('.radio_box :radio:checked').val();
 
 //缓存四个医院的各个就诊总人数json数据，用于主地图画医院的圆点
 var HOSPITAL_POINT_DATA = {};
@@ -36,24 +36,16 @@ function initSystem() {
         contentType: 'application/json',
         dataType: 'json',
         success: function (data) {
-            // alert(JSON.stringify(data));
             // console.log("success", data);
-
             //初始化系统缓存数据
-            GEO_POINT_DATA["GDP"] = data["GDP"];
-            GEO_POINT_DATA["school"] = data["school"];
-            GEO_POINT_DATA["health_center"] = data["health_center"];
-            GEO_POINT_DATA["pollution_company"] = data["pollution_company"];
-            GEO_POINT_DATA["restaurant"] = data["restaurant"];
-
             HOSPITAL_POINT_DATA["map"] = data["map"];
 
-            // console.log(GEO_POINT_DATA);
-            drawMap(HOSPITAL_POINT_DATA["map"], GEO_POINT_DATA);
+            drawMap(HOSPITAL_POINT_DATA["map"], data["GDP"]);
             drawBar(AHQ, tem, rain);
             drawRose(data["radar"]);
             drawHospitalBar(data["disease_bar"]);
-
+            drawPie(data["pie"], "job_pie");
+            drawRainFall();
         }
     });
 
@@ -101,14 +93,17 @@ function redraw(url, redraw_type) {
             console.log("success", data);
 
             if (redraw_type === "select_hospital") {
-                // drawRose(data["radar"]);
                 drawHospitalBar(data["disease_bar"]);
             } else if (redraw_type === "select_time") {
-                drawMap(HOSPITAL_POINT_DATA["map"], GEO_POINT_DATA);
+                drawMap(HOSPITAL_POINT_DATA["map"], data["category"]);
                 drawRose(data["radar"]);
                 drawHospitalBar(data["disease_bar"]);
+                drawPie(data["pie"], "job_pie")
             } else if (redraw_type === "select_category") {
-                drawMap(HOSPITAL_POINT_DATA["map"], GEO_POINT_DATA);
+                drawMap(HOSPITAL_POINT_DATA["map"], data);
+                if(TRANSPORT_DATA["map_checked_type"]!=="pollution_company" && TRANSPORT_DATA["map_checked_type"]!=="restaurant"){
+                    drawRainFall();
+                }
             }
 
         }
@@ -132,11 +127,8 @@ function setCheckBoxEvent() {
     $(function () {
         $(".radio_box :radio").click(function () {
             // alert("选的..." + $(this).val());
-            GEO_POINT_DATA["map_checked_type"] = $(this).val();
-
-            //////////// todo : url 后台接口实现
-            redraw("/test", "select_category");
-
+            TRANSPORT_DATA["map_checked_type"] = $(this).val();
+            redraw("/select_category", "select_category");
         });
     });
 }

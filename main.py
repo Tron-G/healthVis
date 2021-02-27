@@ -26,7 +26,22 @@ def change_season():
     print(data["season"], data["hospital"])
     out_data = {"map": dm.season(data["season"]), "radar": dm.radar_map(data["season"]),
                 "pie": dm.job(data["season"], data["hospital"]),
-                "disease_bar": dm.top10(data["season"], data["hospital"])}
+                "disease_bar": dm.top10(data["season"], data["hospital"]),
+                "category": dm.load_static_data(data["map_checked_type"])}
+
+    print(dm.job(data["season"], data["hospital"]))
+    return jsonify(out_data)
+
+
+# ******************************************************************************************
+# 更新地图图层数据
+# ******************************************************************************************
+@app.route('/select_category',  methods=['POST', 'GET'])
+def select_category():
+    print("\n*************select_category*************")
+    data = request.get_json()
+    print(data["map_checked_type"])
+    out_data = dm.load_static_data(data["map_checked_type"])
     return jsonify(out_data)
 
 
@@ -49,13 +64,10 @@ def change_hospital():
 @app.route('/init',  methods=['POST', 'GET'])
 def initSys():
     data = {"radar": dm.radar_map("all"), "map": dm.season("all"), "pie": dm.job("all", "all"),
-            "GDP": dm.load_static_data("GDP"), "school": dm.load_static_data("school"),
-            "health_center": dm.load_static_data("health_center"),
-            "pollution_company": dm.load_static_data("pollution_company"),
-            "restaurant": dm.load_static_data("restaurant"), "disease_bar": dm.load_static_data("disease-data")}
+            "GDP": dm.load_static_data("GDP"),
+            "disease_bar": dm.load_static_data("disease-data")}
 
     return jsonify(data)
-    pass
 
 
 # ******************************************************************************************

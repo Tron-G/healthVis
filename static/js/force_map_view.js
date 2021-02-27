@@ -242,10 +242,10 @@ function drawForceMap(data) {
 		return allNames;
 	}, {});
 	// console.log(countedNames)
-	list2 = (Object.keys(countedNames))
-	console.log(list2)
+	let list2 = (Object.keys(countedNames))
+	// console.log(list2)
 	let rand = []
-	for (i = 0; i < disease.length; i++) {
+	for (let i = 0; i < disease.length; i++) {
 		rand.push(disease[i].p)
 	}
 	console.log(rand)
@@ -265,7 +265,7 @@ function drawForceMap(data) {
 		'#EE82EE', '#FFE4E1',
 	];
 	for (let i = 0; i < list3.length; i++) {
-		o = {
+		let o = {
 			name: list3[i],
 			itemStyle: {
 				normal: {
@@ -276,7 +276,7 @@ function drawForceMap(data) {
 		leg.push(o)
 	}
 	console.log(list3)
-	flag = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+	let flag = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 	for (i = 0; i < list2.length; i++) {
 		let c;
 		for (let j = 0; j < disease.length; j++) {
@@ -290,7 +290,7 @@ function drawForceMap(data) {
 			label: '',
 			draggable: true, //能否鼠标拖动
 			category: c,
-			symbolSize: countedNames[list2[i]] + 40,
+			symbolSize: countedNames[list2[i]] ,
 			// label: {
 			// 	normal: {
 			// 		show: true, //控制非高亮时节点名称是否显示
@@ -322,17 +322,26 @@ function drawForceMap(data) {
 					type: 'solid', //线的类型 'solid'（实线）'dashed'（虚线）'dotted'（点线）
 				},
 
-			}
+			},
+			emphasis: {
+				focus: 'adjacency',
+				lineStyle: {
+					width: data[i]["possibility"] * 10
+				}
+			},
 		}
 		links.push(o)
 	}
 	let main = echarts.init(document.getElementById('force_map_view'))
 
-	option = {
+	let option = {
 		// backgroundColor:'#040f23',
 		title: {
-			text: '',
-			x: 'center'
+			text: '疾病关联图谱',
+			x: 'center',
+			textStyle:{
+			    fontSize:12
+			}
 		},
 		//—— 悬浮框 ——
 		tooltip: {
@@ -347,12 +356,12 @@ function drawForceMap(data) {
 		legend: [{
 			orient: 'vertical',
 			x: 'left',
-			y: '50px',
-			itemWidth: 20,
-			itemHeight: 20,
+//			y: '50px',
+			itemWidth: 10,
+			itemHeight: 10,
 			data: leg,
 			textStyle: {
-				fontSize: 16,
+				fontSize: 10,
 				// color:'white'
 			}
 		}],
@@ -368,8 +377,8 @@ function drawForceMap(data) {
 			force: {
 				// x: 'center',
 				// y: '50px',
-				edgeLength: 300,
-				repulsion: 2000
+				edgeLength: 50,
+				repulsion: 200
 			},
 			itemStyle: {
 				normal: {
@@ -396,12 +405,12 @@ function drawForceMap(data) {
 			// 		}
 			// 	},
 			// },
-			emphasis: {
-				focus: 'adjacency',
-				lineStyle: {
-					width: 3
-				}
-			},
+//			emphasis: {
+//				focus: 'adjacency',
+//				lineStyle: {
+//					width: 3
+//				}
+//			},
 			data: nodes,
 			links: links,
 			categories: leg,

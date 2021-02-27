@@ -740,25 +740,48 @@ def load_static_data(data_name):
     if data_name == "GDP":
         with open("./files/category_files/gdpData.json", encoding='UTF-8') as f:
             data = json.load(f)
-    elif data_name == "school":
-        with open("./files/category_files/school_geo.json", encoding='GBK') as f:
-            data = json.load(f)
     elif data_name == "health_center":
+        # 卫生院
         with open("./files/category_files/health_center_geo.json", encoding='GBK') as f:
             data = json.load(f)
     elif data_name == "pollution_company":
+        # 污染企业
         with open("./files/category_files/pollution_company_geo.json", encoding='GBK') as f:
             data = json.load(f)
     elif data_name == "restaurant":
+        # 热门餐饮
         with open("./files/category_files/restaurant_geo.json", encoding='GBK') as f:
             data = json.load(f)
+    elif data_name == "teacher":
+        # 学校数据
+        with open("./files/category_files/school_geo.json", encoding='GBK') as f:
+            data = json.load(f)
+    elif data_name == "police":
+        # 公安局
+        with open("./files/category_files/police_geo.json", encoding='GBK') as f:
+            data = json.load(f)
+    elif data_name == "special":
+        # 特种职业
+        with open("./files/category_files/school_geo.json", encoding='GBK') as f:
+            data = json.load(f)
+    elif data_name == "worker":
+        # 普工
+        with open("./files/category_files/normal_company_geo.json", encoding='GBK') as f:
+            data = json.load(f)
+    elif data_name == "iron":
+        # 钢铁企业
+        with open("./files/category_files/iron_geo.json", encoding='GBK') as f:
+            data = json.load(f)
     elif data_name == "sunburst":
+        # 旭日图数据
         with open("./files/sunburst-data.json", encoding='UTF-8') as f:
             data = json.load(f)
     elif data_name == "disease-detail":
+        # 疾病表
         with open("./files/disease-details.json", encoding='UTF-8') as f:
             data = json.load(f)
     elif data_name == "disease_rules":
+        # 疾病图谱
         with open("./files/disease_rules.json", encoding='GBK') as f:
             data = json.load(f)
     elif data_name == "disease-data":

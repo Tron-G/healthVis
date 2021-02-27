@@ -1,9 +1,14 @@
 /**
  * @description 绘制系统首页地图以及四个医院的圆点，热力图层，职业相关坐标点集等
  * @param {object} hospital_data  四个医院的各个就诊总人数json数据
- * @param {object} GEO_POINT_DATA  主视图上的单选框的选中值map_checked_type，用于分别绘制不同的点集数据 (GDP|school...),以及对应的数据等
+ * @param {object} category_data  地图图层数据，GDP，卫生院坐标等等
  */
-function drawMap(hospital_data, GEO_POINT_DATA) {
+function drawMap(hospital_data, category_data) {
+    $("#map_view").empty();
+    // $(".mapboxgl-ctrl").remove();
+    // $(".mapboxgl-canvas").remove();
+    // $(".mapboxgl-popup").remove();
+    // $(".hospital_name").remove();
     //医院名称颜色
     const HOSPITAL_NAME_COLOR = "#ff0000";
     //医院圆点颜色
@@ -77,6 +82,8 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
     //////////////////////////////////////////////////////////////////////
     // 地图初始化
     //////////////////////////////////////////////////////////////////////
+
+
     mapboxgl.accessToken =
         'pk.eyJ1IjoieGlhb2JpZSIsImEiOiJja2pndjRhMzQ1d2JvMnltMDE2dnlkMGhrIn0.bCKzSCs5tHTIYk4xQ65doA';
 
@@ -87,8 +94,13 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
         zoom: 9.2
     });
 
-    map.addControl(new mapboxgl.NavigationControl(), 'top-left');
+    // map.removeControl(navigation_control);
+    // map.removeControl(draw);
 
+    let navigation_control = new mapboxgl.NavigationControl();
+    map.addControl(navigation_control, 'top-left');
+
+    //添加刷选工具栏按钮绑定事件
     var draw = new MapboxDraw({
         displayControlsDefault: false,
         controls: {
@@ -102,6 +114,9 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
     map.on("draw.create", updateArea);
     map.on("draw.update", updateArea);
     map.on("draw.delete", delArea);
+
+    let words = "";
+
     //////////////////////////////////////////////////////////////////////
     // 四大医院坐标点动画图标生成
     //////////////////////////////////////////////////////////////////////
@@ -167,25 +182,12 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
     map.on('load', function () {
 
         //////////////////////////////////////////////////////////////////////
-        // 根据单选框的值绘制地图点集
+        // 根据选择的种类的值绘制地图点集
         //////////////////////////////////////////////////////////////////////
-        switch (GEO_POINT_DATA["map_checked_type"]) {
-            case "GDP":
-                //gdp热力图
-                drawHeatMap("GDP", GEO_POINT_DATA["GDP"]);
-                break;
-            case "school":
-                drawCategoryPlace("school", GEO_POINT_DATA["school"]);
-                break;
-            case "health_center":
-                drawCategoryPlace("health_center", GEO_POINT_DATA["health_center"]);
-                break;
-            case "restaurant":
-                drawCategoryPlace("restaurant", GEO_POINT_DATA["restaurant"]);
-                break;
-            case "pollution_company":
-                drawHeatMap("pollution_company", GEO_POINT_DATA["pollution_company"]);
-                break;
+        if(TRANSPORT_DATA["map_checked_type"] === "GDP" || TRANSPORT_DATA["map_checked_type"] === "pollution_company"){
+            drawHeatMap(TRANSPORT_DATA["map_checked_type"], category_data);
+        }else{
+            drawCategoryPlace(TRANSPORT_DATA["map_checked_type"], category_data);
         }
 
 
@@ -221,6 +223,7 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
             //添加医院的名字
             let el = document.createElement("div");
             el.id = "hospital_name" + index;
+            el.className  = "hospital_name";
             el.innerHTML = hospital_point[index].name;
 
             el.style.color = HOSPITAL_NAME_COLOR;
@@ -299,7 +302,7 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
     });
 
     /**
-     * @description 刷选地图显示弹窗
+     * @description 刷选地图显示弹窗同时触发词云
      */
     function updateArea(e) {
         var data = draw.getAll();
@@ -314,21 +317,18 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
             var southWestPointPixel = map.project(southWest);
 
             var features = map.queryRenderedFeatures([southWestPointPixel, northEastPointPixel], {
-                layers: [GEO_POINT_DATA["map_checked_type"]]
-            });
-            console.log(GEO_POINT_DATA["map_checked_type"]);
-            var features1 = map.queryRenderedFeatures({
-                layers: [GEO_POINT_DATA["map_checked_type"]]
+                layers: [TRANSPORT_DATA["map_checked_type"]]
             });
             //框选结果
-            console.log(features1);
-
             var filter_hp = features.reduce(
                 function (memo, feature) {
                     //console.log(feature);
                     // if (feature.properties.hasOwnProperty("category")) {
                     //     console.log(feature.properties.category);
                     // }
+                    if (TRANSPORT_DATA["map_checked_type"] === "restaurant" || TRANSPORT_DATA["map_checked_type"] === "pollution_company") {
+                        words += "、" + feature.properties.category;
+                    }
 
                     let popup = new mapboxgl.Popup({
                         closeOnClick: false,
@@ -339,19 +339,29 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
                         .addTo(map);
 
                     return memo;
-                },["name"]
+                }, ["name"]
             );
-
-
         } else {
             if (e.type !== 'draw.delete') alert("请用绘制工具绘制图形后再试!");
         }
+        // console.log(words.split("、"));
+        //展示词云图
+        if (TRANSPORT_DATA["map_checked_type"] === "restaurant" || TRANSPORT_DATA["map_checked_type"] === "pollution_company") {
+            if(echarts.getInstanceByDom(document.getElementById("word_cloud")) !== undefined){
+
+                console.log(echarts.getInstanceByDom(document.getElementById("word_cloud")));
+                echarts.getInstanceByDom(document.getElementById("word_cloud")).dispose();
+            }
+            drawWordCloud(words.split("、"), "word_cloud");
+        }
+
     }
 
     /**
      * @description 删除按钮去掉弹窗
      */
     function delArea() {
+        words = "";
         $(".popUp").remove();
     }
 
@@ -361,7 +371,6 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
      * @param {object} geo_data  日照市主要GDP贡献公司的坐标以及GDP值等
      */
     function drawHeatMap(type_name, geo_data) {
-
 
         //////////////////////////////////////////////////////////////////////////
         //gdp最值计算
@@ -432,8 +441,7 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
                     ]
                 }
             });
-        }
-        else {
+        } else {
             map.addSource('heatmap_data', {
                 "type": "geojson",
                 "data": geo_data
@@ -519,18 +527,16 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
      */
     function drawCategoryPlace(type_name, type_place_data) {
 
-        let TYPE_POINT_COLOR = "#cd8d7b";
-        switch (type_name) {
-            case "school":
-                TYPE_POINT_COLOR = "#625261";
-                break;
-            case "health_center":
-                TYPE_POINT_COLOR = "#e40017";
-                break;
-            case "restaurant":
-                TYPE_POINT_COLOR = "#00917c";
-                break;
-        }
+        let TYPE_POINT_COLOR = {
+            "teacher":"#625261",
+            "health_center":"#e40017",
+            "restaurant":"#00917c",
+            "police": "#8f4068",
+            "worker": "#91684a",
+            "iron": "#1e212d",
+            "special": "#0e49b5"
+        };
+
         // console.log(type_place_data);
         /////////////////////////////////////////////////////////////////////////////////
         //   Add a source and layer displaying a point which will be animated in a circle.
@@ -553,10 +559,9 @@ function drawMap(hospital_data, GEO_POINT_DATA) {
                     9, 2,
                     16, 20
                 ],
-                "circle-color": TYPE_POINT_COLOR
+                "circle-color": TYPE_POINT_COLOR[type_name]
             }
         });
     }
-
 }
 

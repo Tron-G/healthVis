@@ -15,18 +15,6 @@ a.mapboxgl-ctrl-logo,.mapboxgl-ctrl-bottom-right{
      display: none !important;
 }
 
-#select_box{
-    background: rgba(125, 126, 128, 0.2);
-    position: absolute;
-    left: 30%;
-    top:1%;
-    width: 20%;
-    height: 3%;
-    text-align: center;
-    /*border:1px solid #BFBFBF;*/
-    box-shadow: 0 0 10px #888888;
-    z-index: 9;
-}
 .mapboxgl-ctrl-top-right {
     position: absolute;
     right: 30%;
@@ -36,7 +24,7 @@ a.mapboxgl-ctrl-logo,.mapboxgl-ctrl-bottom-right{
 
 .mapboxgl-ctrl-top-left {
     position: absolute;
-    left: 23%;
-    top: 3%;
+    left: 20%;
+    top: 2%;
     z-index: 9;
 }

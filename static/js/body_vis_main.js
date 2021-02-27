@@ -9,7 +9,6 @@
  *
  * */
 
-
 //全局状态变量，保存当前医院
 var TRANSPORT_DATA = {};
 TRANSPORT_DATA["hospital"] = "all";

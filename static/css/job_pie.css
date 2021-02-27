@@ -1,10 +1,10 @@
-#job_pie{
-    background: rgba(125, 126, 128, 0.2);
+#job_pie {
+    background: rgba(193, 193, 193, 0.3);
     position: absolute;
     left: 0;
-    top:4%;
+    top: 4%;
     width: 20%;
-    height:47%;
+    height: 43%;
     box-shadow: 0 0 10px #888888;
     z-index: 1;
     overflow: hidden;

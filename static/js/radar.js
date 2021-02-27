@@ -72,7 +72,7 @@ function drawRose(obj) {
 			name: list[i]
 		});
 	}
-	console.log(data1)
+	// console.log(data1)
 
 
 
