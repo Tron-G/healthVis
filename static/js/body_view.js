@@ -565,7 +565,7 @@ function drawBodyMap(type, data) {
                     for (let i = 0; i < advice_texts.length; i++) {
                         svg.append("text")
                             .text(advice_texts[i])
-                            .attr("x", 400)
+                            .attr("x", 410)
                             .attr("y", 600 + i * 15)
                             .attr("class", "disease_advice_text")
                             .attr("fill", "black")

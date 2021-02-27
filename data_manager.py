@@ -61,10 +61,10 @@ def radar_map(season):
 # 按职业返回json
 # ******************************************************************************************
 # @app.route('/job/<season>/<hospital>')
-def job(season, hospital):
+def job(season,hospital):
     df = pd.read_csv("./files/exam.csv")
-    the_season = ["spring", "summer", "fall", "winter"]
-    the_hospital = ["日照市岚山区人民医院", "日照市人民医院", "日照市中医医院", "五莲县人民医院"]
+    the_season = ["spring","summer","fall","winter"]
+    the_hospital = ["日照市岚山区人民医院","日照市人民医院","日照市中医医院","五莲县人民医院"]
     work = {}
     condition1 = {}
     condition2 = {}
@@ -73,11 +73,11 @@ def job(season, hospital):
     condition5 = {}
     for one_season in the_season:
         if season == one_season:
-            df = df[(df["SEASON"] == "spring")]
+            df = df[(df["SEASON"] == season)]
             df = df.reset_index(drop=True)
             for one_hospital in the_hospital:
                 if hospital == one_hospital:
-                    df = df[(df["ORG_NAME"] == hospital)]
+                    df = df[(df["ORG_NAME"]==hospital)]
                     df = df.reset_index(drop=True)
                     condition1["正常"] = len(df[(df["EXAM_TYPE_NAME"] == '公安局体检套餐(男)') & (df["SUMMARY"] == "正常")]) + len(
                         df[(df["EXAM_TYPE_NAME"] == '公安局体检套餐(女)') & (df["SUMMARY"] == "正常")])

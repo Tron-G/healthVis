@@ -131,8 +131,21 @@ function sunburst(json) {
             .style("opacity", 1)
             .on("mouseover", mouseover)
             .on("click",function (d) {
-                console.log(this.id)
-            })
+                let translation = {
+                    "February": 2,
+                    "March": 3,
+                    "May": 5,
+                    "June": 6,
+                    "July": 7,
+                    "August": 8,
+                    "September": 9,
+                    "October": 10,
+                    "November": 11
+                };
+                // console.log(translation[this.id]);
+                TRANSPORT_DATA["month"] = translation[this.id];
+                redraw("/get_month_data", "select_time");
+            });
 
         // Add the mouseleave handler to the bounding circle.
         d3.select("#container").on("mouseleave", mouseleave);
