@@ -1,0 +1,1097 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照华泰特种浆纸基地"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.820713197701,
+          35.5736077751982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市特种设备监督检验所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.525970967143,
+          35.4530629876648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东友江特种材料科技有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.521192969966,
+          35.6272258987606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东信德特种纸业有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.199054056458,
+          35.786235911623
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市丰盈特种气体有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.533415404566,
+          35.4228389984377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照众安特种装备有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.533415404566,
+          35.4228389984377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县双良特种养殖专业合作社"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.803773042225,
+          35.5382199396873
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照盛东特种车辆公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.516230640499,
+          35.3857148710768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照易通达特种设备检测有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.417644754848,
+          35.3473485983804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照易通达特种设备检测有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.417644754848,
+          35.3473485983804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市特种设备作业人员考试中心"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.505917194938,
+          35.4582535956323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市特种设备作业人员考试中心-南门"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.505917194938,
+          35.4582535956323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市安全建筑施工特种作业人员考核基地"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.533415404566,
+          35.4228389984377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市东润特种设备检验测有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.533415404566,
+          35.4228389984377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县恒泰特种设备检验检测有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.843538242404,
+          35.5858721229893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市特种设备监督检验所-东南门"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.526000970547,
+          35.4530510061773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东信德特种纸业有限公司-西门"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.199054056458,
+          35.786235911623
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "青岛宏海特种设备培训学校(一碑廓分校)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.209198512598,
+          35.9660376574865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市电力局"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.537673013361,
+          35.418090920344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照阳光合源电力工程有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.501699021755,
+          35.4449579455135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县宏德电力有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.83565013189,
+          35.6311302599828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "岚山供电部"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.328657263571,
+          35.1238730784991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照骏达电力设备有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.486539038308,
+          35.4908168977653
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照博科电力器材有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.501028975675,
+          35.4778159095012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照供电公司东港供电部-南门"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.538290957721,
+          35.4185369287298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县科源电力工程有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.219678971306,
+          35.7735538254175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "东港(园区)供电中心"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.524259695147,
+          35.3936597552385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "鲁圣电力器材集团有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.303624992399,
+          35.1368979323987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照电力建筑工程公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.501616018326,
+          35.4449061184633
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "国网日照供电公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.538290957721,
+          35.4185369287298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市光明电力服务有限责任公司-西门"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.539558287134,
+          35.3994568690491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照鲁源电力设备有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.831999418298,
+          35.6030209336953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "国网日照供电公司-西门"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.538290957721,
+          35.4185369287298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市东港区政务服务大厅供电窗口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.537258535198,
+          35.4300367604255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "奥能电力设备有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.842437638493,
+          35.6511110433054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东鹤蓝电力工程有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.418737902823,
+          36.8658503391194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照豪成电力服务有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.505728011798,
+          35.4885659276563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照豪成电力服务有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.505728011798,
+          35.4885659276563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照供电公司东港供电部"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.538290957721,
+          35.4185369287298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "国家电网充电站(日照市山海天度假区阳光佳园)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.57016696942,
+          35.4534801334214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照铄钧电力工程有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.433026260434,
+          35.4310112113957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "国家电网充电站(山东省日照市石臼海滨五路光明公司)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.54358449243,
+          35.4176057133384
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "国家电网充电站(五莲县城南滨河路)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.201758315365,
+          35.7700159701075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县电力公司松柏供电局"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.322194853732,
+          35.7433637690739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照鲁源电力设备有限公司-西北门"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.831999418298,
+          35.6030209336953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县光明电力服务有限责任公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.803208726703,
+          35.5259027743241
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "国家电网充电站(东港区岚山路阳光合源集团)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.542830005632,
+          35.4177369063085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "国家电网充电站(日照市山海基地)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.526510219941,
+          35.4878422856995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "国家电网(岚山虎山供电营业厅)-西北门"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.328657263571,
+          35.1238730784991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照新格有色金属有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.459264416922,
+          35.3663814912971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市伟杰金属加工厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.533415404566,
+          35.4228389984377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照中意华坤金属制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.367346742903,
+          35.3411882746337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县瑞海三利金属制品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.855713965117,
+          35.6222648953999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照盛宇金属制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.507052024289,
+          35.4944539348404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市东港区玉芳金属制品经销处"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.481311798545,
+          35.4601616657118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东铭晟金属材料有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.851329964737,
+          35.7630059001705
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市岚山区凯瑞特金属加工厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.325530441752,
+          35.1274323300517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市建坤金属有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.435394822572,
+          35.4392866167541
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县易达金属制品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.260665238165,
+          35.8752137795061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市利滨金属贸易有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.533415404566,
+          35.4228389984377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市东港区艺钢金属制品厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.520226662729,
+          35.5331308119357
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照亿昕明金属制品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.533415404566,
+          35.4228389984377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市东港区金昌金属制品厂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.581858954616,
+          35.5676368853639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市金属表面处理中心生态产业园"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.533415404566,
+          35.4228389984377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市建坤金属有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.435394822572,
+          35.4392866167541
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照济钢金属科技有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.533415404566,
+          35.4228389984377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市龙飞不锈钢制品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.459927366389,
+          35.4256552236343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照富铁金属有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.498491981254,
+          35.3833694863068
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县华川金属制品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.829493325586,
+          35.5996553446595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "山东鹏昊建筑金属材料有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.53845705441,
+          35.42034248347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市州泰金属制造有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.72845937776,
+          35.4684822578517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照同力金属材料有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.46792596848,
+          35.4569609183574
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "岚山平安不锈钢门窗店"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.335727017765,
+          35.1059789376077
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照海正金属制品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.188038764803,
+          35.7826659779873
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲同欣金属制品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.047251025277,
+          35.869700864425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "莒县子目非金属材料有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.010153343309,
+          35.5170654595503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照合荣金属制品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.211157106255,
+          35.7354236886547
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照铭辰金属制品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.533415404566,
+          35.4228389984377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照豪都工贸有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.478531004009,
+          35.4446089025452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五莲县恒源金属材料有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.20488280159,
+          35.7642692158012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照普瑞恩金属制品有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.187201633898,
+          35.7867542229658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "发升不锈钢电焊"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.517266476582,
+          35.403102266618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "德一广告不锈钢"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.473390989711,
+          35.4279463527454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日照市奥展商贸有限公司"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4603090564,
+          35.4260137614815
+        ]
+      }
+    }
+  ]
+}

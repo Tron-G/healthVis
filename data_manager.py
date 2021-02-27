@@ -762,7 +762,7 @@ def load_static_data(data_name):
             data = json.load(f)
     elif data_name == "special":
         # 特种职业
-        with open("./files/category_files/school_geo.json", encoding='GBK') as f:
+        with open("./files/category_files/special_geo.json", encoding='GBK') as f:
             data = json.load(f)
     elif data_name == "worker":
         # 普工
