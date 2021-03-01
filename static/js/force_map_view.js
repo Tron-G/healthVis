@@ -1,5 +1,6 @@
 function drawForceMap(data) {
-	let disease = [{
+	let disease = [
+		{
 			name: "咽炎",
 			p: '呼吸道',
 			n: 0
@@ -261,7 +262,7 @@ function drawForceMap(data) {
 	var list3 = (Object.keys(partion))
 	var leg = []
 	var colors = ['#929fff', '#9de0ff', '#836FFF', '#af87fe', '#7dc3fe',
-		'#bb60b2', '	#FFD700', '#f47a75', '#009db2', '#FFF8DC',
+		'#bb60b2', '#FFD700', '#f47a75', '#009db2', '#FFF8DC',
 		'#EE82EE', '#FFE4E1',
 	];
 	for (let i = 0; i < list3.length; i++) {
@@ -332,7 +333,7 @@ function drawForceMap(data) {
 		}
 		links.push(o)
 	}
-	let main = echarts.init(document.getElementById('force_map_view'))
+	let main = echarts.init(document.getElementById('force_map_view'));
 
 	let option = {
 		// backgroundColor:'#040f23',
@@ -340,7 +341,8 @@ function drawForceMap(data) {
 			text: '疾病关联图谱',
 			x: 'center',
 			textStyle:{
-			    fontSize:12
+			    fontSize:17,
+				fontWeight: "bold"
 			}
 		},
 		//—— 悬浮框 ——
@@ -357,6 +359,7 @@ function drawForceMap(data) {
 			orient: 'vertical',
 			x: 'left',
 //			y: '50px',
+			top:"20%",
 			itemWidth: 10,
 			itemHeight: 10,
 			data: leg,

@@ -87,7 +87,7 @@ function drawRose(obj) {
 			},
 			{
 				text: Object.keys(obj)[1],
-				left: "60%",
+				left: "55%",
 				top: "1%"
 			}, {
 				text: Object.keys(obj)[2],
@@ -96,7 +96,7 @@ function drawRose(obj) {
 			},
 			{
 				text: Object.keys(obj)[3],
-				left: "60%",
+				left: "50%",
 				top: "48%"
 			}
 		],
@@ -126,7 +126,7 @@ function drawRose(obj) {
 				startAngle: 0,
 				clockwise: false,
 				radius: ["10%", "40%"],
-				center: ['15%', '30%'],
+				center: ['20%', '30%'],
 				roseType: 'area',
 				avoidLabelOverlap: false,
 				label: {
@@ -208,7 +208,7 @@ function drawRose(obj) {
 				startAngle: 0,
 				clockwise: false,
 				radius: ["10%", "40%"],
-				center: ['15%', '70%'],
+				center: ['20%', '70%'],
 				roseType: 'area',
 				avoidLabelOverlap: false,
 				label: {

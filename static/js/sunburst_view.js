@@ -48,11 +48,11 @@ function sunburst(json) {
     vis.append("text")
         .attr("x",width*0.01)
         .attr("y",height*0.53)
-        .attr("font-size",15)
+        .attr("font-size",18)
         .attr("text-anchor", "middle")
         .attr("font-weight","bold")
         .attr("font-family","微软雅黑")
-        .text("日照市2019年季节性疾病详细分布情况")
+        .text("月高发疾病分布概览")
 
     var partition = d3.layout.partition()
         .size([2 * Math.PI, radius * radius])

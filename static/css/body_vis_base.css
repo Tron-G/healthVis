@@ -14,11 +14,11 @@ body{
     height: 4%;
 }
 
-#system_title{
+#system_title {
     color: white;
     position: absolute;
     top: 2%;
-    left: 43%;
+    left: 38%;
     font-size: 20px;
     font-weight: bold;
 }

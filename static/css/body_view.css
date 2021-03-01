@@ -9,11 +9,11 @@
 
 #man_background {
     position: absolute;
-    top: 100px;
-    left: 450px;
+    top: 20%;
+    left: 32%;
     width: 270px;
     height: 450px;
-    background-color: rgb(184, 215, 240, 0.1);
+    background-color: rgb(184, 215, 240, 0.3);
     /* overflow: hidden; */
 }
 #man_background, #woman_background:hover{
@@ -21,10 +21,10 @@
 }
 #woman_background {
     position: absolute;
-    top: 100px;
-    left: 755px;
+    top: 20%;
+    left: 50%;
     width: 270px;
     height: 450px;
-    background-color: rgb(240, 185, 237, 0.1);
+    background-color: rgb(240, 185, 237, 0.3);
     /* overflow: hidden; */
 }

@@ -54,8 +54,10 @@ function drawTowBar1(obj) { //改参数
 		baseOption: {
 			title: {
 				text: obj['disease_name'],
-				textStyle:{
-				    fontSize:10
+				left: "2%",
+				top: "1%",
+				textStyle: {
+					fontSize: 15
 				}
 			},
 			// backgroundColor: background,
@@ -100,8 +102,8 @@ function drawTowBar1(obj) { //改参数
 			grid: [{
 				show: false,
 				left: '2%',
-				top: '14%',
-				bottom: '15%',
+				top: '13%',
+				bottom: '14%',
 				containLabel: true,
 				width: '35%'
 			}, {
@@ -458,8 +460,10 @@ function drawTowbar2(obj) { //改参数
 		baseOption: {
 			title: {
 				text: month+"高发疾病数据",
+				top:"1%",
+				left:"1%",
 				textStyle:{
-				    fontSize:10
+				    fontSize:15
 				}
 			},
 			// backgroundColor: background,
@@ -469,7 +473,7 @@ function drawTowbar2(obj) { //改参数
 				data: []
 			},
 			legend: {
-				top: '1%',
+				top: '3%',
 				left: '31%',
 				itemWidth: 10,
 				itemHeight: 10,
@@ -485,20 +489,20 @@ function drawTowbar2(obj) { //改参数
 				show: false,
 				left: '0%',
 				top: '11%',
-				bottom: '10%',
+				bottom: '5%',
 				containLabel: true,
 				width: '35%'
 			}, {
 				show: false,
 				left: '50%',
 				top: '11%',
-				bottom: '11%',
+				bottom: '5%',
 				width: '0%'
 			}, {
 				show: false,
 				left: '61%',
 				top: '11%',
-				bottom: '10%',
+				bottom: '5%',
 				containLabel: true,
 				width: '38%'
 			}],

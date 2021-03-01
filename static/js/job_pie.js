@@ -1,6 +1,6 @@
 /**
  * @description 绘制职业健康饼图
- * @param {obj} data  职业饼图数据
+ * @param {object} data  职业饼图数据
  * @param {string} div_id 饼图要绑定的div的id
  */
 function drawPie(data, div_id) {
@@ -47,7 +47,7 @@ function drawPie(data, div_id) {
 
     let arc_generator1 = d3.arc()
         .innerRadius(0) //设置内半径
-        .outerRadius(90); //设置外半径
+        .outerRadius(120); //设置外半径
     let arc_generator = d3.arc()
         .innerRadius(0)
         .outerRadius(45);
@@ -64,10 +64,10 @@ function drawPie(data, div_id) {
     for (let i = 0; i < job_name_list.length; i++) {
         svg.append("svg:image")
             .attr("xlink:href", "./static/image/job/" + job_name_list[i] + ".svg")
-            .attr("x", i * 50)
-            .attr("y", 240)
-            .attr("width", "40")
-            .attr("height", "40")
+            .attr("x", i * 55 )
+            .attr("y", 310)
+            .attr("width", "50")
+            .attr("height", "50")
             .attr("id", job_name_list[i] + "_btn")
             .style("cursor", "pointer")
             .on("click", function () {
@@ -85,10 +85,10 @@ function drawPie(data, div_id) {
         svg.append("text")
             .text(ch_name[i])
             .attr("id", job_name_list[i] + "_btn_title")
-            .attr("x", i * 50 + 5)
-            .attr("y", 300)
+            .attr("x", i * 55 + 10)
+            .attr("y", 380)
             .attr("fill", "black")
-            .attr("font-size", 14)
+            .attr("font-size", 15)
             .attr("font-weight", "bold")
             .style("cursor", "pointer")
     }
@@ -99,14 +99,14 @@ function drawPie(data, div_id) {
         svg.append("text")
             .text(title + "职业体检结论概况")
             .attr("class", "pie_title")
-            .attr("x", 70)
+            .attr("x", 80)
             .attr("y", 25)
             .attr("fill", "black")
             .attr("font-size", 16)
             .attr("font-weight", "bold");
 
         let g = svg.append("g")
-            .attr("transform", "translate(140, 140)");
+            .attr("transform", "translate(160, 160)");
         g.selectAll("path")
             .data(angle_data(data[category]))
             .enter()
@@ -151,12 +151,12 @@ function drawPie(data, div_id) {
         for (let i = 0; i < job_name_list.length - 1; i++) {
             //计算饼图坐标
             let pos_x = 0, pos_y = 0;
-            pos_x = 50 + i * 100;
-            pos_y = 90;
+            pos_x = 60 + i * 100;
+            pos_y = 110;
             count++;
             if (count > 3) {
-                pos_x = 50 + (i - 3) * 100;
-                pos_y = 190;
+                pos_x = 60 + (i - 3) * 100;
+                pos_y = 220;
             }
 
             let g = svg.append("g")
@@ -201,7 +201,7 @@ function drawPie(data, div_id) {
         svg.append("text")
             .text("职业套餐抽样体检结论概况")
             .attr("class", "pie_title")
-            .attr("x", 50)
+            .attr("x", 65)
             .attr("y", 25)
             .attr("fill", "black")
             .attr("font-size", 16)

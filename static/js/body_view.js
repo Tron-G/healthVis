@@ -1,7 +1,7 @@
 /**
  * @description 绘制人体结构图
  * @param {string} type  "search"展示搜索框输入的相关疾病； "time"展示指定时间范围的疾病
- * @param {obj} data 疾病表数据
+ * @param {object} data 疾病表数据
  */
 let sample = {
     '牙结石': [12, 11],
@@ -43,7 +43,7 @@ function drawBodyMap(type, data) {
     const woman_disease_advice = {};
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //svg属性
-    const svg_background = "#f5f5f5";
+    const svg_background = "rgba(177,209,242,0.2)";
     const svg_width = document.getElementById("body_view").offsetWidth;
     const svg_height = document.getElementById("body_view").offsetHeight;
 
@@ -188,7 +188,7 @@ function drawBodyMap(type, data) {
             "width": 12,
             "height": 12,
             "x": woman_svg_width / 2.07,
-            "y": woman_svg_height / 7.5,
+            "y": woman_svg_height / 7.8,
             "opacity": 1
         },
         "throat": {
@@ -471,16 +471,16 @@ function drawBodyMap(type, data) {
             let disease_id = "tag_" + organ_name;
             //计算图标位置
             let item_x = -20;
-            let item_y = 130;
+            let item_y = 150;
             counter++;
             if (counter > 3) {
                 counter = 1;
                 col += 1;
-                item_y += col * 100;
+                item_y += col * 120;
                 item_x += counter * 110;
             } else {
                 item_x += counter * 110;
-                item_y += col * 100;
+                item_y += col * 120;
             }
 
             //疾病建议分段
@@ -511,7 +511,7 @@ function drawBodyMap(type, data) {
                 .text(disease_name[organ_name])
                 .attr("id", "disease_name" + i)
                 .attr("class", "disease_organ_list")
-                .attr("x", item_x - 30)
+                .attr("x", item_x - 50)
                 .attr("y", item_y - 55)
                 .attr("fill", "#91091e")
                 .attr("font-weight", "bold")
@@ -554,19 +554,19 @@ function drawBodyMap(type, data) {
 
                     /////////////////////////////////
                     svg.append("rect")
-                        .attr("x", 400)
-                        .attr("y", 580)
+                        .attr("x", 500)
+                        .attr("y", 700)
                         .attr("id", "disease_advice")
                         .attr("width", 650)
-                        .attr("height", 130)
-                        .attr("fill", "rgba(125, 126, 128, 0.2)");
+                        .attr("height", 170)
+                        .attr("fill", "#d2c6b2");
 
                     //疾病建议
                     for (let i = 0; i < advice_texts.length; i++) {
                         svg.append("text")
                             .text(advice_texts[i])
-                            .attr("x", 410)
-                            .attr("y", 600 + i * 15)
+                            .attr("x", 510)
+                            .attr("y", 720 + i * 15)
                             .attr("class", "disease_advice_text")
                             .attr("fill", "black")
                             .style("font-size", "12px");

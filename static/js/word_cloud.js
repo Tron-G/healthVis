@@ -77,8 +77,7 @@ function drawWordCloud(data, div_id) {
     layout.start();
 
     function draw(words) {
-        svg
-            .append('g')
+        svg.append('g')
             .attr('transform', `translate(${layout.size()[0] / 2},${layout.size()[1] / 2})`)
             .selectAll('text')
             .data(words)
