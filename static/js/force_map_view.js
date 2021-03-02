@@ -242,13 +242,13 @@ function drawForceMap(data) {
 		return allNames;
 	}, {});
 	// console.log(countedNames)
-	list2 = (Object.keys(countedNames))
-	console.log(list2)
+	let list2 = (Object.keys(countedNames))
+	// console.log(list2)
 	let rand = []
-	for (i = 0; i < disease.length; i++) {
+	for (let i = 0; i < disease.length; i++) {
 		rand.push(disease[i].p)
 	}
-	console.log(rand)
+	// console.log(rand)
 	var partion = rand.reduce(function (allNames, name) {
 		if (name in allNames) {
 			allNames[name]++;
@@ -275,9 +275,9 @@ function drawForceMap(data) {
 		}
 		leg.push(o)
 	}
-	console.log(list3)
-	flag = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-	for (i = 0; i < list2.length; i++) {
+	// console.log(list3)
+	let flag = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+	for (let i = 0; i < list2.length; i++) {
 		let c;
 		for (let j = 0; j < disease.length; j++) {
 			if (list2[i] == disease[j].name) {
@@ -307,8 +307,8 @@ function drawForceMap(data) {
 		nodes.push(o)
 		data1.push(o2)
 	}
-	console.log(nodes)
-	console.log(data1)
+	// console.log(nodes)
+	// console.log(data1)
 	let links = []
 	for (let i = 0; i < data.length; i++) {
 		let o = {
@@ -338,10 +338,11 @@ function drawForceMap(data) {
 	option = {
 		// backgroundColor:'#040f23',
 		title: {
-			text: '疾病关系矢量图',
+			text: '疾病关联图谱',
 			x: 'center',
 			textStyle:{
-			    fontSize:10
+			    fontSize:16,
+				fontWeight: "bold"
 			}
 		},
 		//—— 悬浮框 ——

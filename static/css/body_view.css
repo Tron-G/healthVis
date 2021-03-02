@@ -9,10 +9,10 @@
 
 #man_background {
     position: absolute;
-    top: 20%;
-    left: 32%;
-    width: 270px;
-    height: 450px;
+    top: 12%;
+    left: 29%;
+    width: 340px;
+    height: 540px;
     background-color: rgb(184, 215, 240, 0.3);
     /* overflow: hidden; */
 }
@@ -21,10 +21,10 @@
 }
 #woman_background {
     position: absolute;
-    top: 20%;
-    left: 50%;
-    width: 270px;
-    height: 450px;
+    top: 12%;
+    left: 51%;
+    width: 340px;
+    height: 540px;
     background-color: rgb(240, 185, 237, 0.3);
     /* overflow: hidden; */
 }

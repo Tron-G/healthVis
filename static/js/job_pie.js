@@ -31,7 +31,7 @@ function drawPie(data, div_id) {
         transform_data[name].push({named: "正常", 'total': data[job_list[i]]["正常"]});
         transform_data[name].push({named: "异常", 'total': data[job_list[i]]["异常"]});
     }
-    console.log(transform_data);
+    // console.log(transform_data);
 
     let duration_time = 600;
     let width = document.getElementById(div_id).offsetWidth;
@@ -70,6 +70,7 @@ function drawPie(data, div_id) {
             .attr("height", "50")
             .attr("id", job_name_list[i] + "_btn")
             .style("cursor", "pointer")
+            .style("opacity", "0.8")
             .on("click", function () {
                 d3.selectAll("g>*").remove();
                 d3.select(".pie_title").remove();
@@ -114,6 +115,7 @@ function drawPie(data, div_id) {
             .attr("d", arc_generator1)
             .style("fill", function (d, i) {
                 // console.log(i)
+                console.log("--->",d);
                 return colorset[i]
             }) //给不同的扇形区填充不同的颜色
             .transition()

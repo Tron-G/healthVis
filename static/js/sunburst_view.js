@@ -1,6 +1,6 @@
 function sunburst(json) {
 
-    var width =$("#sunburst").width();
+    var width = $("#sunburst").width();
     var height = $("#sunburst").height();
     var radius = Math.min(width, height) / 2;
 
@@ -25,34 +25,77 @@ function sunburst(json) {
         "woman": "#ddd1d1",
     };
 
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    //切换月份刷新其他视图
+    function selectMonth(month) {
+        let translation = {
+            "February": 2,
+            "March": 3,
+            "May": 5,
+            "June": 6,
+            "July": 7,
+            "August": 8,
+            "September": 9,
+            "October": 10,
+            "November": 11
+        };
+        console.log(translation[month]);
+        TRANSPORT_DATA["month"] = translation[month];
+        redraw("/get_month_data", "select_time");
+    }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 // Total size of all segments; we set this later, after loading the data.
     var totalSize = 0;
 
-    // entering.append("svg:text")
-    //         .attr("x", (b.w + b.t) / 2)
-    //         .attr("y", b.h / 2)
-    //         .attr("dy", "0.35em")
-    //         .attr("text-anchor", "middle")
-    //         .text(function (d) {
-    //             return getStr(d.name);
-    //         });
-
-
     var vis = d3.select("#chart").append("svg:svg")
-        .attr("width", width*0.98)
+        .attr("width", width * 0.98)
         .attr("height", height)
         .append("svg:g")
         .attr("id", "container")
-        .attr("transform", "translate(" + width / 2 + "," + height/3  + ")");
+        .attr("transform", "translate(" + width / 2 + "," + height / 2.2 + ")");
 
     vis.append("text")
-        .attr("x",width*0.01)
-        .attr("y",height*0.53)
-        .attr("font-size",18)
+        .attr("x", width * 0.01)
+        .attr("y", -height * 0.4)
+        .attr("font-size", 13)
         .attr("text-anchor", "middle")
-        .attr("font-weight","bold")
-        .attr("font-family","微软雅黑")
+        .attr("font-weight", "bold")
+        .attr("font-family", "微软雅黑")
         .text("月高发疾病分布概览")
+
+    vis.append("text")
+        .attr("x", -width * 0.4)
+        .attr("y", -height * 0.35)
+        .attr("font-size", 10)
+        .attr("text-anchor", "middle")
+        .attr("font-weight", "bold")
+        .attr("font-family", "微软雅黑")
+        .text("男性")
+
+    vis.append("rect")
+        .attr("x", -width * 0.48)
+        .attr("y", -height * 0.35 - 10)
+        .attr("width", width * 0.03)
+        .attr("height", height * 0.03)
+        .attr("fill", "#9ca8b8")
+
+
+    vis.append("text")
+        .attr("x", -width * 0.4)
+        .attr("y", -height * 0.3)
+        .attr("font-size", 10)
+        .attr("text-anchor", "middle")
+        .attr("font-weight", "bold")
+        .attr("font-family", "微软雅黑")
+        .text("女性")
+
+    vis.append("rect")
+        .attr("x", -width * 0.48)
+        .attr("y", -height * 0.3 - 10)
+        .attr("width", width * 0.03)
+        .attr("height", height * 0.03)
+        .attr("fill", "#ddd1d1")
 
     var partition = d3.layout.partition()
         .size([2 * Math.PI, radius * radius])
@@ -87,74 +130,103 @@ function sunburst(json) {
             }
         })
 
-
 // Use d3.text and d3.csv.parseRows so that we do not need to have a header
 // row, and can receive the csv as an array of arrays.
-        initializeBreadcrumbTrail();
-        drawLegend();
-        d3.select("#togglelegend").on("click", toggleLegend);
+    initializeBreadcrumbTrail();
+    drawLegend();
+    d3.select("#togglelegend").on("click", toggleLegend);
 
-        // Bounding circle underneath the sunburst, to make it easier to detect
-        // when the mouse leaves the parent g.
-        vis.append("svg:circle")
-            .attr("r", radius)
-            .style("opacity", 0);
+    // Bounding circle underneath the sunburst, to make it easier to detect
+    // when the mouse leaves the parent g.
+    vis.append("svg:circle")
+        .attr("r", radius)
+        .style("opacity", 0);
 
-        // For efficiency, filter nodes to keep only those large enough to see.
-        var nodes = partition.nodes(json)
-            .filter(function (d) {
-                return (d.dx > 0.005); // 0.005 radians = 0.29 degrees
-            });
+    // For efficiency, filter nodes to keep only those large enough to see.
+    var nodes = partition.nodes(json)
+        .filter(function (d) {
+            return (d.dx > 0.005); // 0.005 radians = 0.29 degrees
+        });
 
-        var path = vis.data([json]).selectAll("path")
-            .data(nodes)
-            .enter().append("svg:path")
-            .attr("display", function (d) {
-                return d.depth ? null : "none";
-            })
-            .attr("id",function (d) {
-                if(d.depth=='1')
-                {
-                    return d.name.split('.')[0];
+    var path = vis.data([json]).selectAll("path")
+        .data(nodes)
+        .enter().append("svg:path")
+        .attr("display", function (d) {
+            return d.depth ? null : "none";
+        })
+        .attr("id", function (d) {
+            if (d.depth == '1') {
+                return d.name.split('.')[0];
+            }
+
+        })
+        .attr("d", arc)
+        .attr("fill-rule", "evenodd")
+        .style("fill", function (d) {
+            if (d.name.substr(0, 4) == 'girl') return "#ddd1d1";
+            else {
+                return colors[getCaption(d.name)];
+            }
+
+        })
+        .style("opacity", 1)
+        .style("cursor", "pointer")
+        .on("mouseover", mouseover)
+        .on("click", function (d) {
+            selectMonth(this.id);
+        });
+    d3.select("#container").on("mouseleave", mouseleave);
+
+    var gtext = vis.append("g")
+        .attr("trsnsform", "translate(" + width / 2 + "," + height / 2.2 + ")")
+
+    gtext.selectAll("text")
+        .data(nodes)
+        .enter()
+        .append("text")
+        .text(function (d) {
+            if (d.depth == '1') {
+                if (d.name.split('.')[0] == 'February') {
+                    return '2';
+                } else if (d.name.split('.')[0] == 'May') {
+                    return '5';
+                } else if (d.name.split('.')[0] == 'June') {
+                    return '6';
+                } else if (d.name.split('.')[0] == 'July') {
+                    return '7';
+                } else if (d.name.split('.')[0] == 'August') {
+                    return '8';
+                } else if (d.name.split('.')[0] == 'September') {
+                    return '9';
+                } else if (d.name.split('.')[0] == 'October') {
+                    return '10';
+                } else if (d.name.split('.')[0] == 'November') {
+                    return '11';
+                } else if (d.name.split('.')[0] == 'August') {
+                    return '8';
+                } else if (d.name.split('.')[0] == 'March') {
+                    return '3';
                 }
+            }
+        })
+        .attr("transform", function (d) {
+            return "translate(" + arc.centroid(d) + ")"
+        })
+        .attr("text-anchor", "middle")
+        .attr("fill", '#fbfbfb')
+        .style("cursor", "pointer")
+        .on("click", function (d) {
+            selectMonth(d.name.split(".")[0]);
+        })
 
-            })
-            .attr("d", arc)
-            .attr("fill-rule", "evenodd")
-            .style("fill", function (d) {
-                if (d.name.substr(0, 4) == 'girl') return "#ddd1d1";
-                else {
-                    return colors[getCaption(d.name)];
-                }
+    // Add the mouseleave handler to the bounding circle.
 
-            })
-            .style("opacity", 1)
-            .on("mouseover", mouseover)
-            .on("click",function (d) {
-                let translation = {
-                    "February": 2,
-                    "March": 3,
-                    "May": 5,
-                    "June": 6,
-                    "July": 7,
-                    "August": 8,
-                    "September": 9,
-                    "October": 10,
-                    "November": 11
-                };
-                // console.log(translation[this.id]);
-                TRANSPORT_DATA["month"] = translation[this.id];
-                redraw("/get_month_data", "select_time");
-            });
 
-        // Add the mouseleave handler to the bounding circle.
-        d3.select("#container").on("mouseleave", mouseleave);
-
-        // Get total size of the tree = value of root node from partition.
-       // console.log(path.node())
-        // console.log(json)
-       // console.log(path.node().__data__);
-        totalSize = path.node().__data__.value;
+    // Get total size of the tree = value of root node from partition.
+    // console.log(path.node())
+    // console.log(json)
+    // console.log(path.node().__data__);
+    totalSize = path.node().__data__.value;
 
     function getCaption(obj) {
         var index = obj.lastIndexOf("\.");
@@ -242,16 +314,31 @@ function sunburst(json) {
 
 // Generate a string that describes the points of a breadcrumb polygon.
     function breadcrumbPoints(d, i) {
-        var points = [];
-        points.push("0,0");
-        points.push(b.w + ",0");
-        points.push(b.w + b.t + "," + (b.h / 2));
-        points.push(b.w + "," + b.h);
-        points.push("0," + b.h);
-        if (i > 0) { // Leftmost breadcrumb; don't include 6th vertex.
-            points.push(b.t + "," + (b.h / 2));
+        // console.log(i)
+        if (i == 0) {
+            var points = [];
+            points.push("0,0");
+            points.push(b.w / 1.5 + ",0");
+            points.push(b.w / 1.5 + b.t + "," + (b.h / 2));
+            points.push(b.w / 1.5 + "," + b.h);
+            points.push("0," + b.h);
+            if (i > 0) { // Leftmost breadcrumb; don't include 6th vertex.
+                points.push(b.t + "," + (b.h / 2));
+            }
+            return points.join(" ");
+        } else {
+            var points = [];
+            points.push("0,0");
+            points.push(b.w + ",0");
+            points.push(b.w + b.t + "," + (b.h / 2));
+            points.push(b.w + "," + b.h);
+            points.push("0," + b.h);
+            if (i > 0) { // Leftmost breadcrumb; don't include 6th vertex.
+                points.push(b.t + "," + (b.h / 2));
+            }
+            return points.join(" ");
         }
-        return points.join(" ");
+
     }
 
 // Update the breadcrumb trail to show the current sequence and percentage.
@@ -277,7 +364,14 @@ function sunburst(json) {
             });
 
         entering.append("svg:text")
-            .attr("x", (b.w + b.t) / 2)
+            .attr("x", function (d, i) {
+                if (i == 0) {
+                    return (b.w / 1.5 + b.t) / 2
+                } else {
+                    return (b.w + b.t) / 2
+                }
+
+            })
             .attr("y", b.h / 2)
             .attr("dy", "0.35em")
             .attr("text-anchor", "middle")
@@ -287,7 +381,11 @@ function sunburst(json) {
 
         // Set position for entering and updating nodes.
         g.attr("transform", function (d, i) {
-            return "translate(" + i * (b.w + b.s) + ", 0)";
+            if (i == 1 || i == 2) {
+                return "translate(" + i * (b.w / 1.5 + b.s) + ", 0)";
+            } else {
+                return "translate(" + i * (b.w + b.s) + ", 0)";
+            }
         });
 
         // Remove exiting nodes.

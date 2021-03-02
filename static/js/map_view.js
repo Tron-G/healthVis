@@ -184,9 +184,9 @@ function drawMap(hospital_data, category_data) {
         //////////////////////////////////////////////////////////////////////
         // 根据选择的种类的值绘制地图点集
         //////////////////////////////////////////////////////////////////////
-        if(TRANSPORT_DATA["map_checked_type"] === "GDP" || TRANSPORT_DATA["map_checked_type"] === "pollution_company"){
+        if (TRANSPORT_DATA["map_checked_type"] === "GDP" || TRANSPORT_DATA["map_checked_type"] === "pollution_company") {
             drawHeatMap(TRANSPORT_DATA["map_checked_type"], category_data);
-        }else{
+        } else {
             drawCategoryPlace(TRANSPORT_DATA["map_checked_type"], category_data);
         }
 
@@ -223,7 +223,7 @@ function drawMap(hospital_data, category_data) {
             //添加医院的名字
             let el = document.createElement("div");
             el.id = "hospital_name" + index;
-            el.className  = "hospital_name";
+            el.className = "hospital_name";
             el.innerHTML = hospital_point[index].name;
 
             el.style.color = HOSPITAL_NAME_COLOR;
@@ -347,7 +347,7 @@ function drawMap(hospital_data, category_data) {
         // console.log(words.split("、"));
         //展示词云图
         if (TRANSPORT_DATA["map_checked_type"] === "restaurant" || TRANSPORT_DATA["map_checked_type"] === "pollution_company") {
-            if(echarts.getInstanceByDom(document.getElementById("word_cloud")) !== undefined){
+            if (echarts.getInstanceByDom(document.getElementById("word_cloud")) !== undefined) {
 
                 console.log(echarts.getInstanceByDom(document.getElementById("word_cloud")));
                 echarts.getInstanceByDom(document.getElementById("word_cloud")).dispose();
@@ -528,9 +528,9 @@ function drawMap(hospital_data, category_data) {
     function drawCategoryPlace(type_name, type_place_data) {
 
         let TYPE_POINT_COLOR = {
-            "teacher":"#625261",
-            "health_center":"#e40017",
-            "restaurant":"#00917c",
+            "teacher": "#625261",
+            "health_center": "#e40017",
+            "restaurant": "#00917c",
             "police": "#8f4068",
             "worker": "#91684a",
             "iron": "#1e212d",

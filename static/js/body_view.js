@@ -30,6 +30,7 @@ function drawBodyMap(type, data) {
     $("#mysvg").remove();
     $("#man_svg").remove();
     $("#woman_svg").remove();
+    $("#organ_svg").remove();
     //男性疾病列表及器官列表，对应人数
     const man_disease_organs = [];
     const man_disease_name = {};
@@ -53,111 +54,116 @@ function drawBodyMap(type, data) {
     const woman_svg_width = document.getElementById("woman_background").offsetWidth;
     const woman_svg_height = document.getElementById("woman_background").offsetHeight;
 
+    const organ_list_width = document.getElementById("organ_view").offsetWidth;
+    const organ_list_height = document.getElementById("organ_view").offsetHeight;
+
+    //器官列表展示的性别
+    let show_organ_sex = "man";
     //器官属性(位置，大小，透明度)
     const man_organs = {
         "brain": {
             "width": 30,
             "height": 30,
-            "x": man_svg_width / 2.25,
+            "x": man_svg_width / 2.18,
             "y": man_svg_height / 16,
             "opacity": 1
         },
         "eyes": {
-            "width": 30,
-            "height": 30,
-            "x": man_svg_width / 2.22,
-            "y": man_svg_height / 14,
+            "width": 35,
+            "height": 35,
+            "x": man_svg_width / 2.2,
+            "y": man_svg_height / 13.95,
             "opacity": 1
         },
         "nose": {
             "width": 12,
             "height": 12,
-            "x": man_svg_width / 2.07,
+            "x": man_svg_width / 2.06,
             "y": man_svg_height / 9.5,
             "opacity": 1
         },
         "mouth": {
-            "width": 12,
-            "height": 12,
+            "width": 15,
+            "height": 15,
             "x": man_svg_width / 2.07,
-            "y": man_svg_height / 7.5,
+            "y": man_svg_height / 7.7,
             "opacity": 1
         },
         "throat": {
             "width": 40,
             "height": 40,
-            "x": man_svg_width / 2.34,
-            "y": man_svg_height / 7.35,
+            "x": man_svg_width / 2.25,
+            "y": man_svg_height / 7.1,
             "opacity": 1
         },
         "lung": {
-            "width": 80,
-            "height": 80,
-            "x": man_svg_width / 2.8,
-            "y": man_svg_height / 5.7,
+            "width": 90,
+            "height": 90,
+            "x": man_svg_width / 2.7,
+            "y": man_svg_height / 5.4,
             "opacity": 1
         },
         "breast": {
-            "width": 60,
-            "height": 60,
-            "x": man_svg_width / 2.5,
-            "y": man_svg_height / 4.5,
+            "width": 90,
+            "height": 90,
+            "x": man_svg_width / 2.65,
+            "y": man_svg_height / 4.8,
             "opacity": 1
         },
         "heart": {
-            "width": 35,
-            "height": 35,
-            "x": man_svg_width / 2.17,
-            "y": man_svg_height / 4.5,
+            "width": 45,
+            "height": 45,
+            "x": man_svg_width / 2.15,
+            "y": man_svg_height / 4.4,
             "opacity": 1
         },
         "liver": {
-            "width": 45,
-            "height": 45,
+            "width": 55,
+            "height": 55,
             "x": man_svg_width / 2.45,
-            "y": man_svg_height / 3.3,
+            "y": man_svg_height / 3.25,
             "opacity": 1
         },
         "gallbladder": {
-            "width": 30,
-            "height": 30,
-            "x": man_svg_width / 2.4,
-            "y": man_svg_height / 2.8,
+            "width": 35,
+            "height": 35,
+            "x": man_svg_width / 2.35,
+            "y": man_svg_height / 2.85,
             "opacity": 1
         },
         "stomach": {
-            "width": 35,
-            "height": 35,
+            "width": 45,
+            "height": 45,
             "x": man_svg_width / 2.1,
             "y": man_svg_height / 3.15,
             "opacity": 1
         },
         "kidney": {
-            "width": 35,
-            "height": 35,
-            "x": man_svg_width / 2.24,
-            "y": man_svg_height / 2.75,
+            "width": 45,
+            "height": 45,
+            "x": man_svg_width / 2.22,
+            "y": man_svg_height / 2.77,
             "opacity": 1
         },
         "spine": {
-            "width": 30,
-            "height": 30,
-            "x": man_svg_width / 2.22,
-            "y": man_svg_height / 2.7,
+            "width": 35,
+            "height": 35,
+            "x": man_svg_width / 2.2,
+            "y": man_svg_height / 2.5,
             "opacity": 1
         },
         "intestines": {
-            "width": 65,
-            "height": 65,
-            "x": woman_svg_width / 2.55,
-            "y": woman_svg_height / 2.6,
+            "width": 75,
+            "height": 75,
+            "x": woman_svg_width / 2.46,
+            "y": woman_svg_height / 2.57,
             "opacity": 1
         },
         "prostate": {
-            "width": 25,
-            "height": 25,
-            "x": man_svg_width / 2.2,
-            "y": man_svg_height / 2.25,
+            "width": 35,
+            "height": 35,
+            "x": man_svg_width / 2.18,
+            "y": man_svg_height / 2.3,
             "opacity": 1
         }
     };
@@ -166,112 +172,112 @@ function drawBodyMap(type, data) {
         "brain": {
             "width": 30,
             "height": 30,
-            "x": woman_svg_width / 2.25,
+            "x": woman_svg_width / 2.15,
             "y": woman_svg_height / 16,
             "opacity": 1
         },
         "eyes": {
             "width": 30,
             "height": 30,
-            "x": woman_svg_width / 2.22,
+            "x": woman_svg_width / 2.15,
             "y": woman_svg_height / 14,
             "opacity": 1
         },
         "nose": {
             "width": 12,
             "height": 12,
-            "x": woman_svg_width / 2.07,
+            "x": woman_svg_width / 2.05,
             "y": woman_svg_height / 9.5,
             "opacity": 1
         },
         "mouth": {
             "width": 12,
             "height": 12,
-            "x": woman_svg_width / 2.07,
+            "x": woman_svg_width / 2.05,
             "y": woman_svg_height / 7.8,
             "opacity": 1
         },
         "throat": {
             "width": 40,
             "height": 40,
-            "x": woman_svg_width / 2.32,
+            "x": woman_svg_width / 2.23,
             "y": woman_svg_height / 7.35,
             "opacity": 1
         },
         "lung": {
             "width": 80,
             "height": 80,
-            "x": woman_svg_width / 2.79,
-            "y": woman_svg_height / 5.7,
+            "x": woman_svg_width / 2.57,
+            "y": woman_svg_height / 5.4,
             "opacity": 1
         },
         "heart": {
-            "width": 35,
-            "height": 35,
-            "x": woman_svg_width / 2.17,
-            "y": woman_svg_height / 4.5,
+            "width": 40,
+            "height": 40,
+            "x": woman_svg_width / 2.15,
+            "y": woman_svg_height / 4.4,
             "opacity": 1
         },
         "breast": {
-            "width": 60,
-            "height": 60,
-            "x": woman_svg_width / 2.5,
-            "y": woman_svg_height / 4.5,
+            "width": 70,
+            "height": 70,
+            "x": woman_svg_width / 2.48,
+            "y": woman_svg_height / 4.65,
             "opacity": 1
         },
         "liver": {
-            "width": 45,
-            "height": 45,
-            "x": woman_svg_width / 2.45,
-            "y": woman_svg_height / 3.3,
+            "width": 50,
+            "height": 50,
+            "x": woman_svg_width / 2.35,
+            "y": woman_svg_height / 3.35,
             "opacity": 1
         },
         "gallbladder": {
-            "width": 30,
-            "height": 30,
-            "x": woman_svg_width / 2.4,
-            "y": woman_svg_height / 2.8,
+            "width": 35,
+            "height": 35,
+            "x": woman_svg_width / 2.35,
+            "y": woman_svg_height / 2.95,
             "opacity": 1
         },
         "stomach": {
-            "width": 35,
-            "height": 35,
+            "width": 40,
+            "height": 40,
             "x": woman_svg_width / 2.1,
-            "y": woman_svg_height / 3.15,
+            "y": woman_svg_height / 3.2,
             "opacity": 1
         },
         "kidney": {
-            "width": 35,
-            "height": 35,
-            "x": woman_svg_width / 2.24,
-            "y": woman_svg_height / 2.75,
+            "width": 40,
+            "height": 40,
+            "x": woman_svg_width / 2.2,
+            "y": woman_svg_height / 2.85,
             "opacity": 1
         },
         "spine": {
-            "width": 30,
-            "height": 30,
-            "x": woman_svg_width / 2.22,
-            "y": woman_svg_height / 2.7,
+            "width": 35,
+            "height": 35,
+            "x": woman_svg_width / 2.2,
+            "y": woman_svg_height / 2.6,
             "opacity": 1
         },
         "intestines": {
-            "width": 65,
-            "height": 65,
-            "x": woman_svg_width / 2.55,
+            "width": 70,
+            "height": 70,
+            "x": woman_svg_width / 2.4,
             "y": woman_svg_height / 2.6,
             "opacity": 1
         },
         "uterus": {
-            "width": 35,
-            "height": 35,
-            "x": woman_svg_width / 2.25,
+            "width": 40,
+            "height": 40,
+            "x": woman_svg_width / 2.24,
             "y": woman_svg_height / 2.3,
             "opacity": 1
         }
 
     };
 
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////s////////////////////////////
     if (type === "search") {
         //搜索id
         if (TRANSPORT_DATA["id"] !== "") {
@@ -298,6 +304,7 @@ function drawBodyMap(type, data) {
         }
     }
 
+    //统计搜索id的患者疾病列表
     function countPatientDisease(disease_list, disease_organs, disease_name, disease_advice, organ_list) {
         for (let i = 0; i < disease_list.length; i++) {
             let organ = DISEASE_LIST[disease_list[i]]["organ"];
@@ -362,9 +369,9 @@ function drawBodyMap(type, data) {
     }
 
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // 整体svg
     let svg = d3.select("#body_view").append("svg")
         .attr("id", "mysvg")
-        .attr("class", "svg1")
         .attr("width", svg_width)
         .attr("height", svg_height);
     //svg背景
@@ -372,6 +379,27 @@ function drawBodyMap(type, data) {
         .attr("width", svg_width)
         .attr("height", svg_height)
         .attr("fill", svg_background);
+
+    let organ_svg = d3.select("#organ_view").append("svg")
+        .attr("id", "organ_svg")
+        .attr("width", organ_list_width)
+        .attr("height", organ_list_height);
+
+    for (let i = 0; i < 2; i++) {
+        let titles = ["男性患者", "女性患者"];
+        svg.append("text")
+            .text(titles[i])
+            .attr("class", "patient_title")
+            .attr("x", 630 + i * 370)
+            .attr("y", 90)
+            .attr("fill", "gray")
+            .attr("font-weight", "bold")
+        // .style("opacity", 0);
+
+
+    }
+
+
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //添加人体图
     let man_svg = d3.select("#man_background").append("svg")
@@ -407,16 +435,18 @@ function drawBodyMap(type, data) {
         .attr("x", woman_svg_width / 8.5)
         .attr("y", woman_svg_height / 20);
 
+    showOrganList("man");
     //////////////////////////////////////////////////////////////////////////////////////////
     //添加人体器官
     drawOrgans("man");
     drawOrgans("woman");
 
     function drawOrgans(sex) {
-        let disease_organs;
-        let organs_list;
+        show_organ_sex = sex;
+        let disease_organs, organs_list;
         let disease_count;
         let body_svg;
+
         if (sex === "man") {
             disease_organs = man_disease_organs;
             organs_list = man_organs;
@@ -442,72 +472,77 @@ function drawBodyMap(type, data) {
                     .style("opacity", organs_list[organ_name]["opacity"])
             }
         }
+        // let lis = Object.keys(organs_list);
+        // for (let i = 0; i < lis.length; i++) {
+        //     console.log(organs_list[lis[i]]);
+        //
+        //     let organ_name = disease_organs[i];
+        //         // organs_list[organ_name]["opacity"] = disease_count[organ_name];
+        //         body_svg.append("svg:image")
+        //             .attr("xlink:href", "./static/image/body/" + lis[i] + ".svg")
+        //             .attr("id", sex + "_body_" + organ_name)
+        //             .attr("width", organs_list[lis[i]]["width"])
+        //             .attr("height", organs_list[lis[i]]["height"])
+        //             .attr("x", organs_list[lis[i]]["x"])
+        //             .attr("y", organs_list[lis[i]]["y"])
+        //             .style("opacity", organs_list[lis[i]]["opacity"])
+        // }
+
     }
 
     /////////////////////////////////////////////////////////////////////////////////////////
     // 展示左边的器官排列
     function showOrganList(sex) {
         let disease_organs, organs_list, disease_name, disease_advice, body_svg;
-
+        let titles;
         if (sex === "man") {
             disease_organs = man_disease_organs;
             organs_list = man_organs;
             disease_name = man_disease_name;
             disease_advice = man_disease_advice;
             body_svg = man_svg;
+            titles = "男性患者患病器官";
         } else {
             disease_organs = woman_disease_organs;
             organs_list = woman_organs;
             disease_name = woman_disease_name;
             disease_advice = woman_disease_advice;
             body_svg = woman_svg;
+            titles = "女性患者患病器官";
         }
 
         let counter = 0, col = 0;
+
+        organ_svg.append("text")
+            .text(titles)
+            .attr("x", 150)
+            .attr("y", 30)
+            .attr("class", "disease_organ_list")
+            .attr("fill", "#393e46")
+            .attr("font-size", 17)
+            .attr("font-weight", "bold");
 
         for (let i = 0; i < disease_organs.length; i++) {
             let organ_name = disease_organs[i];
 
             let disease_id = "tag_" + organ_name;
             //计算图标位置
-            let item_x = -20;
-            let item_y = 150;
+            let item_x = -40;
+            let item_y = 120;
             counter++;
             if (counter > 3) {
                 counter = 1;
                 col += 1;
-                item_y += col * 120;
-                item_x += counter * 110;
+                item_y += col * 140;
+                item_x += counter * 130;
             } else {
-                item_x += counter * 110;
-                item_y += col * 120;
+                item_x += counter * 130;
+                item_y += col * 140;
             }
 
-            //疾病建议分段
-            let advice_texts = [];
-            let words_count = 0;
-            let text_line = "";
-            for (let i = 0; i < disease_advice[organ_name].length; i++) {
-                if (disease_advice[organ_name][i] === "#") {
-                    if (text_line !== "") {
-                        advice_texts.push(text_line);
-                        text_line = "";
-                        words_count = 0;
-                    }
-                    continue;
-                }
-                text_line += disease_advice[organ_name][i];
-                words_count++;
-                if (words_count > 50) {
-                    advice_texts.push(text_line);
-                    words_count = 0;
-                    text_line = "";
-                }
-            }
-            advice_texts.push(text_line);
 
             //疾病名称
-            svg.append("text")
+            organ_svg.append("text")
                 .text(disease_name[organ_name])
                 .attr("id", "disease_name" + i)
                 .attr("class", "disease_organ_list")
@@ -516,7 +551,7 @@ function drawBodyMap(type, data) {
                 .attr("fill", "#91091e")
                 .attr("font-weight", "bold")
                 .style("opacity", 0);
-            svg.append("circle")
+            organ_svg.append("circle")
                 .attr("id", "circle" + i)
                 .attr("class", "disease_organ_list")
                 .attr("cx", item_x)
@@ -526,7 +561,7 @@ function drawBodyMap(type, data) {
                 .style("stroke-width", 2)
                 .style("fill", "#E6E6E6");
 
-            svg.append("svg:image")
+            organ_svg.append("svg:image")
                 .attr("xlink:href", "./static/image/body/" + organ_name + ".svg")
                 .attr("id", disease_id)
                 .attr("class", "disease_organ_list")
@@ -554,19 +589,44 @@ function drawBodyMap(type, data) {
 
                     /////////////////////////////////
                     svg.append("rect")
-                        .attr("x", 500)
-                        .attr("y", 700)
+                        .attr("x", 480)
+                        .attr("y", 670)
                         .attr("id", "disease_advice")
-                        .attr("width", 650)
-                        .attr("height", 170)
+                        .attr("width", 730)
+                        .attr("height", 200)
                         .attr("fill", "#d2c6b2");
+
+
+                    //疾病建议分段
+                    let advice_texts = [];
+                    let words_count = 0;
+                    let text_line = "";
+                    for (let i = 0; i < disease_advice[organ_name].length; i++) {
+                        if (disease_advice[organ_name][i] === "#") {
+                            if (text_line !== "") {
+                                advice_texts.push(text_line);
+                                text_line = "";
+                                words_count = 0;
+                            }
+                            continue;
+                        }
+                        text_line += disease_advice[organ_name][i];
+                        words_count++;
+                        if (words_count > 57) {
+                            advice_texts.push(text_line);
+                            words_count = 0;
+                            text_line = "";
+                        }
+                    }
+                    advice_texts.push(text_line);
+
 
                     //疾病建议
                     for (let i = 0; i < advice_texts.length; i++) {
                         svg.append("text")
                             .text(advice_texts[i])
-                            .attr("x", 510)
-                            .attr("y", 720 + i * 15)
+                            .attr("x", 500)
+                            .attr("y", 690 + i * 17)
                             .attr("class", "disease_advice_text")
                             .attr("fill", "black")
                             .style("font-size", "12px");

@@ -6,7 +6,7 @@ function drawTowBar1(obj) { //改参数
 	 * 照着一个案例改的
 	 * 增加下面的数值显示
 	 * */
-	list = (Object.keys(obj))
+	let list = (Object.keys(obj))
 	// console.log(list.length)
 
 	list.splice(9, 9);
@@ -54,7 +54,7 @@ function drawTowBar1(obj) { //改参数
 		baseOption: {
 			title: {
 				text: obj['disease_name'],
-				left: "2%",
+				left: "center",
 				top: "1%",
 				textStyle: {
 					fontSize: 15
@@ -87,7 +87,7 @@ function drawTowBar1(obj) { //改参数
 				}
 			},
 			legend: {
-				top: '5%',
+				top: '8%',
 				left: '31%',
 				itemWidth: 10,
 				itemHeight: 10,
@@ -102,21 +102,21 @@ function drawTowBar1(obj) { //改参数
 			grid: [{
 				show: false,
 				left: '2%',
-				top: '13%',
-				bottom: '14%',
+				top: '16%',
+				bottom: '8%',
 				containLabel: true,
 				width: '35%'
 			}, {
 				show: false,
 				left: '51%',
-				top: '11%',
-				bottom: '11%',
+				top: '16%',
+				bottom: '8%',
 				width: '0%'
 			}, {
 				show: false,
 				right: '2%',
-				top: '14%',
-				bottom: '14%',
+				top: '16%',
+				bottom: '8%',
 				containLabel: true,
 				width: '35%'
 			}],
@@ -462,7 +462,7 @@ function drawTowbar2(obj) { //改参数
 			title: {
 				text: month+"高发疾病数据",
 				top:"1%",
-				left:"1%",
+				left:"center",
 				textStyle:{
 				    fontSize:15
 				}
@@ -474,7 +474,7 @@ function drawTowbar2(obj) { //改参数
 				data: []
 			},
 			legend: {
-				top: '3%',
+				top: '7%',
 				left: '31%',
 				itemWidth: 10,
 				itemHeight: 10,
@@ -489,20 +489,20 @@ function drawTowbar2(obj) { //改参数
 			grid: [{
 				show: false,
 				left: '0%',
-				top: '11%',
+				top: '12%',
 				bottom: '5%',
 				containLabel: true,
 				width: '35%'
 			}, {
 				show: false,
 				left: '50%',
-				top: '11%',
+				top: '12%',
 				bottom: '5%',
 				width: '0%'
 			}, {
 				show: false,
 				left: '61%',
-				top: '11%',
+				top: '12s%',
 				bottom: '5%',
 				containLabel: true,
 				width: '38%'

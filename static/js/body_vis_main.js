@@ -12,7 +12,7 @@
 //全局状态变量，保存当前医院
 var TRANSPORT_DATA = {};
 TRANSPORT_DATA["hospital"] = "all";
-TRANSPORT_DATA["month"] = 2;
+TRANSPORT_DATA["month"] = 8;
 TRANSPORT_DATA["id"] = "";
 TRANSPORT_DATA["disease"] = "";
 
