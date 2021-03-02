@@ -2,7 +2,7 @@ function drawRainFall() {
     var dom = document.getElementById("word_cloud");
     var myChart = echarts.init(dom);
     var app = {};
-    var colorlist = ["#9ba4b4", "#afb0b2", "#c5b8a5", "#c39e5c", "#b67171", "#da723c", "#8696a7", "#96a48b", "#596157", "#939391", "#7b8b6f", "#2d6187"];
+    var colorlist = ["#c1cbd7", "#afb0b2", "#c5b8a5", "#bfbfbf", "#e0e5df", "#b5c4b1", "#8696a7", "#96a48b", "#d8caaf", "#939391", "#7b8b6f", "#f0ebe5"];
     var option;
     option = {
         title: {
@@ -31,7 +31,11 @@ function drawRainFall() {
                 color: colorlist,
                 roseType: 'area',
                 itemStyle: {
-                    borderRadius: 8
+                    borderRadius: 8,
+                    borderWidth: 1,
+						borderColor: '#19181d',
+						shadowColor: '#fcfcfc',
+						shadowBlur: 0,
                 },
                 data: [
                     {value: 13, name: '1月'},
@@ -48,7 +52,8 @@ function drawRainFall() {
                     {value: 13, name: '12月'}
 
                 ]
-            }
+            },
+
         ]
     };
 

@@ -101,8 +101,8 @@ function drawRose(obj) {
 			}
 		],
 		color: [
-			"#f9ed69", "#f08a5d", "#b83b5e", "#6a2c70", "#6DBC49",
-			"#37B44E", "#3DBA78", "#14ADCF"
+			"#afb0b2", "#c5b8a5", "#b5c4b1", "#939391", "#8696a7",
+			"#ddd1d1", "#9ca8b8", "#939391"
 		],
 		tooltip:{
 		    show:true,
@@ -120,7 +120,8 @@ function drawRose(obj) {
 			},
 		},
 		calculable: true,
-		series: [{
+		series: [
+			{
 				name: '1',
 				type: 'pie',
 				startAngle: 0,
@@ -153,8 +154,8 @@ function drawRose(obj) {
 						// }]),
 						borderWidth: 1,
 						borderColor: '#19181d',
-						shadowColor: '#19181d',
-						shadowBlur: 10,
+						shadowColor: '#fcfcfc',
+						shadowBlur: 0,
 					}
 				},
 				data: data1.sort(function(a, b) {
@@ -195,7 +196,7 @@ function drawRose(obj) {
 						borderWidth: 1,
 						borderColor: '#19181d',
 						shadowColor: '#19181d',
-						shadowBlur: 10,
+						shadowBlur: 0,
 					}
 				},
 				data: data2.sort(function(a, b) {
@@ -236,7 +237,7 @@ function drawRose(obj) {
 						borderWidth: 1,
 						borderColor: '#19181d',
 						shadowColor: '#19181d',
-						shadowBlur: 10,
+						shadowBlur: 0,
 					}
 				},
 				data: data3.sort(function(a, b) {
@@ -277,7 +278,7 @@ function drawRose(obj) {
 						borderWidth: 1,
 						borderColor: '#19181d',
 						shadowColor: '#19181d',
-						shadowBlur: 10,
+						shadowBlur: 0,
 					}
 				},
 				data: data4.sort(function(a, b) {

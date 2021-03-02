@@ -36,7 +36,7 @@ function drawPie(data, div_id) {
     let duration_time = 600;
     let width = document.getElementById(div_id).offsetWidth;
     let height = document.getElementById(div_id).offsetHeight;
-    let colorset = ['#cbe2b0', '#ee9595', '#f0ebe5', '#c1cbd7', '#939391', '#d8caaf'];
+    let colorset = ['#9ca8b8', '#ddd1d1', '#f0ebe5', '#c1cbd7', '#939391', '#d8caaf'];
 
     let svg = d3.select("#" + div_id)
         .append("svg")

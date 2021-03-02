@@ -38,7 +38,7 @@ function drawBar(AHQ, tem, rain) {
 				name:"冬天",
 				xAxis: '2019/1/1',
 				itemStyle: {
-					color: '#CDCDB4',
+					color: '#ddceaf',
 					// color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
 					// 	offset: 0,
 					// 	color: 'white'
@@ -59,7 +59,7 @@ function drawBar(AHQ, tem, rain) {
 				name:"春天",
 				xAxis: '2019/2/6',
 				itemStyle: {
-					color: '#00FA9A',
+					color: '#bbdfc5',
 					// color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
 					// 	offset: 0,
 					// 	color: 'white'
@@ -80,7 +80,7 @@ function drawBar(AHQ, tem, rain) {
 				name:"夏天",
 				xAxis: '2019/5/7',
 				itemStyle: {
-					color: '#00F5FF',
+					color: '#bacdde',
 					// color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
 					// 	offset: 0,
 					// 	color: 'white'
@@ -101,7 +101,7 @@ function drawBar(AHQ, tem, rain) {
 				name:"秋天",
 				xAxis: '2019/8/9',
 				itemStyle: {
-					color: '#FFC125',
+					color: '#ecd8d5',
 					// color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
 					// 	offset: 0,
 					// 	color: 'white'
@@ -122,7 +122,7 @@ function drawBar(AHQ, tem, rain) {
 				name:"冬天",
 				xAxis: '2019/11/11',
 				itemStyle: {
-					color: '#CDCDB4',
+					color: '#ddceaf',
 					// color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
 					// 	offset: 0,
 					// 	color: 'white'
@@ -345,10 +345,10 @@ function drawBar(AHQ, tem, rain) {
 				// 				symbolSize: 3, //标记的大小
 				itemStyle: {
 					//折线拐点标志的样式
-					color: "#058cff"
+					color: "#4e88bf"
 				},
 				lineStyle: {
-					color: "#00EE00",
+					color: "#8cca3f",
 					smooth:true,
 					width: 1
 				},

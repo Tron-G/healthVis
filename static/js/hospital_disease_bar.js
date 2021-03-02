@@ -87,7 +87,7 @@ function drawHospitalBar(disease) {
                 barWidth: '60%',
                 itemStyle: {
                     normal: {
-                        color: '#4a47a3'
+                        color: '#8fa7a5'
                     }
                 },
                 data: num

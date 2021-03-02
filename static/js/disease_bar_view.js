@@ -40,14 +40,14 @@ function drawTowBar1(obj) { //改参数
 	var timeLineData = [1]
 	var background = "#0e2147"; //背景
 	let colors = [{
-			borderColor: "rgba(227,161,96,1)",
-			start: "rgba(227,161,96,0.8)",
-			end: "rgba(227,161,96,0.4)"
+			borderColor: "rgba(227,156,187,1)",
+			start: "rgba(227,156,187,0.8)",
+			end: "rgba(227,156,187,0.4)"
 		},
 		{
-			borderColor: "rgba(0,222,255,1)",
-			start: "rgba(0,222,255,0.8)",
-			end: "rgba(0,222,255,0.4)"
+			borderColor: "rgba(133,193,234,1)",
+			start: "rgba(133,193,234,0.8)",
+			end: "rgba(133,193,234,0.4)"
 		},
 	];
 	var option = {
@@ -439,16 +439,17 @@ function drawTowbar2(obj) { //改参数
 	var timeLineData = [1]
 	var background = "#0e2147"; //背景
 	let colors = [{
-			borderColor: "rgba(227,161,96,1)",
-			start: "rgba(227,161,96,0.8)",
-			end: "rgba(227,161,96,0.4)"
+			borderColor: "rgba(227,156,187,1)",
+			start: "rgba(227,156,187,0.8)",
+			end: "rgba(227,156,187,0.4)"
 		},
 		{
-			borderColor: "rgba(0,222,255,1)",
-			start: "rgba(0,222,255,0.8)",
-			end: "rgba(0,222,255,0.4)"
+			borderColor: "rgba(133,193,234,1)",
+			start: "rgba(133,193,234,0.8)",
+			end: "rgba(133,193,234,0.4)"
 		},
 	];
+
 	var month;
 	if(TRANSPORT_DATA["month"]==0){
 	    month="全年"

@@ -1,6 +1,5 @@
 function drawForceMap(data) {
-	let disease = [
-		{
+	let disease = [{
 			name: "咽炎",
 			p: '呼吸道',
 			n: 0
@@ -243,10 +242,10 @@ function drawForceMap(data) {
 		return allNames;
 	}, {});
 	// console.log(countedNames)
-	let list2 = (Object.keys(countedNames))
-	// console.log(list2)
+	list2 = (Object.keys(countedNames))
+	console.log(list2)
 	let rand = []
-	for (let i = 0; i < disease.length; i++) {
+	for (i = 0; i < disease.length; i++) {
 		rand.push(disease[i].p)
 	}
 	console.log(rand)
@@ -261,12 +260,12 @@ function drawForceMap(data) {
 
 	var list3 = (Object.keys(partion))
 	var leg = []
-	var colors = ['#929fff', '#9de0ff', '#836FFF', '#af87fe', '#7dc3fe',
-		'#bb60b2', '#FFD700', '#f47a75', '#009db2', '#FFF8DC',
-		'#EE82EE', '#FFE4E1',
-	];
+	var colors = [
+			"#afb0b2", "#c5b8a5", "#b5c4b1", "#939391", "#8696a7",
+			"#ddd1d1", "#9ca8b8", "#939391"
+		];
 	for (let i = 0; i < list3.length; i++) {
-		let o = {
+		o = {
 			name: list3[i],
 			itemStyle: {
 				normal: {
@@ -277,7 +276,7 @@ function drawForceMap(data) {
 		leg.push(o)
 	}
 	console.log(list3)
-	let flag = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+	flag = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 	for (i = 0; i < list2.length; i++) {
 		let c;
 		for (let j = 0; j < disease.length; j++) {
@@ -318,31 +317,31 @@ function drawForceMap(data) {
 			lineStyle: {
 				normal: {
 					show: true,
-					width: data[i]["possibility"] * 5,
+					width: data[i]["possibility"] * 10,
 					curveness: 0.2,
 					type: 'solid', //线的类型 'solid'（实线）'dashed'（虚线）'dotted'（点线）
 				},
 
 			},
-			emphasis: {
-				focus: 'adjacency',
-				lineStyle: {
-					width: data[i]["possibility"] * 10
-				}
-			},
+//			emphasis: {
+//				focus: 'adjacency',
+//
+//				lineStyle: {
+//					width: data[i]["possibility"] * 10
+//				}
+//			},
 		}
 		links.push(o)
 	}
-	let main = echarts.init(document.getElementById('force_map_view'));
+	let main = echarts.init(document.getElementById('force_map_view'))
 
-	let option = {
+	option = {
 		// backgroundColor:'#040f23',
 		title: {
-			text: '疾病关联图谱',
+			text: '疾病关系矢量图',
 			x: 'center',
 			textStyle:{
-			    fontSize:17,
-				fontWeight: "bold"
+			    fontSize:10
 			}
 		},
 		//—— 悬浮框 ——
@@ -359,7 +358,6 @@ function drawForceMap(data) {
 			orient: 'vertical',
 			x: 'left',
 //			y: '50px',
-			top:"20%",
 			itemWidth: 10,
 			itemHeight: 10,
 			data: leg,
@@ -383,6 +381,15 @@ function drawForceMap(data) {
 				edgeLength: 50,
 				repulsion: 200
 			},
+            label: {
+                show: false,
+                position: 'right',
+                formatter: '{b}',
+                textStyle:{
+                    color:"black"
+                }
+
+            },
 			itemStyle: {
 				normal: {
 					borderColor: '#fff',
