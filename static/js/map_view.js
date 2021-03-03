@@ -64,7 +64,6 @@ function drawMap(hospital_data, category_data) {
         ],
     };
 
-
     let temp_list = [];
     for (let each of point_data["features"]) {
         temp_list.push(each["properties"]["sum"])
@@ -87,7 +86,7 @@ function drawMap(hospital_data, category_data) {
     mapboxgl.accessToken =
         'pk.eyJ1IjoieGlhb2JpZSIsImEiOiJja2pndjRhMzQ1d2JvMnltMDE2dnlkMGhrIn0.bCKzSCs5tHTIYk4xQ65doA';
 
-    var map = new mapboxgl.Map({
+    let map = new mapboxgl.Map({
         container: 'map_view',
         style: 'mapbox://styles/xiaobie/ckjr35koy6b3t19pb3h5wlzs2',
         center: [119.442402, 35.45598],
@@ -101,7 +100,7 @@ function drawMap(hospital_data, category_data) {
     map.addControl(navigation_control, 'top-left');
 
     //添加刷选工具栏按钮绑定事件
-    var draw = new MapboxDraw({
+    let draw = new MapboxDraw({
         displayControlsDefault: false,
         controls: {
             polygon: true,
@@ -193,18 +192,38 @@ function drawMap(hospital_data, category_data) {
 
         ////////////////////////////////////////////////////////////////////////////
         // //点击事件
-        // map.on('click', 'hospital', function (e) {
-        //     let coordinates = e.features[0].geometry.coordinates.slice();
-        //     let names = e.features[0].properties.name;
-        //
-        //
-        //     while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-        //         coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-        //     }
-        //     console.log(names);
-        //
-        //
-        // });
+        map.on('click', function (e) {
+            // let coordinates = e.features[0].geometry.coordinates.slice();
+            // let names = e.features[0].properties.name;
+            //
+            // while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            //     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+            // }
+            // console.log(names);
+
+            // 以此点*px范围内的正方形算为点击反应区
+            let bbox = [
+                [e.point.x - 1, e.point.y - 1],
+                [e.point.x + 1, e.point.y + 1]
+            ];
+            // mapbox 返回查询要素的图层属性
+            let features = map.queryRenderedFeatures(bbox, {
+                layers: [TRANSPORT_DATA["map_checked_type"]]
+            });
+            let filter_hp = features.reduce(
+                function (memo, feature) {
+                    //console.log(feature);
+                    let popup = new mapboxgl.Popup({
+                        closeOnClick: false,
+                        className: "popUp"
+                    })
+                        .setLngLat(feature.geometry["coordinates"])
+                        .setText(feature.properties.name)
+                        .addTo(map);
+                    return memo;
+                }, ['name']
+            );
+        });
         //
         // // Change the cursor to a pointer when the mouse is over the places layer.
         // map.on('mouseenter', 'hospital', function () {
@@ -278,7 +297,6 @@ function drawMap(hospital_data, category_data) {
                 let coordinates = e.features[0].geometry.coordinates.slice();
                 let hospital_name = e.features[0].properties.name;
 
-
                 // while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
                 //     coordinates[0] += e.lngLat.lng > coordinates[0] ? 180 : -180;
                 // }
@@ -305,22 +323,22 @@ function drawMap(hospital_data, category_data) {
      * @description 刷选地图显示弹窗同时触发词云
      */
     function updateArea(e) {
-        var data = draw.getAll();
+        let data = draw.getAll();
         if (data.features.length > 0) {
 
             //查询选中要素
-            var draw_polygon = turf.bbox(e.features[0]);
-            var southWest = [draw_polygon[0], draw_polygon[1]];
-            var northEast = [draw_polygon[2], draw_polygon[3]];
+            let draw_polygon = turf.bbox(e.features[0]);
+            let southWest = [draw_polygon[0], draw_polygon[1]];
+            let northEast = [draw_polygon[2], draw_polygon[3]];
 
-            var northEastPointPixel = map.project(northEast);
-            var southWestPointPixel = map.project(southWest);
+            let northEastPointPixel = map.project(northEast);
+            let southWestPointPixel = map.project(southWest);
 
-            var features = map.queryRenderedFeatures([southWestPointPixel, northEastPointPixel], {
+            let features = map.queryRenderedFeatures([southWestPointPixel, northEastPointPixel], {
                 layers: [TRANSPORT_DATA["map_checked_type"]]
             });
             //框选结果
-            var filter_hp = features.reduce(
+            let filter_hp = features.reduce(
                 function (memo, feature) {
                     //console.log(feature);
                     // if (feature.properties.hasOwnProperty("category")) {
@@ -354,7 +372,6 @@ function drawMap(hospital_data, category_data) {
             }
             drawWordCloud(words.split("、"), "word_cloud");
         }
-
     }
 
     /**
