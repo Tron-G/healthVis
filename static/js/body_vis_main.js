@@ -9,15 +9,16 @@
  *
  * */
 
-//全局状态变量，保存当前医院
+//全局状态变量，保存当前医院,选中月份，病人id以及选中疾病名称
 var TRANSPORT_DATA = {};
 TRANSPORT_DATA["hospital"] = "all";
 TRANSPORT_DATA["month"] = 8;
 TRANSPORT_DATA["id"] = "";
 TRANSPORT_DATA["disease"] = "";
-
+//缓存疾病表
 var DISEASE_LIST = {};
-
+// 缓存疾病知识图谱
+var DISEASE_RULE = {};
 /**
  * @description 初始化人体结构图系统
  */
@@ -32,13 +33,13 @@ function initBodyVis() {
             // alert(JSON.stringify(data));
             console.log("success", data);
             DISEASE_LIST = data["disease-detail"];
-
+            DISEASE_RULE = data["disease_rules"];
 
             drawBodyMap("time", data["body_disease"]);
             // drawTowBar1(data["disease_age"]);
             drawTowbar2(data["body_disease"]);
             sunburst(data["sunburst"]);
-            drawForceMap(data["disease_rules"]);
+            drawForceMap(data["disease_rules"], "overview");
         }
     });
 
@@ -103,14 +104,19 @@ function redraw(url, redraw_type) {
 
             if (redraw_type === "search_id") {
                 drawBodyMap("search", data);
+                drawForceMap(DISEASE_RULE,"overview")
             } else if (redraw_type === "search_disease") {
                 drawBodyMap("search", data);
                 drawTowBar1(data);
+                drawForceMap(DISEASE_RULE,"focus")
             } else if (redraw_type === "select_time") {
                 drawBodyMap("time", data);
                 drawTowbar2(data);
+                drawForceMap(DISEASE_RULE,"overview")
             } else if(redraw_type === "disease_bar_back") {
                 drawTowbar2(data);
+                drawForceMap(DISEASE_RULE,"overview");
+                drawBodyMap("time", data);
             }
 
         }

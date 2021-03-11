@@ -1,5 +1,11 @@
-function drawForceMap(data) {
-	let disease = [{
+/**
+ * @description 绘制系统第二页的疾病节点链路图
+ * @param {object} data  节点链路图数据
+ * @param {string} draw_type  绘制类型，“overview”：全图绘制，“focus”：展示具体一个疾病的关联关系
+ */
+function drawForceMap(data, draw_type) {
+	let disease = [
+		{
 			name: "咽炎",
 			p: '呼吸道',
 			n: 0
@@ -230,6 +236,8 @@ function drawForceMap(data) {
 	let data1 = []
 	let nodes = []
 	let list = []
+
+
 	for (let i = 0; i < data.length; i++) {
 		list.push(data[i]["condition"][0])
 	}
@@ -375,7 +383,7 @@ function drawForceMap(data) {
 			type: 'graph',
 			layout: 'force', // 'circular' ,force
 			roam: true, //鼠标缩放及平移
-			focusNodeAdjacency: true, //是否在鼠标移到节点上的时候突出显示节点、节点的边和邻接节点
+			// focusNodeAdjacency: true, //是否在鼠标移到节点上的时候突出显示节点、节点的边和邻接节点
 			force: {
 				// x: 'center',
 				// y: '50px',
@@ -427,5 +435,29 @@ function drawForceMap(data) {
 			categories: leg,
 		}]
 	}; // 使用刚指定的配置项和数据显示图表。
-	main.setOption(option)
+	main.setOption(option);
+
+
+	if(draw_type === "focus"){
+		draw(TRANSPORT_DATA["disease"]);
+	}
+
+	//高亮指定疾病关联
+	function draw(str){
+		let index;
+
+		list2.forEach(function(el,i){
+			if(el===str){
+				console.log(i);
+				index=i;
+			}
+		})
+
+		main.dispatchAction({
+			type: 'focusNodeAdjacency',
+			dataIndex: index
+			// name:params.name
+		})
+	}
 }
+
