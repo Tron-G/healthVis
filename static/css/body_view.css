@@ -7,24 +7,17 @@
     z-index: 0;
 }
 
-#man_background {
+#body_background{
     position: absolute;
-    top: 12%;
-    left: 29%;
-    width: 340px;
-    height: 540px;
-    background-color: rgb(184, 215, 240, 0.3);
-    /* overflow: hidden; */
+    top: 5%;
+    left: 0;
+    width: 330px;
+    height: 520px;
+    /*background-color: rgb(184, 215, 240, 0.3);*/
+    /*box-shadow: 0 0 7px #888888;*/
+    z-index: 1;
 }
-#man_background, #woman_background:hover{
-    cursor: pointer;
-}
-#woman_background {
-    position: absolute;
-    top: 12%;
-    left: 51%;
-    width: 340px;
-    height: 540px;
-    background-color: rgb(240, 185, 237, 0.3);
-    /* overflow: hidden; */
-}
+
+/*#man_background, #woman_background:hover{*/
+/*    cursor: pointer;*/
+/*}*/

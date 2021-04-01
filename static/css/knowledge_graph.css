@@ -1,0 +1,10 @@
+#knowledge_graph{
+    position: absolute;
+    background: rgba(224, 225, 227, 0.2);
+    left: 48.5%;
+    top: 16%;
+    height: 470px;
+    width: 470px;
+    /*box-shadow: 0 0 7px #888888;*/
+    z-index: 1;
+}

@@ -1,6 +1,6 @@
 /**
  * @description 绘制指定时间和医院的高发疾病柱状图
- * @param {obj} disease  高发疾病数据
+ * @param {object} disease  高发疾病数据
  */
 function drawHospitalBar(disease) {
     let hospital = disease["hospital"];

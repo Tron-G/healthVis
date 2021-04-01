@@ -1,5 +1,8 @@
 // console.log(Object.keys(obj['日照市岚山区人民医院']))
  //颜色
+
+
+
 function drawRose(obj) {
 	list = (Object.keys(obj['日照市岚山区人民医院']))
 

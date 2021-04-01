@@ -4,7 +4,7 @@
 # @File : .py
 # @Software : PyCharm
 import random
-
+import copy
 from flask import Flask
 import pandas as pd
 import json
@@ -61,10 +61,10 @@ def radar_map(season):
 # 按职业返回json
 # ******************************************************************************************
 # @app.route('/job/<season>/<hospital>')
-def job(season,hospital):
+def job(season, hospital):
     df = pd.read_csv("./files/exam.csv")
-    the_season = ["spring","summer","fall","winter"]
-    the_hospital = ["日照市岚山区人民医院","日照市人民医院","日照市中医医院","五莲县人民医院"]
+    the_season = ["spring", "summer", "fall", "winter"]
+    the_hospital = ["日照市岚山区人民医院", "日照市人民医院", "日照市中医医院", "五莲县人民医院"]
     work = {}
     condition1 = {}
     condition2 = {}
@@ -77,7 +77,7 @@ def job(season,hospital):
             df = df.reset_index(drop=True)
             for one_hospital in the_hospital:
                 if hospital == one_hospital:
-                    df = df[(df["ORG_NAME"]==hospital)]
+                    df = df[(df["ORG_NAME"] == hospital)]
                     df = df.reset_index(drop=True)
                     condition1["正常"] = len(df[(df["EXAM_TYPE_NAME"] == '公安局体检套餐(男)') & (df["SUMMARY"] == "正常")]) + len(
                         df[(df["EXAM_TYPE_NAME"] == '公安局体检套餐(女)') & (df["SUMMARY"] == "正常")])
@@ -331,7 +331,7 @@ def top10(season, hospital):
     the_hospital = {}
     diseases = []
     keywords = []
-    #top的数量
+    # top的数量
     n = 15
     top = []
     # 读取全部疾病，放入words列表中
@@ -788,6 +788,10 @@ def load_static_data(data_name):
         # 本地储存一整年的所有医院的高发疾病
         with open("./files/disease-data.json", encoding='UTF-8') as f:
             data = json.load(f)
+    elif data_name == "disease_knowledge":
+        # 疾病详细知识
+        with open("./files/disease_knowledge.json", encoding='UTF-8') as f:
+            data = json.load(f)
     return data
 
 
@@ -846,7 +850,7 @@ def get_disease_age(disease_name, month):
                         ages["90-100"][sex_code] = ages["90-100"][sex_code] + 1
         # print(ages)
         return ages
-    #当月份参数为0时
+    # 当月份参数为0时
     for i in range(0, len(df["HEALTH_EXAM_NO"])):
         if disease_name in df["EXAM_SUMMARY"][i]:
             age = df["AGE"][i]
@@ -889,7 +893,7 @@ def get_patient_disease(exam_id):
     patient = {}
     patient["exam_id"] = exam_id
     diseases = []
-    col = df.iloc[:,4]
+    col = df.iloc[:, 4]
     # print(col.values)
     if exam_id not in col.values:
         patient["sex"] = ""
@@ -910,11 +914,11 @@ def get_patient_disease(exam_id):
 # ******************************************************************************************
 def get_topdisease_sex(month):
     df = pd.read_csv("./files/report.csv")
-    with open("./files/myword.txt","r",encoding='UTF-8') as file:
+    with open("./files/myword.txt", "r", encoding='UTF-8') as file:
         words = file.readlines()
-        for i in range(0,len(words)):
-            words[i] = words[i].replace("\n","")
-    #topn
+        for i in range(0, len(words)):
+            words[i] = words[i].replace("\n", "")
+    # topn
     n = 20
     top = []
     month = int(month)
@@ -922,12 +926,12 @@ def get_topdisease_sex(month):
     diseases = {}
     the_month = ["all", "19-Jan", "19-Feb", "19-Mar", "19-Apr", "19-May", "19-Jun", "19-Jul", "19-Aug",
                  "19-Sep", "19-Oct", "19-Nov", "19-Dec"]
-    #当参数不为0时
+    # 当参数不为0时
     if the_month[month] != "all":
-        #筛选出该月的数据
+        # 筛选出该月的数据
         df = df[(df["SUMMARIZE_TIME"] == the_month[month])]
         df = df.reset_index(drop=True)
-        #找出top20
+        # 找出top20
         for word in words:
             keyword = {"keyword": word, "value": 0}
             for i in range(0, len(df["ID"])):
@@ -940,12 +944,12 @@ def get_topdisease_sex(month):
                 if keyword['value'] > max['value']:
                     max['keyword'] = keyword['keyword']
                     max['value'] = keyword['value']
-            if max['keyword']!= "":
+            if max['keyword'] != "":
                 top.append(max)
             for keyword in keywords:
                 if keyword['keyword'] == max['keyword']:
                     keyword['value'] = 0
-        #找出男女的人数
+        # 找出男女的人数
         # print(top)
         girl_df = df[df["SEX_CODE"] == "2"]
         girl_df = girl_df.reset_index(drop=True)
@@ -966,7 +970,7 @@ def get_topdisease_sex(month):
             num.append(girl)
             diseases[one] = num
         return diseases
-    #当输入的参数为0时
+    # 当输入的参数为0时
     for word in words:
         keyword = {"keyword": word, "value": 0}
         for i in range(0, len(df["ID"])):
@@ -1004,3 +1008,85 @@ def get_topdisease_sex(month):
         diseases[one] = num
     return diseases
 
+
+# ******************************************************************************************
+# 基于用户协同过滤推荐算法的返回指定患者的相似用户的推荐疾病
+# ******************************************************************************************
+def get_recommend_disease(exam_id):
+
+    # 最相似个数
+    similarity_nums = 5
+
+    # 患者-疾病表
+    with open("./files/patient_disease.json") as f:
+        patient_disease = json.load(f, encoding='gbk')
+    # 疾病-病人倒排表
+    with open("./files/disease_patient.json") as f:
+        disease_patient = json.load(f, encoding='gbk')
+    # 用户相似度矩阵
+    with open("./files/patient_matrix_final.json") as f:
+        patient_matrix = json.load(f, encoding='gbk')
+    # 疾病统计频率作为评分
+    with open("./files/disease_score.json") as f:
+        disease_score = json.load(f, encoding='gbk')
+
+    # 疾病表
+    disease_list = []
+    # 患者列表
+    patient_list = []
+    for each in patient_disease:
+        if each["id"] not in patient_list:
+            patient_list.append(each["id"])
+        for i in each["disease"]:
+            if i not in disease_list:
+                disease_list.append(i)
+
+    usr_disease = patient_disease[patient_list.index(exam_id)]["disease"]
+    usr_index = patient_list.index(exam_id)
+
+    recommend_disease = {}
+    similarity_usr = []
+
+    # similaritys = []
+    # 寻找k个最相似用户
+    temp_list = copy.copy(patient_matrix[usr_index])
+    for i in range(similarity_nums):
+        similarity_usr.append(patient_list[temp_list.index(max(temp_list))])
+        # similaritys.append(temp_list[temp_list.index(max(temp_list))])
+        temp_list[temp_list.index(max(temp_list))] = 0
+
+    # 用户相似度*评分 = 推荐疾病的总分
+    for i in similarity_usr:
+        for j in patient_disease[patient_list.index(i)]["disease"]:
+            if j not in usr_disease:
+                recommend_disease[j] = disease_score[j] * patient_matrix[usr_index][patient_list.index(i)]
+
+    # 按照评分降序排序
+    recommend_disease = sorted(recommend_disease.items(), key=lambda kv: (kv[1], kv[0]), reverse=True)
+    return recommend_disease
+
+
+# ******************************************************************************************
+# 生成具体疾病信息表,type:返回的数据的种类，0表示返回当月最高发疾病的信息用于初始化信息界面，1表示返回具体疾病数据
+# ******************************************************************************************
+def set_disease_info_data(disease_name, type=0, month_data=None):
+    if month_data is None:
+        month_data = {}
+    disease_detail = load_static_data("disease-detail")
+    disease_knowledge = load_static_data("disease_knowledge")
+
+    if type == 0:
+        temp = {}
+        for each in month_data:
+            temp[each] = month_data[each][0] + month_data[each][1]
+        temp = sorted(temp.items(), key=lambda kv: (kv[1], kv[0]), reverse=True)
+        disease_name = temp[0][0]
+
+    data = {"name": disease_name, "advice": disease_detail[disease_name]["advice"]}
+    for i in disease_knowledge:
+        if i["name"] == disease_name:
+            for j in i["pithy"]:
+                data[j] = i["pithy"][j]
+            for k in i["detail"]:
+                data[k] = i["detail"][k]
+    return data

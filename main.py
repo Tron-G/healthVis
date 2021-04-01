@@ -30,7 +30,6 @@ def change_season():
                 "category": dm.load_static_data(data["map_checked_type"])}
 
     print(dm.job(data["season"], data["hospital"]))
-
     return jsonify(out_data)
 
 
@@ -67,7 +66,6 @@ def initSys():
     data = {"radar": dm.radar_map("all"), "map": dm.season("all"), "pie": dm.job("all", "all"),
             "GDP": dm.load_static_data("GDP"),
             "disease_bar": dm.load_static_data("disease-data")}
-
     return jsonify(data)
 
 
@@ -77,9 +75,13 @@ def initSys():
 @app.route('/init_bodyvis',  methods=['POST', 'GET'])
 def initBodyVis():
     month = request.get_json()["month"]
+    body_disease = dm.get_topdisease_sex(month)
     data = {"sunburst": dm.load_static_data("sunburst"), "disease-detail": dm.load_static_data("disease-detail"),
-            "body_disease": dm.get_topdisease_sex(month), "disease_rules": dm.load_static_data("disease_rules")}
+            "body_disease": body_disease, "disease_rules": dm.load_static_data("disease_rules"),
+            "disease_info": dm.set_disease_info_data("", 0, body_disease)}
+
     # print(dm.load_static_data("disease-detail"))
+    # print(dm.get_topdisease_sex(month))
     return jsonify(data)
 
 
@@ -99,7 +101,7 @@ def getMonthData():
 @app.route('/search_id',  methods=['POST', 'GET'])
 def searchById():
     id = request.get_json()["id"]
-    data = dm.get_patient_disease(id)
+    data = {"patient_disease": dm.get_patient_disease(id), "recommend_list": dm.get_recommend_disease(id)}
     return jsonify(data)
 
 
@@ -111,6 +113,17 @@ def searchBydisease():
     disease = request.get_json()["disease"]
     month = request.get_json()["month"]
     data = dm.get_disease_age(disease, month)
+    # print(dm.get_disease_age(disease, month))
+    return jsonify(data)
+
+
+# ******************************************************************************************
+# 返回疾病具体信息
+# ******************************************************************************************
+@app.route('/get_disease_info',  methods=['POST', 'GET'])
+def getDiseaseInfo():
+    disease = request.get_json()["disease_info"]
+    data = dm.set_disease_info_data(disease, 1)
     return jsonify(data)
 
 
@@ -135,4 +148,4 @@ def test():
 
 if __name__ == '__main__':
     app.debug = True
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', port=80)

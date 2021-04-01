@@ -2,6 +2,8 @@
  * @description 疾病年龄分布柱状图
  */
 function drawTowBar1(obj) { //改参数
+
+	// console.log(obj);
 	var TwoBar2 = echarts.init(document.getElementById("disease_bar_view"))
 	TwoBar2.clear()
 	/**
@@ -390,8 +392,10 @@ function drawTowBar1(obj) { //改参数
 /**
  * @description 月份疾病性别分布柱状图
  */
-function drawTowbar2(obj) { //改参数
+function drawTowbar2(obj) {
+	//改参数
 
+	// console.log(obj);
 	var TwoBar = echarts.init(document.getElementById("disease_bar_view"))
 	TwoBar.clear()
 	list = (Object.keys(obj))

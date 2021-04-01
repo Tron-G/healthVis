@@ -1,0 +1,11 @@
+#disease_info{
+    position: absolute;
+    background: rgba(204, 65, 37, 0.1);
+     /*background: rgba(224, 225, 227, 0.2);*/
+    right: 0;
+    top: 4.5%;
+    height: 480px;
+    width: 390px;
+    /*box-shadow: 0 0 7px #888888;*/
+    z-index: 1;
+}

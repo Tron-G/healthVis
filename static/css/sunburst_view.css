@@ -3,9 +3,9 @@
     background: rgba(224, 225, 227, 0.2);
     right: 0;
     bottom: 0;
-    height: 420px;
-    width: 420px;
-    box-shadow: 0 0 10px #888888;
+    height: 380px;
+    width: 390px;
+    /*box-shadow: 0 0 7px #888888;*/
     z-index: 1;
 }
 #main {

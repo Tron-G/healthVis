@@ -2,10 +2,10 @@
 
 .container {
   position: absolute;
-  left: 1.5%;
-  top: 4.8%;
-  width: 400px;
-  height: 40px;
+  left: 0;
+  top: 4%;
+  width: 350px;
+  height: 30px;
 }
 /*.container .search {*/
 /*  position: absolute;*/
@@ -56,21 +56,22 @@
 .container input {
   font-family: 'Inconsolata', monospace;
   position: absolute;
-  margin: auto;
+  margin: 5px;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  width: 350px;
-  height: 40px;
+  width: 300px;
+  height: 30px;
   outline: none;
   border: none;
-  background: #a18f89;
+  /*background: #a18f89;*/
+  background: rgba(130, 214, 223, 0.5);;
   color: white;
-  text-shadow: 0 0 10px #a18f89;
+  /*text-shadow: 0 0 10px #82d6e9;*/
   padding: 0 10px 0 10px;
   border-radius: 30px;
-  box-shadow: 0 0 15px 0 #a18f89, 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px 0 #a18f89, 0 6px 6px 0 rgba(0, 0, 0, 0.2);
   transition: all 1s;
   opacity: 1;
   z-index: 5;
@@ -107,7 +108,8 @@
 /*  transform: rotate(-45deg);*/
 /*}*/
 .container input::placeholder {
-  color: white;
+  color: black;
   opacity: 0.5;
   font-weight: bolder;
+  font-size: 13px;
 }

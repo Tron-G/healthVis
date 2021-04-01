@@ -1,10 +1,10 @@
 #organ_view{
     position: absolute;
     background: rgba(224, 225, 227, 0.2);
-    top: 11%;
+    bottom: 0;
     left: 0;
-    height: 390px;
-    width: 440px;
-    box-shadow: 0 0 10px #888888;
+    height: 300px;
+    width: 330px;
+    /*box-shadow: 0 0 10px #888888;*/
     z-index: 1;
 }

@@ -15,6 +15,8 @@ TRANSPORT_DATA["hospital"] = "all";
 TRANSPORT_DATA["month"] = 8;
 TRANSPORT_DATA["id"] = "";
 TRANSPORT_DATA["disease"] = "";
+// 传递具体疾病信息的疾病名
+TRANSPORT_DATA["disease_info"] = "";
 //缓存疾病表
 var DISEASE_LIST = {};
 // 缓存疾病知识图谱
@@ -40,6 +42,8 @@ function initBodyVis() {
             drawTowbar2(data["body_disease"]);
             sunburst(data["sunburst"]);
             drawForceMap(data["disease_rules"], "overview");
+            drawSingleInfo(data["disease_info"]);
+            drawRecommendView([]);
         }
     });
 
@@ -77,7 +81,9 @@ function setSearchEvent() {
                 TRANSPORT_DATA["disease"] = text;
                 TRANSPORT_DATA["id"] = "";
                 TRANSPORT_DATA["month"] = 0;
-                redraw("/search_disease", "search_disease")
+                redraw("/search_disease", "search_disease");
+                TRANSPORT_DATA["disease_info"] = text;
+                redraw("/get_disease_info", "disease_detail");
             }
         }
     })
@@ -91,6 +97,7 @@ function setSearchEvent() {
  *                 search_disease: 搜索指定疾病，重绘人体结构图和年龄分布图
  *                 select_time: 选择月份操作，重绘人体结构图和性别分布图
  *                 disease_bar_back: 年龄分布图返回到性别分布图，仅重绘直方图
+ *                 disease_detail: 绘制疾病的具体信息
  */
 function redraw(url, redraw_type) {
     $.ajax({
@@ -117,6 +124,8 @@ function redraw(url, redraw_type) {
                 drawTowbar2(data);
                 drawForceMap(DISEASE_RULE,"overview");
                 drawBodyMap("time", data);
+            } else if(redraw_type === "disease_detail"){
+                drawSingleInfo(data);
             }
 
         }
