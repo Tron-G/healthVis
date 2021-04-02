@@ -10,6 +10,7 @@ TRANSPORT_DATA["map_checked_type"] = $('.radio_box :radio:checked').val();
 
 //缓存四个医院的各个就诊总人数json数据，用于主地图画医院的圆点
 var HOSPITAL_POINT_DATA = {};
+
 ///////////////////////////////////////////////////////////////////////////////////
 
 /**
@@ -50,9 +51,10 @@ function initSystem() {
     });
 
     setCheckBoxEvent();
-    testData();
+    // testData();
     GoBodyVisPage();
 }
+
 initSystem();
 
 
@@ -101,8 +103,20 @@ function redraw(url, redraw_type) {
                 drawPie(data["pie"], "job_pie")
             } else if (redraw_type === "select_category") {
                 drawMap(HOSPITAL_POINT_DATA["map"], data);
-                if(TRANSPORT_DATA["map_checked_type"]!=="pollution_company" && TRANSPORT_DATA["map_checked_type"]!=="restaurant"){
+                if (TRANSPORT_DATA["map_checked_type"] !== "pollution_company" && TRANSPORT_DATA["map_checked_type"] !== "restaurant") {
                     drawRainFall();
+                }
+                //初始化展示全部词云
+                else {
+                    let words = [];
+                    for (let i = 0; i < data["features"].length; i++) {
+                        words.push(data["features"][i]["properties"]["category"]);
+                    }
+                    if (echarts.getInstanceByDom(document.getElementById("word_cloud")) !== undefined) {
+                        // console.log(echarts.getInstanceByDom(document.getElementById("word_cloud")));
+                        echarts.getInstanceByDom(document.getElementById("word_cloud")).dispose();
+                    }
+                    drawWordCloud(words, "word_cloud");
                 }
             }
 

@@ -367,7 +367,7 @@ function drawMap(hospital_data, category_data) {
         if (TRANSPORT_DATA["map_checked_type"] === "restaurant" || TRANSPORT_DATA["map_checked_type"] === "pollution_company") {
             if (echarts.getInstanceByDom(document.getElementById("word_cloud")) !== undefined) {
 
-                console.log(echarts.getInstanceByDom(document.getElementById("word_cloud")));
+                // console.log(echarts.getInstanceByDom(document.getElementById("word_cloud")));
                 echarts.getInstanceByDom(document.getElementById("word_cloud")).dispose();
             }
             drawWordCloud(words.split("、"), "word_cloud");

@@ -432,6 +432,8 @@ function drawBodyMap(type, data) {
         $(".body_map").remove();
         if (sex === "man") {
             d3.select("#body_background_rect")
+
+
                 .attr("fill", "rgb(184, 215, 240, 0.2)");
             human_svg.append("svg:image")
                 .attr("xlink:href", "./static/image/body/man.svg")
