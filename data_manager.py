@@ -912,7 +912,7 @@ def get_patient_disease(exam_id):
 # ******************************************************************************************
 # 返回指定月份的前20高发疾病以及疾病的男女人数数据,参数month的值为1到12,值为0就返回一整年的数据
 # ******************************************************************************************
-def get_topdisease_sex(month):
+def get_topdisease_sex(month, hospital="all"):
     df = pd.read_csv("./files/report.csv")
     with open("./files/myword.txt", "r", encoding='UTF-8') as file:
         words = file.readlines()
@@ -926,6 +926,93 @@ def get_topdisease_sex(month):
     diseases = {}
     the_month = ["all", "19-Jan", "19-Feb", "19-Mar", "19-Apr", "19-May", "19-Jun", "19-Jul", "19-Aug",
                  "19-Sep", "19-Oct", "19-Nov", "19-Dec"]
+    the_hospitals = ["日照市岚山区人民医院", "日照市人民医院", "日照市中医医院", "五莲县人民医院"]
+    # 判断是否在为四个医院之一
+    for one_hospital in the_hospitals:
+        if hospital == one_hospital:
+            df = df[(df["ORG_NAME"] == hospital)]
+            df = df.reset_index(drop=True)
+        # 当参数不为0时
+        if the_month[month] != "all":
+            # 筛选出该月的数据
+            df = df[(df["SUMMARIZE_TIME"] == the_month[month])]
+            df = df.reset_index(drop=True)
+            # 找出top20
+            for word in words:
+                keyword = {"keyword": word, "value": 0}
+                for i in range(0, len(df["ID"])):
+                    if word in df["EXAM_SUMMARY"][i]:
+                        keyword['value'] = keyword['value'] + 1
+                keywords.append(keyword)
+            for i in range(0, n):
+                max = {"keyword": "", "value": 0}
+                for keyword in keywords:
+                    if keyword['value'] > max['value']:
+                        max['keyword'] = keyword['keyword']
+                        max['value'] = keyword['value']
+                if max['keyword'] != "":
+                    top.append(max)
+                for keyword in keywords:
+                    if keyword['keyword'] == max['keyword']:
+                        keyword['value'] = 0
+            # 找出男女的人数
+            # print(top)
+            girl_df = df[df["SEX_CODE"] == "2"]
+            girl_df = girl_df.reset_index(drop=True)
+            boy_df = df[df["SEX_CODE"] == "1"]
+            boy_df = boy_df.reset_index(drop=True)
+            for one in top:
+                girl = 0
+                boy = 0
+                num = []
+                one = one["keyword"]
+                for i in range(0, len(girl_df["ID"])):
+                    if one in girl_df["EXAM_SUMMARY"][i]:
+                        girl = girl + 1
+                for i in range(0, len(boy_df["ID"])):
+                    if one in boy_df["EXAM_SUMMARY"][i]:
+                        boy = boy + 1
+                num.append(boy)
+                num.append(girl)
+                diseases[one] = num
+            return diseases
+        # 当输入的参数为0时
+        for word in words:
+            keyword = {"keyword": word, "value": 0}
+            for i in range(0, len(df["ID"])):
+                if word in df["EXAM_SUMMARY"][i]:
+                    keyword['value'] = keyword['value'] + 1
+            keywords.append(keyword)
+        for i in range(0, n):
+            max = {"keyword": "", "value": 0}
+            for keyword in keywords:
+                if keyword['value'] > max['value']:
+                    max['keyword'] = keyword['keyword']
+                    max['value'] = keyword['value']
+            if max['keyword'] != "":
+                top.append(max)
+            for keyword in keywords:
+                if keyword['keyword'] == max['keyword']:
+                    keyword['value'] = 0
+        girl_df = df[df["SEX_CODE"] == "2"]
+        girl_df = girl_df.reset_index(drop=True)
+        boy_df = df[df["SEX_CODE"] == "1"]
+        boy_df = boy_df.reset_index(drop=True)
+        for one in top:
+            girl = 0
+            boy = 0
+            num = []
+            one = one["keyword"]
+            for i in range(0, len(girl_df["ID"])):
+                if one in girl_df["EXAM_SUMMARY"][i]:
+                    girl = girl + 1
+            for i in range(0, len(boy_df["ID"])):
+                if one in boy_df["EXAM_SUMMARY"][i]:
+                    boy = boy + 1
+            num.append(boy)
+            num.append(girl)
+            diseases[one] = num
+        return diseases
     # 当参数不为0时
     if the_month[month] != "all":
         # 筛选出该月的数据
@@ -1013,7 +1100,6 @@ def get_topdisease_sex(month):
 # 基于用户协同过滤推荐算法的返回指定患者的相似用户的推荐疾病
 # ******************************************************************************************
 def get_recommend_disease(exam_id):
-
     # 最相似个数
     similarity_nums = 5
 
@@ -1069,18 +1155,16 @@ def get_recommend_disease(exam_id):
 # ******************************************************************************************
 # 生成具体疾病信息表,type:返回的数据的种类，0表示返回当月最高发疾病的信息用于初始化信息界面，1表示返回具体疾病数据
 # ******************************************************************************************
-def set_disease_info_data(disease_name, type=0, month_data=None):
-    if month_data is None:
-        month_data = {}
+def set_disease_info_data(disease_name, type=0, month=0):
+    month = str(month)
     disease_detail = load_static_data("disease-detail")
     disease_knowledge = load_static_data("disease_knowledge")
 
     if type == 0:
-        temp = {}
-        for each in month_data:
-            temp[each] = month_data[each][0] + month_data[each][1]
-        temp = sorted(temp.items(), key=lambda kv: (kv[1], kv[0]), reverse=True)
-        disease_name = temp[0][0]
+        disease_list = {"2": "牙结石", "3": "椎间盘突出", "5": "总胆固醇(CHOL)偏高", "6": "牙结石",
+                        "7": "高密度脂蛋白(HDL-C)偏低", "8": "窦性心动过缓", "9": "高密度脂蛋白(HDL-C)偏低",
+                        "10": "窦性心动过缓", "11": "牙结石"}
+        disease_name = disease_list[month]
 
     data = {"name": disease_name, "advice": disease_detail[disease_name]["advice"]}
     for i in disease_knowledge:

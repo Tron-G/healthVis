@@ -117,13 +117,14 @@ function redraw(url, redraw_type) {
                 drawTowBar1(data);
                 drawForceMap(DISEASE_RULE,"focus")
             } else if (redraw_type === "select_time") {
-                drawBodyMap("time", data);
-                drawTowbar2(data);
-                drawForceMap(DISEASE_RULE,"overview")
-            } else if(redraw_type === "disease_bar_back") {
-                drawTowbar2(data);
+                drawBodyMap("time", data["month"]);
+                drawTowbar2(data["month"]);
                 drawForceMap(DISEASE_RULE,"overview");
-                drawBodyMap("time", data);
+                 drawSingleInfo(data["disease_info"]);
+            } else if(redraw_type === "disease_bar_back") {
+                drawTowbar2(data["month"]);
+                drawForceMap(DISEASE_RULE,"overview");
+                drawBodyMap("time", data["month"]);
             } else if(redraw_type === "disease_detail"){
                 drawSingleInfo(data);
             }

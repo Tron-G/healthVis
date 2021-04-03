@@ -75,10 +75,9 @@ def initSys():
 @app.route('/init_bodyvis',  methods=['POST', 'GET'])
 def initBodyVis():
     month = request.get_json()["month"]
-    body_disease = dm.get_topdisease_sex(month)
     data = {"sunburst": dm.load_static_data("sunburst"), "disease-detail": dm.load_static_data("disease-detail"),
-            "body_disease": body_disease, "disease_rules": dm.load_static_data("disease_rules"),
-            "disease_info": dm.set_disease_info_data("", 0, body_disease)}
+            "body_disease": dm.get_topdisease_sex(month), "disease_rules": dm.load_static_data("disease_rules"),
+            "disease_info": dm.set_disease_info_data("", 0, month)}
 
     # print(dm.load_static_data("disease-detail"))
     # print(dm.get_topdisease_sex(month))
@@ -91,7 +90,8 @@ def initBodyVis():
 @app.route('/get_month_data',  methods=['POST', 'GET'])
 def getMonthData():
     month = request.get_json()["month"]
-    data = dm.get_topdisease_sex(month)
+    data = {"month": dm.get_topdisease_sex(month),
+            "disease_info": dm.set_disease_info_data("", 0, month)}
     return jsonify(data)
 
 
