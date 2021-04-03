@@ -51,7 +51,7 @@ function initSystem() {
     });
 
     setCheckBoxEvent();
-    // testData();
+    testData();
     GoBodyVisPage();
 }
 

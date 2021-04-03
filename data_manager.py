@@ -912,14 +912,14 @@ def get_patient_disease(exam_id):
 # ******************************************************************************************
 # 返回指定月份的前20高发疾病以及疾病的男女人数数据,参数month的值为1到12,值为0就返回一整年的数据
 # ******************************************************************************************
-def get_topdisease_sex(month, hospital="all"):
+def get_topdisease_sex(month, hospital="all", top_num=20):
     df = pd.read_csv("./files/report.csv")
     with open("./files/myword.txt", "r", encoding='UTF-8') as file:
         words = file.readlines()
         for i in range(0, len(words)):
             words[i] = words[i].replace("\n", "")
     # topn
-    n = 20
+    n = top_num
     top = []
     month = int(month)
     keywords = []
