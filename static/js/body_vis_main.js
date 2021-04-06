@@ -17,10 +17,14 @@ TRANSPORT_DATA["id"] = "";
 TRANSPORT_DATA["disease"] = "";
 // 传递具体疾病信息的疾病名
 TRANSPORT_DATA["disease_info"] = "";
+// 缓存关联图谱中选择的疾病
+TRANSPORT_DATA["selected_disease"] = [];
+
 //缓存疾病表
 var DISEASE_LIST = {};
 // 缓存疾病知识图谱
 var DISEASE_RULE = {};
+
 /**
  * @description 初始化人体结构图系统
  */
@@ -44,6 +48,7 @@ function initBodyVis() {
             drawForceMap(data["disease_rules"], "overview");
             drawSingleInfo(data["disease_info"]);
             drawRecommendView([]);
+            drawSingleGraph(data["single_graph"]);
         }
     });
 
@@ -98,6 +103,7 @@ function setSearchEvent() {
  *                 select_time: 选择月份操作，重绘人体结构图和性别分布图
  *                 disease_bar_back: 年龄分布图返回到性别分布图，仅重绘直方图
  *                 disease_detail: 绘制疾病的具体信息
+ *                 disease_knowledge: 绘制疾病知识图谱以及单分图
  */
 function redraw(url, redraw_type) {
     $.ajax({
@@ -111,24 +117,27 @@ function redraw(url, redraw_type) {
 
             if (redraw_type === "search_id") {
                 drawBodyMap("search", data);
-                drawForceMap(DISEASE_RULE,"overview")
+                drawForceMap(DISEASE_RULE, "overview")
             } else if (redraw_type === "search_disease") {
                 drawBodyMap("search", data);
                 drawTowBar1(data);
-                drawForceMap(DISEASE_RULE,"focus")
+                drawForceMap(DISEASE_RULE, "focus")
             } else if (redraw_type === "select_time") {
                 drawBodyMap("time", data["month"]);
                 drawTowbar2(data["month"]);
-                drawForceMap(DISEASE_RULE,"overview");
-                 drawSingleInfo(data["disease_info"]);
-            } else if(redraw_type === "disease_bar_back") {
+                drawForceMap(DISEASE_RULE, "overview");
+                drawSingleInfo(data["disease_info"]);
+                drawSingleGraph(data["single_graph"]);
+            } else if (redraw_type === "disease_bar_back") {
                 drawTowbar2(data["month"]);
-                drawForceMap(DISEASE_RULE,"overview");
+                drawForceMap(DISEASE_RULE, "overview");
                 drawBodyMap("time", data["month"]);
-            } else if(redraw_type === "disease_detail"){
-                drawSingleInfo(data);
+            } else if (redraw_type === "disease_detail") {
+                drawSingleInfo(data["info_text"]);
+                drawSingleGraph(data["single_graph"]);
+            } else if (redraw_type === "disease_knowledge") {
+                drawKnowledgeGraph(data);
             }
-
         }
     });
 }

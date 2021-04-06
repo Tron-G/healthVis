@@ -81,8 +81,6 @@ function drawMap(hospital_data, category_data) {
     //////////////////////////////////////////////////////////////////////
     // 地图初始化
     //////////////////////////////////////////////////////////////////////
-
-
     mapboxgl.accessToken =
         'pk.eyJ1IjoieGlhb2JpZSIsImEiOiJja2pndjRhMzQ1d2JvMnltMDE2dnlkMGhrIn0.bCKzSCs5tHTIYk4xQ65doA';
 
@@ -116,6 +114,8 @@ function drawMap(hospital_data, category_data) {
 
     let words = "";
 
+    //缓存饮食界面上一个选择的医院，用于移除layer
+    let selected_hospital = [];
     //////////////////////////////////////////////////////////////////////
     // 四大医院坐标点动画图标生成
     //////////////////////////////////////////////////////////////////////
@@ -297,12 +297,66 @@ function drawMap(hospital_data, category_data) {
                 let coordinates = e.features[0].geometry.coordinates.slice();
                 let hospital_name = e.features[0].properties.name;
 
-                // while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-                //     coordinates[0] += e.lngLat.lng > coordinates[0] ? 180 : -180;
-                // }
-                console.log(hospital_name);
-                TRANSPORT_DATA["hospital"] = hospital_name;
-                redraw("/change_hospital", "select_hospital");
+                while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                    coordinates[0] += e.lngLat.lng > coordinates[0] ? 180 : -180;
+                }
+
+                //餐饮页面下选择医院
+                if (TRANSPORT_DATA["map_checked_type"] === "restaurant") {
+                    let last_select = "";
+                    //首次选择医院点
+                    if (selected_hospital.length === 0) {
+                        selected_hospital.push(hospital_name);
+                    }
+                    //切换医院点
+                    else {
+                        $(".popUp").remove();
+                        last_select = selected_hospital.pop();
+                        map.removeLayer("polygon" + last_select);
+                        map.removeSource("polygon" + last_select);
+                        selected_hospital.push(hospital_name);
+                        TRANSPORT_DATA["selected_restaurant_type"] = [];
+                    }
+
+                    // 圆圈半径
+                    let radius = 3;
+                    //显示范围内的地点弹窗
+                    for (let i = 0; i < category_data["features"].length; i++) {
+                        let coords = category_data["features"][i]["geometry"]["coordinates"];
+                        if (calcDistance(coordinates, coords) <= radius) {
+                            let popup = new mapboxgl.Popup({
+                                closeOnClick: false,
+                                className: "popUp"
+                            })
+                                .setLngLat(coords)
+                                .setText(category_data["features"][i]["properties"]["name"])
+                                .addTo(map);
+                            let restaurant_type = category_data["features"][i]["properties"]["category"];
+                            if (TRANSPORT_DATA["selected_restaurant_type"].indexOf(restaurant_type) === -1) {
+                                TRANSPORT_DATA["selected_restaurant_type"].push(restaurant_type);
+                            }
+                        }
+                    }
+                    //点击医院显示半径3km的圆
+                    map.addSource("polygon" + hospital_name, createGeoJSONCircle(coordinates, radius));
+                    map.addLayer({
+                        "id": "polygon" + hospital_name,
+                        "type": "fill",
+                        "source": "polygon" + hospital_name,
+                        "layout": {},
+                        "paint": {
+                            "fill-color": "#393e46",
+                            "fill-opacity": 0.4
+                        }
+                    });
+
+
+                    redraw("/change_hospital_restaurant", "select_hospital_restaurant");
+                }
+                else {
+                    TRANSPORT_DATA["hospital"] = hospital_name;
+                    redraw("/change_hospital", "select_hospital");
+                }
 
             });
 
@@ -373,6 +427,74 @@ function drawMap(hospital_data, category_data) {
             drawWordCloud(words.split("、"), "word_cloud");
         }
     }
+
+    /**
+     * @description 绘制圆形区域的函数
+     * @param {object} center  [经度，纬度]
+     * @param {number} radiusInKm  圆的半径单位km
+     * @param {number} points
+     */
+    function createGeoJSONCircle(center, radiusInKm, points = 64) {
+
+        let coords = {
+            latitude: center[1],
+            longitude: center[0]
+        };
+
+        let km = radiusInKm;
+
+        let ret = [];
+        let distanceX = km / (111.320 * Math.cos(coords.latitude * Math.PI / 180));
+        let distanceY = km / 110.574;
+
+        let theta, x, y;
+        for (let i = 0; i < points; i++) {
+            theta = (i / points) * (2 * Math.PI);
+            x = distanceX * Math.cos(theta);
+            y = distanceY * Math.sin(theta);
+
+            ret.push([coords.longitude + x, coords.latitude + y]);
+        }
+        ret.push(ret[0]);
+
+        return {
+            "type": "geojson",
+            "data": {
+                "type": "FeatureCollection",
+                "features": [{
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [ret]
+                    }
+                }]
+            }
+        };
+    }
+
+
+    /**
+     * @description 计算两个坐标点之间的距离
+     * @param {object} center1 第一个点的[经度，纬度]
+     * @param {number} center2 第二个点的[经度，纬度]
+     */
+    function calcDistance(center1, center2) {
+        let coordes1 = {
+            latitude: center1[1] * Math.PI / 180.0,
+            longitude: center1[0] * Math.PI / 180.0
+        };
+        let coordes2 = {
+            latitude: center2[1] * Math.PI / 180.0,
+            longitude: center2[0] * Math.PI / 180.0
+        };
+        let s = 2 * Math.asin(Math.sqrt(Math.pow(Math.sin((coordes1.latitude - coordes2.latitude) / 2), 2) +
+            Math.cos(coordes1.latitude) * Math.cos(coordes2.latitude) * Math.pow(Math.sin((coordes1.longitude - coordes2.longitude) / 2), 2)));
+
+        s *= 6378.137;
+        s = Math.round(s * 10000) / 10000;
+        return s;
+    }
+
 
     /**
      * @description 删除按钮去掉弹窗

@@ -1,0 +1,171 @@
+[
+  {
+    "disease_name": "高密度脂蛋白偏低",
+    "Alcohol": "1",
+    "Oli": "5",
+    "Salinity": "1",
+    "Sugar": "4",
+    "Smog": "1",
+    "Hot": "1",
+    "Purine": "2"
+  },
+  {
+    "disease_name": "牙结石",
+    "Alcohol": "2",
+    "Oli": "1",
+    "Salinity": "1",
+    "Sugar": "5",
+    "Smog": "4",
+    "Hot": "3",
+    "Purine": "1"
+  },
+  {
+    "disease_name": "脂肪肝",
+    "Alcohol": "4",
+    "Oli": "5",
+    "Salinity": "1",
+    "Sugar": "2",
+    "Smog": "1",
+    "Hot": "1",
+    "Purine": "2"
+  },
+  {
+    "disease_name": "咽炎",
+    "Alcohol": "4",
+    "Oli": "1",
+    "Salinity": "2",
+    "Sugar": "1",
+    "Smog": "4",
+    "Hot": "5",
+    "Purine": "1"
+  },
+  {
+    "disease_name": "尿酸偏高",
+    "Alcohol": "4",
+    "Oli": "2",
+    "Salinity": "3",
+    "Sugar": "1",
+    "Smog": "1",
+    "Hot": "1",
+    "Purine": "5"
+  },
+  {
+    "disease_name": "胆红素偏高",
+    "Alcohol": "2",
+    "Oli": "5",
+    "Salinity": "1",
+    "Sugar": "1",
+    "Smog": "1",
+    "Hot": "1",
+    "Purine": "4"
+  },
+  {
+    "disease_name": "高血压",
+    "Alcohol": "3",
+    "Oli": "2",
+    "Salinity": "5",
+    "Sugar": "2",
+    "Smog": "2",
+    "Hot": "1",
+    "Purine": "2"
+  },
+  {
+    "disease_name": "超重",
+    "Alcohol": "1",
+    "Oli": "4",
+    "Salinity": "1",
+    "Sugar": "5",
+    "Smog": "1",
+    "Hot": "1",
+    "Purine": "2"
+  },
+  {
+    "disease_name": "谷丙转氨酶偏高",
+    "Alcohol": "5",
+    "Oli": "1",
+    "Salinity": "1",
+    "Sugar": "1",
+    "Smog": "1",
+    "Hot": "1",
+    "Purine": "2"
+  },
+  {
+    "disease_name": "脂蛋白a偏高",
+    "Alcohol": "1",
+    "Oli": "5",
+    "Salinity": "1",
+    "Sugar": "2",
+    "Smog": "2",
+    "Hot": "1",
+    "Purine": "2"
+  },
+  {
+    "disease_name": "总胆固醇高",
+    "Alcohol": "2",
+    "Oli": "4",
+    "Salinity": "1",
+    "Sugar": "2",
+    "Smog": "2",
+    "Hot": "1",
+    "Purine": "5"
+  },
+  {
+    "disease_name": "甘油三酯偏高",
+    "Alcohol": "1",
+    "Oli": "5",
+    "Salinity": "3",
+    "Sugar": "3",
+    "Smog": "1",
+    "Hot": "1",
+    "Purine": "1"
+  },
+  {
+    "disease_name": "血糖偏高",
+    "Alcohol": "2",
+    "Oli": "1",
+    "Salinity": "3",
+    "Sugar": "5",
+    "Smog": "1",
+    "Hot": "1",
+    "Purine": "1"
+  },
+  {
+    "disease_name": "肾病",
+    "Alcohol": "3",
+    "Oli": "1",
+    "Salinity": "5",
+    "Sugar": "2",
+    "Smog": "1",
+    "Hot": "1",
+    "Purine": "4"
+  },
+  {
+    "disease_name": "心脏病",
+    "Alcohol": "4",
+    "Oli": "3",
+    "Salinity": "2",
+    "Sugar": "3",
+    "Smog": "5",
+    "Hot": "1",
+    "Purine": "1"
+  },
+  {
+    "disease_name": "呼吸道炎症",
+    "Alcohol": "1",
+    "Oli": "2",
+    "Salinity": "1",
+    "Sugar": "1",
+    "Smog": "5",
+    "Hot": "2",
+    "Purine": "1"
+  },{
+    "disease_name": "肠胃病",
+    "Alcohol": "4",
+    "Oli": "2",
+    "Salinity": "1",
+    "Sugar": "1",
+    "Smog": "3",
+    "Hot": "5",
+    "Purine": "1"
+  }
+]

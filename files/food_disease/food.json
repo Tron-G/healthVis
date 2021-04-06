@@ -1,0 +1,232 @@
+[
+  {
+    "restaurant_name": "茶饮果汁",
+    "Alcohol": "1",
+    "Oli": "3",
+    "Salinity": "2",
+    "Sugar": "5",
+    "Smog": "1",
+    "Hot": "1",
+    "Purine": "1"
+  },
+  {
+    "restaurant_name": "川菜馆",
+    "Alcohol": "2",
+    "Oli": "4",
+    "Salinity": "3",
+    "Sugar": "1",
+    "Smog": "3",
+    "Hot": "5",
+    "Purine": "2",
+    "carbohydrate": "2"
+  },
+  {
+    "restaurant_name": "海鲜",
+    "Alcohol": "4",
+    "Oli": "2",
+    "Salinity": "3",
+    "Sugar": "1",
+    "Smog": "2",
+    "Hot": "2",
+    "Purine": "5"
+  },
+  {
+    "restaurant_name": "韩国菜",
+    "Alcohol": "2",
+    "Oli": "2",
+    "Salinity": "4",
+    "Sugar": "2",
+    "Smog": "3",
+    "Hot": "4",
+    "Purine": "2"
+  },
+  {
+    "restaurant_name": "自助餐",
+    "Alcohol": "3",
+    "Oli": "2",
+    "Salinity": "2",
+    "Sugar": "2",
+    "Smog": "3",
+    "Hot": "3",
+    "Purine": "2"
+  },
+  {
+    "restaurant_name": "西餐",
+    "Alcohol": "2",
+    "Oli": "3",
+    "Salinity": "2",
+    "Sugar": "2",
+    "Smog": "4",
+    "Hot": "1",
+    "Purine": "4"
+  },
+  {
+    "restaurant_name": "快餐小吃",
+    "Alcohol": "1",
+    "Oli": "5",
+    "Salinity": "3",
+    "Sugar": "2",
+    "Smog": "2",
+    "Hot": "2",
+    "Purine": "2"
+  },
+  {
+    "restaurant_name": "烤肉",
+    "Alcohol": "3",
+    "Oli": "4",
+    "Salinity": "4",
+    "Sugar": "2",
+    "Smog": "5",
+    "Hot": "4",
+    "Purine": "3"
+  },
+  {
+    "restaurant_name": "日料",
+    "Alcohol": "2",
+    "Oli": "1",
+    "Salinity": "2",
+    "Sugar": "1",
+    "Smog": "1",
+    "Hot": "1",
+    "Purine": "3"
+  },
+  {
+    "restaurant_name": "川渝火锅",
+    "Alcohol": "3",
+    "Oli": "5",
+    "Salinity": "4",
+    "Sugar": "1",
+    "Smog": "2",
+    "Hot": "5",
+    "Purine": "3"
+  },
+  {
+    "restaurant_name": "东北菜",
+    "Alcohol": "2",
+    "Oli": "2",
+    "Salinity": "3",
+    "Sugar": "2",
+    "Smog": "1",
+    "Hot": "1",
+    "Purine": "2"
+  },
+  {
+    "restaurant_name": "面包烘焙",
+    "Alcohol": "1",
+    "Oli": "1",
+    "Salinity": "1",
+    "Sugar": "5",
+    "Smog": "3",
+    "Hot": "1",
+    "Purine": "1"
+  },
+  {
+    "restaurant_name": "甜品",
+    "Alcohol": "1",
+    "Oli": "1",
+    "Salinity": "1",
+    "Sugar": "5",
+    "Smog": "1",
+    "Hot": "1",
+    "Purine": "2"
+  },
+  {
+    "restaurant_name": "潮汕火锅",
+    "Alcohol": "2",
+    "Oli": "3",
+    "Salinity": "3",
+    "Sugar": "1",
+    "Smog": "1",
+    "Hot": "2",
+    "Purine": "4"
+  },
+  {
+    "restaurant_name": "南方菜",
+    "Alcohol": "2",
+    "Oli": "2",
+    "Salinity": "2",
+    "Sugar": "3",
+    "Smog": "1",
+    "Hot": "1",
+    "Purine": "2"
+  },
+  {
+    "restaurant_name": "干锅",
+    "Alcohol": "2",
+    "Oli": "4",
+    "Salinity": "4",
+    "Sugar": "1",
+    "Smog": "2",
+    "Hot": "3",
+    "Purine": "2"
+  },
+  {
+    "restaurant_name": "面食煮食",
+    "Alcohol": "1",
+    "Oli": "2",
+    "Salinity": "3",
+    "Sugar": "1",
+    "Smog": "1",
+    "Hot": "2",
+    "Purine": "2"
+  },
+  {
+    "restaurant_name": "烧烤",
+    "Alcohol": "5",
+    "Oli": "4",
+    "Salinity": "4",
+    "Sugar": "1",
+    "Smog": "5",
+    "Hot": "4",
+    "Purine": "4"
+  },
+  {
+    "restaurant_name": "鲁菜",
+    "Alcohol": "2",
+    "Oli": "4",
+    "Salinity": "3",
+    "Sugar": "2",
+    "Smog": "1",
+    "Hot": "2",
+    "Purine": "3"
+  },
+  {
+    "restaurant_name": "其他中餐",
+    "Alcohol": "2",
+    "Oli": "3",
+    "Salinity": "3",
+    "Sugar": "1",
+    "Smog": "1",
+    "Hot": "2",
+    "Purine": "2"
+  },
+  {
+    "restaurant_name": "油炸食品",
+    "Alcohol": "1",
+    "Oli": "5",
+    "Salinity": "3",
+    "Sugar": "1",
+    "Smog": "3",
+    "Hot": "2",
+    "Purine": "2"
+  },
+  {
+    "restaurant_name": "家常菜",
+    "Alcohol": "2",
+    "Oli": "2",
+    "Salinity": "2",
+    "Sugar": "2",
+    "Smog": "2",
+    "Hot": "2",
+    "Purine": "2"
+  },{
+    "restaurant_name": "咖啡厅",
+    "Alcohol": "1",
+    "Oli": "1",
+    "Salinity": "2",
+    "Sugar": "4",
+    "Smog": "1",
+    "Hot": "1",
+    "Purine": "1"
+  }
+]

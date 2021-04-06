@@ -4,6 +4,9 @@ var TRANSPORT_DATA = {};
 TRANSPORT_DATA["season"] = "all";
 TRANSPORT_DATA["hospital"] = "all";
 TRANSPORT_DATA["map_checked_type"] = $('.radio_box :radio:checked').val();
+//缓存选择范围的餐厅种类
+TRANSPORT_DATA["selected_restaurant_type"] = [];
+
 // //缓存几种地图上显示的热力图和点集数据
 // var GEO_POINT_DATA = {};
 // GEO_POINT_DATA["map_checked_type"] = $('.radio_box :radio:checked').val();
@@ -37,7 +40,7 @@ function initSystem() {
         contentType: 'application/json',
         dataType: 'json',
         success: function (data) {
-            // console.log("success", data);
+            console.log("success", data);
             //初始化系统缓存数据
             HOSPITAL_POINT_DATA["map"] = data["map"];
 
@@ -51,7 +54,7 @@ function initSystem() {
     });
 
     setCheckBoxEvent();
-    testData();
+    // testData();
     GoBodyVisPage();
 }
 
@@ -79,9 +82,10 @@ function testData() {
  * @description 用户交互操作后重绘各个视图
  * @param {string} url 访问的后台接口名称
  * @param {string} redraw_type  重绘的类型，
- *                 select_hospital:选择医院操作，仅重绘玫瑰图;
+ *                 select_hospital:选择医院操作，重绘选择医院的高发疾病柱状图;
  *                 select_time:季节选择操作，重绘所有视图;
  *                 select_category:单选框选择地点或者职业，重绘地图
+ *                 select_hospital_restaurant: 餐饮页面下选择医院分析饮食与疾病关联，重绘高发疾病柱状图，加入饮食相关疾病
  */
 function redraw(url, redraw_type) {
     $.ajax({
@@ -118,8 +122,9 @@ function redraw(url, redraw_type) {
                     }
                     drawWordCloud(words, "word_cloud");
                 }
+            } else if (redraw_type === "select_hospital_restaurant") {
+                drawHospitalBar(data["disease_bar"], data["food_disease"]);
             }
-
         }
     });
 }

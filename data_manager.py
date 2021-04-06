@@ -8,7 +8,7 @@ import copy
 from flask import Flask
 import pandas as pd
 import json
-
+import numpy as np
 app = Flask(__name__)
 
 
@@ -335,7 +335,7 @@ def top10(season, hospital):
     n = 15
     top = []
     # 读取全部疾病，放入words列表中
-    with open("./files/myword.txt", "r", encoding='UTF-8') as file:
+    with open("./files/disease_data/myword.txt", "r", encoding='UTF-8') as file:
         words = file.readlines()
         for i in range(0, len(words)):
             words[i] = words[i].replace("\n", "")
@@ -375,7 +375,7 @@ def top10(season, hospital):
                             # 将人数加入info中
                             info["total"] = one["value"]
                             # 读取已经处理好的疾病和建议的json
-                            with open("./files/advice.json", "r", encoding="utf-8") as json_file:
+                            with open("./files/disease_data/advice.json", "r", encoding="utf-8") as json_file:
                                 advices = json_file.read()
                                 advices = json.loads(advices)
                             # 将建议加入info中
@@ -411,7 +411,7 @@ def top10(season, hospital):
                     disease = {}
                     info = {}
                     info["total"] = one["value"]
-                    with open("./files/advice.json", "r", encoding="utf-8") as json_file:
+                    with open("./files/disease_data/advice.json", "r", encoding="utf-8") as json_file:
                         advices = json_file.read()
                         advices = json.loads(advices)
                     for advice in advices.keys():
@@ -454,7 +454,7 @@ def top10(season, hospital):
                     # 将人数加入info中
                     info["total"] = one["value"]
                     # 读取已经处理好的疾病和建议的json
-                    with open("./files/advice.json", "r", encoding="utf-8") as json_file:
+                    with open("./files/disease_data/advice.json", "r", encoding="utf-8") as json_file:
                         advices = json_file.read()
                         advices = json.loads(advices)
                     # 将建议加入info中
@@ -491,7 +491,7 @@ def top10(season, hospital):
             disease = {}
             info = {}
             info["total"] = one["value"]
-            with open("./files/advice.json", "r", encoding="utf-8") as json_file:
+            with open("./files/disease_data/advice.json", "r", encoding="utf-8") as json_file:
                 advices = json_file.read()
                 advices = json.loads(advices)
             for advice in advices.keys():
@@ -592,7 +592,7 @@ def sunburst_data(hospital):
     n = 15
     months = []
     # 读取全部疾病
-    with open("./files/myword.txt", "r", encoding='UTF-8') as file:
+    with open("./files/disease_data/myword.txt", "r", encoding='UTF-8') as file:
         words = file.readlines()
         for i in range(0, len(words)):
             words[i] = words[i].replace("\n", "")
@@ -774,23 +774,23 @@ def load_static_data(data_name):
             data = json.load(f)
     elif data_name == "sunburst":
         # 旭日图数据
-        with open("./files/sunburst-data.json", encoding='UTF-8') as f:
+        with open("./files/disease_data/sunburst-data.json", encoding='UTF-8') as f:
             data = json.load(f)
     elif data_name == "disease-detail":
         # 疾病表
-        with open("./files/disease-details.json", encoding='UTF-8') as f:
+        with open("./files/disease_data/disease-details.json", encoding='UTF-8') as f:
             data = json.load(f)
     elif data_name == "disease_rules":
         # 疾病图谱
-        with open("./files/disease_rules.json", encoding='GBK') as f:
+        with open("./files/disease_data/disease_rules.json", encoding='GBK') as f:
             data = json.load(f)
     elif data_name == "disease-data":
         # 本地储存一整年的所有医院的高发疾病
-        with open("./files/disease-data.json", encoding='UTF-8') as f:
+        with open("./files/disease_data/disease-data.json", encoding='UTF-8') as f:
             data = json.load(f)
     elif data_name == "disease_knowledge":
         # 疾病详细知识
-        with open("./files/disease_knowledge.json", encoding='UTF-8') as f:
+        with open("./files/disease_data/disease_knowledge.json", encoding='UTF-8') as f:
             data = json.load(f)
     return data
 
@@ -886,7 +886,7 @@ def get_disease_age(disease_name, month):
 # ******************************************************************************************
 def get_patient_disease(exam_id):
     df = pd.read_csv("./files/report.csv")
-    with open("./files/myword.txt", "r", encoding='UTF-8') as file:
+    with open("./files/disease_data/myword.txt", "r", encoding='UTF-8') as file:
         words = file.readlines()
         for i in range(0, len(words)):
             words[i] = words[i].replace("\n", "")
@@ -914,7 +914,7 @@ def get_patient_disease(exam_id):
 # ******************************************************************************************
 def get_topdisease_sex(month, hospital="all", top_num=20):
     df = pd.read_csv("./files/report.csv")
-    with open("./files/myword.txt", "r", encoding='UTF-8') as file:
+    with open("./files/disease_data/myword.txt", "r", encoding='UTF-8') as file:
         words = file.readlines()
         for i in range(0, len(words)):
             words[i] = words[i].replace("\n", "")
@@ -1104,16 +1104,16 @@ def get_recommend_disease(exam_id):
     similarity_nums = 5
 
     # 患者-疾病表
-    with open("./files/patient_disease.json") as f:
+    with open("./files/disease_data/patient_disease.json") as f:
         patient_disease = json.load(f, encoding='gbk')
     # 疾病-病人倒排表
-    with open("./files/disease_patient.json") as f:
+    with open("./files/disease_data/disease_patient.json") as f:
         disease_patient = json.load(f, encoding='gbk')
     # 用户相似度矩阵
-    with open("./files/patient_matrix_final.json") as f:
+    with open("./files/disease_data/patient_matrix_final.json") as f:
         patient_matrix = json.load(f, encoding='gbk')
     # 疾病统计频率作为评分
-    with open("./files/disease_score.json") as f:
+    with open("./files/disease_data/disease_score.json") as f:
         disease_score = json.load(f, encoding='gbk')
 
     # 疾病表
@@ -1174,3 +1174,264 @@ def set_disease_info_data(disease_name, type=0, month=0):
             for k in i["detail"]:
                 data[k] = i["detail"][k]
     return data
+
+
+# ******************************************************************************************
+# 生成在疾病关联图中点击的疾病列表详细数据
+# ******************************************************************************************
+def get_disease_list_info(disease_list):
+    data = []
+    for each in disease_list:
+        data.append(set_disease_info_data(each, 1))
+    return data
+
+
+# ******************************************************************************************
+# bfs遍历图算法，返回路径上的疾病名称
+# ******************************************************************************************
+def BFS(graph, start):  # graph图  s指的是开始结点
+    # 需要一个队列
+    if start not in graph:
+        return []
+    queue = [start]
+    temp = []
+    seen = set()  # 看是否访问过该结点
+    seen.add(start)
+    while len(queue) > 0:
+        vertex = queue.pop(0)  # 保存第一结点，并弹出，方便把他下面的子节点接入
+        nodes = graph[vertex]  # 子节点的数组
+        # p = k[i] + 1
+        for w in nodes:
+            if w not in seen:  # 判断是否访问过，使用一个数组
+                queue.append(w)
+                seen.add(w)
+        temp.append(vertex)
+    return temp
+
+
+# ******************************************************************************************
+# 根据搜索的疾病名称生成单分图数据
+# ******************************************************************************************
+def get_single_graph_data(disease_name):
+    with open("./files/disease_data/single_graph.json", encoding='UTF-8') as f:
+        data = json.load(f)
+    dis_list = BFS(data, disease_name)
+    res = {}
+    for i in dis_list:
+        for each in data:
+            if each == i:
+                res[each] = data[each]
+    node = []
+    relation = []
+    out_data = {}
+    for i in dis_list:
+        node.append({"name": i, "draggable": "true"})
+    out_data["node"] = node
+    for i in res:
+        for j in res[i]:
+            temp = {}
+            temp["source"] = i
+            temp["target"] = j
+            temp["lineStyle"] = {"normal": {"width": res[i][j] * 10}}
+            relation.append(temp)
+    out_data["relation"] = relation
+    return out_data
+
+
+# ******************************************************************************************
+# 根据餐饮种类返回关联疾病
+# ******************************************************************************************
+def get_food_disease_data(restaurant_type):
+    f = open('./files/food_disease/food.json', 'rb')
+    f1 = open('./files/food_disease/disease.json', 'rb')
+
+    content1 = f1.read()
+    content = f.read()
+    a = json.loads(content)
+    b = json.loads(content1)
+
+    restaurant_name = ""
+    alcohol_food = []
+    oli_food = []
+    salinity_food = []
+    sugar_food = []
+    smog_food = []
+    hot_food = []
+    purine_food = []
+
+    disease_name = ""
+    alcohol_disease = []
+    oli_disease = []
+    salinity_disease = []
+    sugar_disease = []
+    smog_disease = []
+    hot_disease = []
+    purine_disease = []
+
+    # 餐馆的菜品数组
+    for i in a:
+        temp1 = (i["Alcohol"])
+        temp2 = (i["Oli"])
+        temp3 = (i["Salinity"])
+        temp4 = (i["Sugar"])
+        temp5 = (i["Smog"])
+        temp6 = (i["Hot"])
+        temp7 = (i["Purine"])
+        temp8 = (i["restaurant_name"])
+
+        list1 = list(temp1)
+        list2 = list(temp2)
+        list3 = list(temp3)
+        list4 = list(temp4)
+        list5 = list(temp5)
+        list6 = list(temp6)
+        list7 = list(temp7)
+
+        restaurant_name = str(restaurant_name) + temp8 + " "
+        alcohol_food = alcohol_food + list1
+        oli_food = oli_food + list2
+        salinity_food += list3
+        sugar_food += list4
+        smog_food += list5
+        hot_food += list6
+        purine_food += list7
+    restaurant_Array = restaurant_name.split(" ")
+
+    # 疾病的数组
+    for i in b:
+        temp1 = (i["Alcohol"])
+        temp2 = (i["Oli"])
+        temp3 = (i["Salinity"])
+        temp4 = (i["Sugar"])
+        temp5 = (i["Smog"])
+        temp6 = (i["Hot"])
+        temp7 = (i["Purine"])
+        temp8 = (i["disease_name"])
+
+        list1 = list(temp1)
+        list2 = list(temp2)
+        list3 = list(temp3)
+        list4 = list(temp4)
+        list5 = list(temp5)
+        list6 = list(temp6)
+        list7 = list(temp7)
+
+        disease_name = str(disease_name) + temp8 + " "
+
+        alcohol_disease += list1
+        oli_disease += list2
+        salinity_disease += list3
+        sugar_disease += list4
+        smog_disease += list5
+        hot_disease += list6
+        purine_disease += list7
+    disease_Array = disease_name.split(" ")
+
+    canshu = []
+    numCollect = []
+    # 替换变量
+    tempNum = []
+    tempDisease = []
+    # 疾病的名称
+    diseaseIndex = []
+    diseaEnd = []
+
+    # 计算关联度
+    for i in range(len(restaurant_Array) - 1):
+        temp9 = 10
+        # print("\n")
+        # print("吃" + restaurant_Array[i])
+        diseaseIndex.clear()
+        canshu.clear()
+        for j in range(len(disease_Array) - 1):
+            min = temp9
+            # print(min)
+            aa = int(alcohol_food[i]) - int(alcohol_disease[j])
+            bb = int(oli_food[i]) - int(oli_disease[j])
+            cc = int(salinity_food[i]) - int(salinity_disease[j])
+            dd = int(sugar_food[i]) - int(sugar_disease[j])
+            ee = int(smog_food[i]) - int(smog_disease[j])
+            ff = int(hot_food[i]) - int(hot_disease[j])
+            gg = int(purine_food[i]) - int(purine_disease[j])
+            count = [aa, bb, cc, dd, ee, ff, gg]
+
+            # 计数器
+            NUMBER = 0
+            if (int(alcohol_food[i]) == int(alcohol_disease[j]) == 1):
+                del count[0]
+                NUMBER = NUMBER + 1
+            if (int(oli_food[i]) == int(oli_disease[j]) == 1):
+                del count[1 - NUMBER]
+                NUMBER = NUMBER + 1
+            if (int(salinity_food[i]) == int(salinity_disease[j]) == 1):
+                del count[2 - NUMBER]
+                NUMBER = NUMBER + 1
+
+            if (int(sugar_food[i]) == int(sugar_disease[j]) == 1):
+                del count[3 - NUMBER]
+                NUMBER = NUMBER + 1
+
+            if (int(smog_food[i]) == int(smog_disease[j]) == 1):
+                del count[4 - NUMBER]
+                NUMBER = NUMBER + 1
+
+            if (int(hot_food[i]) == int(hot_disease[j]) == 1):
+                del count[5 - NUMBER]
+                NUMBER = NUMBER + 1
+
+            if (int(purine_food[i]) == int(purine_disease[j]) == 1):
+                del count[6 - NUMBER]
+                NUMBER = NUMBER + 1
+
+            # count.append(aa)
+            # print(count)
+            result = np.var(count)
+            # print(result)
+            if (result < temp9):
+                index = j
+                temp9 = result
+            if (result < 3):
+                sum = result
+                indexF = j
+                canshu.append(result)
+                diseaseIndex.append(disease_Array[indexF])
+                # print(disease_Array[indexF])
+
+        # print(disease_Array)
+        diseaseIndex.append(disease_Array[indexF])
+
+        tempDisease = [k for k in diseaseIndex]
+
+        tempNum = [k for k in canshu]
+
+        diseaEnd.append(tempDisease)
+        # print(diseaEnd)
+        numCollect.append(tempNum)
+
+    # 解决bug
+    for i in range(len(diseaEnd)):
+        del diseaEnd[i][len(diseaEnd[i]) - 1]
+
+    # 给定输出的疾病系数集
+    out_num = []
+    # 给定输出的病名称
+    out_disease = []
+    res = {}
+    for i in range(len(restaurant_type)):
+        for j in range(len(restaurant_Array) - 1):
+            if restaurant_type[i] == restaurant_Array[j]:
+                # 输出的病
+                k = 0
+                for each in diseaEnd[j]:
+                    if each in res:
+                        if numCollect[j][k] > res[each]:
+                            res[each] = numCollect[j][k]
+                    else:
+                        res[each] = numCollect[j][k]
+                    k += 1
+                out_num.append(numCollect[j])
+                # 该病的系数
+                out_disease.append(diseaEnd[j])
+    # print(res)
+    res = sorted(res.items(), key=lambda kv: (kv[1], kv[0]), reverse=True)
+    return res

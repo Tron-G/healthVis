@@ -294,9 +294,9 @@ function drawForceMap(data, draw_type) {
         }
         // console.log(c)
         if (countedNames[list2[i]] < 10) {
-            countedNames[list2[i]] = countedNames[list2[i]] + 20
+            countedNames[list2[i]] = countedNames[list2[i]] + 15
         } else if (countedNames[list2[i]] > 100) {
-            countedNames[list2[i]] = countedNames[list2[i]] - 100
+            countedNames[list2[i]] = countedNames[list2[i]] - 150
         }
         let o = {
             name: list2[i],
@@ -332,9 +332,10 @@ function drawForceMap(data, draw_type) {
             lineStyle: {
                 normal: {
                     show: true,
-                    width: data[i]["possibility"] * 10,
+                    width: data[i]["possibility"] * 5,
                     curveness: 0.2,
                     type: 'solid', //线的类型 'solid'（实线）'dashed'（虚线）'dotted'（点线）
+                    color: "source"
                 },
             },
 //			emphasis: {
@@ -382,13 +383,37 @@ function drawForceMap(data, draw_type) {
                 // color:'white'
             }
         }],
+        toolbox: {
+            show: true,
+            itemSize: 10,
+            // left:20,
+            // itemGap: 30,
+            bottom: 15,
+            right: 15,
+            feature: {
+                myTool: {
+                    show: true,
+                    // title: '清除',
+                    icon: 'path d="M799.2 874.4c0 34.4-28 62.4-62.368 62.4H287.2a62.496 62.496 0 0 1-62.4-62.4V212h574.4v662.4zM349.6 100c0-7.2 5.6-12.8 12.8-12.8h300c7.2 0 12.768 5.6 12.768 12.8v37.6H349.6V100z m636.8 37.6H749.6V100c0-48-39.2-87.2-87.2-87.2h-300a87.392 87.392 0 0 0-87.2 87.2v37.6H37.6C16.8 137.6 0 154.4 0 175.2s16.8 37.6 37.6 37.6h112v661.6A137.6 137.6 0 0 0 287.2 1012h449.6a137.6 137.6 0 0 0 137.6-137.6V212h112c20.8 0 37.6-16.8 37.6-37.6s-16.8-36.8-37.6-36.8zM512 824c20.8 0 37.6-16.8 37.6-37.6v-400c0-20.8-16.768-37.6-37.6-37.6-20.8 0-37.6 16.8-37.6 37.6v400c0 20.8 16.8 37.6 37.6 37.6m-175.2 0c20.8 0 37.6-16.8 37.6-37.6v-400c0-20.8-16.8-37.6-37.6-37.6s-37.6 16.8-37.6 37.6v400c0.8 20.8 17.6 37.6 37.6 37.6m350.4 0c20.8 0 37.632-16.8 37.632-37.6v-400c0-20.8-16.8-37.6-37.632-37.6-20.768 0-37.6 16.8-37.6 37.6v400c0 20.8 16.8 37.6 37.6 37.6',                   // 清除知识图谱以及选择的疾病缓存数组
+                    onclick: function () {
+
+                        console.log("返回");
+                        TRANSPORT_DATA["selected_disease"] = [];
+                        if (echarts.getInstanceByDom(document.getElementById("knowledge_graph")) !== undefined) {
+                            // console.log(echarts.getInstanceByDom(document.getElementById("word_cloud")));
+                            echarts.getInstanceByDom(document.getElementById("knowledge_graph")).dispose();
+                        }
+                    }
+                }
+            }
+        },
 
         //—— 其他设置 ——
         animationDurationUpdate: 150,
         animationEasingUpdate: 'quinticInOut',
         series: [{
             type: 'graph',
-            layout: 'none', // 'circular' ,force
+            layout: 'circular', // 'circular' ,force
             roam: true, //鼠标缩放及平移
             // focusNodeAdjacency: true, //是否在鼠标移到节点上的时候突出显示节点、节点的边和邻接节点
             force: {
@@ -396,6 +421,9 @@ function drawForceMap(data, draw_type) {
                 // y: '50px',
                 edgeLength: 20,
                 repulsion: 100
+            },
+            circular: {
+                rotateLabel: true
             },
             label: {
                 show: false,
@@ -445,6 +473,19 @@ function drawForceMap(data, draw_type) {
     }; // 使用刚指定的配置项和数据显示图表。
     main.setOption(option);
 
+
+    main.on("click", function (params) {
+
+        if (TRANSPORT_DATA["selected_disease"].length < 5) {
+            TRANSPORT_DATA["selected_disease"].push(params.name);
+            console.log(TRANSPORT_DATA["selected_disease"]);
+            redraw("/get_knowledge_info", "disease_knowledge");
+        } else {
+            alert("最多同时选择5种疾病对比")
+        }
+    });
+
+
     if (draw_type === "focus") {
         draw(TRANSPORT_DATA["disease"]);
     }
@@ -458,16 +499,7 @@ function drawForceMap(data, draw_type) {
                 index = i;
             }
         })
-        nodes.forEach(function (n) {
-            if (n.name == str) {
-                console.log(n.x)
-                centerX = n.x;
-                centerY = n.y
-            }
-        })
-        option.center = [centerX, centerY]
-		main.clear();
-        main.setOption(option)
+
         main.dispatchAction({
             type: 'focusNodeAdjacency',
             dataIndex: index
@@ -475,4 +507,3 @@ function drawForceMap(data, draw_type) {
         })
     }
 }
-

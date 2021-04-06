@@ -20,7 +20,7 @@ def feature():
 # 点击时间轴更新各个视图的数据
 # ******************************************************************************************
 @app.route('/change_season',  methods=['POST', 'GET'])
-def change_season():
+def changeSeason():
     print("\n*************change_season*************")
     data = request.get_json()
     print(data["season"], data["hospital"])
@@ -30,6 +30,7 @@ def change_season():
                 "category": dm.load_static_data(data["map_checked_type"])}
 
     print(dm.job(data["season"], data["hospital"]))
+
     return jsonify(out_data)
 
 
@@ -37,7 +38,7 @@ def change_season():
 # 更新地图图层数据
 # ******************************************************************************************
 @app.route('/select_category',  methods=['POST', 'GET'])
-def select_category():
+def selectCategory():
     print("\n*************select_category*************")
     data = request.get_json()
     print(data["map_checked_type"])
@@ -49,12 +50,28 @@ def select_category():
 # 点击医院更新各个视图的数据
 # ******************************************************************************************
 @app.route('/change_hospital',  methods=['POST', 'GET'])
-def change_hospital():
+def changeHospital():
     data = request.get_json()
     print("\n*************change_hospital*************")
     print(data["season"], data["hospital"])
     out_data = {"pie": dm.job(data["season"], data["hospital"]),
                 "disease_bar": dm.top10(data["season"], data["hospital"])}
+    # print(out_data["disease_bar"])
+    return jsonify(out_data)
+
+
+# ******************************************************************************************
+# 餐饮界面下点击医院
+# ******************************************************************************************
+@app.route('/change_hospital_restaurant',  methods=['POST', 'GET'])
+def changeHospitalRestaurant():
+    data = request.get_json()
+    print("\n*************change_hospital*************")
+    print(data["season"], data["hospital"])
+    out_data = {"pie": dm.job(data["season"], data["hospital"]),
+                "disease_bar": dm.top10(data["season"], data["hospital"]),
+                "food_disease": dm.get_food_disease_data(data["selected_restaurant_type"])}
+    # print(out_data["disease_bar"])
     return jsonify(out_data)
 
 
@@ -75,9 +92,10 @@ def initSys():
 @app.route('/init_bodyvis',  methods=['POST', 'GET'])
 def initBodyVis():
     month = request.get_json()["month"]
+    disease_info = dm.set_disease_info_data("", 0, month)
     data = {"sunburst": dm.load_static_data("sunburst"), "disease-detail": dm.load_static_data("disease-detail"),
             "body_disease": dm.get_topdisease_sex(month), "disease_rules": dm.load_static_data("disease_rules"),
-            "disease_info": dm.set_disease_info_data("", 0, month)}
+            "disease_info": disease_info, "single_graph": dm.get_single_graph_data(disease_info["name"])}
 
     # print(dm.load_static_data("disease-detail"))
     # print(dm.get_topdisease_sex(month))
@@ -90,8 +108,10 @@ def initBodyVis():
 @app.route('/get_month_data',  methods=['POST', 'GET'])
 def getMonthData():
     month = request.get_json()["month"]
+    disease_info = dm.set_disease_info_data("", 0, month)
     data = {"month": dm.get_topdisease_sex(month),
-            "disease_info": dm.set_disease_info_data("", 0, month)}
+            "disease_info": disease_info,
+            "single_graph": dm.get_single_graph_data(disease_info["name"])}
     return jsonify(data)
 
 
@@ -102,6 +122,7 @@ def getMonthData():
 def searchById():
     id = request.get_json()["id"]
     data = {"patient_disease": dm.get_patient_disease(id), "recommend_list": dm.get_recommend_disease(id)}
+    print(data)
     return jsonify(data)
 
 
@@ -118,12 +139,23 @@ def searchBydisease():
 
 
 # ******************************************************************************************
-# 返回疾病具体信息
+# 返回疾病具体信息和单分图数据
 # ******************************************************************************************
 @app.route('/get_disease_info',  methods=['POST', 'GET'])
 def getDiseaseInfo():
     disease = request.get_json()["disease_info"]
-    data = dm.set_disease_info_data(disease, 10)
+    data = {"info_text": dm.set_disease_info_data(disease, 1),
+            "single_graph": dm.get_single_graph_data(disease)}
+    return jsonify(data)
+
+
+# ******************************************************************************************
+# 返回疾病知识图谱数据
+# ******************************************************************************************
+@app.route('/get_knowledge_info',  methods=['POST', 'GET'])
+def getKnowledgeInfo():
+    disease = request.get_json()["selected_disease"]
+    data = dm.get_disease_list_info(disease)
     return jsonify(data)
 
 
@@ -141,7 +173,7 @@ def test():
     # out = dm.sunburst_data("all")
     # 9a38653b2e769a84fa89ffa9da1c9e6d
     # out = dm.get_patient_disease("1e6ce7eab018584f9cbac518d4fd2824")
-    out = dm.get_topdisease_sex(10, "日照市中医医院")
+    out = dm.get_disease_list_info(["咽炎","鼻甲肥大"])
     print(out)
     return jsonify(out)
 

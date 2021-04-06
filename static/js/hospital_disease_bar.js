@@ -1,8 +1,9 @@
 /**
  * @description 绘制指定时间和医院的高发疾病柱状图
  * @param {object} disease  高发疾病数据
+ * @param {object} diet_disease  饮食疾病数据
  */
-function drawHospitalBar(disease) {
+function drawHospitalBar(disease, diet_disease=[]) {
     let hospital = disease["hospital"];
     let season = TRANSPORT_DATA["season"];
     switch (season) {
@@ -26,43 +27,41 @@ function drawHospitalBar(disease) {
         hospital = "全部医院";
     }
     //console.log(disease);
-    let detail_data = disease['disease'];
-    let x_data = [];
-    let num = [];
-    for (let i in detail_data) {
-        let name = Object.keys(detail_data[i])[0];
-        x_data.push(name);
-        num.push(detail_data[i][name]["total"]);
-    }
-    // console.log(x_data);
-    // console.log(num);
-    let dom = document.getElementById("hospital_disease_bar");
-    let myChart = echarts.init(dom);
-    let app = {};
+    if (diet_disease.length === 0) {
+        let detail_data = disease['disease'];
+        let x_data = [];
+        let num = [];
+        for (let i in detail_data) {
+            let name = Object.keys(detail_data[i])[0];
+            x_data.push(name);
+            num.push(detail_data[i][name]["total"]);
+        }
+        // console.log(x_data);
+        // console.log(num);
+        let dom = document.getElementById("hospital_disease_bar");
+        let myChart = echarts.init(dom);
+        let app = {};
 
-    let option;
-
-    option = {
-        title: {
-            text: hospital + season + '的高发疾病',
-            left: 'center',
-            top: '5%'
-        },
-        tooltip: {
-            trigger: 'axis',
-            axisPointer: {            // 坐标轴指示器，坐标轴触发有效
-                type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
-            }
-        },
-        grid: {
-            left: '5%',
-            right: '2%',
-            bottom: '1%',
-            top: '15%',
-            containLabel: true
-        },
-        xAxis: [
-            {
+        let option = {
+            title: {
+                text: hospital + season + '的高发疾病',
+                left: 'center',
+                top: '5%'
+            },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: { // 坐标轴指示器，坐标轴触发有效
+                    type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+                }
+            },
+            grid: {
+                left: '5%',
+                right: '2%',
+                bottom: '1%',
+                top: '15%',
+                containLabel: true
+            },
+            xAxis: [{
                 type: 'category',
                 data: x_data,
                 axisTick: {
@@ -73,15 +72,11 @@ function drawHospitalBar(disease) {
                     interval: 0,
                     rotate: 40
                 }
-            }
-        ],
-        yAxis: [
-            {
+            }],
+            yAxis: [{
                 type: 'value'
-            }
-        ],
-        series: [
-            {
+            }],
+            series: [{
                 name: '人数',
                 type: 'bar',
                 barWidth: '60%',
@@ -91,11 +86,121 @@ function drawHospitalBar(disease) {
                     }
                 },
                 data: num
-            }
-        ]
-    };
+            }]
+        };
+        if (option && typeof option === 'object') {
+            myChart.setOption(option);
+        }
+    } else {
+        let detail_data = disease['disease'];
+        let x_data = [];
+        let num = [];
+        let num2 = [];
+        for (let i in detail_data) {
+            let name = Object.keys(detail_data[i])[0];
+            x_data.push(name);
+            num.push(detail_data[i][name]["total"]);
 
-    if (option && typeof option === 'object') {
-        myChart.setOption(option);
+        }
+        console.log(x_data)
+        let list = []
+        for (let i = 0; i < diet_disease.length; i++) {
+            list.push(diet_disease[i][0])
+        }
+        console.log(list)
+
+        x_data.forEach(x => {
+            if (list.includes(x)) {
+                for (let i = 0; i < diet_disease.length; i++) {
+                    if (x === diet_disease[i][0]) {
+                        num2.push(diet_disease[i][1]);
+                    }
+                }
+            } else {
+                num2.push(0);
+            }
+        })
+
+        let main = echarts.init(document.getElementById('hospital_disease_bar'));
+        let colors = ['#5470C6', '#91CC75'];
+
+        let option = {
+            title: {
+                text: hospital + season + '的高发疾病',
+                left: 'center',
+                top: '5%'
+            },
+            color: colors,
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'cross'
+                }
+            },
+            grid: {
+                right: '20%'
+            },
+            legend: {
+                data: ['蒸发量', '降水量']
+            },
+            xAxis: [{
+                type: 'category',
+                axisTick: {
+                    alignWithLabel: true
+                },
+                axisLabel: {
+                    fontSize: 16,
+                    interval: 0,
+                    rotate: 40
+                },
+                data: x_data
+            }],
+            yAxis: [{
+                type: 'value',
+                name: '人数',
+                position: 'left',
+                axisLine: {
+                    show: true,
+                    lineStyle: {
+                        color: colors[0]
+                    }
+                },
+                axisLabel: {
+                    formatter: '{value} 人'
+                }
+            },
+                {
+                    type: 'value',
+                    name: '指数',
+
+                    position: 'right',
+                    axisLine: {
+                        show: true,
+                        lineStyle: {
+                            color: colors[1]
+                        }
+                    },
+                    axisLabel: {
+                        formatter: '{value}'
+                    }
+                },
+
+            ],
+            series: [{
+                name: '蒸发量',
+                type: 'bar',
+                data: num
+            },
+                {
+                    name: '降水量',
+                    type: 'bar',
+                    yAxisIndex: 1,
+                    data: num2
+                },
+
+            ]
+        };
+        main.setOption(option)
     }
+
 }
