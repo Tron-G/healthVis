@@ -29,8 +29,8 @@ def changeSeason():
                 "disease_bar": dm.top10(data["season"], data["hospital"]),
                 "category": dm.load_static_data(data["map_checked_type"])}
 
-    print(dm.job(data["season"], data["hospital"]))
-
+    # print(dm.job(data["season"], data["hospital"]))
+    print(out_data["disease_bar"])
     return jsonify(out_data)
 
 
@@ -56,7 +56,7 @@ def changeHospital():
     print(data["season"], data["hospital"])
     out_data = {"pie": dm.job(data["season"], data["hospital"]),
                 "disease_bar": dm.top10(data["season"], data["hospital"])}
-    # print(out_data["disease_bar"])
+    print(out_data["disease_bar"])
     return jsonify(out_data)
 
 

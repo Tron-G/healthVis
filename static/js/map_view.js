@@ -304,12 +304,14 @@ function drawMap(hospital_data, category_data) {
                 //餐饮页面下选择医院
                 if (TRANSPORT_DATA["map_checked_type"] === "restaurant") {
                     let last_select = "";
+                    let words = [];
                     //首次选择医院点
                     if (selected_hospital.length === 0) {
                         selected_hospital.push(hospital_name);
                     }
                     //切换医院点
                     else {
+                        words = [];
                         $(".popUp").remove();
                         last_select = selected_hospital.pop();
                         map.removeLayer("polygon" + last_select);
@@ -332,6 +334,7 @@ function drawMap(hospital_data, category_data) {
                                 .setText(category_data["features"][i]["properties"]["name"])
                                 .addTo(map);
                             let restaurant_type = category_data["features"][i]["properties"]["category"];
+                            words.push(restaurant_type);
                             if (TRANSPORT_DATA["selected_restaurant_type"].indexOf(restaurant_type) === -1) {
                                 TRANSPORT_DATA["selected_restaurant_type"].push(restaurant_type);
                             }
@@ -350,10 +353,15 @@ function drawMap(hospital_data, category_data) {
                         }
                     });
 
+                    //展示词云图
+                    if (echarts.getInstanceByDom(document.getElementById("word_cloud")) !== undefined) {
+                        // console.log(echarts.getInstanceByDom(document.getElementById("word_cloud")));
+                        echarts.getInstanceByDom(document.getElementById("word_cloud")).dispose();
+                    }
+                    drawWordCloud(words, "word_cloud");
 
                     redraw("/change_hospital_restaurant", "select_hospital_restaurant");
-                }
-                else {
+                } else {
                     TRANSPORT_DATA["hospital"] = hospital_name;
                     redraw("/change_hospital", "select_hospital");
                 }
