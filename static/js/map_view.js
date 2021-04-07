@@ -303,6 +303,7 @@ function drawMap(hospital_data, category_data) {
 
                 //餐饮页面下选择医院
                 if (TRANSPORT_DATA["map_checked_type"] === "restaurant") {
+                    TRANSPORT_DATA["hospital"] = hospital_name;
                     let last_select = "";
                     let words = [];
                     //首次选择医院点
@@ -358,6 +359,7 @@ function drawMap(hospital_data, category_data) {
                         // console.log(echarts.getInstanceByDom(document.getElementById("word_cloud")));
                         echarts.getInstanceByDom(document.getElementById("word_cloud")).dispose();
                     }
+                    console.log(words);
                     drawWordCloud(words, "word_cloud");
 
                     redraw("/change_hospital_restaurant", "select_hospital_restaurant");

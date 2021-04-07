@@ -26,11 +26,11 @@ def changeSeason():
     print(data["season"], data["hospital"])
     out_data = {"map": dm.season(data["season"]), "radar": dm.radar_map(data["season"]),
                 "pie": dm.job(data["season"], data["hospital"]),
-                "disease_bar": dm.top10(data["season"], data["hospital"]),
+                "disease_bar": dm.get_season_hospital_data(data["season"], data["hospital"]),
                 "category": dm.load_static_data(data["map_checked_type"])}
 
     # print(dm.job(data["season"], data["hospital"]))
-    print(out_data["disease_bar"])
+    # print(out_data["disease_bar"])
     return jsonify(out_data)
 
 
@@ -55,8 +55,8 @@ def changeHospital():
     print("\n*************change_hospital*************")
     print(data["season"], data["hospital"])
     out_data = {"pie": dm.job(data["season"], data["hospital"]),
-                "disease_bar": dm.top10(data["season"], data["hospital"])}
-    print(out_data["disease_bar"])
+                "disease_bar": dm.get_season_hospital_data(data["season"], data["hospital"])}
+    # print(out_data["disease_bar"])
     return jsonify(out_data)
 
 
@@ -69,7 +69,7 @@ def changeHospitalRestaurant():
     print("\n*************change_hospital*************")
     print(data["season"], data["hospital"])
     out_data = {"pie": dm.job(data["season"], data["hospital"]),
-                "disease_bar": dm.top10(data["season"], data["hospital"]),
+                "disease_bar": dm.get_season_hospital_data(data["season"], data["hospital"]),
                 "food_disease": dm.get_food_disease_data(data["selected_restaurant_type"])}
     # print(out_data["disease_bar"])
     return jsonify(out_data)
@@ -82,7 +82,7 @@ def changeHospitalRestaurant():
 def initSys():
     data = {"radar": dm.radar_map("all"), "map": dm.season("all"), "pie": dm.job("all", "all"),
             "GDP": dm.load_static_data("GDP"),
-            "disease_bar": dm.load_static_data("disease-data")}
+            "disease_bar": dm.get_season_hospital_data("all", "all")}
     return jsonify(data)
 
 

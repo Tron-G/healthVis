@@ -42,8 +42,7 @@ function drawWordCloud(data, div_id) {
         }
     }
 
-
-    console.log("22", items);
+    // console.log("22", items);
 
     const width = document.getElementById(div_id).offsetWidth;
     const height = document.getElementById(div_id).offsetHeight;

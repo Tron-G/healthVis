@@ -3,7 +3,7 @@
  * @param {object} disease  高发疾病数据
  * @param {object} diet_disease  饮食疾病数据
  */
-function drawHospitalBar(disease, diet_disease=[]) {
+function drawHospitalBar(disease, diet_disease = []) {
     let hospital = disease["hospital"];
     let season = TRANSPORT_DATA["season"];
     switch (season) {
@@ -40,6 +40,7 @@ function drawHospitalBar(disease, diet_disease=[]) {
         // console.log(num);
         let dom = document.getElementById("hospital_disease_bar");
         let myChart = echarts.init(dom);
+        myChart.clear();
         let app = {};
 
         let option = {
@@ -122,7 +123,7 @@ function drawHospitalBar(disease, diet_disease=[]) {
         })
 
         let main = echarts.init(document.getElementById('hospital_disease_bar'));
-        let colors = ['#5470C6', '#91CC75'];
+        let colors = ['#5470C6', '#8fa7a5'];
 
         let option = {
             title: {
@@ -137,9 +138,9 @@ function drawHospitalBar(disease, diet_disease=[]) {
                     type: 'cross'
                 }
             },
-            grid: {
-                right: '20%'
-            },
+            // grid: {
+            //     right: '20%'
+            // },
             legend: {
                 data: ['蒸发量', '降水量']
             },
@@ -149,9 +150,9 @@ function drawHospitalBar(disease, diet_disease=[]) {
                     alignWithLabel: true
                 },
                 axisLabel: {
-                    fontSize: 16,
+                    fontSize: 9,
                     interval: 0,
-                    rotate: 40
+                    rotate: 45
                 },
                 data: x_data
             }],
@@ -162,7 +163,7 @@ function drawHospitalBar(disease, diet_disease=[]) {
                 axisLine: {
                     show: true,
                     lineStyle: {
-                        color: colors[0]
+                        color: colors[1]
                     }
                 },
                 axisLabel: {
@@ -177,7 +178,7 @@ function drawHospitalBar(disease, diet_disease=[]) {
                     axisLine: {
                         show: true,
                         lineStyle: {
-                            color: colors[1]
+                            color: colors[0]
                         }
                     },
                     axisLabel: {
@@ -189,11 +190,14 @@ function drawHospitalBar(disease, diet_disease=[]) {
             series: [{
                 name: '蒸发量',
                 type: 'bar',
+                barWidth: 8,
+                barGap: "2%",
                 data: num
             },
                 {
                     name: '降水量',
                     type: 'bar',
+                    barWidth: 8,
                     yAxisIndex: 1,
                     data: num2
                 },

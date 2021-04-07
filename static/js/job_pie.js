@@ -64,7 +64,7 @@ function drawPie(data, div_id) {
     for (let i = 0; i < job_name_list.length; i++) {
         svg.append("svg:image")
             .attr("xlink:href", "./static/image/job/" + job_name_list[i] + ".svg")
-            .attr("x", i * 55 )
+            .attr("x", i * 55)
             .attr("y", 310)
             .attr("width", "50")
             .attr("height", "50")
@@ -105,6 +105,20 @@ function drawPie(data, div_id) {
             .attr("fill", "black")
             .attr("font-size", 16)
             .attr("font-weight", "bold");
+        //数据全为0
+        if (data[category][0]["total"] + data[category][1]["total"] === 0) {
+            $(".pie_text").remove();
+            svg.append("text")
+                .text("暂无数据")
+                .attr("class", "pie_text")
+                .attr("x", 130)
+                .attr("y", 180)
+                .attr("fill", "black")
+                .attr("font-size", 16)
+                .attr("font-weight", "bold");
+            return;
+        }
+
 
         let g = svg.append("g")
             .attr("transform", "translate(160, 160)");
@@ -115,7 +129,6 @@ function drawPie(data, div_id) {
             .attr("d", arc_generator1)
             .style("fill", function (d, i) {
                 // console.log(i)
-                console.log("--->",d);
                 return colorset[i]
             }) //给不同的扇形区填充不同的颜色
             .transition()
@@ -145,10 +158,17 @@ function drawPie(data, div_id) {
             .attr("text-anchor", "middle") //是文字居中
             .attr("font-size", 10)
             .attr("fill", "#433d3c")
+            .style("opacity", function (d) {
+                if (d.data.total === 0) {
+                    return 0;
+                } else
+                    return 1;
+            })
     }
 
     //全部饼图
     let showAll = function (data) {
+        $(".pie_text").remove();
         let count = 0;
         for (let i = 0; i < job_name_list.length - 1; i++) {
             //计算饼图坐标
@@ -161,43 +181,62 @@ function drawPie(data, div_id) {
                 pos_y = 220;
             }
 
-            let g = svg.append("g")
-                .attr("transform", "translate(" + pos_x + ", " + pos_y + ")");
-            g.selectAll("path")
-                .data(angle_data(data[job_name_list[i]]))
-                .enter()
-                .append("path")
-                .attr("d", arc_generator)
-                .style("fill", function (d, i) {
-                    return colorset[i]
-                }) //给不同的扇形区填充不同的颜色
-                .transition()
-                .delay(function (d, i) {
-                    return i * 200;
-                })
-                .duration(duration_time)
-                .ease(d3.easeLinear)
-                .attrTween('d', function (d) {
-                    let i = d3.interpolate(d.startAngle, d.endAngle);
-                    return function (t) {
-                        d.endAngle = i(t);
-                        return arc_generator(d);
-                    }
-                });
+            //没有数据
+            if (data[job_name_list[i]][0]["total"] + data[job_name_list[i]][1]["total"] === 0) {
+                svg.append("text")
+                    .text("暂无数据")
+                    .attr("class", "pie_text")
+                    .attr("x", pos_x - 20)
+                    .attr("y", pos_y + 10)
+                    .attr("fill", "black")
+                    .attr("font-size", 13)
+                    .attr("font-weight", "bold");
+            } else {
+                let g = svg.append("g")
+                    .attr("transform", "translate(" + pos_x + ", " + pos_y + ")");
+                g.selectAll("path")
+                    .data(angle_data(data[job_name_list[i]]))
+                    .enter()
+                    .append("path")
+                    .attr("d", arc_generator)
+                    .style("fill", function (d, i) {
+                        return colorset[i]
+                    }) //给不同的扇形区填充不同的颜色
+                    .transition()
+                    .delay(function (d, i) {
+                        return i * 200;
+                    })
+                    .duration(duration_time)
+                    .ease(d3.easeLinear)
+                    .attrTween('d', function (d) {
+                        let i = d3.interpolate(d.startAngle, d.endAngle);
+                        return function (t) {
+                            d.endAngle = i(t);
+                            return arc_generator(d);
+                        }
+                    });
 
-            g.selectAll("text") //给每个扇形去添加对应文字
-                .data(angle_data(data[job_name_list[i]]))
-                .enter()
-                .append("text")
-                .text(function (d) {
-                    return d.data.named
-                })
-                .attr("transform", function (d) {
-                    return "translate(" + arc_generator.centroid(d) + ")"
-                }) //调成每个文字的对应位置
-                .attr("text-anchor", "middle") //是文字居中
-                .attr("font-size", 10)
-                .attr("fill", "#433d3c")
+                g.selectAll("text") //给每个扇形去添加对应文字
+                    .data(angle_data(data[job_name_list[i]]))
+                    .enter()
+                    .append("text")
+                    .text(function (d) {
+                        return d.data.named
+                    })
+                    .attr("transform", function (d) {
+                        return "translate(" + arc_generator.centroid(d) + ")"
+                    }) //调成每个文字的对应位置
+                    .attr("text-anchor", "middle") //是文字居中
+                    .attr("font-size", 10)
+                    .attr("fill", "#433d3c")
+                    .style("opacity", function (d) {
+                        if (d.data.total === 0) {
+                            return 0;
+                        } else
+                            return 1;
+                    })
+            }
+
         }
 
         svg.append("text")
