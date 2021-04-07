@@ -65,6 +65,9 @@ function GoBackToMapView() {
     $("#back_btn").click(function () {
         window.open('/', '_self');
     });
+    $("#weather_page").click(function () {
+        window.open('/weather', '_self');
+    });
 }
 
 /**

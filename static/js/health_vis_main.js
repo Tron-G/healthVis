@@ -130,11 +130,14 @@ function redraw(url, redraw_type) {
 }
 
 /**
- * @description 跳转到人体结构图页面
+ * @description 跳转到人体结构图页面和气候分析页面
  */
 function GoBodyVisPage() {
     $("#second_page").click(function () {
         window.open('/feature', '_self');
+    });
+    $("#weather_page").click(function () {
+        window.open('/weather', '_self');
     });
 }
 
