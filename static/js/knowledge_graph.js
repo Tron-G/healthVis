@@ -14,14 +14,14 @@ function drawKnowledgeGraph(data) {
                 "categories": d.name,
                 itemStyle: {
                     normal: {
-                        borderWidth: '1',
-                        borderType: 'solid',
-                        borderColor: '#00ffff',
+                        // borderWidth: '1',
+                        // borderType: 'solid',
+                        // borderColor: '#00ffff',
                         shadowColor: 'rgba(0, 0, 0, .6)',
                         shadowBlur: 10,
                         color: new echarts.graphic.RadialGradient(0.4, 0.3, 1, [{
                             offset: 0,
-                            color: 'rgba(67, 186, 255, 0)',
+                            color: 'rgba(67, 186, 255, 0.1)',
                         }, {
                             offset: 1,
                             color: 'rgb(67, 186, 255)'
@@ -47,14 +47,14 @@ function drawKnowledgeGraph(data) {
                         "draggable": "true",
                         itemStyle: {
                             normal: {
-                                borderWidth: '1',
-                                borderType: 'solid',
-                                borderColor: '#00ffff',
+                                // borderWidth: '1',
+                                // borderType: 'solid',
+                                // borderColor: '#00ffff',
                                 shadowColor: 'rgba(0, 0, 0, .6)',
                                 shadowBlur: 10,
                                 color: new echarts.graphic.RadialGradient(0.4, 0.3, 1, [{
                                     offset: 0,
-                                    color: 'rgba(67, 186, 255, 0)',
+                                    color: 'rgba(67, 186, 255, 0.1)',
                                 }, {
                                     offset: 1,
                                     color: 'rgb(67, 186, 255)'
@@ -110,9 +110,9 @@ function drawKnowledgeGraph(data) {
             draggable: true,
             roam: true,
             force: {
-                repulsion: 200,
+                repulsion: 50,
                 gravity: 0.03,
-                edgeLength: 100,
+                edgeLength: 35,
             },
             // categories: cat,
             data: result,

@@ -71,7 +71,7 @@ function drawTowBar1(obj) { //改参数
         tooltip: {
             trigger: "axis",
             axisPointer: {
-                type: "shadow",
+                // type: "shadow",
                 label: {
                     show: true
                 }
@@ -196,19 +196,7 @@ function drawTowBar1(obj) { //改参数
             barWidth: 15,
             itemStyle: {
                 normal: {
-                    color: new echarts.graphic.LinearGradient(1, 0, 0, 0, [{
-                        offset: 0,
-                        color: 'rgba(132,225,145,.8)'
-                    },
-                        {
-                            offset: 0.8,
-                            color: 'rgba(106,185,242,.8)'
-                        },
-                        {
-                            offset: 1,
-                            color: 'rgba(106,185,242,0)'
-                        }
-                    ]),
+                    color: "#96CDCD"
                 }
             },
             data: nums1
@@ -219,19 +207,7 @@ function drawTowBar1(obj) { //改参数
                 barWidth: 15,
                 itemStyle: {
                     normal: {
-                        color: new echarts.graphic.LinearGradient(1, 0, 0, 0, [{
-                            offset: 0,
-                            color: 'rgba(255,157,96,.8)'
-                        },
-                            {
-                                offset: 0.8,
-                                color: 'rgba(246,84,157,.8)'
-                            },
-                            {
-                                offset: 1,
-                                color: 'rgba(246,84,157,0)'
-                            }
-                        ]),
+                        color: '#FFD39B'
                     }
                 },
                 data: nums2
@@ -440,19 +416,7 @@ function drawTowbar2(obj) {
             barWidth: 15,
             itemStyle: {
                 normal: {
-                    color: new echarts.graphic.LinearGradient(1, 0, 0, 0, [{
-                        offset: 0,
-                        color: 'rgba(132,225,145,.8)'
-                    },
-                        {
-                            offset: 0.8,
-                            color: 'rgba(106,185,242,.8)'
-                        },
-                        {
-                            offset: 1,
-                            color: 'rgba(106,185,242,0)'
-                        }
-                    ]),
+                   color: "#96CDCD"
                 }
             },
             data: nums1
@@ -463,19 +427,7 @@ function drawTowbar2(obj) {
                 barWidth: 15,
                 itemStyle: {
                     normal: {
-                        color: new echarts.graphic.LinearGradient(1, 0, 0, 0, [{
-                            offset: 0,
-                            color: 'rgba(255,157,96,.8)'
-                        },
-                            {
-                                offset: 0.8,
-                                color: 'rgba(246,84,157,.8)'
-                            },
-                            {
-                                offset: 1,
-                                color: 'rgba(246,84,157,0)'
-                            }
-                        ]),
+                        color: '#FFD39B'
                     }
                 },
                 data: nums2

@@ -2745,8 +2745,8 @@ function drawScatter(str) {
 				draggable: true,
 				itemStyle: {
 					normal: {
-						shadowBlur: 10,
-						shadowColor: "#000",
+						// shadowBlur: 10,
+						// shadowColor: "#000",
 						color: colorList[0]
 					}
 				}
@@ -2788,8 +2788,8 @@ function drawScatter(str) {
 					draggable: true,
 					itemStyle: {
 						normal: {
-							shadowBlur: 10,
-							shadowColor: "#000",
+							// shadowBlur: 10,
+							// shadowColor: "#000",
 							color: colorList[i + 1]
 						}
 					}

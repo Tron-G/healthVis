@@ -267,8 +267,9 @@ function drawForceMap(data, draw_type) {
     var list3 = (Object.keys(partion))
     var leg = []
     var colors = [
-        "#afb0b2", "#c5b8a5", "#b5c4b1", "#939391", "#8696a7",
-        "#ddd1d1", "#9ca8b8", "#939391"
+        // '#87CEEB', '#96CDCD', '#40e0d0',
+        // '#B0E0E6', '#7FFFD4', '#FFDAB9', '#F0F8FF', '#ffd700',
+        // '#EEE8AA', '#4ea397',
     ];
     for (let i = 0; i < list3.length; i++) {
         o = {
@@ -276,6 +277,7 @@ function drawForceMap(data, draw_type) {
             itemStyle: {
                 normal: {
                     color: colors[i],
+
                 }
             }
         }
@@ -296,7 +298,7 @@ function drawForceMap(data, draw_type) {
         if (countedNames[list2[i]] < 10) {
             countedNames[list2[i]] = countedNames[list2[i]] + 15
         } else if (countedNames[list2[i]] > 100) {
-            countedNames[list2[i]] = countedNames[list2[i]] - 150
+            countedNames[list2[i]] = countedNames[list2[i]] - 200
         }
         let o = {
             name: list2[i],
@@ -333,7 +335,7 @@ function drawForceMap(data, draw_type) {
                 normal: {
                     show: true,
                     width: data[i]["possibility"] * 5,
-                    curveness: 0.2,
+                    curveness: 0.4,
                     type: 'solid', //线的类型 'solid'（实线）'dashed'（虚线）'dotted'（点线）
                     color: "source"
                 },
@@ -393,7 +395,7 @@ function drawForceMap(data, draw_type) {
             feature: {
                 myTool: {
                     show: true,
-                    // title: '清除',
+                    title: '清除',
                     icon: 'path d="M799.2 874.4c0 34.4-28 62.4-62.368 62.4H287.2a62.496 62.496 0 0 1-62.4-62.4V212h574.4v662.4zM349.6 100c0-7.2 5.6-12.8 12.8-12.8h300c7.2 0 12.768 5.6 12.768 12.8v37.6H349.6V100z m636.8 37.6H749.6V100c0-48-39.2-87.2-87.2-87.2h-300a87.392 87.392 0 0 0-87.2 87.2v37.6H37.6C16.8 137.6 0 154.4 0 175.2s16.8 37.6 37.6 37.6h112v661.6A137.6 137.6 0 0 0 287.2 1012h449.6a137.6 137.6 0 0 0 137.6-137.6V212h112c20.8 0 37.6-16.8 37.6-37.6s-16.8-36.8-37.6-36.8zM512 824c20.8 0 37.6-16.8 37.6-37.6v-400c0-20.8-16.768-37.6-37.6-37.6-20.8 0-37.6 16.8-37.6 37.6v400c0 20.8 16.8 37.6 37.6 37.6m-175.2 0c20.8 0 37.6-16.8 37.6-37.6v-400c0-20.8-16.8-37.6-37.6-37.6s-37.6 16.8-37.6 37.6v400c0.8 20.8 17.6 37.6 37.6 37.6m350.4 0c20.8 0 37.632-16.8 37.632-37.6v-400c0-20.8-16.8-37.6-37.632-37.6-20.768 0-37.6 16.8-37.6 37.6v400c0 20.8 16.8 37.6 37.6 37.6',                   // 清除知识图谱以及选择的疾病缓存数组
                     onclick: function () {
 
@@ -437,10 +439,10 @@ function drawForceMap(data, draw_type) {
             },
             itemStyle: {
                 normal: {
-                    borderColor: '#fff',
-                    borderWidth: 1,
+                    borderColor: '#000',
+                    borderWidth: 0.5,
                     shadowBlur: 100,
-                    shadowColor: 'rgba(255, 255, 255, 0.3)'
+                    shadowColor: 'rgba(0, 0, 0, 0.3)'
                 }
             },
             edgeSymbol: ['none', 'arrow'], //箭头

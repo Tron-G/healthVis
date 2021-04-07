@@ -117,9 +117,10 @@ def initBodyVis():
 def getMonthData():
     month = request.get_json()["month"]
     disease_info = dm.set_disease_info_data("", 0, month)
-    data = {"month": dm.get_topdisease_sex(month),
+    data = {"month": dm.get_sunburst_month_data(month),
             "disease_info": disease_info,
             "single_graph": dm.get_single_graph_data(disease_info["name"])}
+    # print(data["month"])
     return jsonify(data)
 
 

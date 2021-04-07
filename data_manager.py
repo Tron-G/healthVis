@@ -792,6 +792,10 @@ def load_static_data(data_name):
         # 疾病详细知识
         with open("./files/disease_data/disease_knowledge.json", encoding='UTF-8') as f:
             data = json.load(f)
+    elif data_name == "disease_month":
+        # 本地缓存的旭日图选择的月份数据
+        with open("./files/disease_data/disease_month.json", encoding='UTF-8') as f:
+            data = json.load(f)
     return data
 
 
@@ -1450,3 +1454,12 @@ def get_season_hospital_data(season, hospital):
                     out_data = item
 
     return out_data
+
+
+# ******************************************************************************************
+# 读取本地缓存的所有季节所有医院的高发疾病表
+# ******************************************************************************************
+def get_sunburst_month_data(month):
+    data = load_static_data("disease_month")
+    return data[str(month)]
+
