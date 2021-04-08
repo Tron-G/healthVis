@@ -5,6 +5,12 @@
  */
 function drawMap(hospital_data, category_data) {
     $("#map_view").empty();
+    let background_map_data = {};
+    if (JSON.stringify(category_data["last"]) === '{}') {
+        background_map_data = category_data["now"];
+    } else {
+        background_map_data = category_data["last"];
+    }
     // $(".mapboxgl-ctrl").remove();
     // $(".mapboxgl-canvas").remove();
     // $(".mapboxgl-popup").remove();
@@ -183,9 +189,17 @@ function drawMap(hospital_data, category_data) {
         // 根据选择的种类的值绘制地图点集
         //////////////////////////////////////////////////////////////////////
         if (TRANSPORT_DATA["map_checked_type"] === "GDP" || TRANSPORT_DATA["map_checked_type"] === "pollution_company") {
-            drawHeatMap(TRANSPORT_DATA["map_checked_type"], category_data);
+            drawHeatMap(TRANSPORT_DATA["map_checked_type"], category_data["now"]);
+        } else if (TRANSPORT_DATA["map_checked_type"] === "restaurant" || TRANSPORT_DATA["map_checked_type"] === "health_center") {
+            drawCategoryPlace(TRANSPORT_DATA["map_checked_type"], category_data["now"]);
         } else {
-            drawCategoryPlace(TRANSPORT_DATA["map_checked_type"], category_data);
+            if (TRANSPORT_DATA["last_checked_type"] === "GDP" || TRANSPORT_DATA["last_checked_type"] === "pollution_company") {
+                drawHeatMap(TRANSPORT_DATA["last_checked_type"], category_data["last"]);
+                drawCategoryPlace(TRANSPORT_DATA["map_checked_type"], category_data["now"]);
+            } else {
+                drawCategoryPlace(TRANSPORT_DATA["last_checked_type"], category_data["last"]);
+                drawCategoryPlace(TRANSPORT_DATA["map_checked_type"], category_data["now"]);
+            }
         }
 
 
@@ -323,18 +337,18 @@ function drawMap(hospital_data, category_data) {
                     // 圆圈半径
                     let radius = 3;
                     //显示范围内的地点弹窗
-                    for (let i = 0; i < category_data["features"].length; i++) {
-                        let coords = category_data["features"][i]["geometry"]["coordinates"];
+                    for (let i = 0; i < background_map_data["features"].length; i++) {
+                        let coords = background_map_data["features"][i]["geometry"]["coordinates"];
                         if (calcDistance(coordinates, coords) <= radius) {
                             let popup = new mapboxgl.Popup({
                                 closeOnClick: false,
                                 className: "popUp"
                             })
                                 .setLngLat(coords)
-                                .setText(category_data["features"][i]["properties"]["name"])
+                                .setText(background_map_data["features"][i]["properties"]["name"])
                                 .addTo(map);
-                            let restaurant_type = category_data["features"][i]["properties"]["category"];
-                            let detail_type = category_data["features"][i]["properties"]["food_category"];
+                            let restaurant_type = background_map_data["features"][i]["properties"]["category"];
+                            let detail_type = background_map_data["features"][i]["properties"]["food_category"];
                             words.push(detail_type);
                             if (TRANSPORT_DATA["selected_restaurant_type"].indexOf(restaurant_type) === -1) {
                                 TRANSPORT_DATA["selected_restaurant_type"].push(restaurant_type);
@@ -411,8 +425,10 @@ function drawMap(hospital_data, category_data) {
                     // if (feature.properties.hasOwnProperty("category")) {
                     //     console.log(feature.properties.category);
                     // }
-                    if (TRANSPORT_DATA["map_checked_type"] === "restaurant" || TRANSPORT_DATA["map_checked_type"] === "pollution_company") {
+                    if (TRANSPORT_DATA["map_checked_type"] === "restaurant") {
                         words += "、" + feature.properties.food_category;
+                    } else if (TRANSPORT_DATA["map_checked_type"] === "pollution_company") {
+                        words += "、" + feature.properties.category;
                     }
 
                     let popup = new mapboxgl.Popup({
@@ -635,20 +651,20 @@ function drawMap(hospital_data, category_data) {
                         ["linear"],
                         ["zoom"],
                         9, 1,
-                        13.5, 0
+                        14.5, 0
                     ]
                 }
             });
         }
 
-        map.addSource('point', {
+        map.addSource('heat-point', {
             "type": "geojson",
             "data": geo_data
         });
 
         map.addLayer({
             "id": type_name,
-            "source": "point",
+            "source": "heat-point",
             "type": "circle",
             "minzoom": 6,
             "paint": {
@@ -664,8 +680,8 @@ function drawMap(hospital_data, category_data) {
                     "interpolate",
                     ["linear"],
                     ["zoom"],
-                    11, 0,
-                    13.5, 1
+                    12, 0,
+                    14.5, 1
                 ],
                 "circle-color": "#f6416c"
             }
@@ -692,14 +708,14 @@ function drawMap(hospital_data, category_data) {
         // console.log(type_place_data);
         /////////////////////////////////////////////////////////////////////////////////
         //   Add a source and layer displaying a point which will be animated in a circle.
-        map.addSource('point', {
+        map.addSource(type_name + 'point', {
             "type": "geojson",
             "data": type_place_data
         });
 
         map.addLayer({
             "id": type_name,
-            "source": "point",
+            "source": type_name + "point",
             "type": "circle",
             "minzoom": 6,
             "paint": {

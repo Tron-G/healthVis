@@ -4,6 +4,8 @@ var TRANSPORT_DATA = {};
 TRANSPORT_DATA["season"] = "all";
 TRANSPORT_DATA["hospital"] = "all";
 TRANSPORT_DATA["map_checked_type"] = $('.radio_box :radio:checked').val();
+//缓存上一次点击的地图种类
+TRANSPORT_DATA["last_checked_type"] = "";
 //缓存选择范围的餐厅种类
 TRANSPORT_DATA["selected_restaurant_type"] = [];
 
@@ -32,7 +34,6 @@ var HOSPITAL_POINT_DATA = {};
  * @description ***** 系统初始化并缓存数据,可视作系统的main函数 **************
  * *************************************************************************
  */
-
 function initSystem() {
     $.ajax({
         type: 'POST',
@@ -44,13 +45,14 @@ function initSystem() {
             console.log("success", data);
             //初始化系统缓存数据
             HOSPITAL_POINT_DATA["map"] = data["map"];
-
+            redraw("/select_category","select_category");
             drawMap(HOSPITAL_POINT_DATA["map"], data["GDP"]);
             drawBar(AHQ, tem, rain);
             drawRose(data["radar"]);
             drawHospitalBar(data["disease_bar"]);
             drawPie(data["pie"], "job_pie");
-            drawRainFall();
+            // drawRainFall();
+
         }
     });
 
@@ -114,8 +116,11 @@ function redraw(url, redraw_type) {
                 //初始化展示全部词云
                 else {
                     let words = [];
-                    for (let i = 0; i < data["features"].length; i++) {
-                        words.push(data["features"][i]["properties"]["food_category"]);
+                    for (let i = 0; i < data["now"]["features"].length; i++) {
+                        if(TRANSPORT_DATA["map_checked_type"] === "restaurant")
+                            words.push(data["now"]["features"][i]["properties"]["food_category"]);
+                        else
+                            words.push(data["now"]["features"][i]["properties"]["category"]);
                     }
                     if (echarts.getInstanceByDom(document.getElementById("word_cloud")) !== undefined) {
                         // console.log(echarts.getInstanceByDom(document.getElementById("word_cloud")));
@@ -151,6 +156,7 @@ function setCheckBoxEvent() {
         $(".radio_box :radio").click(function () {
             // alert("选的..." + $(this).val());
             TRANSPORT_DATA["map_checked_type"] = $(this).val();
+            TRANSPORT_DATA["last_checked_type"] = "";
             redraw("/select_category", "select_category");
         });
     });

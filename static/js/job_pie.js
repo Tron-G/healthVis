@@ -75,7 +75,11 @@ function drawPie(data, div_id) {
                 d3.selectAll("g>*").remove();
                 d3.select(".pie_title").remove();
                 if (job_name_list[i] !== "overview") {
+
                     drawSinglePie(transform_data, job_name_list[i], ch_name[i]);
+                    if(TRANSPORT_DATA["last_checked_type"] === ""){
+                        TRANSPORT_DATA["last_checked_type"] = TRANSPORT_DATA["map_checked_type"];
+                    }
                     TRANSPORT_DATA["map_checked_type"] = job_name_list[i];
                     redraw("/select_category", "select_category");
                 } else {

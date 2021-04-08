@@ -272,7 +272,7 @@ function drawForceMap(data, draw_type) {
     var list3 = (Object.keys(partion))
     var leg = []
     var colors = [
-         '#c1cbd7 ','#afb0b2', '#c5b8a5','#bfbfbf', '#e0e5df', '#b5c4b1', '#8696a7', '#96a48b', '#d8caaf', '#939391','#7b8b6f','#f0ebe5','#9ca8b8','#ddd1d1'
+         '#c0a6a6','#9098b3', '#ac9a7d','#c0a6a6 ', '#90a0b5', '#b5c4b1', '#8696a7', '#96a48b', '#d8caaf', '#939391','#7b8b6f','#f0ebe5','#9ca8b8','#ddd1d1'
     ];
     for (let i = 0; i < list3.length; i++) {
         o = {
