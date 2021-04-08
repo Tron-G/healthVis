@@ -7,7 +7,7 @@ function drawSingleGraph(data) {
     main.clear()
     var option = {
          title: {
-            text: '疾病关联图谱',
+            text: '疾病聚类结构图',
             x: 'center',
             textStyle: {
                 fontSize: 16,

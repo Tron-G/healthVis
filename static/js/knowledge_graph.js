@@ -89,7 +89,7 @@ function drawKnowledgeGraph(data) {
     main.clear()
     var option = {
          title: {
-            text: '知识图谱',
+            text: '疾病知识图谱',
             x: 'center',
             textStyle: {
                 fontSize: 16,
