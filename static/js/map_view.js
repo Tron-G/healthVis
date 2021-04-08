@@ -341,6 +341,9 @@ function drawMap(hospital_data, category_data) {
                             }
                         }
                     }
+
+                    d3.selectAll(".popUp")
+                        .style("opacity", "0.3");
                     //点击医院显示半径3km的圆
                     map.addSource("polygon" + hospital_name, createGeoJSONCircle(coordinates, radius));
                     map.addLayer({
