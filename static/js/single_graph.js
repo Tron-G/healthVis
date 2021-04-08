@@ -31,7 +31,7 @@ function drawSingleGraph(data) {
             "symbolSize": 30,
             "itemStyle": {
                 "normal": {
-                    color: "#A170DD",
+                    color: "#9ca8b8",
                     // shadowBlur: 5,
                     "label": {
                         "show": true,

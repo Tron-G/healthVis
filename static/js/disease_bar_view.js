@@ -111,7 +111,7 @@ function drawTowBar1(obj) { //改参数
             axisLine: {
                 show: true, //隐藏X轴轴线
                 lineStyle: {
-                    color: '#26D9FF',
+                    color: '#494949',
                     width: 2
                 }
             },
@@ -150,7 +150,7 @@ function drawTowBar1(obj) { //改参数
             axisLine: {
                 show: true,
                 lineStyle: {
-                    color: '#26D9FF',
+                    color: '#3a3a3a',
                     width: 2
                 }
             },
@@ -196,7 +196,7 @@ function drawTowBar1(obj) { //改参数
             barWidth: 15,
             itemStyle: {
                 normal: {
-                    color: "#96CDCD"
+                    color: "#9ca8b8"
                 }
             },
             data: nums1
@@ -207,7 +207,7 @@ function drawTowBar1(obj) { //改参数
                 barWidth: 15,
                 itemStyle: {
                     normal: {
-                        color: '#FFD39B'
+                        color: '#ddd1d1'
                     }
                 },
                 data: nums2
@@ -331,7 +331,7 @@ function drawTowbar2(obj) {
             axisLine: {
                 show: true, //隐藏X轴轴线
                 lineStyle: {
-                    color: '#26D9FF',
+                    color: '#282828',
                     width: 2
                 }
             },
@@ -370,7 +370,7 @@ function drawTowbar2(obj) {
             axisLine: {
                 show: true,
                 lineStyle: {
-                    color: '#26D9FF',
+                    color: '#2b2b2b',
                     width: 2
                 }
             },
@@ -416,7 +416,7 @@ function drawTowbar2(obj) {
             barWidth: 15,
             itemStyle: {
                 normal: {
-                   color: "#96CDCD"
+                   color: "#9ca8b8"
                 }
             },
             data: nums1
@@ -427,7 +427,7 @@ function drawTowbar2(obj) {
                 barWidth: 15,
                 itemStyle: {
                     normal: {
-                        color: '#FFD39B'
+                        color: '#ddd1d1'
                     }
                 },
                 data: nums2

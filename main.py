@@ -74,10 +74,10 @@ def changeHospital():
 @app.route('/change_hospital_restaurant',  methods=['POST', 'GET'])
 def changeHospitalRestaurant():
     data = request.get_json()
-    print("\n*************change_hospital111*************")
+    print("\n*************change_hospital_restaurant*************")
     print(data["season"], data["hospital"])
     out_data = {"pie": dm.job(data["season"], data["hospital"]),
-                "disease_bar": dm.top10(data["season"], data["hospital"], True),
+                "disease_bar": dm.get_season_hospital_data(data["season"], data["hospital"], True),
                 "food_disease": dm.get_food_disease_data(data["selected_restaurant_type"])}
     print(out_data["disease_bar"])
     return jsonify(out_data)

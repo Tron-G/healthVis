@@ -9,7 +9,6 @@ function drawForceMap(data, draw_type) {
         echarts.getInstanceByDom(document.getElementById("force_map_view")).dispose();
     }
 
-
     let disease = [
         {
             name: "咽炎",
@@ -273,9 +272,7 @@ function drawForceMap(data, draw_type) {
     var list3 = (Object.keys(partion))
     var leg = []
     var colors = [
-        // '#87CEEB', '#96CDCD', '#40e0d0',
-        // '#B0E0E6', '#7FFFD4', '#FFDAB9', '#F0F8FF', '#ffd700',
-        // '#EEE8AA', '#4ea397',
+         '#c1cbd7 ','#afb0b2', '#c5b8a5','#bfbfbf', '#e0e5df', '#b5c4b1', '#8696a7', '#96a48b', '#d8caaf', '#939391','#7b8b6f','#f0ebe5','#9ca8b8','#ddd1d1'
     ];
     for (let i = 0; i < list3.length; i++) {
         o = {

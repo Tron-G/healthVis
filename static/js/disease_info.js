@@ -25,6 +25,7 @@ function drawDiseaseInfo(data) {
                 .attr("r", 55)
                 .attr("fill", "#e2703a")
                 .style("cursor", "pointer")
+                .style("opacity", 0.5)
                 .on("click", () => {
                     // console.log(data[i]);
                     TRANSPORT_DATA["disease_info"] = data[i];

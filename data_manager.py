@@ -818,6 +818,10 @@ def load_static_data(data_name):
         # 本地储存一整年的所有医院的高发疾病
         with open("./files/disease_data/disease-hospital.json", encoding='UTF-8') as f:
             data = json.load(f)
+    elif data_name == "disease-hospital-food":
+        # 本地储存一整年的所有医院的高发疾病
+        with open("./files/disease_data/disease-hospital-food.json", encoding='UTF-8') as f:
+            data = json.load(f)
     elif data_name == "disease_knowledge":
         # 疾病详细知识
         with open("./files/disease_data/disease_knowledge.json", encoding='UTF-8') as f:
@@ -1482,15 +1486,17 @@ def get_food_disease_data(restaurant_type):
 # ******************************************************************************************
 # 读取本地缓存的所有季节所有医院的高发疾病表
 # ******************************************************************************************
-def get_season_hospital_data(season, hospital):
-    data = load_static_data("disease-hospital")
+def get_season_hospital_data(season, hospital, is_food=False):
+    if is_food:
+        data = load_static_data("disease-hospital-food")
+    else:
+        data = load_static_data("disease-hospital")
     out_data = {}
     for each in data:
         if each["season"] == season:
             for item in each["data"]:
                 if item["hospital"] == hospital:
                     out_data = item
-
     return out_data
 
 

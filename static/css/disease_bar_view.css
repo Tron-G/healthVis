@@ -1,10 +1,10 @@
 #disease_bar_view{
     position: absolute;
     background: rgba(224, 225, 227, 0.2);
-    left: 22%;
+    left: 20%;
     bottom: 0;
     height: 250px;
-    width: 890px;
+    width: 950px;
     /*box-shadow: 0 0 7px #888888;*/
     z-index: 1;
 }

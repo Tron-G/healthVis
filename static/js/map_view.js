@@ -319,7 +319,7 @@ function drawMap(hospital_data, category_data) {
                         selected_hospital.push(hospital_name);
                         TRANSPORT_DATA["selected_restaurant_type"] = [];
                     }
-
+                    map.flyTo({center: e.features[0].geometry.coordinates, zoom: 13});
                     // 圆圈半径
                     let radius = 3;
                     //显示范围内的地点弹窗
@@ -343,7 +343,7 @@ function drawMap(hospital_data, category_data) {
                     }
 
                     d3.selectAll(".popUp")
-                        .style("opacity", "0.3");
+                        .style("opacity", "0.4");
                     //点击医院显示半径3km的圆
                     map.addSource("polygon" + hospital_name, createGeoJSONCircle(coordinates, radius));
                     map.addLayer({

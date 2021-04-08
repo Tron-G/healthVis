@@ -50,7 +50,7 @@ function drawRecommendView(data) {
             .attr("cx", pos_x + i * 100)
             .attr("cy", pos_y)
             .attr("r", scale(data[i][1]))
-            .attr("fill", "#c64756")
+            .attr("fill", "#9ca8b8")
             .style("cursor", "pointer")
             .on("click", () => {
                 TRANSPORT_DATA["disease_info"] = data[i][0];
