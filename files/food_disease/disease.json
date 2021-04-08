@@ -1,6 +1,6 @@
 [
   {
-    "disease_name": "高密度脂蛋白偏低",
+    "disease_name": "高密度脂蛋白(HDL-C)偏低",
     "Alcohol": "1",
     "Oli": "5",
     "Salinity": "1",
@@ -40,7 +40,7 @@
     "Purine": "1"
   },
   {
-    "disease_name": "尿酸偏高",
+    "disease_name": "尿酸(UA)偏高",
     "Alcohol": "4",
     "Oli": "2",
     "Salinity": "3",
@@ -50,7 +50,7 @@
     "Purine": "5"
   },
   {
-    "disease_name": "胆红素偏高",
+    "disease_name": "胆红素(TBIL)偏高",
     "Alcohol": "2",
     "Oli": "5",
     "Salinity": "1",
@@ -80,7 +80,7 @@
     "Purine": "2"
   },
   {
-    "disease_name": "谷丙转氨酶偏高",
+    "disease_name": "谷丙转氨酶(ALT)偏高",
     "Alcohol": "5",
     "Oli": "1",
     "Salinity": "1",
@@ -90,7 +90,7 @@
     "Purine": "2"
   },
   {
-    "disease_name": "脂蛋白a偏高",
+    "disease_name": "脂蛋白a(LPa)偏高",
     "Alcohol": "1",
     "Oli": "5",
     "Salinity": "1",
@@ -100,7 +100,7 @@
     "Purine": "2"
   },
   {
-    "disease_name": "总胆固醇高",
+    "disease_name": "总胆固醇(CHOL)偏高",
     "Alcohol": "2",
     "Oli": "4",
     "Salinity": "1",
@@ -110,7 +110,7 @@
     "Purine": "5"
   },
   {
-    "disease_name": "甘油三酯偏高",
+    "disease_name": "甘油三酯(TG)偏高",
     "Alcohol": "1",
     "Oli": "5",
     "Salinity": "3",
@@ -130,42 +130,60 @@
     "Purine": "1"
   },
   {
-    "disease_name": "肾病",
-    "Alcohol": "3",
-    "Oli": "1",
-    "Salinity": "5",
-    "Sugar": "2",
-    "Smog": "1",
+    "disease_name": "胆囊息肉",
+    "Alcohol": "2",
+    "Oli": "5",
+    "Salinity": "2",
+    "Sugar": "3",
+    "Smog": "2",
     "Hot": "1",
     "Purine": "4"
   },
   {
-    "disease_name": "心脏病",
-    "Alcohol": "4",
+    "disease_name": "肾囊肿",
+    "Alcohol": "3",
     "Oli": "3",
-    "Salinity": "2",
-    "Sugar": "3",
-    "Smog": "5",
+    "Salinity": "5",
+    "Sugar": "2",
+    "Smog": "2",
     "Hot": "1",
     "Purine": "1"
   },
   {
-    "disease_name": "呼吸道炎症",
-    "Alcohol": "1",
-    "Oli": "2",
+    "disease_name": "γ-谷氨酰转肽酶(GGT)偏高",
+    "Alcohol": "4",
+    "Oli": "4",
     "Salinity": "1",
-    "Sugar": "1",
-    "Smog": "5",
-    "Hot": "2",
+    "Sugar": "3",
+    "Smog": "2",
+    "Hot": "1",
     "Purine": "1"
   },{
-    "disease_name": "肠胃病",
-    "Alcohol": "4",
+    "disease_name": "低密度脂蛋白(LDL--C)偏高",
+    "Alcohol": "2",
+    "Oli": "4",
+    "Salinity": "5",
+    "Sugar": "3",
+    "Smog": "1",
+    "Hot": "1",
+    "Purine": "2"
+  },{
+    "disease_name": "肥胖",
+    "Alcohol": "2",
+    "Oli": "5",
+    "Salinity": "1",
+    "Sugar": "5",
+    "Smog": "1",
+    "Hot": "1",
+    "Purine": "3"
+  },{
+    "disease_name": "谷草转氨酶(AST)偏高",
+    "Alcohol": "5",
     "Oli": "2",
     "Salinity": "1",
-    "Sugar": "1",
-    "Smog": "3",
-    "Hot": "5",
-    "Purine": "1"
+    "Sugar": "2",
+    "Smog": "1",
+    "Hot": "1",
+    "Purine": "2"
   }
 ]

@@ -17,23 +17,17 @@ function drawKnowledgeGraph(data) {
                         // borderWidth: '1',
                         // borderType: 'solid',
                         // borderColor: '#00ffff',
-                        shadowColor: 'rgba(0, 0, 0, .6)',
-                        shadowBlur: 10,
-                        color: new echarts.graphic.RadialGradient(0.4, 0.3, 1, [{
-                            offset: 0,
-                            color: 'rgba(67, 186, 255, 0.1)',
-                        }, {
-                            offset: 1,
-                            color: 'rgb(67, 186, 255)'
-                        }])
+                        // shadowColor: 'rgba(0, 0, 0, .6)',
+                        // shadowBlur: 10,
+                         color: '#5F9EA0'
                     }
                 },
                 "label": {
                     "show": true,
-                    position: 'right',
+                    // position: 'right',
                     "textStyle": {
                         "color": "black",
-                        fontSize: 12
+                        fontSize: 8
                     }
                 }
             }
@@ -50,27 +44,21 @@ function drawKnowledgeGraph(data) {
                                 // borderWidth: '1',
                                 // borderType: 'solid',
                                 // borderColor: '#00ffff',
-                                shadowColor: 'rgba(0, 0, 0, .6)',
-                                shadowBlur: 10,
-                                color: new echarts.graphic.RadialGradient(0.4, 0.3, 1, [{
-                                    offset: 0,
-                                    color: 'rgba(67, 186, 255, 0.1)',
-                                }, {
-                                    offset: 1,
-                                    color: 'rgb(67, 186, 255)'
-                                }])
+                                // shadowColor: 'rgba(0, 0, 0, .6)',
+                                // shadowBlur: 10,
+                                color: '#5F9EA0'
                             }
                         },
                         "label": {
                             formatter: function (pararms) {
-                                console.log(pararms)
+                                // console.log(pararms)
                             },
                             "normal": {
                                 // "show": false,
                                 'position': 'right',
                                 "textStyle": {
                                     "color": "black",
-                                    fontSize: 12
+                                    fontSize: 8
                                 }
                             }
                         }
@@ -87,7 +75,7 @@ function drawKnowledgeGraph(data) {
             }
         }
     })
-    console.log(nodes)
+    // console.log(nodes)
     var result = [];
     var obj = {};
     for (var i = 0; i < nodes.length; i++) {
@@ -96,10 +84,18 @@ function drawKnowledgeGraph(data) {
             obj[nodes[i].name] = true;
         }
     }
-    console.log(result);
+    // console.log(result);
     let main = echarts.init(document.getElementById('knowledge_graph'));
     main.clear()
     var option = {
+         title: {
+            text: '知识图谱',
+            x: 'center',
+            textStyle: {
+                fontSize: 16,
+                fontWeight: "bold"
+            }
+        },
         animationDurationUpdate: 300,
         animationEasingUpdate: 'quinticInOut',
 

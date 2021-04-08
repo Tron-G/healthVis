@@ -117,7 +117,6 @@ function redraw(url, redraw_type) {
         dataType: 'json',
         success: function (data) {
             console.log("success", data);
-
             if (redraw_type === "search_id") {
                 drawBodyMap("search", data);
                 drawForceMap(DISEASE_RULE, "overview")

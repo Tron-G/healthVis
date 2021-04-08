@@ -16,6 +16,13 @@ body {
     box-shadow: 0 0 5px #2b2b2b;
     z-index: 9;
 }
+#main_view{
+    position: absolute;
+    top: 4%;
+    right: 0;
+    width: 100%;
+    height: 96%;
+}
 
 #system_title {
     color: white;
@@ -73,6 +80,8 @@ body {
 
 #scatter {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 29%;
     height: 68%;
     background-color: rgba(224, 225, 227, 0.2);

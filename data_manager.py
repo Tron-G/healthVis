@@ -9,6 +9,7 @@ from flask import Flask
 import pandas as pd
 import json
 import numpy as np
+
 app = Flask(__name__)
 
 
@@ -324,7 +325,7 @@ def season(season):
 # 根据医院和季节返回top10疾病在该医院的人数和建议
 # ******************************************************************************************
 # @app.route("/top10/<season>/<hospital>")
-def top10(season, hospital):
+def top10(season, hospital, food_disease=False):
     df = pd.read_csv("./files/report.csv")
     the_hospitals = ["日照市岚山区人民医院", "日照市人民医院", "日照市中医医院", "五莲县人民医院"]
     the_season = ["spring", "summer", "fall", "winter"]
@@ -339,171 +340,200 @@ def top10(season, hospital):
         words = file.readlines()
         for i in range(0, len(words)):
             words[i] = words[i].replace("\n", "")
-        # 选择该季节的数据
-        for one_season in the_season:
-            if season == one_season:
-                df = df[(df["SEASON"] == season)]
-                df = df.reset_index(drop=True)
-                # 选择该医院的数据
-                for one_hospital in the_hospitals:
-                    if hospital == one_hospital:
-                        df = df[(df["ORG_NAME"] == hospital)]
-                        df = df.reset_index(drop=True)
-                        # 计算出top10
-                        for word in words:
-                            keyword = {"keyword": word, "value": 0}
-                            for i in range(0, len(df["ID"])):
-                                if word in df["EXAM_SUMMARY"][i]:
-                                    keyword['value'] = keyword['value'] + 1
-                            keywords.append(keyword)
-                        for i in range(0, n):
-                            max = {"keyword": "", "value": 0}
-                            for keyword in keywords:
-                                if keyword['value'] > max['value']:
-                                    max['keyword'] = keyword['keyword']
-                                    max['value'] = keyword['value']
-                            top.append(max)
-                            for keyword in keywords:
-                                if keyword['keyword'] == max['keyword']:
-                                    keyword['value'] = 0
-                        the_hospital["hospital"] = hospital
-                        # print(top)
-                        # 将top的疾病赋予人数和建议
-                        for one in top:
-                            disease = {}
-                            info = {}
-                            # 将人数加入info中
-                            info["total"] = one["value"]
-                            # 读取已经处理好的疾病和建议的json
-                            with open("./files/disease_data/advice.json", "r", encoding="utf-8") as json_file:
-                                advices = json_file.read()
-                                advices = json.loads(advices)
-                            # 将建议加入info中
-                            for advice in advices.keys():
-                                if one["keyword"] == advice:
-                                    info["advice"] = advices[advice]
-                                    # print(advices[advice])
-                            disease[one["keyword"]] = info
-                            diseases.append(disease)
-                        the_hospital["disease"] = diseases
-                        # print(the_hospital)
-                        return the_hospital
-                # 在不选择医院的情况下将进行
-                for word in words:
-                    keyword = {"keyword": word, "value": 0}
-                    for i in range(0, len(df["ID"])):
-                        if word in df["EXAM_SUMMARY"][i]:
-                            keyword['value'] = keyword['value'] + 1
-                    keywords.append(keyword)
-                for i in range(0, n):
-                    max = {"keyword": "", "value": 0}
-                    for keyword in keywords:
-                        if keyword['value'] > max['value']:
-                            max['keyword'] = keyword['keyword']
-                            max['value'] = keyword['value']
-                    top.append(max)
-                    for keyword in keywords:
-                        if keyword['keyword'] == max['keyword']:
-                            keyword['value'] = 0
-                the_hospital["hospital"] = hospital
-                # print(top)
-                for one in top:
-                    disease = {}
-                    info = {}
-                    info["total"] = one["value"]
-                    with open("./files/disease_data/advice.json", "r", encoding="utf-8") as json_file:
-                        advices = json_file.read()
-                        advices = json.loads(advices)
-                    for advice in advices.keys():
-                        if one["keyword"] == advice:
-                            info["advice"] = advices[advice]
-                            # print(advices[advice])
-                    disease[one["keyword"]] = info
-                    diseases.append(disease)
-                the_hospital["disease"] = diseases
-                # print(the_hospital)
-                return the_hospital
-        # 在不选择季节的情况下进行
-        for one_hospital in the_hospitals:
-            if hospital == one_hospital:
-                df = df[(df["ORG_NAME"] == hospital)]
-                df = df.reset_index(drop=True)
-                # 计算出top10
-                for word in words:
-                    keyword = {"keyword": word, "value": 0}
-                    for i in range(0, len(df["ID"])):
-                        if word in df["EXAM_SUMMARY"][i]:
-                            keyword['value'] = keyword['value'] + 1
-                    keywords.append(keyword)
-                for i in range(0, n):
-                    max = {"keyword": "", "value": 0}
-                    for keyword in keywords:
-                        if keyword['value'] > max['value']:
-                            max['keyword'] = keyword['keyword']
-                            max['value'] = keyword['value']
-                    top.append(max)
-                    for keyword in keywords:
-                        if keyword['keyword'] == max['keyword']:
-                            keyword['value'] = 0
-                the_hospital["hospital"] = hospital
-                # print(top)
-                # 将top的疾病赋予人数和建议
-                for one in top:
-                    disease = {}
-                    info = {}
-                    # 将人数加入info中
-                    info["total"] = one["value"]
-                    # 读取已经处理好的疾病和建议的json
-                    with open("./files/disease_data/advice.json", "r", encoding="utf-8") as json_file:
-                        advices = json_file.read()
-                        advices = json.loads(advices)
-                    # 将建议加入info中
-                    for advice in advices.keys():
-                        if one["keyword"] == advice:
-                            info["advice"] = advices[advice]
-                            # print(advices[advice])
-                    disease[one["keyword"]] = info
-                    diseases.append(disease)
-                the_hospital["disease"] = diseases
-                # print(the_hospital)
-                return the_hospital
-        # 在不选择季节和医院的情况下将进行
-        for word in words:
-            keyword = {"keyword": word, "value": 0}
-            for i in range(0, len(df["ID"])):
-                if word in df["EXAM_SUMMARY"][i]:
-                    keyword['value'] = keyword['value'] + 1
-            keywords.append(keyword)
-        for i in range(0, n):
-            max = {"keyword": "", "value": 0}
-            for keyword in keywords:
-                if keyword['value'] > max['value']:
-                    max['keyword'] = keyword['keyword']
-                    max['value'] = keyword['value']
-            top.append(max)
-            for keyword in keywords:
-                if keyword['keyword'] == max['keyword']:
-                    keyword['value'] = 0
-        the_hospital["hospital"] = hospital
-        outstr = ''
-        # print(top)
-        for one in top:
-            disease = {}
-            info = {}
-            info["total"] = one["value"]
-            with open("./files/disease_data/advice.json", "r", encoding="utf-8") as json_file:
-                advices = json_file.read()
-                advices = json.loads(advices)
-            for advice in advices.keys():
-                if one["keyword"] == advice:
-                    info["advice"] = advices[advice]
-                    # print(advices[advice])
-            disease[one["keyword"]] = info
-            diseases.append(disease)
-        the_hospital["disease"] = diseases
-        # print(the_hospital)
-        return the_hospital
-        # deseases = [{"yajieshi":{}},{},{}]
+
+        if food_disease == True:
+            with open("files/food_disease/disease.json","r",encoding="UTF-8") as file:
+                infos = json.load(file)
+            disease_names = []
+            for info in infos:
+                disease_names.append(info["disease_name"])
+            # 选择该季节的数据
+            for one_season in the_season:
+                if season == one_season:
+                    df = df[(df["SEASON"] == season)]
+                    df = df.reset_index(drop=True)
+                    # 选择该医院的数据
+                    for one_hospital in the_hospitals:
+                        if hospital == one_hospital:
+                            df = df[(df["ORG_NAME"] == hospital)]
+                            df = df.reset_index(drop=True)
+                            # 计算出top10
+                            for word in words:
+                                keyword = {"keyword": word, "value": 0}
+                                for i in range(0, len(df["ID"])):
+                                    if word in df["EXAM_SUMMARY"][i]:
+                                        keyword['value'] = keyword['value'] + 1
+                                keywords.append(keyword)
+                            for i in range(0, n):
+                                max = {"keyword": "", "value": 0}
+                                for keyword in keywords:
+                                    if keyword['value'] > max['value']:
+                                        max['keyword'] = keyword['keyword']
+                                        max['value'] = keyword['value']
+                                top.append(max)
+                                for keyword in keywords:
+                                    if keyword['keyword'] == max['keyword']:
+                                        keyword['value'] = 0
+                            the_hospital["hospital"] = hospital
+                            # print(top)
+                            new_top = []
+                            for i in range(len(top)):
+                                if top[i]["keyword"] in disease_names:
+                                    new_top.append(top[i])
+                            top = new_top
+                            # 将top的疾病赋予人数和建议
+                            for one in top:
+                                disease = {}
+                                info = {}
+                                # 将人数加入info中
+                                info["total"] = one["value"]
+                                # 读取已经处理好的疾病和建议的json
+                                with open("./files/disease_data/advice.json", "r", encoding="utf-8") as json_file:
+                                    advices = json_file.read()
+                                    advices = json.loads(advices)
+                                # 将建议加入info中
+                                for advice in advices.keys():
+                                    if one["keyword"] == advice:
+                                        info["advice"] = advices[advice]
+                                        # print(advices[advice])
+                                disease[one["keyword"]] = info
+                                diseases.append(disease)
+                            the_hospital["disease"] = diseases
+                            # print(the_hospital)
+                            return the_hospital
+                    # 在不选择医院的情况下将进行
+                    for word in words:
+                        keyword = {"keyword": word, "value": 0}
+                        for i in range(0, len(df["ID"])):
+                            if word in df["EXAM_SUMMARY"][i]:
+                                keyword['value'] = keyword['value'] + 1
+                        keywords.append(keyword)
+                    for i in range(0, n):
+                        max = {"keyword": "", "value": 0}
+                        for keyword in keywords:
+                            if keyword['value'] > max['value']:
+                                max['keyword'] = keyword['keyword']
+                                max['value'] = keyword['value']
+                        top.append(max)
+                        for keyword in keywords:
+                            if keyword['keyword'] == max['keyword']:
+                                keyword['value'] = 0
+                    the_hospital["hospital"] = hospital
+                    # print(top)
+                    new_top = []
+                    for i in range(len(top)):
+                        if top[i]["keyword"] in disease_names:
+                            new_top.append(top[i])
+                    top = new_top
+                    for one in top:
+                        disease = {}
+                        info = {}
+                        info["total"] = one["value"]
+                        with open("./files/disease_data/advice.json", "r", encoding="utf-8") as json_file:
+                            advices = json_file.read()
+                            advices = json.loads(advices)
+                        for advice in advices.keys():
+                            if one["keyword"] == advice:
+                                info["advice"] = advices[advice]
+                                # print(advices[advice])
+                        disease[one["keyword"]] = info
+                        diseases.append(disease)
+                    the_hospital["disease"] = diseases
+                    # print(the_hospital)
+                    return the_hospital
+            # 在不选择季节的情况下进行
+            for one_hospital in the_hospitals:
+                if hospital == one_hospital:
+                    df = df[(df["ORG_NAME"] == hospital)]
+                    df = df.reset_index(drop=True)
+                    # 计算出top10
+                    for word in words:
+                        keyword = {"keyword": word, "value": 0}
+                        for i in range(0, len(df["ID"])):
+                            if word in df["EXAM_SUMMARY"][i]:
+                                keyword['value'] = keyword['value'] + 1
+                        keywords.append(keyword)
+                    for i in range(0, n):
+                        max = {"keyword": "", "value": 0}
+                        for keyword in keywords:
+                            if keyword['value'] > max['value']:
+                                max['keyword'] = keyword['keyword']
+                                max['value'] = keyword['value']
+                        top.append(max)
+                        for keyword in keywords:
+                            if keyword['keyword'] == max['keyword']:
+                                keyword['value'] = 0
+                    the_hospital["hospital"] = hospital
+                    # print(top)
+                    new_top = []
+                    for i in range(len(top)):
+                        if top[i]["keyword"] in disease_names:
+                            new_top.append(top[i])
+                    top = new_top
+                    # 将top的疾病赋予人数和建议
+                    for one in top:
+                        disease = {}
+                        info = {}
+                        # 将人数加入info中
+                        info["total"] = one["value"]
+                        # 读取已经处理好的疾病和建议的json
+                        with open("./files/disease_data/advice.json", "r", encoding="utf-8") as json_file:
+                            advices = json_file.read()
+                            advices = json.loads(advices)
+                        # 将建议加入info中
+                        for advice in advices.keys():
+                            if one["keyword"] == advice:
+                                info["advice"] = advices[advice]
+                                # print(advices[advice])
+                        disease[one["keyword"]] = info
+                        diseases.append(disease)
+                    the_hospital["disease"] = diseases
+                    # print(the_hospital)
+                    return the_hospital
+            # 在不选择季节和医院的情况下将进行
+            for word in words:
+                keyword = {"keyword": word, "value": 0}
+                for i in range(0, len(df["ID"])):
+                    if word in df["EXAM_SUMMARY"][i]:
+                        keyword['value'] = keyword['value'] + 1
+                keywords.append(keyword)
+            for i in range(0, n):
+                max = {"keyword": "", "value": 0}
+                for keyword in keywords:
+                    if keyword['value'] > max['value']:
+                        max['keyword'] = keyword['keyword']
+                        max['value'] = keyword['value']
+                top.append(max)
+                for keyword in keywords:
+                    if keyword['keyword'] == max['keyword']:
+                        keyword['value'] = 0
+            the_hospital["hospital"] = hospital
+            outstr = ''
+            # print(top)
+            new_top = []
+            for i in range(len(top)):
+                if top[i]["keyword"]  in disease_names:
+                    new_top.append(top[i])
+            top = new_top
+            # print(top)
+
+            for one in top:
+                disease = {}
+                info = {}
+                info["total"] = one["value"]
+                with open("./files/disease_data/advice.json", "r", encoding="utf-8") as json_file:
+                    advices = json_file.read()
+                    advices = json.loads(advices)
+                for advice in advices.keys():
+                    if one["keyword"] == advice:
+                        info["advice"] = advices[advice]
+                        # print(advices[advice])
+                disease[one["keyword"]] = info
+                diseases.append(disease)
+            the_hospital["disease"] = diseases
+            # print(the_hospital)
+            return the_hospital
+            # deseases = [{"yajieshi":{}},{},{}]
 
 
 # ******************************************************************************************
@@ -1395,9 +1425,13 @@ def get_food_disease_data(restaurant_type):
                 index = j
                 temp9 = result
             if (result < 3):
+                result = 1 - result / 3
+
+                # print(result)
                 sum = result
                 indexF = j
                 canshu.append(result)
+
                 diseaseIndex.append(disease_Array[indexF])
                 # print(disease_Array[indexF])
 
@@ -1434,8 +1468,12 @@ def get_food_disease_data(restaurant_type):
                         res[each] = numCollect[j][k]
                     k += 1
                 out_num.append(numCollect[j])
+
                 # 该病的系数
                 out_disease.append(diseaEnd[j])
+
+    print(out_num)
+    print(out_disease)
     # print(res)
     res = sorted(res.items(), key=lambda kv: (kv[1], kv[0]), reverse=True)
     return res
@@ -1462,4 +1500,3 @@ def get_season_hospital_data(season, hospital):
 def get_sunburst_month_data(month):
     data = load_static_data("disease_month")
     return data[str(month)]
-

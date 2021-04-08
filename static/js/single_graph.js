@@ -6,6 +6,14 @@ function drawSingleGraph(data) {
     let main = echarts.init(document.getElementById('knowledge_graph'));
     main.clear()
     var option = {
+         title: {
+            text: '疾病关联图谱',
+            x: 'center',
+            textStyle: {
+                fontSize: 16,
+                fontWeight: "bold"
+            }
+        },
         // "tooltip": {
         // 	"trigger": "item",
         // 	"formatter": "{b}"
@@ -24,12 +32,12 @@ function drawSingleGraph(data) {
             "itemStyle": {
                 "normal": {
                     color: "#A170DD",
-                    shadowBlur: 10,
+                    // shadowBlur: 5,
                     "label": {
                         "show": true,
                         // position:"right",
                         "textStyle": {
-                            "color": "white",
+                            "color": "black",
                             "fontSize": 8
                         }
                     }

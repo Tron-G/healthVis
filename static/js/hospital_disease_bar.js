@@ -142,7 +142,7 @@ function drawHospitalBar(disease, diet_disease = []) {
             //     right: '20%'
             // },
             legend: {
-                data: ['蒸发量', '降水量']
+                data: ['高发疾病', '饮食导致疾病']
             },
             xAxis: [{
                 type: 'category',
@@ -188,14 +188,14 @@ function drawHospitalBar(disease, diet_disease = []) {
 
             ],
             series: [{
-                name: '蒸发量',
+                name: '高发疾病',
                 type: 'bar',
                 barWidth: 8,
                 barGap: "2%",
                 data: num
             },
                 {
-                    name: '降水量',
+                    name: '饮食导致疾病',
                     type: 'bar',
                     barWidth: 8,
                     yAxisIndex: 1,

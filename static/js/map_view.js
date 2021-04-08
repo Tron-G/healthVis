@@ -74,7 +74,7 @@ function drawMap(hospital_data, category_data) {
 
     //计算医院点动态半径 100, 400
     function calcRadius(sum) {
-        return parseInt((sum - min_sum) / (max_sum - min_sum) * 400) + 100
+        return parseInt((sum - min_sum) / (max_sum - min_sum) * 400) + 100;
     }
 
 
@@ -104,7 +104,6 @@ function drawMap(hospital_data, category_data) {
             polygon: true,
             trash: true
         }
-
     });
     window.Draw = draw;
     map.addControl(draw, "top-left");
@@ -335,7 +334,8 @@ function drawMap(hospital_data, category_data) {
                                 .setText(category_data["features"][i]["properties"]["name"])
                                 .addTo(map);
                             let restaurant_type = category_data["features"][i]["properties"]["category"];
-                            words.push(restaurant_type);
+                            let detail_type = category_data["features"][i]["properties"]["food_category"];
+                            words.push(detail_type);
                             if (TRANSPORT_DATA["selected_restaurant_type"].indexOf(restaurant_type) === -1) {
                                 TRANSPORT_DATA["selected_restaurant_type"].push(restaurant_type);
                             }
@@ -362,7 +362,7 @@ function drawMap(hospital_data, category_data) {
                         // console.log(echarts.getInstanceByDom(document.getElementById("word_cloud")));
                         echarts.getInstanceByDom(document.getElementById("word_cloud")).dispose();
                     }
-                    console.log(words);
+                    // console.log(words);
                     drawWordCloud(words, "word_cloud");
 
                     redraw("/change_hospital_restaurant", "select_hospital_restaurant");
@@ -412,7 +412,7 @@ function drawMap(hospital_data, category_data) {
                     //     console.log(feature.properties.category);
                     // }
                     if (TRANSPORT_DATA["map_checked_type"] === "restaurant" || TRANSPORT_DATA["map_checked_type"] === "pollution_company") {
-                        words += "、" + feature.properties.category;
+                        words += "、" + feature.properties.food_category;
                     }
 
                     let popup = new mapboxgl.Popup({

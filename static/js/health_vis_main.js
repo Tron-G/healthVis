@@ -32,6 +32,7 @@ var HOSPITAL_POINT_DATA = {};
  * @description ***** 系统初始化并缓存数据,可视作系统的main函数 **************
  * *************************************************************************
  */
+
 function initSystem() {
     $.ajax({
         type: 'POST',
@@ -114,7 +115,7 @@ function redraw(url, redraw_type) {
                 else {
                     let words = [];
                     for (let i = 0; i < data["features"].length; i++) {
-                        words.push(data["features"][i]["properties"]["category"]);
+                        words.push(data["features"][i]["properties"]["food_category"]);
                     }
                     if (echarts.getInstanceByDom(document.getElementById("word_cloud")) !== undefined) {
                         // console.log(echarts.getInstanceByDom(document.getElementById("word_cloud")));

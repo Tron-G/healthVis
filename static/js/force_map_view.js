@@ -4,6 +4,12 @@
  * @param {string} draw_type  绘制类型，“overview”：全图绘制，“focus”：展示具体一个疾病的关联关系
  */
 function drawForceMap(data, draw_type) {
+    if (echarts.getInstanceByDom(document.getElementById("force_map_view")) !== undefined) {
+        // console.log(echarts.getInstanceByDom(document.getElementById("word_cloud")));
+        echarts.getInstanceByDom(document.getElementById("force_map_view")).dispose();
+    }
+
+
     let disease = [
         {
             name: "咽炎",
@@ -352,7 +358,7 @@ function drawForceMap(data, draw_type) {
     }
 
     let main = echarts.init(document.getElementById('force_map_view'))
-
+    main.clear();
     option = {
         // backgroundColor:'#040f23',
         title: {
@@ -477,7 +483,7 @@ function drawForceMap(data, draw_type) {
 
 
     main.on("click", function (params) {
-
+        console.log(TRANSPORT_DATA["selected_disease"]);
         if (TRANSPORT_DATA["selected_disease"].length < 5) {
             TRANSPORT_DATA["selected_disease"].push(params.name);
             console.log(TRANSPORT_DATA["selected_disease"]);
