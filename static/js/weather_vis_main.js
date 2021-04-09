@@ -6,7 +6,7 @@ function initBodyVis() {
     drawXiaobei();
     heatmap();
     drawScatter("all");
-    temperature();
+    temperature(0);
     Redirect();
 }
 
