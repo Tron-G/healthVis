@@ -1863,7 +1863,7 @@ function heatmap() {
 		title: {
 			top: 10,
 			left: 'center',
-			text: '2019年日照市AQI指数与呼吸道疾病的关系'
+			text: '2019年日照市AQI指数分布'
 		},
 		tooltip: {},
 		visualMap: {
@@ -1927,7 +1927,7 @@ function heatmap() {
 				coordinateSystem: 'calendar',
 				data: important,
 				symbolSize: function(val) {
-					return val[1] / 5;
+					return val[1] / 12;
 				},
 				showEffectOn: 'render',
 				rippleEffect: {

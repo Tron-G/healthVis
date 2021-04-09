@@ -159,8 +159,11 @@ def searchBydisease():
 @app.route('/get_disease_info', methods=['POST', 'GET'])
 def getDiseaseInfo():
     disease = request.get_json()["disease_info"]
+    disease_name = request.get_json()["disease"]
+    month = request.get_json()["month"]
     data = {"info_text": dm.set_disease_info_data(disease, 1),
-            "single_graph": dm.get_single_graph_data(disease)}
+            "single_graph": dm.get_single_graph_data(disease),
+            "month":dm.get_disease_age(disease_name, month)}
     return jsonify(data)
 
 

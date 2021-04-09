@@ -369,7 +369,7 @@ function drawMap(hospital_data, category_data) {
                         "layout": {},
                         "paint": {
                             "fill-color": "#393e46",
-                            "fill-opacity": 0.4
+                            "fill-opacity": 0.5
                         }
                     });
 

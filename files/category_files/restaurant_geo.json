@@ -1638,8 +1638,8 @@
             "properties": {
                 "name": "俺家小院",
                 "heat": 508,
-                "category": "家常菜",
-                "food_category": "其他中餐"
+                "category": "海鲜",
+                "food_category": "海鲜"
             },
             "geometry": {
                 "type": "Point",
@@ -1703,7 +1703,7 @@
                 "name": "陕师傅肉夹馍(万达店)",
                 "heat": 991,
                 "category": "快餐小吃",
-                "food_category": "快餐简餐"
+                "food_category": "烤肉"
             },
             "geometry": {
                 "type": "Point",
@@ -2087,7 +2087,7 @@
                 "name": "香莉来烘焙(正阳路店)",
                 "heat": 474,
                 "category": "面包烘焙",
-                "food_category": "面包烘焙"
+                "food_category": "烤肉"
             },
             "geometry": {
                 "type": "Point",
@@ -2119,7 +2119,7 @@
                 "name": "张景辉熏肉大饼(日照旗舰店)",
                 "heat": 461,
                 "category": "家常菜",
-                "food_category": "其他美食"
+                "food_category": "烤肉"
             },
             "geometry": {
                 "type": "Point",
@@ -2214,7 +2214,7 @@
             "properties": {
                 "name": "爱渡烘焙",
                 "heat": 550,
-                "category": "面包烘焙",
+                "category": "烤肉",
                 "food_category": "面包烘焙"
             },
             "geometry": {
@@ -2359,7 +2359,7 @@
                 "name": "油饼鸡丝汤",
                 "heat": 79,
                 "category": "快餐小吃",
-                "food_category": "快餐简餐"
+                "food_category": "海鲜"
             },
             "geometry": {
                 "type": "Point",
@@ -2375,7 +2375,7 @@
                 "name": "泉鲜面皮店",
                 "heat": 758,
                 "category": "快餐小吃",
-                "food_category": "快餐简餐"
+                "food_category": "烤肉"
             },
             "geometry": {
                 "type": "Point",
@@ -2471,7 +2471,7 @@
                 "name": "天瑞食府特色家常菜(山东路店)",
                 "heat": 17,
                 "category": "家常菜",
-                "food_category": "家常菜"
+                "food_category": "海鲜"
             },
             "geometry": {
                 "type": "Point",
@@ -2486,7 +2486,7 @@
             "properties": {
                 "name": "小城味道(新市区店)",
                 "heat": 211,
-                "category": "家常菜",
+                "category": "烤肉",
                 "food_category": "私房菜"
             },
             "geometry": {
@@ -2598,7 +2598,7 @@
             "properties": {
                 "name": "玛格利塔现烤披萨店",
                 "heat": 172,
-                "category": "西餐",
+                "category": "烤肉",
                 "food_category": "西餐"
             },
             "geometry": {
@@ -2726,7 +2726,7 @@
             "properties": {
                 "name": "河间总统府驴肉火烧(奎山老店)",
                 "heat": 649,
-                "category": "面食煮食",
+                "category": "烤肉",
                 "food_category": "小吃面食"
             },
             "geometry": {
@@ -2742,7 +2742,7 @@
             "properties": {
                 "name": "驴肉火烧(万平口店)",
                 "heat": 23,
-                "category": "面食煮食",
+                "category": "烤肉",
                 "food_category": "小吃面食"
             },
             "geometry": {
@@ -2759,7 +2759,7 @@
                 "name": "芙蓉小镇乡味菜馆",
                 "heat": 601,
                 "category": "鲁菜",
-                "food_category": "鲁菜"
+                "food_category": "海鲜"
             },
             "geometry": {
                 "type": "Point",
@@ -2839,7 +2839,7 @@
                 "name": "中豪尚江南",
                 "heat": 155,
                 "category": "鲁菜",
-                "food_category": "鲁菜"
+                "food_category": "海鲜"
             },
             "geometry": {
                 "type": "Point",
@@ -2918,7 +2918,7 @@
             "properties": {
                 "name": "食为天商务酒店",
                 "heat": 212,
-                "category": "鲁菜",
+                "category": "海鲜",
                 "food_category": "鲁菜"
             },
             "geometry": {

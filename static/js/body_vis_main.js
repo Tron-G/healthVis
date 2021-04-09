@@ -139,6 +139,11 @@ function redraw(url, redraw_type) {
                 drawSingleInfo(data["info_text"]);
                 drawSingleGraph(data["single_graph"]);
                 drawForceMap(DISEASE_RULE, "focus");
+
+                drawTowBar1(data["month"]);
+
+
+
             } else if (redraw_type === "disease_knowledge") {
                 drawKnowledgeGraph(data);
             } else if (redraw_type === "force_map_select") {
