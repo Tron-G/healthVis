@@ -35,8 +35,8 @@ function drawRecommendView(data) {
     let scale = d3.scale.linear().domain([0, 1]).range([5, 100]);
 
     let data_len;
-    if (data.length > 8) {
-        data_len = 8;
+    if (data.length > 5) {
+        data_len = 5;
     } else {
         data_len = data.length;
     }

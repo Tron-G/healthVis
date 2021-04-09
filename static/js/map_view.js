@@ -8,9 +8,13 @@ function drawMap(hospital_data, category_data) {
     let background_map_data = {};
     if (JSON.stringify(category_data["last"]) === '{}') {
         background_map_data = category_data["now"];
-    } else {
+    }else if(category_data["last"] === undefined){
+        background_map_data = category_data;
+    }
+    else {
         background_map_data = category_data["last"];
     }
+
     // $(".mapboxgl-ctrl").remove();
     // $(".mapboxgl-canvas").remove();
     // $(".mapboxgl-popup").remove();
@@ -82,7 +86,6 @@ function drawMap(hospital_data, category_data) {
     function calcRadius(sum) {
         return parseInt((sum - min_sum) / (max_sum - min_sum) * 400) + 100;
     }
-
 
     //////////////////////////////////////////////////////////////////////
     // 地图初始化
@@ -184,14 +187,13 @@ function drawMap(hospital_data, category_data) {
 
 
     map.on('load', function () {
-
         //////////////////////////////////////////////////////////////////////
         // 根据选择的种类的值绘制地图点集
         //////////////////////////////////////////////////////////////////////
         if (TRANSPORT_DATA["map_checked_type"] === "GDP" || TRANSPORT_DATA["map_checked_type"] === "pollution_company") {
-            drawHeatMap(TRANSPORT_DATA["map_checked_type"], category_data["now"]);
+            drawHeatMap(TRANSPORT_DATA["map_checked_type"], background_map_data);
         } else if (TRANSPORT_DATA["map_checked_type"] === "restaurant" || TRANSPORT_DATA["map_checked_type"] === "health_center") {
-            drawCategoryPlace(TRANSPORT_DATA["map_checked_type"], category_data["now"]);
+            drawCategoryPlace(TRANSPORT_DATA["map_checked_type"], background_map_data);
         } else {
             if (TRANSPORT_DATA["last_checked_type"] === "GDP" || TRANSPORT_DATA["last_checked_type"] === "pollution_company") {
                 drawHeatMap(TRANSPORT_DATA["last_checked_type"], category_data["last"]);
@@ -539,7 +541,7 @@ function drawMap(hospital_data, category_data) {
      * @param {object} geo_data  日照市主要GDP贡献公司的坐标以及GDP值等
      */
     function drawHeatMap(type_name, geo_data) {
-
+    console.log(type_name, geo_data);
         //////////////////////////////////////////////////////////////////////////
         //gdp最值计算
         //////////////////////////////////////////////////////////////////////////

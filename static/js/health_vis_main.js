@@ -46,7 +46,7 @@ function initSystem() {
             //初始化系统缓存数据
             HOSPITAL_POINT_DATA["map"] = data["map"];
             redraw("/select_category","select_category");
-            drawMap(HOSPITAL_POINT_DATA["map"], data["GDP"]);
+            // drawMap(HOSPITAL_POINT_DATA["map"], data["GDP"]);
             drawBar(AHQ, tem, rain);
             drawRose(data["radar"]);
             drawHospitalBar(data["disease_bar"]);
@@ -104,6 +104,7 @@ function redraw(url, redraw_type) {
             if (redraw_type === "select_hospital") {
                 drawHospitalBar(data["disease_bar"]);
             } else if (redraw_type === "select_time") {
+                HOSPITAL_POINT_DATA["map"] = data["map"];
                 drawMap(HOSPITAL_POINT_DATA["map"], data["category"]);
                 drawRose(data["radar"]);
                 drawHospitalBar(data["disease_bar"]);

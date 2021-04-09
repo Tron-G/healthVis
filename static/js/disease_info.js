@@ -43,11 +43,13 @@ function drawDiseaseInfo(data) {
                 .attr("transform", "rotate(30 " + (pos_x + (i % 3) * 120 - 15) + "," + (pos_y + col * 130 + 15) + ")")
                 .on("click", () => {
                     // console.log(data[i]);
+                    TRANSPORT_DATA["disease"] = data[i];
                     TRANSPORT_DATA["disease_info"] = data[i];
                     redraw("/get_disease_info", "disease_detail");
                 })
         }
     } else {
+        TRANSPORT_DATA["disease"] = data[0];
         TRANSPORT_DATA["disease_info"] = data[0];
         redraw("/get_disease_info", "disease_detail");
     }

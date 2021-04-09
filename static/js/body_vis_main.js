@@ -107,6 +107,7 @@ function setSearchEvent() {
  *                 disease_bar_back: 年龄分布图返回到性别分布图，仅重绘直方图
  *                 disease_detail: 绘制疾病的具体信息
  *                 disease_knowledge: 绘制疾病知识图谱以及单分图
+ *                 force_map_select: 关联图谱中选择疾病操作
  */
 function redraw(url, redraw_type) {
     $.ajax({
@@ -137,8 +138,15 @@ function redraw(url, redraw_type) {
             } else if (redraw_type === "disease_detail") {
                 drawSingleInfo(data["info_text"]);
                 drawSingleGraph(data["single_graph"]);
+                drawForceMap(DISEASE_RULE, "focus");
             } else if (redraw_type === "disease_knowledge") {
                 drawKnowledgeGraph(data);
+            } else if (redraw_type === "force_map_select") {
+                drawBodyMap("search", data["search"]);
+                drawTowBar1(data["search"]);
+                drawSingleInfo(data["info_text"]);
+                drawKnowledgeGraph(data["knowledge"]);
+                drawForceMap(DISEASE_RULE, "focus");
             }
         }
     });

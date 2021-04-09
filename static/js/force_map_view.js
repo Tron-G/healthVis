@@ -480,11 +480,17 @@ function drawForceMap(data, draw_type) {
 
 
     main.on("click", function (params) {
-        console.log(TRANSPORT_DATA["selected_disease"]);
+        // draw(params.name);
         if (TRANSPORT_DATA["selected_disease"].length < 5) {
             TRANSPORT_DATA["selected_disease"].push(params.name);
-            console.log(TRANSPORT_DATA["selected_disease"]);
-            redraw("/get_knowledge_info", "disease_knowledge");
+            // console.log(TRANSPORT_DATA["selected_disease"]);
+            console.log(params.name);
+            TRANSPORT_DATA["disease"] = params.name;
+            TRANSPORT_DATA["month"] = 0;
+            TRANSPORT_DATA["disease_info"] = params.name;
+            redraw("/force_map_select","force_map_select");
+            // redraw("/get_disease_info", "disease_detail");
+            // redraw("/get_knowledge_info", "disease_knowledge");
         } else {
             alert("最多同时选择5种疾病对比")
         }

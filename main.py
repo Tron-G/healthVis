@@ -175,6 +175,21 @@ def getKnowledgeInfo():
 
 
 # ******************************************************************************************
+# 返回疾病关联图选择疾病的数据
+# ******************************************************************************************
+@app.route('/force_map_select', methods=['POST', 'GET'])
+def selectForceMapNode():
+    disease = request.get_json()["disease"]
+    month = request.get_json()["month"]
+    disease_names = request.get_json()["disease_info"]
+    disease_lis = request.get_json()["selected_disease"]
+    data = {"search": dm.get_disease_age(disease, month), "info_text": dm.set_disease_info_data(disease_names, 1),
+            "knowledge": dm.get_disease_list_info(disease_lis)}
+    # print(dm.get_disease_age(disease, month))
+    return jsonify(data)
+
+
+# ******************************************************************************************
 # 后台接口测试
 # ******************************************************************************************
 @app.route('/test', methods=['POST', 'GET'])

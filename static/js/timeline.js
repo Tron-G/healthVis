@@ -412,7 +412,7 @@ function drawBar(AHQ, tem, rain) {
 				season = "all";
 				break;
 		}
-
+		console.log(season);
 		TRANSPORT_DATA["season"] = season;
 		redraw("/change_season", "select_time");
 	})

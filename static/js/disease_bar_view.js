@@ -54,7 +54,7 @@ function drawTowBar1(obj) { //改参数
             end: "rgba(133,193,234,0.4)"
         },
     ];
-    option = {
+    let option = {
         /*  grid: {
             top: "20%",
             bottom: "12%"
@@ -157,7 +157,7 @@ function drawTowBar1(obj) { //改参数
             axisLabel: {
                 show: true,
                 textStyle: {
-                    color: "rgba(250,250,250,0.6)",
+                    color: '#2b2b2b',
                     fontSize: 16
                 }
             },
@@ -294,7 +294,7 @@ function drawTowbar2(obj) {
     else {
         month = TRANSPORT_DATA["month"] + "月"
     }
-    option = {
+    let option = {
         /*  grid: {
             top: "20%",
             bottom: "12%"
@@ -377,7 +377,7 @@ function drawTowbar2(obj) {
             axisLabel: {
                 show: true,
                 textStyle: {
-                    color: "rgba(250,250,250,0.6)",
+                    color: '#2b2b2b',
                     fontSize: 16
                 }
             },

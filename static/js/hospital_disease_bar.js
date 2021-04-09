@@ -123,13 +123,13 @@ function drawHospitalBar(disease, diet_disease = []) {
         })
 
         let main = echarts.init(document.getElementById('hospital_disease_bar'));
-        let colors = ['#5470C6', '#8fa7a5'];
+        let colors = ['#5470C6', '#000'];
 
         let option = {
             title: {
                 text: hospital + season + '的高发疾病',
                 left: 'center',
-                top: '5%'
+                top: '2%'
             },
             color: colors,
             tooltip: {
@@ -138,11 +138,12 @@ function drawHospitalBar(disease, diet_disease = []) {
                     type: 'cross'
                 }
             },
-            // grid: {
-            //     right: '20%'
-            // },
+            grid: {
+                top: '20%'
+            },
             legend: {
-                data: ['高发疾病', '饮食导致疾病']
+                data: ['高发疾病', '饮食关联疾病'],
+                top:"10%"
             },
             xAxis: [{
                 type: 'category',
@@ -173,7 +174,7 @@ function drawHospitalBar(disease, diet_disease = []) {
                 {
                     type: 'value',
                     name: '指数',
-
+                    max:1,
                     position: 'right',
                     axisLine: {
                         show: true,
@@ -195,7 +196,7 @@ function drawHospitalBar(disease, diet_disease = []) {
                 data: num
             },
                 {
-                    name: '饮食导致疾病',
+                    name: '饮食关联疾病',
                     type: 'bar',
                     barWidth: 8,
                     yAxisIndex: 1,
