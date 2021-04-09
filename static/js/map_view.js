@@ -335,7 +335,7 @@ function drawMap(hospital_data, category_data) {
                         selected_hospital.push(hospital_name);
                         TRANSPORT_DATA["selected_restaurant_type"] = [];
                     }
-                    map.flyTo({center: e.features[0].geometry.coordinates, zoom: 13});
+                    map.flyTo({center: e.features[0].geometry.coordinates, zoom: 12});
                     // 圆圈半径
                     let radius = 3;
                     //显示范围内的地点弹窗
