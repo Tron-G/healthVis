@@ -12,6 +12,7 @@ function drawXiaobei() {
 					fontSize: 16
 				},
 				left: "center",
+				top: "3%"
 			},
 			{
 				text: '一月',

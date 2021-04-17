@@ -23,7 +23,7 @@ body{
     font-size: 20px;
     font-weight: bold;
 }
-#back_btn{
+#health_btn{
     position: absolute;
     top: 10%;
     left: 2%;
@@ -45,6 +45,6 @@ body{
     border-radius:25px;
     box-shadow: 0 0 5px #2b2b2b;
 }
-#back_btn:hover,#weather_page:hover {
+#health_btn:hover,#weather_page:hover {
     background-color: #f05454
 }

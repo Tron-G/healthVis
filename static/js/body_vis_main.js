@@ -62,8 +62,8 @@ initBodyVis();
  * @description 跳转到地图页面
  */
 function GoBackToMapView() {
-    $("#back_btn").click(function () {
-        window.open('/', '_self');
+    $("#health_btn").click(function () {
+        window.open('/feature', '_self');
     });
     $("#weather_page").click(function () {
         window.open('/weather', '_self');

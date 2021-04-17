@@ -141,7 +141,7 @@ function redraw(url, redraw_type) {
  */
 function GoBodyVisPage() {
     $("#second_page").click(function () {
-        window.open('/feature', '_self');
+        window.open('/', '_self');
     });
     $("#weather_page").click(function () {
         window.open('/weather', '_self');
