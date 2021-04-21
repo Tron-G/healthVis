@@ -113,7 +113,7 @@ function drawXiaobei() {
 				textAlign: 'center'
 			}
 		],
-		color: ['#9ca8b8','#ddd1d1','#afb0b2', '#e0e5df', '#b5c4b1', '#8696a7', '#96a48b', '#d8caaf', '#939391','#7b8b6f','#f0ebe5'],
+		color: [ '#BAE3AA','#e7e3c5','rgb(216,202,175)', 'rgb(221,209,209)','rgb(172,182,194)', 'rgb(147,147,145)',],
 		// legend: {},
 		// tooltip: {},
 		tooltip:{},
@@ -1459,10 +1459,7 @@ function drawXiaobei() {
 		scatterr(m, datalist2["name"][m],datalist2["data"][m]) //月份，坐标轴，数据
 		temperature(param.seriesName)
 		drawScatter(param.seriesName)
-
 	})
-
-
 }
 
 
@@ -1876,26 +1873,26 @@ function heatmap() {
 			pieces: [{
 				gt: 0,
 				lte: 50,
-				color: '#acb6c2'
+				color: "#BAE3AA"
 			}, {
 				gt: 50,
 				lte: 100,
-				color: '#ddd1d1'
+				color:"#e7e3c5"
 			}, {
 				gt: 100,
 				lte: 150,
-				color: '#acb7a4'
+				color:  '#d8caaf'
 			}, {
 				gt: 150,
 				lte: 200,
-				color: '#939391'
+				color: '#ddd1d1'
 			}, {
 				gt: 200,
 				lte: 300,
-				color: '#d8caaf'
+				color:'#acb6c2'
 			}, {
 				gt: 300,
-				color: '#b5c4b1'
+				color: '#939391'
 			}],
 			type: 'piecewise',
 			orient: 'horizontal',
@@ -2750,7 +2747,7 @@ console.log(str)
             "12": {}
         }
     ]
-    console.log(data)
+    // console.log(data)
     var colorList = [
         [
            '#9ca8b8','#ddd1d1','#c1cbd7 ','#afb0b2', '#c5b8a5','#bfbfbf', '#e0e5df', '#b5c4b1', '#8696a7', '#96a48b', '#d8caaf', '#939391','#7b8b6f','#f0ebe5'
@@ -2823,7 +2820,7 @@ console.log(str)
         console.log(list)
         for (let i = 0; i < 4; i++) {
             for (let j = 0; j < list.length; j++) {
-                console.log(data[i + 1][str][list[j]])
+                // console.log(data[i + 1][str][list[j]])
                 let size;
                 if (data[i + 1][str][list[j]] < 5) {
                     size = data[i + 1][str][list[j]] * 10
@@ -2932,7 +2929,7 @@ console.log(str)
  * @description 绘制散点图
  */
 function scatterr(mouth, datalist1, datalist2) {
-	//console.log(datalist2)
+	datalist1.unshift(' ')
 	var dom = document.getElementById("scatter2");
 	var myChart = echarts.init(dom);
 	var app = {};
@@ -2943,59 +2940,16 @@ function scatterr(mouth, datalist1, datalist2) {
 	var years = ['0-10', '10-20', '20-30', '30-40', '40-50', '50-60', '60-70', '70-80', '80-90', '90-100'];
 
 
-	var data = [
-		[4, 15, 16],
-		[5, 15, 8],
-		[4, 0, 4],
-		[5, 6, 4],
-		[3, 15, 4],
-		[5, 0, 3],
-		[5, 7, 3],
-		[4, 10, 3],
-		[5, 12, 3],
-		[5, 14, 3],
-		[5, 20, 3],
-		[5, 2, 2],
-		[5, 3, 2],
-		[6, 4, 2],
-		[6, 15, 2],
-		[6, 22, 2],
-		[3, 0, 1],
-		[6, 1, 1],
-		[4, 1, 1],
-		[4, 2, 1],
-		[3, 2, 1],
-		[3, 3, 1],
-		[4, 3, 1],
-		[7, 3, 1],
-		[5, 5, 1],
-		[4, 6, 1],
-		[7, 6, 1],
-		[6, 6, 1],
-		[4, 7, 1],
-		[7, 7, 1],
-		[6, 8, 1],
-		[4, 8, 1],
-		[6, 9, 1],
-		[4, 9, 1],
-		[5, 11, 1],
-		[7, 12, 1],
-		[5, 13, 1],
-		[6, 14, 1],
-		[7, 15, 1],
-		[3, 16, 1],
-		[5, 16, 1],
-		[4, 17, 1],
-		[5, 17, 1],
-		[5, 18, 1],
-		[4, 19, 1],
-		[6, 20, 1],
-		[7, 21, 1]
-	];
+
 	data = datalist2.map(function(item) {
 		return [item[1], item[0], item[2]];
 	});
-
+	data.forEach(d=>{
+		if(d[0]==0){
+			d[0]=1
+		}
+	})
+	console.log(data)
 	option = {
 		title: {
 			text: '2019年日照市' + mouth + '月呼吸道疾病分布情况',
@@ -3021,7 +2975,7 @@ function scatterr(mouth, datalist1, datalist2) {
 		},
 		grid: {
 			left: 2,
-			bottom: 50,
+			bottom: 0,
 			right: 20,
 			containLabel: true
 		},
@@ -3033,9 +2987,9 @@ function scatterr(mouth, datalist1, datalist2) {
 				show: true
 			},
 			axisLabel: {
-				fontSize: 10,
+				fontSize: 8,
 				interval: 0,
-				rotate: 45
+				rotate: 35
 			},
 			axisLine: {
 				show: false
@@ -3043,32 +2997,33 @@ function scatterr(mouth, datalist1, datalist2) {
 		},
 		yAxis: {
 			type: 'category',
-			name:"年龄分布",
+			name:"年龄分布(岁)",
 			data: years,
 			axisLine: {
 				show: false
 			},
 			axisLabel:{
-				formatter:"{value} 岁"
+				fontSize: 8,
+				formatter:"{value}"
 			}
 		},
-		dataZoom: [{
-			type: 'inside',
-			start: 0,
-			end: 200
-		}, {
-			type:"slider",
-			height:10,
-			left:"center",
-			width:"80%",
-			start: 0,
-			end: 200,
-		}],
+		// dataZoom: [{
+		// 	type: 'inside',
+		// 	start: 0,
+		// 	end: 200
+		// }, {
+		// 	type:"slider",
+		// 	height:10,
+		// 	left:"center",
+		// 	width:"80%",
+		// 	start: 0,
+		// 	end: 200,
+		// }],
 		series: [{
 			name: 'Punch Card',
 			type: 'scatter',
 			symbolSize: function(val) {
-				return val[2] * 5;
+				return val[2] * 3;
 			},
 			itemStyle:{
 				normal:{
