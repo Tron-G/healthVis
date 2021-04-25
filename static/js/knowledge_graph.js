@@ -3,6 +3,7 @@
  * @param {array} data  知识图谱数据组
  */
 function drawKnowledgeGraph(data) {
+    destroy_scroll()
     let nodes = []
     let links = []
     data.forEach(d => {

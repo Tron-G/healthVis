@@ -20,10 +20,17 @@ TRANSPORT_DATA["disease_info"] = "";
 // 缓存关联图谱中选择的疾病
 TRANSPORT_DATA["selected_disease"] = [];
 
+//缓存聚类结构图参数
+TRANSPORT_DATA["parameter_1"] = 0.3;
+TRANSPORT_DATA["parameter_2"] = 0.09;
+TRANSPORT_DATA["parameter_3"] = 0.09;
 //缓存疾病表
 var DISEASE_LIST = {};
 // 缓存疾病知识图谱
 var DISEASE_RULE = {};
+
+//系统交互状态，用于判定刷新视图,0: 无任何操作，1：调整聚类参数 2：选择月份，3： 选择或搜索具体疾病
+var STSTEM_STATUS = 0;
 
 /**
  * @description 初始化人体结构图系统
@@ -40,6 +47,7 @@ function initBodyVis() {
             console.log("success", data);
             DISEASE_LIST = data["disease-detail"];
             DISEASE_RULE = data["disease_rules"];
+            TRANSPORT_DATA["disease"] = data["disease_info"]["name"];
 
             drawBodyMap("time", data["body_disease"]);
             // drawTowBar1(data["disease_age"]);
@@ -108,6 +116,7 @@ function setSearchEvent() {
  *                 disease_detail: 绘制疾病的具体信息
  *                 disease_knowledge: 绘制疾病知识图谱以及单分图
  *                 force_map_select: 关联图谱中选择疾病操作
+ *                 change_force_parameter: 调节聚类结构图边权重
  */
 function redraw(url, redraw_type) {
     $.ajax({
@@ -122,10 +131,12 @@ function redraw(url, redraw_type) {
                 drawBodyMap("search", data);
                 drawForceMap(DISEASE_RULE, "overview")
             } else if (redraw_type === "search_disease") {
+                STSTEM_STATUS = 3;
                 drawBodyMap("search", data);
                 drawTowBar1(data);
                 drawForceMap(DISEASE_RULE, "focus")
             } else if (redraw_type === "select_time") {
+                STSTEM_STATUS = 2;
                 drawBodyMap("time", data["month"]);
                 drawTowbar2(data["month"]);
                 drawForceMap(DISEASE_RULE, "overview");
@@ -139,20 +150,23 @@ function redraw(url, redraw_type) {
                 drawSingleInfo(data["info_text"]);
                 drawSingleGraph(data["single_graph"]);
                 drawForceMap(DISEASE_RULE, "focus");
-
                 drawTowBar1(data["month"]);
-
-
 
             } else if (redraw_type === "disease_knowledge") {
                 drawKnowledgeGraph(data);
             } else if (redraw_type === "force_map_select") {
+                STSTEM_STATUS = 0;
                 drawBodyMap("search", data["search"]);
                 drawTowBar1(data["search"]);
                 drawSingleInfo(data["info_text"]);
                 drawKnowledgeGraph(data["knowledge"]);
                 drawForceMap(DISEASE_RULE, "focus");
             }
+            else if (redraw_type === "change_force_parameter") {
+                STSTEM_STATUS = 1;
+                drawSingleGraph(data["single_graph"]);
+            }
+
         }
     });
 }

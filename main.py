@@ -196,6 +196,23 @@ def selectForceMapNode():
 
 
 # ******************************************************************************************
+# 返回疾病关联图选择疾病的数据
+# ******************************************************************************************
+@app.route('/change_force_parameter', methods=['POST', 'GET'])
+def changeForceParameter():
+    parameter1 = request.get_json()["parameter_1"]
+    parameter2 = request.get_json()["parameter_2"]
+    parameter3 = request.get_json()["parameter_3"]
+    print(parameter1, parameter2,parameter3)
+    disease_name = request.get_json()["disease"]
+    data = {"single_graph": dm.get_single_graph_data(disease_name, parameter1, parameter2, parameter3)}
+
+
+    # print(dm.get_disease_age(disease, month))
+    return jsonify(data)
+
+
+# ******************************************************************************************
 # 后台接口测试
 # ******************************************************************************************
 @app.route('/test', methods=['POST', 'GET'])

@@ -342,7 +342,7 @@ def top10(season, hospital, food_disease=False):
             words[i] = words[i].replace("\n", "")
 
         if food_disease == True:
-            with open("files/food_disease/disease.json","r",encoding="UTF-8") as file:
+            with open("files/food_disease/disease.json", "r", encoding="UTF-8") as file:
                 infos = json.load(file)
             disease_names = []
             for info in infos:
@@ -512,7 +512,7 @@ def top10(season, hospital, food_disease=False):
             # print(top)
             new_top = []
             for i in range(len(top)):
-                if top[i]["keyword"]  in disease_names:
+                if top[i]["keyword"] in disease_names:
                     new_top.append(top[i])
             top = new_top
             # print(top)
@@ -829,6 +829,10 @@ def load_static_data(data_name):
     elif data_name == "disease_month":
         # 本地缓存的旭日图选择的月份数据
         with open("./files/disease_data/disease_month.json", encoding='UTF-8') as f:
+            data = json.load(f)
+    elif data_name == "disease_distance":
+        # 本地缓存的疾病距离矩阵
+        with open("./files/disease_data/disease_value.json", encoding='UTF-8') as f:
             data = json.load(f)
     return data
 
@@ -1250,9 +1254,11 @@ def BFS(graph, start):  # graph图  s指的是开始结点
 # ******************************************************************************************
 # 根据搜索的疾病名称生成单分图数据
 # ******************************************************************************************
-def get_single_graph_data(disease_name):
-    with open("./files/disease_data/single_graph.json", encoding='UTF-8') as f:
-        data = json.load(f)
+def get_single_graph_data(disease_name, parameter1=0.30, parameter2=0.09, parameter3=0.09):
+    # with open("./files/disease_data/single_graph.json", encoding='UTF-8') as f:
+    #     data = json.load(f)
+
+    data = set_single_map_data(parameter1, parameter2, parameter3)
     dis_list = BFS(data, disease_name)
     res = {}
     for i in dis_list:
@@ -1506,3 +1512,38 @@ def get_season_hospital_data(season, hospital, is_food=False):
 def get_sunburst_month_data(month):
     data = load_static_data("disease_month")
     return data[str(month)]
+
+
+# ******************************************************************************************
+# 动态计算单分图
+# 参数：词权重，症状权重，科室权重，治疗权重，检查权重，诊断权重，疾病权重
+# ******************************************************************************************
+def set_single_map_data(word_value=0.30, symptom_value=0.09, departments_value=0.09, treat_value=0.16,
+                        inspect_value=0.03, check_value=0.18, cause_value=0.15):
+    diseases = load_static_data("disease_distance")
+    graphs = {}
+    for disease_name_1 in diseases.keys():
+        graph = {}
+        for disease_name_2 in diseases[disease_name_1].keys():
+            value = 0
+            for i in range(len(diseases[disease_name_1][disease_name_2])):
+                if i == 0:
+                    value = value + diseases[disease_name_1][disease_name_2][i] * word_value
+                if i == 1:
+                    value = value + diseases[disease_name_1][disease_name_2][i] * symptom_value
+                if i == 2:
+                    value = value + diseases[disease_name_1][disease_name_2][i] * departments_value
+                if i == 3:
+                    value = value + diseases[disease_name_1][disease_name_2][i] * treat_value
+                if i == 4:
+                    value = value + diseases[disease_name_1][disease_name_2][i] * inspect_value
+                if i == 5:
+                    value = value + diseases[disease_name_1][disease_name_2][i] * check_value
+                if i == 6:
+                    value = value + diseases[disease_name_1][disease_name_2][i] * cause_value
+            if value > 0.17:
+                graph[disease_name_2] = value
+        graphs[disease_name_1] = graph
+    # with open(save_path,"w",encoding="utf-8") as file:
+    #     json.dump(graphs,file,ensure_ascii=False)
+    return graphs

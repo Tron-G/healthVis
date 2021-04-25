@@ -518,3 +518,4 @@ function drawForceMap(data, draw_type) {
         })
     }
 }
+
