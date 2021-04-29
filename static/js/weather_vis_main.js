@@ -19,9 +19,9 @@ initBodyVis();
  */
 function Redirect() {
     $("#map_page").click(function () {
-        window.open('/', '_self');
+        window.open('/feature', '_self');
     });
     $("#body_page").click(function () {
-        window.open('/feature', '_self');
+        window.open('/', '_self');
     });
 }

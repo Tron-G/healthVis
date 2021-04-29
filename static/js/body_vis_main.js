@@ -137,6 +137,7 @@ function redraw(url, redraw_type) {
                 drawForceMap(DISEASE_RULE, "focus")
             } else if (redraw_type === "select_time") {
                 STSTEM_STATUS = 2;
+                TRANSPORT_DATA["disease"] = data["disease_info"]["name"];
                 drawBodyMap("time", data["month"]);
                 drawTowbar2(data["month"]);
                 drawForceMap(DISEASE_RULE, "overview");

@@ -119,7 +119,7 @@ function destroy_scroll() {
     for (let i = 1; i <= 3; i++) {
         let scroll = document.getElementById("scroll" + i)
         if (scroll != null) {
-            console.log(scroll)
+            // console.log(scroll)
             knowledge_graph.removeChild(scroll)
         }
     }
