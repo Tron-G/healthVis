@@ -177,7 +177,8 @@ function scroll() {
             console.log(value);
             TRANSPORT_DATA["parameter_1"] = value;
             redraw("/change_force_parameter", "change_force_parameter");
-            console.log(TRANSPORT_DATA)
+            console.log(TRANSPORT_DATA);
+            document.onmouseup=null;
         }
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -224,7 +225,8 @@ function scroll() {
             console.log(value);
             TRANSPORT_DATA["parameter_2"] = value;
             redraw("/change_force_parameter", "change_force_parameter");
-            console.log(TRANSPORT_DATA)
+            console.log(TRANSPORT_DATA);
+            document.onmouseup=null;
         }
     }
 
@@ -274,7 +276,8 @@ function scroll() {
             console.log(value);
             TRANSPORT_DATA["parameter_3"] = value;
             redraw("/change_force_parameter", "change_force_parameter");
-            console.log(TRANSPORT_DATA)
+            console.log(TRANSPORT_DATA);
+            document.onmouseup=null;
         }
     }
 }

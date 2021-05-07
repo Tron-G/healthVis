@@ -1279,6 +1279,7 @@ def get_single_graph_data(disease_name, parameter1=0.30, parameter2=0.09, parame
             temp["lineStyle"] = {"normal": {"width": res[i][j] * 10}}
             relation.append(temp)
     out_data["relation"] = relation
+    print(out_data)
     return out_data
 
 

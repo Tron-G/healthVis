@@ -28,6 +28,7 @@ function drawDiseaseInfo(data) {
                 .style("opacity", 0.5)
                 .on("click", () => {
                     // console.log(data[i]);
+                    TRANSPORT_DATA["disease"] = data[i];
                     TRANSPORT_DATA["disease_info"] = data[i];
                     redraw("/get_disease_info", "disease_detail");
                 });
