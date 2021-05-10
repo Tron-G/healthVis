@@ -35,8 +35,10 @@ function drawRecommendView(data) {
     let scale = d3.scale.linear().domain([0, 1]).range([5, 100]);
 
     let data_len;
-    if (data.length > 5) {
-        data_len = 5;
+    //显示的推荐疾病个数
+    let show_num = 4;
+    if (data.length > show_num) {
+        data_len = show_num;
     } else {
         data_len = data.length;
     }

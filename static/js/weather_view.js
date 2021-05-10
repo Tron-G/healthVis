@@ -2929,26 +2929,24 @@ console.log(str)
  * @description 绘制散点图
  */
 function scatterr(mouth, datalist1, datalist2) {
-	datalist1.unshift(' ')
+	// datalist1.unshift(' ');
 	var dom = document.getElementById("scatter2");
 	var myChart = echarts.init(dom);
+	myChart.clear();
 	var app = {};
-
 	var option;
 
-
 	var years = ['0-10', '10-20', '20-30', '30-40', '40-50', '50-60', '60-70', '70-80', '80-90', '90-100'];
-
 
 
 	data = datalist2.map(function(item) {
 		return [item[1], item[0], item[2]];
 	});
-	data.forEach(d=>{
-		if(d[0]==0){
-			d[0]=1
-		}
-	})
+	// data.forEach(d=>{
+	// 	if(d[0]==0){
+	// 		d[0]=1
+	// 	}
+	// })
 	console.log(data)
 	option = {
 		title: {

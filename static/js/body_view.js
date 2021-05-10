@@ -569,7 +569,8 @@ function drawBodyMap(type, data) {
                 .attr("class", "disease_organ_list")
                 .attr("x", item_x - 40)
                 .attr("y", item_y - 55)
-                .attr("fill", "#91091e")
+                .attr("fill", "black")
+                // .attr("fill", "#91091e")
                 .attr("font-weight", "bold")
                 .style("font-size", "12px")
                 .style("opacity", 0);

@@ -142,7 +142,7 @@ function drawHospitalBar(disease, diet_disease = []) {
                 top: '20%'
             },
             legend: {
-                data: ['高发疾病', '饮食关联疾病'],
+                data: ['高发疾病', '关联疾病风险指数'],
                 top:"10%"
             },
             xAxis: [{
@@ -196,7 +196,7 @@ function drawHospitalBar(disease, diet_disease = []) {
                 data: num
             },
                 {
-                    name: '饮食关联疾病',
+                    name: '关联疾病风险指数',
                     type: 'bar',
                     barWidth: 8,
                     yAxisIndex: 1,
