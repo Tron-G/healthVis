@@ -53,23 +53,28 @@ $$ P\left ( u,i \right ) = \sum_{v\in S\left ( u,K \right )\cap N\left ( i \righ
 
 1. 城市健康态势，探索不同季节，不同医院的高发疾病概况等
 
-![布局](https://raw.githubusercontent.com/ustbhuangyi/better-scroll/master/packages/vuepress-docs/docs/.vuepress/public/assets/images/schematic.png)
+![demo1]([https://raw.githubusercontent.com/ustbhuangyi/better-scroll/master/packages/vuepress-docs/docs/.vuepress/public/assets/images/schematic.png](https://github.com/Tron-G/healthVis/blob/master/demo1.gif))
 
 2. 工业经济区域因素探索
 
+![demo2]([https://raw.githubusercontent.com/ustbhuangyi/better-scroll/master/packages/vuepress-docs/docs/.vuepress/public/assets/images/schematic.png](https://github.com/Tron-G/healthVis/blob/master/demo2.gif))
 
 3. 地区饮食区域因素探索
 
+![demo3]([https://raw.githubusercontent.com/ustbhuangyi/better-scroll/master/packages/vuepress-docs/docs/.vuepress/public/assets/images/schematic.png](https://github.com/Tron-G/healthVis/blob/master/demo3.gif))
 
 4. 气候关联因素探索
 
+![demo4]([https://raw.githubusercontent.com/ustbhuangyi/better-scroll/master/packages/vuepress-docs/docs/.vuepress/public/assets/images/schematic.png](https://github.com/Tron-G/healthVis/blob/master/demo4.gif))
 
 5. 高发疾病时间分布特征，及疾病聚类结构
 
+![demo5]([https://raw.githubusercontent.com/ustbhuangyi/better-scroll/master/packages/vuepress-docs/docs/.vuepress/public/assets/images/schematic.png](https://github.com/Tron-G/healthVis/blob/master/demo5.gif))
 
 6. 关联疾病探索及疾病知识图谱
 
+![demo6]([https://raw.githubusercontent.com/ustbhuangyi/better-scroll/master/packages/vuepress-docs/docs/.vuepress/public/assets/images/schematic.png](https://github.com/Tron-G/healthVis/blob/master/demo6.gif))
 
 7. 病情分析及疾病预测
 
-
+![demo7]([https://raw.githubusercontent.com/ustbhuangyi/better-scroll/master/packages/vuepress-docs/docs/.vuepress/public/assets/images/schematic.png](https://github.com/Tron-G/healthVis/blob/master/demo7.gif))
