@@ -25,19 +25,23 @@ http://127.0.0.1:5000/
 
 ## 算法支持
 * Apriori
+
 $$ support\left ( A\Rightarrow B \right )=P\left ( A\cap B \right )  $$
 
 $$ confidence\left ( A\Rightarrow B \right )  = P\left ( B \mid A \right )  = \frac{support\_count\left ( A\cap B \right )}{support\_count\left ( A \right ) \notag} $$
 
 * TF-IDF
-  $$ tf_{i,j} = \frac{n_{i,j}}{ {\textstyle \sum_{0}^{k}}n_{k,j} }  $$
+ 
+ $$ tf_{i,j} = \frac{n_{i,j}}{ {\textstyle \sum_{0}^{k}}n_{k,j} }  $$
 
 * K-Means
   
 * 二分图投影
+
 $$     D\left ( s,t \right )=\sum_{i=1}^{m}\frac{\sum_{j=1}^{n}s_{ij}\times t_{ij}}{\sqrt{\sum_{j=1}^{n}\left ( s_{ij} \right )^2\times \sum_{j=1}^{n}\left ( t_{ij} \right )^2}}\times v_{i} $$
 
 * 协同过滤
+
 $$ P\left ( u,i \right ) = \sum_{v\in S\left ( u,K \right )\cap N\left ( i \right )}^{}w_{uv}\times r_{vi} $$
 
 算法详情，及可视化视图设计等，参见论文：
