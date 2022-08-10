@@ -45,6 +45,8 @@ $$     D\left ( s,t \right )=\sum_{i=1}^{m}\frac{\sum_{j=1}^{n}s_{ij}\times t_{i
 
 $$ P\left ( u,i \right ) = \sum_{v\in S\left ( u,K \right )\cap N\left ( i \right )}^{}w_{uv}\times r_{vi} $$
 
+## 论文成果
+
 算法详情，及可视化视图设计等，参见论文：
 
 [Visual Exploration of Regional Factors of the Health of Urban Residents [J]. IEEE Access, 2022.](https://ieeexplore.ieee.org/document/9721899)
